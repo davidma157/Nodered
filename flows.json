@@ -1,1 +1,37 @@
-[]
+[
+    {
+        "id": "d79d1c01a8194acf",
+        "type": "tab",
+        "label": "Flux 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b3f27fe443d69134",
+        "type": "inject",
+        "z": "d79d1c01a8194acf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 340,
+        "y": 190,
+        "wires": [
+            []
+        ]
+    }
+]
