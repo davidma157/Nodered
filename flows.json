@@ -31,6 +31,26 @@
         "x": 340,
         "y": 190,
         "wires": [
+            [
+                "1d7c5f9e0faba074"
+            ]
+        ]
+    },
+    {
+        "id": "1d7c5f9e0faba074",
+        "type": "function",
+        "z": "d79d1c01a8194acf",
+        "name": "function 1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 180,
+        "wires": [
             []
         ]
     }
