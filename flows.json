@@ -326,9 +326,9 @@
             "d8da1221bf37f16a",
             "f94259e3284b277c"
         ],
-        "x": 104,
-        "y": 643,
-        "w": 948,
+        "x": 38,
+        "y": 593,
+        "w": 844,
         "h": 418
     },
     {
@@ -464,8 +464,8 @@
             "80653104c09f9d63",
             "bd7fea0d471990a7"
         ],
-        "x": 234,
-        "y": 669,
+        "x": 64,
+        "y": 619,
         "w": 792,
         "h": 172
     },
@@ -4701,8 +4701,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "Backup BD",
-        "x": 510,
-        "y": 980,
+        "x": 340,
+        "y": 930,
         "wires": [
             [
                 "e9797086d33dca62"
@@ -4730,8 +4730,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 690,
-        "y": 980,
+        "x": 520,
+        "y": 930,
         "wires": []
     },
     {
@@ -4748,8 +4748,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 690,
-        "y": 1020,
+        "x": 520,
+        "y": 970,
         "wires": []
     },
     {
@@ -4774,8 +4774,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 360,
-        "y": 980,
+        "x": 190,
+        "y": 930,
         "wires": [
             [
                 "a087fa5b04e2ed6a"
@@ -4795,8 +4795,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 710,
-        "y": 940,
+        "x": 540,
+        "y": 890,
         "wires": [
             [
                 "56c53ee58ee22f0a",
@@ -4939,8 +4939,8 @@
         "sqlquery": "fixed",
         "sql": "delete FROM SYSTEM_LOG\nwhere  datetime < datetime('now', 'localtime', '-2 days')",
         "name": "Delete SYS_LOG > 2 jours",
-        "x": 880,
-        "y": 710,
+        "x": 710,
+        "y": 660,
         "wires": [
             []
         ]
@@ -4967,8 +4967,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 370,
-        "y": 710,
+        "x": 200,
+        "y": 660,
         "wires": [
             [
                 "f71406035e082c3c"
@@ -4997,8 +4997,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 350,
-        "y": 800,
+        "x": 180,
+        "y": 750,
         "wires": [
             [
                 "bd7fea0d471990a7"
@@ -5014,8 +5014,8 @@
         "sqlquery": "fixed",
         "sql": "delete FROM SYSTEM_LOG\n WHERE id_device = 3",
         "name": "Delete SYS_LOG id_device = 3",
-        "x": 860,
-        "y": 800,
+        "x": 690,
+        "y": 750,
         "wires": [
             []
         ]
@@ -5029,8 +5029,8 @@
         "sqlquery": "fixed",
         "sql": "SELECT count(*)\nFROM SYSTEM_LOG\nwhere  datetime < datetime('now', 'localtime', '-2 days')",
         "name": "Count Delete SYS_LOG ",
-        "x": 610,
-        "y": 710,
+        "x": 440,
+        "y": 660,
         "wires": [
             [
                 "80653104c09f9d63",
@@ -5052,8 +5052,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 810,
-        "y": 760,
+        "x": 640,
+        "y": 710,
         "wires": []
     },
     {
@@ -5065,8 +5065,8 @@
         "sqlquery": "fixed",
         "sql": "SELECT count(*)\nFROM SYSTEM_LOG\n WHERE id_device = 3\n-- where  datetime < datetime('now', 'localtime', '-2 days')",
         "name": "Count Delete SYS_LOG ",
-        "x": 570,
-        "y": 800,
+        "x": 400,
+        "y": 750,
         "wires": [
             [
                 "267b2d2e30b9fb61",
@@ -5317,8 +5317,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 930,
-        "y": 980,
+        "x": 760,
+        "y": 930,
         "wires": []
     },
     {
@@ -5334,8 +5334,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 920,
+        "x": 307,
+        "y": 861,
         "wires": [
             []
         ]
@@ -5362,8 +5362,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 200,
-        "y": 920,
+        "x": 157,
+        "y": 861,
         "wires": [
             [
                 "9abd8010c264a120"
@@ -5389,8 +5389,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 910,
-        "y": 940,
+        "x": 740,
+        "y": 890,
         "wires": [
             []
         ]
