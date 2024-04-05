@@ -87,16 +87,12 @@
             "ccfde0c94ee7c74c",
             "719f22c2cd97bccb",
             "36fe564307c47f87",
-            "7fc28496b2413508",
-            "8d188c0383ccbfd8",
-            "6c5991ebd3d88720",
-            "59af2e70cc8b20ed",
-            "fac2e498954eda55"
+            "7fc28496b2413508"
         ],
         "x": 34,
         "y": 19,
         "w": 852,
-        "h": 292
+        "h": 262
     },
     {
         "id": "1be746086bdfe3c5",
@@ -324,12 +320,16 @@
             "497d93111671d420",
             "571f0fb3a0c1cb2f",
             "e9797086d33dca62",
-            "d1fbda7449de74ee"
+            "836f1c5e6a99b853",
+            "56c53ee58ee22f0a",
+            "9abd8010c264a120",
+            "d8da1221bf37f16a",
+            "f94259e3284b277c"
         ],
-        "x": 34,
-        "y": 759,
-        "w": 722,
-        "h": 162
+        "x": 104,
+        "y": 643,
+        "w": 948,
+        "h": 418
     },
     {
         "id": "429317fe9e4bcd87",
@@ -346,8 +346,8 @@
             "3517ba53be3b782f",
             "ab844b65273cf9b7"
         ],
-        "x": 34,
-        "y": 939,
+        "x": 14,
+        "y": 1129,
         "w": 852,
         "h": 162
     },
@@ -449,6 +449,7 @@
         "id": "836f1c5e6a99b853",
         "type": "group",
         "z": "f178d5dee9c95e1e",
+        "g": "37395d53ca3ec675",
         "name": "Syslog",
         "style": {
             "label": true,
@@ -463,8 +464,8 @@
             "80653104c09f9d63",
             "bd7fea0d471990a7"
         ],
-        "x": 34,
-        "y": 559,
+        "x": 234,
+        "y": 669,
         "w": 792,
         "h": 172
     },
@@ -492,8 +493,8 @@
             "513935f0533c6b43",
             "408b96d47f5f0cce"
         ],
-        "x": 34,
-        "y": 289,
+        "x": 44,
+        "y": 299,
         "w": 852,
         "h": 262
     },
@@ -3658,7 +3659,7 @@
         "z": "57111ca025f638be",
         "g": "b3735df348adb38e",
         "name": "debug 144",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3939,7 +3940,7 @@
         "z": "57111ca025f638be",
         "g": "b3735df348adb38e",
         "name": "debug 163",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4700,8 +4701,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "Backup BD",
-        "x": 290,
-        "y": 840,
+        "x": 510,
+        "y": 980,
         "wires": [
             [
                 "e9797086d33dca62"
@@ -4729,8 +4730,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 470,
-        "y": 840,
+        "x": 690,
+        "y": 980,
         "wires": []
     },
     {
@@ -4747,8 +4748,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 470,
-        "y": 880,
+        "x": 690,
+        "y": 1020,
         "wires": []
     },
     {
@@ -4773,8 +4774,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 140,
-        "y": 840,
+        "x": 360,
+        "y": 980,
         "wires": [
             [
                 "a087fa5b04e2ed6a"
@@ -4787,18 +4788,19 @@
         "z": "f178d5dee9c95e1e",
         "g": "37395d53ca3ec675",
         "name": "Résultat du script",
-        "func": "msg.backup = JSON.parse(msg.payload);\n\nmsg.backup.forEach(function (value) {\n    let date = new Date(value.date);\n     value.date = String(date.getMonth()+1).padStart(2, '0') \n        + \"/\" + String(date.getDate()).padStart(2, '0') + \" \" \n        + date.getHours() + \":\" +  String(date.getMinutes()).padStart(2, '0');\n});\n\nmsg.date = new Date();\n\nreturn msg;\n\n",
+        "func": "msg.backup = JSON.parse(msg.payload);\n\nmsg.backup.forEach(function (value) {\n    let date = new Date(value.date);\n     value.date = String(date.getMonth()+1).padStart(2, '0') \n        + \"/\" + String(date.getDate()).padStart(2, '0') + \" \" \n        + date.getHours() + \":\" +  String(date.getMinutes()).padStart(2, '0');\n});\n\nlet date = new Date();\n\nmsg.date = String(date.getMonth()+1).padStart(2, '0') \n        + \"/\" + String(date.getDate()).padStart(2, '0') + \" \" \n        + date.getHours() + \":\" +  String(date.getMinutes()).padStart(2, '0');\nreturn msg;\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
-        "y": 800,
+        "x": 710,
+        "y": 940,
         "wires": [
             [
-                "d1fbda7449de74ee"
+                "56c53ee58ee22f0a",
+                "f94259e3284b277c"
             ]
         ]
     },
@@ -4829,8 +4831,8 @@
         "sqlquery": "fixed",
         "sql": "SELECT id_sensor, mac, counter,  max(datetime ) as datetime\nFROM DATA_VIEW\nwhere  datetime > datetime('now', 'localtime', '-10 hours')\ngroup by id_sensor\norder by id_sensor, datetime ;",
         "name": "Most recent data temperature",
-        "x": 350,
-        "y": 980,
+        "x": 330,
+        "y": 1170,
         "wires": [
             [
                 "02a13a4670cc3b6d",
@@ -4852,8 +4854,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 650,
-        "y": 980,
+        "x": 630,
+        "y": 1170,
         "wires": []
     },
     {
@@ -4878,8 +4880,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 980,
+        "x": 110,
+        "y": 1170,
         "wires": [
             [
                 "074648f75d87c22c"
@@ -4899,35 +4901,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 540,
-        "y": 1060,
+        "x": 520,
+        "y": 1250,
         "wires": [
             [
                 "ab844b65273cf9b7"
             ]
         ]
-    },
-    {
-        "id": "d1fbda7449de74ee",
-        "type": "ui-text",
-        "z": "f178d5dee9c95e1e",
-        "g": "37395d53ca3ec675",
-        "group": "336cf0cb878743a0",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "name": "Backup BD",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "",
-        "x": 660,
-        "y": 800,
-        "wires": []
     },
     {
         "id": "ab844b65273cf9b7",
@@ -4946,8 +4926,8 @@
         "raw": false,
         "className": "",
         "name": "",
-        "x": 770,
-        "y": 1060,
+        "x": 750,
+        "y": 1250,
         "wires": []
     },
     {
@@ -4959,8 +4939,8 @@
         "sqlquery": "fixed",
         "sql": "delete FROM SYSTEM_LOG\nwhere  datetime < datetime('now', 'localtime', '-2 days')",
         "name": "Delete SYS_LOG > 2 jours",
-        "x": 680,
-        "y": 600,
+        "x": 880,
+        "y": 710,
         "wires": [
             []
         ]
@@ -4987,8 +4967,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 170,
-        "y": 600,
+        "x": 370,
+        "y": 710,
         "wires": [
             [
                 "f71406035e082c3c"
@@ -5017,8 +4997,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
-        "y": 690,
+        "x": 350,
+        "y": 800,
         "wires": [
             [
                 "bd7fea0d471990a7"
@@ -5034,8 +5014,8 @@
         "sqlquery": "fixed",
         "sql": "delete FROM SYSTEM_LOG\n WHERE id_device = 3",
         "name": "Delete SYS_LOG id_device = 3",
-        "x": 660,
-        "y": 690,
+        "x": 860,
+        "y": 800,
         "wires": [
             []
         ]
@@ -5049,8 +5029,8 @@
         "sqlquery": "fixed",
         "sql": "SELECT count(*)\nFROM SYSTEM_LOG\nwhere  datetime < datetime('now', 'localtime', '-2 days')",
         "name": "Count Delete SYS_LOG ",
-        "x": 410,
-        "y": 600,
+        "x": 610,
+        "y": 710,
         "wires": [
             [
                 "80653104c09f9d63",
@@ -5072,8 +5052,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 610,
-        "y": 650,
+        "x": 810,
+        "y": 760,
         "wires": []
     },
     {
@@ -5085,8 +5065,8 @@
         "sqlquery": "fixed",
         "sql": "SELECT count(*)\nFROM SYSTEM_LOG\n WHERE id_device = 3\n-- where  datetime < datetime('now', 'localtime', '-2 days')",
         "name": "Count Delete SYS_LOG ",
-        "x": 370,
-        "y": 690,
+        "x": 570,
+        "y": 800,
         "wires": [
             [
                 "267b2d2e30b9fb61",
@@ -5103,8 +5083,8 @@
         "sqlquery": "fixed",
         "sql": "DELETE FROM TEMPERATURE_EXTERNE_BK\n where  datetime < datetime('now', 'localtime', '-60 days');\n",
         "name": "Purge BK",
-        "x": 300,
-        "y": 370,
+        "x": 310,
+        "y": 380,
         "wires": [
             [
                 "f42a210a627d4892"
@@ -5118,8 +5098,8 @@
         "g": "39f5d1f224b9de66",
         "name": "Backup SENSOR_TEMPERATURE",
         "info": "",
-        "x": 200,
-        "y": 330,
+        "x": 210,
+        "y": 340,
         "wires": []
     },
     {
@@ -5144,8 +5124,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 140,
-        "y": 370,
+        "x": 150,
+        "y": 380,
         "wires": [
             [
                 "fab8a6f816b520df"
@@ -5161,8 +5141,8 @@
         "sqlquery": "fixed",
         "sql": "INSERT INTO TEMPERATURE_EXTERNE_BK \n    SELECT *\n    FROM TEMPERATURE_EXTERNE\n    -- Récupération des données dont le ID > MaxId du backup\n    WHERE id_temp_externe > \n        (SELECT CASE WHEN max(id_temp_externe) \n            IS NULL THEN 0 ELSE max(id_temp_externe) END\n        FROM TEMPERATURE_EXTERNE_BK);",
         "name": "Copy data to BK",
-        "x": 480,
-        "y": 370,
+        "x": 490,
+        "y": 380,
         "wires": [
             [
                 "3fe8d56b817b414a",
@@ -5192,8 +5172,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 170,
-        "y": 470,
+        "x": 180,
+        "y": 480,
         "wires": [
             [
                 "f47d039d1dd75fac"
@@ -5209,8 +5189,8 @@
         "sqlquery": "fixed",
         "sql": "SELECT *\nFROM TEMPERATURE_EXTERNE\nwhere  datetime < datetime('now', 'localtime', '-2 days')\norder by datetime asc;",
         "name": "SELECT TEMPERATURE",
-        "x": 410,
-        "y": 470,
+        "x": 420,
+        "y": 480,
         "wires": [
             [
                 "ac605ca570a82bf0"
@@ -5230,8 +5210,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 590,
-        "y": 470,
+        "x": 600,
+        "y": 480,
         "wires": [
             [
                 "8305de33a78a638d",
@@ -5257,8 +5237,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 770,
-        "y": 410,
+        "x": 780,
+        "y": 420,
         "wires": []
     },
     {
@@ -5270,8 +5250,8 @@
         "sqlquery": "prepared",
         "sql": "DELETE FROM TEMPERATURE_EXTERNE\nWHERE id_temp_externe = $id_temp_externe",
         "name": "Delete data",
-        "x": 770,
-        "y": 450,
+        "x": 780,
+        "y": 460,
         "wires": [
             []
         ]
@@ -5290,8 +5270,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 670,
-        "y": 370,
+        "x": 680,
+        "y": 380,
         "wires": []
     },
     {
@@ -5301,8 +5281,8 @@
         "g": "39f5d1f224b9de66",
         "name": "Détruit les données de plus de 2 jours ayant un écart < .4",
         "info": "",
-        "x": 270,
-        "y": 430,
+        "x": 280,
+        "y": 440,
         "wires": []
     },
     {
@@ -5319,31 +5299,53 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 770,
-        "y": 510,
+        "x": 780,
+        "y": 520,
         "wires": []
     },
     {
-        "id": "8d188c0383ccbfd8",
-        "type": "sqlite",
+        "id": "56c53ee58ee22f0a",
+        "type": "debug",
         "z": "f178d5dee9c95e1e",
-        "g": "82315bf5181c153a",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "fixed",
-        "sql": "DELETE FROM SENSOR_TEMPERATURE\nwhere  datetime < datetime('now', 'localtime', '-2 days')\nand id_sensor = 3;",
-        "name": "Delete data",
-        "x": 470,
-        "y": 250,
+        "g": "37395d53ca3ec675",
+        "name": "debug 168",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "9abd8010c264a120",
+        "type": "function",
+        "z": "f178d5dee9c95e1e",
+        "g": "37395d53ca3ec675",
+        "name": "function 21",
+        "func": "msg.payload ='[ '\n+'{\\\"type\\\":\\\"SOURCE\\\",\\\"name\\\":\\\"nodered.db\\\",\\\"date\\\":\\\"2024-04-05T12:29:34\\\",\\\"size\\\":\\\"1150976\\\" },'\n+'{\\\"type\\\":\\\"SQL\\\",\\\"name\\\":\\\"nodered.bk.sql.gz\\\",\\\"date\\\":\\\"2024-04-05T17:07:23\\\",\\\"size\\\":\\\"56067\\\" },'\n+'{\\\"type\\\":\\\"BACKUP_BIN\\\",\\\"name\\\":\\\"nodered.bk.db\\\",\\\"date\\\":\\\"2024-04-05T17:07:23\\\",\\\"size\\\":\\\"1150976\\\" }]'\n\n\nmsg.backup = JSON.parse(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 920,
         "wires": [
             []
         ]
     },
     {
-        "id": "6c5991ebd3d88720",
+        "id": "d8da1221bf37f16a",
         "type": "inject",
         "z": "f178d5dee9c95e1e",
-        "g": "82315bf5181c153a",
-        "name": "",
+        "g": "37395d53ca3ec675",
+        "name": "Test",
         "props": [
             {
                 "p": "payload"
@@ -5355,62 +5357,42 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
+        "once": true,
+        "onceDelay": "1",
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 290,
-        "y": 250,
+        "x": 200,
+        "y": 920,
         "wires": [
             [
-                "8d188c0383ccbfd8"
+                "9abd8010c264a120"
             ]
         ]
     },
     {
-        "id": "59af2e70cc8b20ed",
-        "type": "sqlite",
+        "id": "f94259e3284b277c",
+        "type": "ui-template",
         "z": "f178d5dee9c95e1e",
-        "g": "82315bf5181c153a",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "fixed",
-        "sql": "INSERT INTO SENSOR_TEMPERATURE \n    SELECT *\n    FROM SENSOR_TEMPERATURE_BK\n    WHERE id_sensor_data < \n        (SELECT CASE WHEN min(id_sensor_data) \n            IS NULL THEN 0 ELSE min(id_sensor_data) END\n        FROM SENSOR_TEMPERATURE);",
-        "name": "Copy data from BK",
-        "x": 640,
-        "y": 270,
+        "g": "37395d53ca3ec675",
+        "group": "336cf0cb878743a0",
+        "page": "",
+        "ui": "",
+        "name": "Backup BD",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <v-card title=\"Rapport de 'nodered.sh'\" :text=\"dateNow\" flat> </v-card>\n  <v-data-table  :headers=\"headers\" \n    :items=\"resultats\"  items-per-page=\"10\"\n    density=\"compact\"\n    select-strategy=\"page\"  \n    >\n   \n    <template v-slot:bottom>\n      <div class=\"text-center pt-2\">\n        <v-pagination :length=\"pageCount\"></v-pagination>\n      </div>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n\n    data: () => ({\n      \n      selected: [],\n      dateNow: \"\",\n      headers: [\n        { title: 'Type', sortable: false, maxWidth:1, key: 'type' },\n        { title: 'name', key: 'name', maxWidth:2, sortable: false},\n        { title: 'date', key: 'date', maxWidth:1, sortable: false},\n        { title: 'size', key: 'size', maxWidth:1, sortable: false},\n      ],\n      resultats: [],\n    }),\n\n    watch: {\n       msg: function(){\n        this.resultats = this.msg.backup;\n        this.dateNow = this.msg.date;\n      },\n      \n    },\n    \n    computed: {\n      pageCount() {\n        return Math.ceil(this.resultats.length / this.itemsPerPage)\n      },\n    },\n  \n  }\n</script>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 910,
+        "y": 940,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "fac2e498954eda55",
-        "type": "inject",
-        "z": "f178d5dee9c95e1e",
-        "g": "82315bf5181c153a",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 410,
-        "y": 270,
-        "wires": [
-            [
-                "59af2e70cc8b20ed"
-            ]
         ]
     },
     {
