@@ -23,6 +23,14 @@
         "info": ""
     },
     {
+        "id": "97407293d780965c",
+        "type": "tab",
+        "label": "Flux 2",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "bc1a8754bbd79fc2",
         "type": "subflow",
         "name": "Map Device",
@@ -166,7 +174,7 @@
             "892a6d47089017b7"
         ],
         "x": 34,
-        "y": 709,
+        "y": 739,
         "w": 982,
         "h": 242,
         "info": " - Device: Circuit du micro-contrôleur"
@@ -355,7 +363,7 @@
         "id": "49aed5c6020fd230",
         "type": "group",
         "z": "a9c9090b.478498",
-        "name": "UI - Configuration devices",
+        "name": "UI - Test",
         "style": {
             "label": true,
             "fill": "#bfdbef",
@@ -426,7 +434,6 @@
             "91ced026339a3eeb",
             "44c0d2d81fe59de0",
             "1c2e8d33bf43083e",
-            "dd3bd018e8aca788",
             "f138d867ef859cef",
             "caa469a26973d9d2",
             "aa76751f0c815d88",
@@ -438,36 +445,16 @@
             "0a4b76749339d8cd",
             "ea6fbc3a9d80e6ea",
             "fdcf63160f9713c2",
-            "6d2d92741ca4d67f"
+            "6d2d92741ca4d67f",
+            "e0694b109915343b",
+            "8fef624b14605b01",
+            "0866c283bc7f9752",
+            "31e656b176aa6f36"
         ],
-        "x": 14,
+        "x": 24,
         "y": 1559,
-        "w": 1152,
-        "h": 232
-    },
-    {
-        "id": "836f1c5e6a99b853",
-        "type": "group",
-        "z": "f178d5dee9c95e1e",
-        "g": "37395d53ca3ec675",
-        "name": "Syslog",
-        "style": {
-            "label": true,
-            "fill": "#ffffbf"
-        },
-        "nodes": [
-            "798c8432df02e379",
-            "1f65d9d6029c1383",
-            "e9d695451b8cd4d1",
-            "267b2d2e30b9fb61",
-            "f71406035e082c3c",
-            "80653104c09f9d63",
-            "bd7fea0d471990a7"
-        ],
-        "x": 64,
-        "y": 619,
-        "w": 792,
-        "h": 172
+        "w": 1322,
+        "h": 262
     },
     {
         "id": "39f5d1f224b9de66",
@@ -497,6 +484,30 @@
         "y": 299,
         "w": 852,
         "h": 262
+    },
+    {
+        "id": "836f1c5e6a99b853",
+        "type": "group",
+        "z": "f178d5dee9c95e1e",
+        "g": "37395d53ca3ec675",
+        "name": "Syslog",
+        "style": {
+            "label": true,
+            "fill": "#ffffbf"
+        },
+        "nodes": [
+            "798c8432df02e379",
+            "1f65d9d6029c1383",
+            "e9d695451b8cd4d1",
+            "267b2d2e30b9fb61",
+            "f71406035e082c3c",
+            "80653104c09f9d63",
+            "bd7fea0d471990a7"
+        ],
+        "x": 64,
+        "y": 619,
+        "w": 792,
+        "h": 172
     },
     {
         "id": "fa8d72ad90e71a48",
@@ -1049,6 +1060,12 @@
         }
     },
     {
+        "id": "1d5e58c3b82f3637",
+        "type": "global-config",
+        "name": "global-config",
+        "env": []
+    },
+    {
         "id": "babb6d48868671a6",
         "type": "function",
         "z": "bc1a8754bbd79fc2",
@@ -1276,7 +1293,7 @@
             "2a827ba8d0b76bf8"
         ],
         "x": 975,
-        "y": 790,
+        "y": 820,
         "wires": []
     },
     {
@@ -1386,7 +1403,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 150,
-        "y": 790,
+        "y": 820,
         "wires": [
             [
                 "5185ef5d8d8f239a"
@@ -2069,7 +2086,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 840,
-        "y": 750,
+        "y": 780,
         "wires": []
     },
     {
@@ -2080,7 +2097,7 @@
         "name": "Rafraichit la liste de device à l'écran",
         "info": "",
         "x": 200,
-        "y": 910,
+        "y": 940,
         "wires": []
     },
     {
@@ -2125,7 +2142,7 @@
         "sql": "select * from SENSOR_VIEW;",
         "name": "Load Devices",
         "x": 420,
-        "y": 790,
+        "y": 820,
         "wires": [
             [
                 "48340506c8ec6a1e",
@@ -2147,7 +2164,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 600,
-        "y": 750,
+        "y": 780,
         "wires": []
     },
     {
@@ -2164,7 +2181,7 @@
         "finalize": "",
         "libs": [],
         "x": 840,
-        "y": 790,
+        "y": 820,
         "wires": [
             [
                 "1559f9fd4805b155"
@@ -2178,7 +2195,7 @@
         "g": "abbcf13b0652a794",
         "name": "",
         "x": 640,
-        "y": 790,
+        "y": 820,
         "wires": [
             [
                 "a64ce37c329514c8",
@@ -2740,7 +2757,7 @@
             "a147248bb7549068"
         ],
         "x": 265,
-        "y": 830,
+        "y": 860,
         "wires": [
             [
                 "5185ef5d8d8f239a",
@@ -2754,7 +2771,7 @@
         "z": "57111ca025f638be",
         "g": "5d89e93885229fe1",
         "name": "debug 117",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2943,7 +2960,7 @@
         "z": "57111ca025f638be",
         "g": "2ff47af73d8a3d20",
         "name": "debug 119",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3004,7 +3021,7 @@
         "z": "57111ca025f638be",
         "g": "dfaa0e84286af4c3",
         "name": "Load devices",
-        "func": "const devicesMap = global.get('devicesMap');\n\nvar devices = [];\n\ndevicesMap.forEach(function (device) {\n  devices.push(device);\n \n});\n\nmsg.action = \"loadDevices\";\nmsg.devices = devices;\n\nreturn msg;",
+        "func": "const devicesMap = global.get('devicesMap')|| [];\n\nvar devices = [];\n\ndevicesMap.forEach(function (device) {\n  devices.push(device);\n \n});\n\nmsg.action = \"loadDevices\";\nmsg.devices = devices;\n\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -3361,7 +3378,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 430,
-        "y": 850,
+        "y": 880,
         "wires": []
     },
     {
@@ -3504,7 +3521,7 @@
         "type": "link out",
         "z": "57111ca025f638be",
         "g": "dfaa0e84286af4c3",
-        "name": "Device refresh request",
+        "name": "Request - Refresh Device",
         "mode": "link",
         "links": [
             "5e2d481f338e5d45"
@@ -3623,7 +3640,7 @@
         "z": "57111ca025f638be",
         "g": "c123dda748f0409f",
         "name": "debug 161",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3782,11 +3799,13 @@
         ],
         "width": 6,
         "height": "4",
-        "className": "",
-        "x": 1070,
-        "y": 1640,
+        "className": "msg.class",
+        "x": 1060,
+        "y": 1660,
         "wires": [
-            []
+            [
+                "8fef624b14605b01"
+            ]
         ]
     },
     {
@@ -3823,36 +3842,8 @@
         "y": 1650,
         "wires": [
             [
-                "dd3bd018e8aca788"
+                "e0694b109915343b"
             ]
-        ]
-    },
-    {
-        "id": "dd3bd018e8aca788",
-        "type": "function",
-        "z": "57111ca025f638be",
-        "g": "4ac0d347446e702f",
-        "name": "Charts Data",
-        "func": "let humidityArray = [];\nlet tempArray = [];\nlet msg1 = {};\nlet msg2 = {};\nlet serieExtArray = [];\n\nlet lastIdSensor = 0;\n\nmsg.payload.forEach(function (value) {\n    if (lastIdSensor != value.id_sensor) {\n        if (lastIdSensor != 0) {\n            msg1.payload = tempArray;\n            msg2.payload = humidityArray;\n            node.send([msg1, msg2]);\n            //on fait append après la 1ère insertion\n            msg1.action = \"append\";\n            msg2.action = \"append\";\n        }\n\n        lastIdSensor = value.id_sensor;\n        tempArray = [];\n        humidityArray = [];\n\n        msg1.topic = value.location;\n        msg2.topic = value.location;\n    }\n\n    const date = new Date(value.datetime);\n    tempArray.push({ \"x\": date, \"y\": value.temperature });\n    humidityArray.push({ \"x\": date, \"y\": value.humidity });\n});\nif (lastIdSensor == 0) {\n    msg1.action = \"replace\";\n    msg2.action = \"replace\";\n}\nmsg1.payload = tempArray;\nmsg2.payload = humidityArray;\nreturn [msg1, msg2];\n\n",
-        "outputs": 2,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 860,
-        "y": 1650,
-        "wires": [
-            [
-                "91ced026339a3eeb"
-            ],
-            [
-                "388cb232c9079e14"
-            ]
-        ],
-        "outputLabels": [
-            "Temperature",
-            "Humidity"
         ]
     },
     {
@@ -3868,13 +3859,13 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-card title=\"Devices\" flat> </v-card>\n  <v-data-table v-model=\"selected\" :headers=\"headers\" \n    :items=\"devices\" item-value=\"id_device\" items-per-page=\"10\"\n    density=\"compact\"\n    select-strategy=\"page\" show-select return-object \n    >\n   \n    <template v-slot:bottom>\n      <div class=\"text-center pt-2\">\n        <v-pagination :length=\"pageCount\"></v-pagination>\n      </div>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      selected: [],\n      headers: [\n        { title: 'id_device', sortable: false, maxWidth:1, key: 'id_device' },\n        { title: 'id_sensor', key: 'id_sensor', maxWidth:1, sortable: false},\n        { title: 'mac', key: 'mac', maxWidth:1, sortable: false},\n        { title: 'Location', key: 'location', maxWidth:1, sortable: false},\n      ],\n      devices: [],\n    }),\n\n    watch: {\n       msg: function(){\n        this.devices = this.msg.payload\n        this.devices.push({ mac: \"SiteWeb\", location:\"\"});\n      },\n      selected: function () {\n        this.send({devices: this.selected})\n      // flow.set(\"DEVICE-TEST\", this.selected );\n        \n      },\n    },\n    mounted() {\n     // this.devices = this.msg?.payload\n    },\n    computed: {\n      pageCount() {\n        return Math.ceil(this.devices.length / this.itemsPerPage)\n      },\n    },\n  \n  }\n</script>",
+        "format": "<template>\n  <v-card title=\"Devices\" flat> </v-card>\n  <v-data-table v-model=\"selected\" :headers=\"headers\" \n    :items=\"devices\" item-value=\"id_device\" items-per-page=\"10\"\n    density=\"compact\"\n    select-strategy=\"page\" show-select return-object \n    >\n   \n    <template v-slot:bottom>\n      <div class=\"text-center pt-2\">\n        <v-pagination :length=\"pageCount\"></v-pagination>\n      </div>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      selected: [],\n      headers: [\n        { title: 'id_device', sortable: false, maxWidth:1, key: 'id_device' },\n        { title: 'id_sensor', key: 'id_sensor', maxWidth:1, sortable: false},\n        { title: 'mac', key: 'mac', maxWidth:1, sortable: false},\n        { title: 'Location', key: 'location', maxWidth:1, sortable: false},\n      ],\n      devices: [],\n    }),\n\n    watch: {\n       msg: function(){\n        this.devices = this.msg.payload\n        this.devices.push({id_device:-1, mac: \"SiteWeb\", location:\"\"});\n      },\n      selected: function () {\n        this.send({devices: this.selected})\n      // flow.set(\"DEVICE-TEST\", this.selected );\n        \n      },\n    },\n    mounted() {\n     // this.devices = this.msg?.payload\n    },\n    computed: {\n      pageCount() {\n        return Math.ceil(this.devices.length / this.itemsPerPage)\n      },\n    },\n  \n  }\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 320,
+        "x": 330,
         "y": 1650,
         "wires": [
             [
@@ -3905,7 +3896,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 100,
+        "x": 110,
         "y": 1600,
         "wires": [
             [
@@ -4157,7 +4148,7 @@
         "z": "57111ca025f638be",
         "g": "8feba00f9cb9532b",
         "name": "debug 164",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -4264,7 +4255,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 110,
+        "x": 120,
         "y": 1710,
         "wires": [
             [
@@ -4281,7 +4272,7 @@
         "page": "",
         "ui": "",
         "name": "Slider",
-        "order": 5,
+        "order": 3,
         "width": 0,
         "height": 0,
         "head": "",
@@ -4291,7 +4282,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 300,
+        "x": 310,
         "y": 1690,
         "wires": [
             [
@@ -4308,7 +4299,7 @@
         "group": "ec83ebd45553c336",
         "name": "Humidité",
         "label": "Humidité",
-        "order": 1,
+        "order": 2,
         "chartType": "line",
         "category": "topic",
         "categoryType": "msg",
@@ -4339,8 +4330,8 @@
         "width": 6,
         "height": "4",
         "className": "",
-        "x": 1050,
-        "y": 1750,
+        "x": 1060,
+        "y": 1730,
         "wires": [
             []
         ]
@@ -4351,21 +4342,21 @@
         "z": "57111ca025f638be",
         "g": "4ac0d347446e702f",
         "name": "Charts data",
-        "func": "\nlet humidityArray = [];\nlet tempArray = [];\nlet msg2 = {};\nlet serieExtArray = [];\n\nmsg.payload.forEach(function(value) {\n    const date = new Date(value.datetime);\n    tempArray.push({\"x\":date, \"y\":value.temperature});\n    humidityArray.push({ \"x\": date, \"y\": value.humidity });\n});\n\n\n\nmsg.payload = tempArray;\nmsg.action = msg2.action = \"append\";\nmsg.color = \"red\";\nmsg2.payload = humidityArray;\n\nmsg.topic = msg2.topic = \"SiteWeb\";\n//node.send(msg);\n\nnode.send([msg, msg2]);",
+        "func": "\nlet humidityArray = [];\nlet tempArray = [];\nlet msg1 = {};\nlet msg2 = {};\nlet serieExtArray = [];\n\nmsg.payload.forEach(function (value) {\n    const date = new Date(value.datetime);\n    //Ce cas se produit si le sensor n'a pas fonctionné correctement\n    if (value.humidity != undefined) {\n        tempArray.push({ \"x\": date, \"y\": value.temperature });\n    } else {\n        tempArray.push({ \"x\": date, \"y\": null });\n    }\n    humidityArray.push({ \"x\": date, \"y\": value.humidity });\n});\n\n\nmsg1.topic = msg2.topic = \"SiteWeb\";\n\nmsg1.payload = tempArray;\nmsg1.action = msg2.action = \"append\";\nmsg2.payload = humidityArray;\n\n//node.send(msg);\n\nnode.send([msg1, msg2]);",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 860,
-        "y": 1740,
+        "x": 740,
+        "y": 1780,
         "wires": [
             [
-                "91ced026339a3eeb"
+                "0866c283bc7f9752"
             ],
             [
-                "388cb232c9079e14"
+                "31e656b176aa6f36"
             ]
         ]
     },
@@ -4376,10 +4367,10 @@
         "g": "4ac0d347446e702f",
         "mydb": "628739f370d1726d",
         "sqlquery": "prepared",
-        "sql": "SELECT 'SiteWeb' as location, temperature, humidity, datetime\nFROM TEMPERATURE_EXTERNE\nwhere  datetime > datetime('now', 'localtime', $nbHours)\norder by datetime asc;",
+        "sql": "SELECT 'SiteWeb' as location, temperature, humidity, datetime\nFROM TEMPERATURE_EXTERNE\nwhere  datetime >  datetime('now', 'localtime', $nbHours)\norder by datetime asc;",
         "name": "Load temp WEB",
-        "x": 660,
-        "y": 1740,
+        "x": 540,
+        "y": 1780,
         "wires": [
             [
                 "28c5da6a4d2da8ba"
@@ -4395,7 +4386,7 @@
         "sqlquery": "fixed",
         "sql": "SELECT DE.id_device,\n       DE.mac,\n       DE.location,\n       SE.id_sensor\n  FROM DEVICE DE\n       JOIN\n       SENSOR SE ON SE.id_device == DE.id_device\n WHERE EXISTS (\n           SELECT 1\n             FROM SENSOR_TEMPERATURE\n            WHERE id_sensor = SE.id_sensor\n       );\n",
         "name": "Load devices",
-        "x": 140,
+        "x": 150,
         "y": 1650,
         "wires": [
             [
@@ -4416,7 +4407,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 500,
+        "x": 510,
         "y": 1740,
         "wires": [
             [
@@ -4431,7 +4422,7 @@
         "g": "4ac0d347446e702f",
         "name": "Data des sensors",
         "info": "",
-        "x": 520,
+        "x": 320,
         "y": 1600,
         "wires": []
     },
@@ -4440,9 +4431,9 @@
         "type": "comment",
         "z": "57111ca025f638be",
         "g": "4ac0d347446e702f",
-        "name": "Data des températures externes d'un site web",
+        "name": " températures externes - site web",
         "info": "",
-        "x": 670,
+        "x": 570,
         "y": 1700,
         "wires": []
     },
@@ -4468,12 +4459,110 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 300,
+        "x": 310,
         "y": 1740,
         "wires": [
             [
                 "0a4b76749339d8cd",
                 "44c0d2d81fe59de0"
+            ]
+        ]
+    },
+    {
+        "id": "e0694b109915343b",
+        "type": "function",
+        "z": "57111ca025f638be",
+        "g": "4ac0d347446e702f",
+        "name": "Charts Data",
+        "func": "let humidityArray = [];\nlet tempArray = [];\nlet msg1 = {};\nlet msg2 = {};\nlet serieExtArray = [];\n\nlet lastIdSensor = 0;\n\nmsg.payload.forEach(function (value) {\n    if (lastIdSensor != value.id_sensor) {\n        if (lastIdSensor != 0) {\n            msg1.payload = tempArray;\n            msg2.payload = humidityArray;\n            node.send([msg1, msg2]);\n            //on fait append après la 1ère insertion\n            msg1.action = \"append\";\n            msg2.action = \"append\";\n           \n        }\n\n        lastIdSensor = value.id_sensor;\n        tempArray = [];\n        humidityArray = [];\n\n        msg1.topic = value.location;\n        msg2.topic = value.location;\n    }\n\n    const date = new Date(value.datetime);\n       //Ce cas se produit si le sensor n'a pas fonctionné correctement\n    if (value.humidity != undefined) {\n        tempArray.push({ \"x\": date, \"y\": value.temperature });\n    } else {\n        tempArray.push({ \"x\": date, \"y\": null });\n    }\n    humidityArray.push({ \"x\": date, \"y\": value.humidity });\n});\nif (lastIdSensor == 0) {\n    msg1.action = \"replace\";\n    msg2.action = \"replace\";\n}\nmsg1.payload = tempArray;\nmsg2.payload = humidityArray;\nreturn [msg1, msg2];\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 1650,
+        "wires": [
+            [
+                "91ced026339a3eeb"
+            ],
+            [
+                "388cb232c9079e14"
+            ]
+        ],
+        "outputLabels": [
+            "Temperature",
+            "Humidity"
+        ]
+    },
+    {
+        "id": "8fef624b14605b01",
+        "type": "debug",
+        "z": "57111ca025f638be",
+        "g": "4ac0d347446e702f",
+        "name": "debug 172",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1230,
+        "y": 1650,
+        "wires": []
+    },
+    {
+        "id": "0866c283bc7f9752",
+        "type": "delay",
+        "z": "57111ca025f638be",
+        "g": "4ac0d347446e702f",
+        "name": "Délai",
+        "pauseType": "delay",
+        "timeout": "300",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 860,
+        "y": 1690,
+        "wires": [
+            [
+                "91ced026339a3eeb"
+            ]
+        ]
+    },
+    {
+        "id": "31e656b176aa6f36",
+        "type": "delay",
+        "z": "57111ca025f638be",
+        "g": "4ac0d347446e702f",
+        "name": "Délai",
+        "pauseType": "delay",
+        "timeout": "300",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 910,
+        "y": 1780,
+        "wires": [
+            [
+                "388cb232c9079e14"
             ]
         ]
     },
@@ -4495,7 +4584,7 @@
         "g": "82315bf5181c153a",
         "mydb": "628739f370d1726d",
         "sqlquery": "fixed",
-        "sql": "DELETE FROM SENSOR_TEMPERATURE_BK\n where  datetime < datetime('now', 'localtime', '-60 days');\n",
+        "sql": "DELETE FROM SENSOR_TEMPERATURE_BK\n where  datetime < datetime('now', 'localtime', '-700 days');\n",
         "name": "Purge BK",
         "x": 300,
         "y": 100,
@@ -5081,7 +5170,7 @@
         "g": "39f5d1f224b9de66",
         "mydb": "628739f370d1726d",
         "sqlquery": "fixed",
-        "sql": "DELETE FROM TEMPERATURE_EXTERNE_BK\n where  datetime < datetime('now', 'localtime', '-60 days');\n",
+        "sql": "DELETE FROM TEMPERATURE_EXTERNE_BK\n where  datetime < datetime('now', 'localtime', '-700 days');\n",
         "name": "Purge BK",
         "x": 310,
         "y": 380,
@@ -5383,7 +5472,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-card title=\"Rapport de 'nodered.sh'\" :text=\"dateNow\" flat> </v-card>\n  <v-data-table  :headers=\"headers\" \n    :items=\"resultats\"  items-per-page=\"10\"\n    density=\"compact\"\n    select-strategy=\"page\"  \n    >\n   \n    <template v-slot:bottom>\n      <div class=\"text-center pt-2\">\n        <v-pagination :length=\"pageCount\"></v-pagination>\n      </div>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n\n    data: () => ({\n      \n      selected: [],\n      dateNow: \"\",\n      headers: [\n        { title: 'Type', sortable: false, maxWidth:1, key: 'type' },\n        { title: 'name', key: 'name', maxWidth:2, sortable: false},\n        { title: 'date', key: 'date', maxWidth:1, sortable: false},\n        { title: 'size', key: 'size', maxWidth:1, sortable: false},\n      ],\n      resultats: [],\n    }),\n\n    watch: {\n       msg: function(){\n        this.resultats = this.msg.backup;\n        this.dateNow = this.msg.date;\n      },\n      \n    },\n    \n    computed: {\n      pageCount() {\n        return Math.ceil(this.resultats.length / this.itemsPerPage)\n      },\n    },\n  \n  }\n</script>",
+        "format": "<template>\n  <v-card title=\"Rapport du script 'nodered.sh'\" :text=\"dateNow\" flat> </v-card>\n  <v-data-table  :headers=\"headers\" \n    :items=\"resultats\"  items-per-page=\"10\"\n    density=\"compact\"\n    select-strategy=\"page\"  \n    >\n   \n    <template v-slot:bottom>\n      <div class=\"text-center pt-2\">\n        <v-pagination :length=\"pageCount\"></v-pagination>\n      </div>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n\n    data: () => ({\n      \n      selected: [],\n      dateNow: \"\",\n      headers: [\n        { title: 'Type', sortable: false, maxWidth:1, key: 'type' },\n        { title: 'name', key: 'name', maxWidth:2, sortable: false},\n        { title: 'date', key: 'date', maxWidth:1, sortable: false},\n        { title: 'size', key: 'size', maxWidth:1, sortable: false},\n      ],\n      resultats: [],\n    }),\n\n    watch: {\n       msg: function(){\n        this.resultats = this.msg.backup;\n        this.dateNow = this.msg.date;\n      },\n      \n    },\n    \n    computed: {\n      pageCount() {\n        return Math.ceil(this.resultats.length / this.itemsPerPage)\n      },\n    },\n  \n  }\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -5493,7 +5582,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <!-- Any HTML can go here -->\n    <button class=\"my-class\" onclick=\"onClick1()\">My Button</button>\n</template>\n\n<script>\n   // export default {\n  //  data: () => ({\n      \n     \n  //  }),\n      /* Write any JavaScript here */\n    // add our onClick function to the window object to make it accessible by the HTML <button>\n    window.onClick1 = function () {\n        alert('Button has been clicked')\n    }\n\n    // Use send() function to pass on data back into Node-RED:\n    this.send('Component has loaded')\n\n    // Subscribe to the incoming msg's\n    this.$socket.on('msg-input:' + this.id, function(msg) {\n        // do stuff with the message\n        alert('BT1 message received: ' + msg.payload)\n    })\n //   }\n</script>",
+        "format": "<template>\n    <!-- Any HTML can go here -->\n    <button class=\"my-class\" onclick=\"onClick1()\">TEST Alert</button>\n</template>\n\n<script>\n   // export default {\n  //  data: () => ({\n      \n     \n  //  }),\n      /* Write any JavaScript here */\n    // add our onClick function to the window object to make it accessible by the HTML <button>\n    window.onClick1 = function () {\n        alert('Button has been clicked')\n    }\n\n    // Use send() function to pass on data back into Node-RED:\n    this.send('Component has loaded')\n\n    // Subscribe to the incoming msg's\n    this.$socket.on('msg-input:' + this.id, function(msg) {\n        // do stuff with the message\n        alert('BT1 message received: ' + msg.payload)\n    })\n //   }\n</script>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -5501,6 +5590,241 @@
         "className": "",
         "x": 590,
         "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "538058d7a3abaa57",
+        "type": "sqlite",
+        "z": "a9c9090b.478498",
+        "mydb": "628739f370d1726d",
+        "sqlquery": "fixed",
+        "sql": "SELECT 'SiteWeb' as location, temperature, humidity, datetime\nFROM TEMPERATURE_EXTERNE\nwhere  datetime >  datetime('now', 'localtime', '-48 hours')\norder by datetime asc;",
+        "name": "Load temp WEB",
+        "x": 440,
+        "y": 540,
+        "wires": [
+            [
+                "623ae241a5292864"
+            ]
+        ]
+    },
+    {
+        "id": "1f2400a346e5c163",
+        "type": "inject",
+        "z": "a9c9090b.478498",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 250,
+        "y": 540,
+        "wires": [
+            [
+                "538058d7a3abaa57"
+            ]
+        ]
+    },
+    {
+        "id": "623ae241a5292864",
+        "type": "debug",
+        "z": "a9c9090b.478498",
+        "name": "debug 169",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 530,
+        "wires": []
+    },
+    {
+        "id": "6523e86042252710",
+        "type": "inject",
+        "z": "97407293d780965c",
+        "name": "",
+        "props": [],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 300,
+        "y": 210,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ba84cd1820120139",
+        "type": "debug",
+        "z": "97407293d780965c",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 210,
+        "wires": []
+    },
+    {
+        "id": "b4f0eb085cc91834",
+        "type": "change",
+        "z": "97407293d780965c",
+        "name": "Get the chart data from flow.chart-data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "chart-data",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 330,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d13d16b33ec638b2",
+        "type": "inject",
+        "z": "97407293d780965c",
+        "name": "import data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"series\":[\"1234\"],\"data\":[[{\"x\":1684841975036,\"y\":8},{\"x\":1684841976037,\"y\":6},{\"x\":1684841977038,\"y\":7},{\"x\":1684841978037,\"y\":7}]],\"labels\":[\"test\"]}]",
+        "payloadType": "json",
+        "x": 320,
+        "y": 270,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73d33be37d3e6847",
+        "type": "ui-chart",
+        "z": "97407293d780965c",
+        "group": "5b69d242410edd23",
+        "name": "",
+        "label": "chart",
+        "order": 9007199254740991,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "time",
+        "yAxisProperty": "y",
+        "ymin": "",
+        "ymax": "",
+        "action": "replace",
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "x": 540,
+        "y": 220,
+        "wires": [
+            [
+                "ba84cd1820120139"
+            ]
+        ]
+    },
+    {
+        "id": "b34a98c0fbb03d27",
+        "type": "inject",
+        "z": "97407293d780965c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"series\":[\"A\"]},{\"data\":[[{\"x\":\"2023-10-23\",\"y\":28},{\"x\":\"2023-10-24\",\"y\":26},{\"x\":\"2023-10-25\",\"y\":27}]]}]",
+        "payloadType": "json",
+        "x": 320,
+        "y": 340,
+        "wires": [
+            [
+                "73d33be37d3e6847"
+            ]
+        ]
+    },
+    {
+        "id": "a2f995178c04da12",
+        "type": "ui-markdown",
+        "z": "97407293d780965c",
+        "group": "5b69d242410edd23",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "content": "# Markdown Content\n\nGoes here...",
+        "className": "",
+        "x": 310,
+        "y": 470,
         "wires": [
             []
         ]
