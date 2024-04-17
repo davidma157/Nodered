@@ -447,13 +447,14 @@
             "fdcf63160f9713c2",
             "6d2d92741ca4d67f",
             "e0694b109915343b",
-            "8fef624b14605b01",
             "0866c283bc7f9752",
-            "31e656b176aa6f36"
+            "31e656b176aa6f36",
+            "75ba57a9059087ae",
+            "311ae53240469805"
         ],
-        "x": 24,
+        "x": 14,
         "y": 1559,
-        "w": 1322,
+        "w": 1272,
         "h": 262
     },
     {
@@ -1711,7 +1712,7 @@
         "z": "57111ca025f638be",
         "g": "590af8aa1ccb96c4",
         "name": "debug 31",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2483,7 +2484,7 @@
         "z": "57111ca025f638be",
         "g": "f53bba5e293da6fb",
         "name": "debug 108",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3800,12 +3801,10 @@
         "width": 6,
         "height": "4",
         "className": "msg.class",
-        "x": 1060,
+        "x": 1190,
         "y": 1660,
         "wires": [
-            [
-                "8fef624b14605b01"
-            ]
+            []
         ]
     },
     {
@@ -3814,14 +3813,14 @@
         "z": "57111ca025f638be",
         "g": "4ac0d347446e702f",
         "name": "Params",
-        "func": "if (msg.slider != undefined) {\n    flow.set('period', msg.slider);\n}\n\n//On garde en mémoire la liste de mac.\nlet idList = context.get(\"idList\") || [];\n\nif (msg.devices != undefined) {\n    idList = [];\n    msg.devices.forEach(function (device) {\n        if (device.id_device != undefined) {\n            idList.push(device.id_device);\n            context.set(\"idList\", idList)\n        }\n    });\n}\n\nmsg.idsDevices = idList.toString();\nmsg.period = flow.get('period');\nlet nbHours = '-' + msg.period + ' hours'\n\nmsg.topic = \"SELECT id_device, mac, id_sensor, location, \"\n    + \" temperature, humidity, counter, datetime\"\n    + \" from DATA_VIEW\"\n    + \" where id_device in ( \" + idList.toString() + \"  )\"\n    + \" and datetime > datetime('now', 'localtime', '\" + nbHours + \"' )\"\n    + \" and role like 'TEMPERATURE'\"\n    + \" ORDER BY id_sensor, datetime asc;\"\n\nreturn msg;\n",
+        "func": "if (msg.dateSelected != undefined) {\n    flow.set('dateSelected', msg.dateSelected);\n}\n\n//On garde en mémoire la liste de mac.\nlet idList = context.get(\"idList\") || [];\n\nif (msg.devices != undefined) {\n    idList = [];\n    msg.devices.forEach(function (device) {\n        if (device.id_sensor != undefined) {\n            idList.push(device.id_sensor);\n            context.set(\"idList\", idList)\n        }\n    });\n}\n\nmsg.idsDevices = idList.toString();\nmsg.dateSelected = flow.get('dateSelected');\nlet nbHours = '+' + msg.dateSelected.slider + ' hours'\nlet dateSelected = msg.dateSelected.date;\n\nmsg.topic = \"SELECT id_device, mac, id_sensor, location, \"\n    + \" temperature, humidity, counter, datetime\"\n    + \" from DATA_VIEW\"\n    + \" where id_sensor in ( \" + idList.toString() + \"  )\"\n    + \" AND datetime > datetime('\"+ dateSelected + \"', 'localtime') \"\n    + \" AND datetime < datetime('\"+ dateSelected + \"', 'localtime', '\" + nbHours + \"') \"\n    + \" and role like 'TEMPERATURE'\"\n    + \" ORDER BY id_sensor, datetime asc;\"\n\n//    + \" and datetime > datetime('2024-04-15T04:00:00.000Z', 'localtime', '\" + nbHours + \"' )\"\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 510,
+        "x": 640,
         "y": 1650,
         "wires": [
             [
@@ -3838,7 +3837,7 @@
         "sqlquery": "msg.topic",
         "sql": "SELECT mac, id_sensor, \ntemperature, humidity, counter, datetime\nfrom DATA_VIEW\nwhere id_device in ( $ids_devices)\nand datetime > datetime('now', 'localtime', $nbHours )\nand role like 'TEMPERATURE'\nORDER BY id_sensor, datetime asc;\n\n\n",
         "name": "Load temp sensor",
-        "x": 680,
+        "x": 810,
         "y": 1650,
         "wires": [
             [
@@ -3865,7 +3864,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 330,
+        "x": 460,
         "y": 1650,
         "wires": [
             [
@@ -3896,8 +3895,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 110,
-        "y": 1600,
+        "x": 100,
+        "y": 1650,
         "wires": [
             [
                 "836e4535583ce900"
@@ -4255,7 +4254,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 120,
+        "x": 110,
         "y": 1710,
         "wires": [
             [
@@ -4276,18 +4275,19 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-slider v-model=\"slider\" :max=\"max\" :min=\"min\" step=\"1\" v-on:end=\"onEnd\" class=\"align-center\" hide-details\n    thumb-label=\"always\" tick-size=1>\n  </v-slider>\n</template>\n\n<script>\n  export default {\n    data () {\n      return {\n        min: 4,\n        max: 360,\n        step: 0,\n        slider: 24,\n      }\n    },\n    watch: {\n     \n      msg: function(){\n        this.send({action: \"msg\", slider: this.slider});\n        \n      }\n    },\n    mounted() {\n      //this.send({payload: this.slider})\n    },\n   methods: {\n      onEnd() {\n        this.send({action: \"onEnd()\",slider: this.slider})\n      },\n    },\n  }\n</script>",
+        "format": "<template>\n  <v-col cols=\"5\">\n    <v-menu v-model=\"menu2\" :close-on-content-click=\"false\" :nudge-right=\"40\" transition=\"scale-transition\" offset-y\n      min-width=\"auto\">\n      <template v-slot:activator=\"{ props }\">\n        <v-text-field v-model=\"dateTextField\" label=\"Date\" prepend-icon=\"mdi-calendar\" readonly v-bind=\"props\">\n        </v-text-field>\n      </template>\n      <v-date-picker v-model=\"datePicker\" elevation=\"24\" :hide-weekdays=\"false\" @update:model-value=\"menu2=false\">\n      </v-date-picker>\n    </v-menu>\n  </v-col>\n  <v-slider v-model=\"slider\" label=\"Durée\" :max=\"max\" :min=\"min\" step=\"1\" v-on:end=\"onEnd\" class=\"align-center\"\n    hide-details thumb-label=\"always\" tick-size=1 hint=\"Durée en heure\">\n  </v-slider>\n</template>\n\n<script>\n  export default {\n        data() {\n      return {\n        min: 10,\n        max: 360,\n        step: 2,\n        slider: 24,\n        datePicker: new Date(), //this.setDatePicker(),\n        dateTextField: new Date(Date.now()).toLocaleDateString('fr-ca', {\n          weekday: 'long',\n          year: 'numeric',\n          month: 'short',\n          day: 'numeric',\n        }),\n        menu2: false,\n      }\n    },\n    watch: {\n      msg: function(){\n        this.datePicker = new Date();\n        this.datePicker.setHours(0);\n        this.sendData(\"msg:--\");\n        //this.send({action: \"msg\", slider: this.slider});\n      },\n      datePicker: function () {\n          this.dateTextField = this.datePicker.toLocaleDateString('fr-ca', {\n            weekday: 'long',\n            year: 'numeric',\n            month: 'short',\n            day: 'numeric',\n          });\n          this.sendData(\"dateChanged()--\");\n         // this.send({action: \"dateChanged()\",dateSelected: {slider: this.slider, date: this.datePicker}});\n      },\n    },\n    mounted() {\n      this.datePicker.setHours(0);\n      this.sendData(\"mounted()--\");\n     // this.send({action: \"mounted()\",dateSelected: {slider: this.slider, date: this.datePicker}});\n    },\n   methods: {\n      onEnd() {\n        this.sendData(\"onEnd()--\");\n        //this.send({action: \"onEnd()\",dateSelected: {slider: this.slider, date: this.datePicker}})\n      },\n      sendData(action){\n        this.send({action: action,dateSelected: {slider: this.slider, date: this.datePicker}});\n      },\n      setDatePicker(){\n        this.datePicker = new Date();\n        this.datePicker.setHours(0);\n        this.sendData(\"setDatePicker()--\");\n      },\n    },\n  }\n</script>",
         "storeOutMessages": true,
-        "passthru": true,
+        "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 310,
-        "y": 1690,
+        "x": 440,
+        "y": 1700,
         "wires": [
             [
                 "0a4b76749339d8cd",
-                "44c0d2d81fe59de0"
+                "44c0d2d81fe59de0",
+                "311ae53240469805"
             ]
         ]
     },
@@ -4330,7 +4330,7 @@
         "width": 6,
         "height": "4",
         "className": "",
-        "x": 1060,
+        "x": 1190,
         "y": 1730,
         "wires": [
             []
@@ -4349,7 +4349,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 740,
+        "x": 870,
         "y": 1780,
         "wires": [
             [
@@ -4367,9 +4367,9 @@
         "g": "4ac0d347446e702f",
         "mydb": "628739f370d1726d",
         "sqlquery": "prepared",
-        "sql": "SELECT 'SiteWeb' as location, temperature, humidity, datetime\nFROM TEMPERATURE_EXTERNE\nwhere  datetime >  datetime('now', 'localtime', $nbHours)\norder by datetime asc;",
+        "sql": "SELECT 'SiteWeb' as location, temperature, humidity, datetime\nFROM TEMPERATURE_EXTERNE\nwhere  datetime > datetime($dateSelected, 'localtime') \n     AND datetime < datetime($dateSelected, 'localtime', $nbHours) \n\n -- datetime >  datetime($dateSelected, 'localtime', $nbHours)\norder by datetime asc;",
         "name": "Load temp WEB",
-        "x": 540,
+        "x": 670,
         "y": 1780,
         "wires": [
             [
@@ -4386,7 +4386,7 @@
         "sqlquery": "fixed",
         "sql": "SELECT DE.id_device,\n       DE.mac,\n       DE.location,\n       SE.id_sensor\n  FROM DEVICE DE\n       JOIN\n       SENSOR SE ON SE.id_device == DE.id_device\n WHERE EXISTS (\n           SELECT 1\n             FROM SENSOR_TEMPERATURE\n            WHERE id_sensor = SE.id_sensor\n       );\n",
         "name": "Load devices",
-        "x": 150,
+        "x": 280,
         "y": 1650,
         "wires": [
             [
@@ -4400,14 +4400,14 @@
         "z": "57111ca025f638be",
         "g": "4ac0d347446e702f",
         "name": "Params",
-        "func": "if (msg.slider != undefined) {\n    context.set('period', msg.slider);\n}\n\nif (msg.devices != undefined) {\n    let status= false;\n    msg.devices.forEach(function (device) {\n        if (device.mac == 'SiteWeb') {\n            status = true;\n        } \n    });\n    context.set('SiteWeb', status);\n}\n\nlet getSiteWeb = context.get('SiteWeb') || false;\n\nif (getSiteWeb) {\n    msg.period = flow.get('period');\n    msg.params = {\n        $nbHours: '-' + msg.period + ' hours'\n    }\n\n    return msg;\n}\n\n",
+        "func": "if (msg.dateSelected != undefined) {\n    flow.set('dateSelected', msg.dateSelected);\n}\n\nif (msg.devices != undefined) {\n    let status= false;\n    msg.devices.forEach(function (device) {\n        if (device.mac == 'SiteWeb') {\n            status = true;\n        } \n    });\n    context.set('SiteWeb', status);\n}\n\nlet getSiteWeb = context.get('SiteWeb') || false;\n\n\nif (getSiteWeb) {\n    msg.dateSelected = flow.get('dateSelected');\n    msg.params = {\n        $dateSelected: msg.dateSelected.date,\n        $nbHours: '+' + msg.dateSelected.slider + ' hours'\n    }\n\n    return msg;\n}\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 510,
+        "x": 640,
         "y": 1740,
         "wires": [
             [
@@ -4422,7 +4422,7 @@
         "g": "4ac0d347446e702f",
         "name": "Data des sensors",
         "info": "",
-        "x": 320,
+        "x": 450,
         "y": 1600,
         "wires": []
     },
@@ -4433,7 +4433,7 @@
         "g": "4ac0d347446e702f",
         "name": " températures externes - site web",
         "info": "",
-        "x": 570,
+        "x": 700,
         "y": 1700,
         "wires": []
     },
@@ -4452,14 +4452,14 @@
                 "vt": "str"
             }
         ],
-        "repeat": "300",
+        "repeat": "120",
         "crontab": "",
         "once": false,
         "onceDelay": "2",
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 310,
+        "x": 440,
         "y": 1740,
         "wires": [
             [
@@ -4481,7 +4481,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 860,
+        "x": 990,
         "y": 1650,
         "wires": [
             [
@@ -4495,24 +4495,6 @@
             "Temperature",
             "Humidity"
         ]
-    },
-    {
-        "id": "8fef624b14605b01",
-        "type": "debug",
-        "z": "57111ca025f638be",
-        "g": "4ac0d347446e702f",
-        "name": "debug 172",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1230,
-        "y": 1650,
-        "wires": []
     },
     {
         "id": "0866c283bc7f9752",
@@ -4532,7 +4514,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 860,
+        "x": 990,
         "y": 1690,
         "wires": [
             [
@@ -4558,13 +4540,61 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 910,
+        "x": 1040,
         "y": 1780,
         "wires": [
             [
                 "388cb232c9079e14"
             ]
         ]
+    },
+    {
+        "id": "75ba57a9059087ae",
+        "type": "inject",
+        "z": "57111ca025f638be",
+        "g": "4ac0d347446e702f",
+        "name": "Update",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 00 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 280,
+        "y": 1710,
+        "wires": [
+            [
+                "9831a0922b955da6"
+            ]
+        ]
+    },
+    {
+        "id": "311ae53240469805",
+        "type": "debug",
+        "z": "57111ca025f638be",
+        "g": "4ac0d347446e702f",
+        "name": "debug 171",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 1600,
+        "wires": []
     },
     {
         "id": "d54da9e0b749cd05",
