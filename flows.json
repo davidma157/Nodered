@@ -259,11 +259,11 @@
             "540255522bc77ebb",
             "c1a2983aa0ad8848",
             "0ac1df192d659735",
-            "df226d076d3a3e81"
+            "6f9680d0ad8fca2f"
         ],
         "x": 34,
         "y": 3719,
-        "w": 932,
+        "w": 1122,
         "h": 202
     },
     {
@@ -449,13 +449,12 @@
             "e0694b109915343b",
             "0866c283bc7f9752",
             "31e656b176aa6f36",
-            "75ba57a9059087ae",
-            "311ae53240469805"
+            "75ba57a9059087ae"
         ],
         "x": 14,
-        "y": 1559,
-        "w": 1272,
-        "h": 262
+        "y": 1549,
+        "w": 1192,
+        "h": 272
     },
     {
         "id": "39f5d1f224b9de66",
@@ -829,7 +828,7 @@
         "name": "Localhost MQTT",
         "broker": "localhost",
         "port": "1883",
-        "clientid": "pi-md",
+        "clientid": "noedred",
         "autoConnect": true,
         "usetls": false,
         "protocolVersion": "5",
@@ -1003,7 +1002,7 @@
         "icon": "mdi-dev-to",
         "layout": "grid",
         "theme": "a70602e73bbb2a95",
-        "order": 4,
+        "order": 5,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -1065,6 +1064,33 @@
         "type": "global-config",
         "name": "global-config",
         "env": []
+    },
+    {
+        "id": "bf25a12ddc9940be",
+        "type": "ui-page",
+        "name": "Outils",
+        "ui": "d4c9d9e9b37824ea",
+        "path": "/Outils",
+        "icon": "mdi-tools",
+        "layout": "grid",
+        "theme": "a70602e73bbb2a95",
+        "order": 4,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "9f41fa0923a34ac2",
+        "type": "ui-group",
+        "name": "Configuration Gateway",
+        "page": "bf25a12ddc9940be",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
     },
     {
         "id": "babb6d48868671a6",
@@ -1752,7 +1778,7 @@
         "z": "57111ca025f638be",
         "g": "adca6ef2dfcba80e",
         "name": "Send all config",
-        "func": "node.status({fill:\"yellow\",shape:\"ring\",text:\"Sending config\"});\n\nlet devicesMap = global.get('devicesMap');\n\nlet device = {};\n\nif(msg.payload == \"GET_DEVICES_CONFIG\"){\n\n    devicesMap.forEach (function(pDevice, mac) {\n        device = {\n        \"header\":{\"mac\":pDevice.mac,\"type\":\"CONFIG\"},\n        \"device\": pDevice\n        }\n        msg.payload = device;\n        node.send(msg);\n    });\n}\n\nnode.status({fill:\"green\",shape:\"ring\",text:\"Configs sent\"});\nreturn null;",
+        "func": "node.status({fill:\"yellow\",shape:\"ring\",text:\"Sending config\"});\n\nlet devicesMap = global.get('devicesMap');\n\nlet device = {};\n\nif(msg.payload == \"GET_DEVICES_CONFIG\"){\n\n    devicesMap.forEach (function(pDevice, mac) {\n        if(pDevice.id_device > 1){\n\n            device = {\n            \"header\":{\"mac\":pDevice.mac,\"type\":\"CONFIG\"},\n            \"device\": pDevice\n            }\n            msg.payload = device;\n            node.send(msg);\n        }\n    });\n}\n\nnode.status({fill:\"green\",shape:\"ring\",text:\"Configs sent\"});\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -1802,12 +1828,11 @@
         "property": "payload",
         "action": "str",
         "pretty": false,
-        "x": 550,
+        "x": 750,
         "y": 3820,
         "wires": [
             [
-                "c1a2983aa0ad8848",
-                "df226d076d3a3e81"
+                "c1a2983aa0ad8848"
             ]
         ]
     },
@@ -1819,14 +1844,14 @@
         "name": "",
         "topic": "dom-sys.server/update_config",
         "qos": "0",
-        "retain": "false",
+        "retain": "true",
         "respTopic": "",
-        "contentType": "",
+        "contentType": "application/json",
         "userProps": "",
         "correl": "",
-        "expiry": "",
+        "expiry": "60",
         "broker": "c6a29fab98717cbb",
-        "x": 810,
+        "x": 1000,
         "y": 3820,
         "wires": []
     },
@@ -2229,7 +2254,7 @@
         "z": "57111ca025f638be",
         "g": "590af8aa1ccb96c4",
         "name": "debug 79",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2378,24 +2403,6 @@
         ]
     },
     {
-        "id": "df226d076d3a3e81",
-        "type": "debug",
-        "z": "57111ca025f638be",
-        "g": "adca6ef2dfcba80e",
-        "name": "debug 101",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 730,
-        "y": 3880,
-        "wires": []
-    },
-    {
         "id": "01804589863ba34e",
         "type": "inject",
         "z": "57111ca025f638be",
@@ -2484,7 +2491,7 @@
         "z": "57111ca025f638be",
         "g": "f53bba5e293da6fb",
         "name": "debug 108",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2502,7 +2509,7 @@
         "z": "57111ca025f638be",
         "g": "2ff47af73d8a3d20",
         "name": "debug 109",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2614,7 +2621,7 @@
         "z": "57111ca025f638be",
         "g": "fa8d72ad90e71a48",
         "name": "debug 113",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3574,7 +3581,7 @@
         "z": "57111ca025f638be",
         "g": "c123dda748f0409f",
         "name": "debug 159",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3641,7 +3648,7 @@
         "z": "57111ca025f638be",
         "g": "c123dda748f0409f",
         "name": "debug 161",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3801,8 +3808,8 @@
         "width": 6,
         "height": "4",
         "className": "msg.class",
-        "x": 1190,
-        "y": 1660,
+        "x": 1110,
+        "y": 1590,
         "wires": [
             []
         ]
@@ -3837,8 +3844,8 @@
         "sqlquery": "msg.topic",
         "sql": "SELECT mac, id_sensor, \ntemperature, humidity, counter, datetime\nfrom DATA_VIEW\nwhere id_device in ( $ids_devices)\nand datetime > datetime('now', 'localtime', $nbHours )\nand role like 'TEMPERATURE'\nORDER BY id_sensor, datetime asc;\n\n\n",
         "name": "Load temp sensor",
-        "x": 810,
-        "y": 1650,
+        "x": 690,
+        "y": 1600,
         "wires": [
             [
                 "e0694b109915343b"
@@ -3948,7 +3955,7 @@
         "z": "57111ca025f638be",
         "g": "70160f0a7636882f",
         "name": "Status MQTT 1",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4211,7 +4218,9 @@
         "z": "57111ca025f638be",
         "g": "c123dda748f0409f",
         "name": "Send configuration in",
-        "links": [],
+        "links": [
+            "0beb5ac9e1a01e39"
+        ],
         "x": 85,
         "y": 1430,
         "wires": [
@@ -4227,7 +4236,9 @@
         "g": "dfaa0e84286af4c3",
         "name": "Send configuration out",
         "mode": "link",
-        "links": [],
+        "links": [
+            "1889b9b8d90b705d"
+        ],
         "x": 495,
         "y": 1290,
         "wires": []
@@ -4286,8 +4297,7 @@
         "wires": [
             [
                 "0a4b76749339d8cd",
-                "44c0d2d81fe59de0",
-                "311ae53240469805"
+                "44c0d2d81fe59de0"
             ]
         ]
     },
@@ -4330,8 +4340,8 @@
         "width": 6,
         "height": "4",
         "className": "",
-        "x": 1190,
-        "y": 1730,
+        "x": 1100,
+        "y": 1720,
         "wires": [
             []
         ]
@@ -4481,8 +4491,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 990,
-        "y": 1650,
+        "x": 880,
+        "y": 1600,
         "wires": [
             [
                 "91ced026339a3eeb"
@@ -4514,8 +4524,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 990,
-        "y": 1690,
+        "x": 1080,
+        "y": 1640,
         "wires": [
             [
                 "91ced026339a3eeb"
@@ -4540,13 +4550,14 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1040,
-        "y": 1780,
+        "x": 1060,
+        "y": 1770,
         "wires": [
             [
                 "388cb232c9079e14"
             ]
-        ]
+        ],
+        "info": "Délai\r\nCe délais est ajouté pour que la mise à jour du \r\ngraphique fonctionne.\r\nCeci permets de faire un update du graphique après que les sensors ont été chargés."
     },
     {
         "id": "75ba57a9059087ae",
@@ -4579,22 +4590,71 @@
         ]
     },
     {
-        "id": "311ae53240469805",
-        "type": "debug",
+        "id": "6f9680d0ad8fca2f",
+        "type": "delay",
         "z": "57111ca025f638be",
-        "g": "4ac0d347446e702f",
-        "name": "debug 171",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 660,
-        "y": 1600,
-        "wires": []
+        "g": "adca6ef2dfcba80e",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": ".5",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 3780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1fe53e4c1f52bad3",
+        "type": "function",
+        "z": "57111ca025f638be",
+        "name": "function 22",
+        "func": "{\"header\":{\"mac\":\"78:21:84:80:30:B8\",\"type\":\"CONFIG\"},\"device\":{\"id_device\":15,\"mac\":\"78:21:84:80:30:B8\",\"location\":\"Bureau\",\"sleep_duration\":3601,\"im_alive_period\":3600,\"sensors\":[{\"id_sensor\":18,\"sensor_role\":\"TEMPERATURE\",\"attributs\":[{\"id_attribut\":22,\"name\":\"pin\",\"value\":22}]}]}}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 17,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 4330,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd53dd7c7dbdb183",
+        "type": "ui-text-input",
+        "z": "57111ca025f638be",
+        "group": "e4203d846baf0d72",
+        "name": "",
+        "label": "text",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "textarea",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": false,
+        "className": "",
+        "x": 620,
+        "y": 4320,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "d54da9e0b749cd05",
