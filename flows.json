@@ -26,6 +26,14 @@
         "id": "97407293d780965c",
         "type": "tab",
         "label": "Flux 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "46d1b53664c89cde",
+        "type": "tab",
+        "label": "Flux 3",
         "disabled": true,
         "info": "",
         "env": []
@@ -120,9 +128,9 @@
             "8feba00f9cb9532b",
             "70160f0a7636882f"
         ],
-        "x": 48,
+        "x": 18,
         "y": 2073,
-        "w": 1164,
+        "w": 1244,
         "h": 984
     },
     {
@@ -174,7 +182,7 @@
             "892a6d47089017b7"
         ],
         "x": 34,
-        "y": 739,
+        "y": 709,
         "w": 982,
         "h": 242,
         "info": " - Device: Circuit du micro-contrôleur"
@@ -212,9 +220,9 @@
             "80973421c6f485ce",
             "3302394b3b687c42"
         ],
-        "x": 34,
-        "y": 3939,
-        "w": 312,
+        "x": 44,
+        "y": 4059,
+        "w": 422,
         "h": 82
     },
     {
@@ -239,7 +247,7 @@
             "a664ec23f24b83a5"
         ],
         "x": 54,
-        "y": 3419,
+        "y": 3539,
         "w": 772,
         "h": 282
     },
@@ -259,10 +267,11 @@
             "540255522bc77ebb",
             "c1a2983aa0ad8848",
             "0ac1df192d659735",
-            "6f9680d0ad8fca2f"
+            "6f9680d0ad8fca2f",
+            "9ee742908744f209"
         ],
-        "x": 34,
-        "y": 3719,
+        "x": 44,
+        "y": 3839,
         "w": 1122,
         "h": 202
     },
@@ -287,7 +296,7 @@
             "82eeb9c38de3cf32"
         ],
         "x": 44,
-        "y": 4059,
+        "y": 4199,
         "w": 862,
         "h": 182
     },
@@ -307,8 +316,8 @@
         ],
         "x": 48,
         "y": 3073,
-        "w": 804,
-        "h": 314,
+        "w": 854,
+        "h": 444,
         "info": "# Redirection des donnnées\r\n## Message entrant sur le port série\r\n - On vérifie si les données commence par @\r\n - Si non , on rejette le messge.\r\n - Si oui, on extrait le topic pour l'envoyer vers MQTT.\r\n"
     },
     {
@@ -374,7 +383,8 @@
             "db981d4c910296e4",
             "50cc735154d103a3",
             "987a44bd9a6154e7",
-            "b73ee2792d4f5473"
+            "b73ee2792d4f5473",
+            "47f5073909bee0a2"
         ],
         "x": 54,
         "y": 129,
@@ -416,7 +426,7 @@
             "4970576a104ab876",
             "568e97383e4285fa"
         ],
-        "x": 14,
+        "x": 34,
         "y": 1889,
         "w": 932,
         "h": 132
@@ -445,16 +455,16 @@
             "0a4b76749339d8cd",
             "ea6fbc3a9d80e6ea",
             "fdcf63160f9713c2",
-            "6d2d92741ca4d67f",
             "e0694b109915343b",
             "0866c283bc7f9752",
             "31e656b176aa6f36",
-            "75ba57a9059087ae"
+            "75ba57a9059087ae",
+            "6c48e35750a5c6be"
         ],
-        "x": 14,
-        "y": 1549,
+        "x": 24,
+        "y": 1569,
         "w": 1192,
-        "h": 272
+        "h": 282
     },
     {
         "id": "39f5d1f224b9de66",
@@ -484,6 +494,31 @@
         "y": 299,
         "w": 852,
         "h": 262
+    },
+    {
+        "id": "99b0856dd2e01ab4",
+        "type": "group",
+        "z": "57111ca025f638be",
+        "name": "Configuration du Gateway",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "3fbc87fd28231303",
+            "0c97012507b7fb6d",
+            "95339f57b2961011",
+            "8e3b455c0415942a",
+            "ed85ba973cfbc3c1",
+            "2b47b1be61752b81",
+            "65ebe7cecc4ac2d8",
+            "5826ad71ca8be439",
+            "469cc2e3af8f2112",
+            "2c32dee76537bd86"
+        ],
+        "x": 44,
+        "y": 4399,
+        "w": 942,
+        "h": 212
     },
     {
         "id": "836f1c5e6a99b853",
@@ -524,12 +559,19 @@
             "da939ff73faa3d33",
             "16071ac81dfe26dd",
             "2f1a1b4973aaf053",
-            "edba9caae115a851"
+            "edba9caae115a851",
+            "51ee3605ff9d80e0",
+            "41e9b0574e55c0c8",
+            "855c0e1ea702f2cf",
+            "f1f19a0d827e452e",
+            "b4133a029132e1bc",
+            "187ba9d2889dfd5c",
+            "2b905ff025d2f0a9"
         ],
         "x": 74,
         "y": 3099,
-        "w": 592,
-        "h": 122
+        "w": 802,
+        "h": 242
     },
     {
         "id": "d0932bcd6a5ec1f6",
@@ -550,7 +592,7 @@
             "e27a25756c4ae984"
         ],
         "x": 74,
-        "y": 3239,
+        "y": 3369,
         "w": 752,
         "h": 122
     },
@@ -601,13 +643,12 @@
             "97610149c73699c4",
             "ab9f8ffd38f55fc7",
             "e4aecc6f336ce4bc",
-            "8244db89f6963d09",
-            "99b263e74101e767"
+            "8244db89f6963d09"
         ],
         "x": 54,
         "y": 299,
         "w": 1022,
-        "h": 222
+        "h": 212
     },
     {
         "id": "0920307b07c98b02",
@@ -651,12 +692,17 @@
             "3b7b291f93b5dc9a",
             "f37c33f5cc57547c",
             "a147248bb7549068",
-            "ac85b8d4daad3a29"
+            "ac85b8d4daad3a29",
+            "ee416b1f0f20e4d8",
+            "b46d7561a233fae7",
+            "ba7bd09e9170283f",
+            "ed7c07d39dda883d",
+            "8952a96107cd9181"
         ],
-        "x": 74,
-        "y": 2719,
-        "w": 1112,
-        "h": 222
+        "x": 44,
+        "y": 2649,
+        "w": 1192,
+        "h": 262
     },
     {
         "id": "5d89e93885229fe1",
@@ -682,7 +728,7 @@
             "4805c368e2c34a0c"
         ],
         "x": 74,
-        "y": 2429,
+        "y": 2409,
         "w": 1002,
         "h": 222
     },
@@ -702,7 +748,7 @@
             "0cbbba078e7506a7"
         ],
         "x": 74,
-        "y": 2289,
+        "y": 2269,
         "w": 622,
         "h": 122
     },
@@ -828,7 +874,7 @@
         "name": "Localhost MQTT",
         "broker": "localhost",
         "port": "1883",
-        "clientid": "noedred",
+        "clientid": "nodered",
         "autoConnect": true,
         "usetls": false,
         "protocolVersion": "5",
@@ -861,7 +907,7 @@
         "type": "serial-port",
         "name": "Gateway",
         "serialport": "/dev/ttyUSB0",
-        "serialbaud": "38400",
+        "serialbaud": "115200",
         "databits": "8",
         "parity": "none",
         "stopbits": "1",
@@ -1012,10 +1058,10 @@
         "type": "ui-group",
         "name": "Devices",
         "page": "fad2edc179425950",
-        "width": "4",
+        "width": "5",
         "height": "1",
         "order": 1,
-        "showTitle": true,
+        "showTitle": false,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -1084,13 +1130,54 @@
         "type": "ui-group",
         "name": "Configuration Gateway",
         "page": "bf25a12ddc9940be",
-        "width": "6",
-        "height": "1",
+        "width": "4",
+        "height": "3",
         "order": -1,
         "showTitle": true,
         "className": "",
         "visible": "true",
         "disabled": "false"
+    },
+    {
+        "id": "311f12a4.3d2b9e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "338b8e1916d50651",
+        "type": "serial-port",
+        "name": "GPIO",
+        "serialport": "/dev/ttyAMA0",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
     },
     {
         "id": "babb6d48868671a6",
@@ -1216,7 +1303,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 180,
-        "y": 2520,
+        "y": 2500,
         "wires": [
             [
                 "558eb47c0c8cd19f",
@@ -1243,7 +1330,7 @@
         "topic": "topic",
         "outputs": 1,
         "x": 590,
-        "y": 2520,
+        "y": 2500,
         "wires": [
             [
                 "d23177f02750759c",
@@ -1284,7 +1371,7 @@
         "finalize": "",
         "libs": [],
         "x": 760,
-        "y": 2520,
+        "y": 2500,
         "wires": [
             [
                 "4805c368e2c34a0c"
@@ -1320,7 +1407,7 @@
             "2a827ba8d0b76bf8"
         ],
         "x": 975,
-        "y": 820,
+        "y": 790,
         "wires": []
     },
     {
@@ -1342,7 +1429,7 @@
         "wires": [
             [
                 "2fa7d3a1d07ea7f0",
-                "99b263e74101e767"
+                "4b60c0e64f93d254"
             ]
         ]
     },
@@ -1359,7 +1446,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 160,
-        "y": 480,
+        "y": 460,
         "wires": [
             [
                 "7b299ba00a6589b0"
@@ -1372,7 +1459,7 @@
         "z": "57111ca025f638be",
         "g": "590af8aa1ccb96c4",
         "name": "Temperature",
-        "func": "//Parametres pour prepared statement\nmsg.params = { \n  $id_sensor:msg.device.data.id_sensor,\n  // (/10) On affiche un digit après le point.\n  $temperature:msg.device.data.temperature/10,\n  $humidity:msg.device.data.humidity/10,\n  $counter:msg.device.header.counter\n}\n\nreturn msg;\n",
+        "func": "//Parametres pour prepared statement\nmsg.params = { \n  $id_sensor:msg.payload.data.id_sensor,\n  // (/10) On affiche un digit après le point.\n  $temperature:msg.payload.data.temperature/10,\n  $humidity:msg.payload.data.humidity/10,\n  $counter:msg.payload.header.counter\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -1380,7 +1467,7 @@
         "finalize": "",
         "libs": [],
         "x": 610,
-        "y": 400,
+        "y": 380,
         "wires": [
             [
                 "97610149c73699c4"
@@ -1403,11 +1490,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 170,
-        "y": 440,
+        "x": 320,
+        "y": 460,
         "wires": [
             [
-                "99b263e74101e767"
+                "4b60c0e64f93d254"
             ]
         ]
     },
@@ -1430,7 +1517,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 150,
-        "y": 820,
+        "y": 790,
         "wires": [
             [
                 "5185ef5d8d8f239a"
@@ -1445,8 +1532,8 @@
         "name": "",
         "scope": null,
         "uncaught": false,
-        "x": 120,
-        "y": 3980,
+        "x": 130,
+        "y": 4100,
         "wires": [
             [
                 "3302394b3b687c42"
@@ -1467,8 +1554,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 250,
-        "y": 3980,
+        "x": 370,
+        "y": 4100,
         "wires": []
     },
     {
@@ -1498,7 +1585,7 @@
         "name": "À la réception de données --> rafraîchir la colonne ACTIF de UI-table device",
         "info": "",
         "x": 510,
-        "y": 3460,
+        "y": 3580,
         "wires": []
     },
     {
@@ -1512,7 +1599,7 @@
             "92d3ed46ab95f44f"
         ],
         "x": 95,
-        "y": 3520,
+        "y": 3640,
         "wires": [
             [
                 "bdb9a365e5db2244"
@@ -1535,7 +1622,7 @@
             "f736f7a43d075aec"
         ],
         "x": 785,
-        "y": 3520,
+        "y": 3640,
         "wires": []
     },
     {
@@ -1552,7 +1639,7 @@
         "finalize": "",
         "libs": [],
         "x": 480,
-        "y": 3500,
+        "y": 3620,
         "wires": [
             [
                 "bc77bc47e5d767ee"
@@ -1565,7 +1652,7 @@
         "z": "57111ca025f638be",
         "g": "590af8aa1ccb96c4",
         "name": "Type message",
-        "property": "device.header.type",
+        "property": "payload.header.type",
         "propertyType": "msg",
         "rules": [
             {
@@ -1587,8 +1674,8 @@
         "checkall": "false",
         "repair": true,
         "outputs": 3,
-        "x": 420,
-        "y": 460,
+        "x": 410,
+        "y": 400,
         "wires": [
             [
                 "c8184d1d79bb29dc"
@@ -1689,7 +1776,7 @@
         "repair": true,
         "outputs": 3,
         "x": 210,
-        "y": 3520,
+        "y": 3640,
         "wires": [
             [
                 "b0c9163b98018ad6"
@@ -1714,7 +1801,7 @@
         "finalize": "",
         "libs": [],
         "x": 490,
-        "y": 3560,
+        "y": 3680,
         "wires": [
             [
                 "bc77bc47e5d767ee"
@@ -1738,7 +1825,7 @@
         "z": "57111ca025f638be",
         "g": "590af8aa1ccb96c4",
         "name": "debug 31",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1764,8 +1851,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 150,
-        "y": 3820,
+        "x": 160,
+        "y": 3940,
         "wires": [
             [
                 "ed0e40f994ac39b6"
@@ -1785,8 +1872,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 380,
-        "y": 3820,
+        "x": 390,
+        "y": 3940,
         "wires": [
             [
                 "540255522bc77ebb"
@@ -1811,8 +1898,8 @@
         "topic": "",
         "payload": "GET_DEVICES_CONFIG",
         "payloadType": "str",
-        "x": 230,
-        "y": 3880,
+        "x": 240,
+        "y": 4000,
         "wires": [
             [
                 "ed0e40f994ac39b6"
@@ -1828,11 +1915,12 @@
         "property": "payload",
         "action": "str",
         "pretty": false,
-        "x": 750,
-        "y": 3820,
+        "x": 760,
+        "y": 3940,
         "wires": [
             [
-                "c1a2983aa0ad8848"
+                "c1a2983aa0ad8848",
+                "9ee742908744f209"
             ]
         ]
     },
@@ -1843,7 +1931,7 @@
         "g": "adca6ef2dfcba80e",
         "name": "",
         "topic": "dom-sys.server/update_config",
-        "qos": "0",
+        "qos": "1",
         "retain": "true",
         "respTopic": "",
         "contentType": "application/json",
@@ -1851,8 +1939,8 @@
         "correl": "",
         "expiry": "60",
         "broker": "c6a29fab98717cbb",
-        "x": 1000,
-        "y": 3820,
+        "x": 1010,
+        "y": 3940,
         "wires": []
     },
     {
@@ -1862,8 +1950,8 @@
         "g": "adca6ef2dfcba80e",
         "name": "Réception des requêtes de la passerelle",
         "info": "",
-        "x": 220,
-        "y": 3760,
+        "x": 230,
+        "y": 3880,
         "wires": []
     },
     {
@@ -1882,7 +1970,7 @@
         "expiry": "",
         "broker": "c6a29fab98717cbb",
         "x": 790,
-        "y": 4140,
+        "y": 4280,
         "wires": []
     },
     {
@@ -1908,7 +1996,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 160,
-        "y": 4140,
+        "y": 4280,
         "wires": [
             [
                 "1d2d9ac81f4f1544"
@@ -1925,7 +2013,7 @@
         "action": "",
         "pretty": false,
         "x": 550,
-        "y": 4140,
+        "y": 4280,
         "wires": [
             [
                 "505a3510bfa564d7",
@@ -1948,7 +2036,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 670,
-        "y": 4200,
+        "y": 4340,
         "wires": []
     },
     {
@@ -1964,7 +2052,7 @@
         "finalize": "",
         "libs": [],
         "x": 360,
-        "y": 4140,
+        "y": 4280,
         "wires": [
             [
                 "a96e3e35bf7460c8"
@@ -1979,7 +2067,7 @@
         "name": "À revoir - Requête au capteurs",
         "info": "",
         "x": 210,
-        "y": 4100,
+        "y": 4240,
         "wires": []
     },
     {
@@ -1990,7 +2078,7 @@
         "name": "Non fonctionnel",
         "info": "",
         "x": 500,
-        "y": 4100,
+        "y": 4240,
         "wires": [],
         "icon": "font-awesome/fa-arrows-alt"
     },
@@ -2002,7 +2090,7 @@
         "name": "En absence de données --> rafraîchir la colonne ACTIF de UI-table device",
         "info": "",
         "x": 400,
-        "y": 3620,
+        "y": 3740,
         "wires": []
     },
     {
@@ -2029,7 +2117,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 210,
-        "y": 3660,
+        "y": 3780,
         "wires": [
             [
                 "5180a561ec14a9ed"
@@ -2050,7 +2138,7 @@
         "finalize": "",
         "libs": [],
         "x": 430,
-        "y": 3660,
+        "y": 3780,
         "wires": [
             [
                 "a664ec23f24b83a5"
@@ -2068,7 +2156,7 @@
             "e8cb5a4a786e5193"
         ],
         "x": 615,
-        "y": 3660,
+        "y": 3780,
         "wires": []
     },
     {
@@ -2112,7 +2200,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 840,
-        "y": 780,
+        "y": 750,
         "wires": []
     },
     {
@@ -2123,7 +2211,7 @@
         "name": "Rafraichit la liste de device à l'écran",
         "info": "",
         "x": 200,
-        "y": 940,
+        "y": 910,
         "wires": []
     },
     {
@@ -2151,7 +2239,7 @@
         "sql": "INSERT INTO SENSOR_TEMPERATURE\n  ( id_sensor, \n    temperature, \n    humidity,\n    counter,\n    datetime\n  )\nVALUES( \n  $id_sensor, \n  $temperature,\n  $humidity,\n  $counter,\n  datetime('now', 'localtime') \n);\n",
         "name": "Insert",
         "x": 750,
-        "y": 400,
+        "y": 380,
         "wires": [
             [
                 "8244db89f6963d09"
@@ -2168,7 +2256,7 @@
         "sql": "select * from SENSOR_VIEW;",
         "name": "Load Devices",
         "x": 420,
-        "y": 820,
+        "y": 790,
         "wires": [
             [
                 "48340506c8ec6a1e",
@@ -2190,7 +2278,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 600,
-        "y": 780,
+        "y": 750,
         "wires": []
     },
     {
@@ -2207,7 +2295,7 @@
         "finalize": "",
         "libs": [],
         "x": 840,
-        "y": 820,
+        "y": 790,
         "wires": [
             [
                 "1559f9fd4805b155"
@@ -2221,7 +2309,7 @@
         "g": "abbcf13b0652a794",
         "name": "",
         "x": 640,
-        "y": 820,
+        "y": 790,
         "wires": [
             [
                 "a64ce37c329514c8",
@@ -2254,7 +2342,7 @@
         "z": "57111ca025f638be",
         "g": "590af8aa1ccb96c4",
         "name": "debug 79",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2263,7 +2351,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 970,
-        "y": 450,
+        "y": 430,
         "wires": []
     },
     {
@@ -2275,10 +2363,11 @@
         "mode": "link",
         "links": [
             "a86662ea5ee6dfbb",
-            "478485b75e139a59"
+            "478485b75e139a59",
+            "6c48e35750a5c6be"
         ],
         "x": 1015,
-        "y": 400,
+        "y": 380,
         "wires": []
     },
     {
@@ -2291,7 +2380,7 @@
         "sql": "SELECT *\nFROM DATA_VIEW\nwhere id_sensor_data = (SELECT last_insert_rowid());",
         "name": "Get last ID",
         "x": 890,
-        "y": 400,
+        "y": 380,
         "wires": [
             [
                 "e4aecc6f336ce4bc",
@@ -2317,7 +2406,7 @@
         "repeat": "3600",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "5",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -2384,7 +2473,7 @@
         "finalize": "",
         "libs": [],
         "x": 420,
-        "y": 2560,
+        "y": 2540,
         "wires": [
             [
                 "9bb6a0be709aef65"
@@ -2425,7 +2514,7 @@
         "payload": "{\"status\":\"ESPNOW_DATA\", \"type\":\"START_SIGNAL\",\"mac\":\"C8:C9:A3:C8:35:9C\"}",
         "payloadType": "str",
         "x": 170,
-        "y": 2590,
+        "y": 2570,
         "wires": [
             [
                 "558eb47c0c8cd19f"
@@ -2447,7 +2536,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 960,
-        "y": 2520,
+        "y": 2500,
         "wires": []
     },
     {
@@ -2465,7 +2554,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 760,
-        "y": 2480,
+        "y": 2460,
         "wires": []
     },
     {
@@ -2509,7 +2598,7 @@
         "z": "57111ca025f638be",
         "g": "2ff47af73d8a3d20",
         "name": "debug 109",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2517,8 +2606,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 870,
-        "y": 2860,
+        "x": 720,
+        "y": 2870,
         "wires": []
     },
     {
@@ -2535,8 +2624,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 190,
-        "y": 2840,
+        "x": 160,
+        "y": 2780,
         "wires": [
             [
                 "bd481b8dd3e88e7d",
@@ -2553,8 +2642,8 @@
         "sqlquery": "prepared",
         "sql": "INSERT INTO SYSTEM_LOG (\n    id_device,\n    id_event_type,\n    log,\n    topic,\n    counter,\n    version,\n    datetime\n)\nVALUES (\n  ( SELECT id_device \n    FROM DEVICE \n    WHERE DEVICE.mac LIKE $mac ),\n  ( SELECT id_event_type\n    FROM EVENT_TYPE\n    WHERE event_type LIKE $event_type),\n  $log,\n  $topic,\n  $counter,\n  $version,\n  datetime('now', 'localtime')\n);\n",
         "name": "SystemLog",
-        "x": 870,
-        "y": 2900,
+        "x": 710,
+        "y": 2830,
         "wires": [
             []
         ]
@@ -2572,8 +2661,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 690,
-        "y": 2900,
+        "x": 530,
+        "y": 2830,
         "wires": [
             [
                 "97c2bcd44f43299c",
@@ -2589,10 +2678,11 @@
         "name": "Serial in",
         "serial": "88425ab7cad6cc83",
         "x": 160,
-        "y": 3180,
+        "y": 3150,
         "wires": [
             [
-                "edba9caae115a851"
+                "edba9caae115a851",
+                "41e9b0574e55c0c8"
             ]
         ]
     },
@@ -2611,7 +2701,7 @@
         "correl": "",
         "expiry": "",
         "broker": "c6a29fab98717cbb",
-        "x": 550,
+        "x": 620,
         "y": 3180,
         "wires": []
     },
@@ -2621,7 +2711,7 @@
         "z": "57111ca025f638be",
         "g": "fa8d72ad90e71a48",
         "name": "debug 113",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2629,7 +2719,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 550,
+        "x": 630,
         "y": 3140,
         "wires": []
     },
@@ -2646,8 +2736,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 3180,
+        "x": 390,
+        "y": 3150,
         "wires": [
             [
                 "2f1a1b4973aaf053",
@@ -2662,7 +2752,7 @@
         "g": "d0932bcd6a5ec1f6",
         "name": "",
         "topic": "dom-sys.server/#",
-        "qos": "0",
+        "qos": "1",
         "datatype": "utf8",
         "broker": "c6a29fab98717cbb",
         "nl": false,
@@ -2670,7 +2760,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 180,
-        "y": 3320,
+        "y": 3450,
         "wires": [
             [
                 "7a1a4351ec72b9b3"
@@ -2685,7 +2775,7 @@
         "name": "Serial out",
         "serial": "88425ab7cad6cc83",
         "x": 720,
-        "y": 3320,
+        "y": 3450,
         "wires": []
     },
     {
@@ -2694,7 +2784,7 @@
         "z": "57111ca025f638be",
         "g": "d0932bcd6a5ec1f6",
         "name": "To serial port",
-        "func": "\n\nmsg.payload = \"@\" + msg.topic + \":\" + msg.payload;\n\nreturn msg;",
+        "func": "\n\nmsg.payload = \"@\" + msg.topic + \"::\" + msg.payload;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2702,7 +2792,7 @@
         "finalize": "",
         "libs": [],
         "x": 350,
-        "y": 3320,
+        "y": 3450,
         "wires": [
             [
                 "4aafe259275fd99f"
@@ -2728,7 +2818,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 520,
-        "y": 3320,
+        "y": 3450,
         "wires": [
             [
                 "d2b39a2251d4d124",
@@ -2751,7 +2841,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 720,
-        "y": 3280,
+        "y": 3410,
         "wires": []
     },
     {
@@ -2765,7 +2855,7 @@
             "a147248bb7549068"
         ],
         "x": 265,
-        "y": 860,
+        "y": 830,
         "wires": [
             [
                 "5185ef5d8d8f239a",
@@ -2788,7 +2878,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 400,
-        "y": 2500,
+        "y": 2480,
         "wires": []
     },
     {
@@ -2812,48 +2902,28 @@
         ]
     },
     {
-        "id": "99b263e74101e767",
-        "type": "function",
-        "z": "57111ca025f638be",
-        "g": "590af8aa1ccb96c4",
-        "name": "Device exist",
-        "func": "let devicesMap = global.get('devicesMap');\nlet device;\n\nmsg.device = msg.payload;\nmsg.payload = {};\nmsg.topic = \"DataReceived\";\n\nif (devicesMap === undefined) {\n    node.status({ fill: \"red\", shape: \"ring\", text: \"devicesMap est vide\" });\n}else{\n    device = devicesMap.get(msg.device.header.mac);\n}\n\nif(device == null){\n    //Si le device n'est pas dans la liste il faut créer une \n    // nouvelle configuration.\n    node.status({ fill: \"yellow\", shape: \"ring\", text: \"Inexistant\" });\n     return [msg, null];\n}else{\n    node.status({ fill: \"green\", shape: \"ring\", text: \"Existant\" });\n    return [null, msg];\n}\n\n",
-        "outputs": 2,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 390,
-        "y": 380,
-        "wires": [
-            [],
-            [
-                "4b60c0e64f93d254"
-            ]
-        ]
-    },
-    {
         "id": "bd481b8dd3e88e7d",
         "type": "function",
         "z": "57111ca025f638be",
         "g": "2ff47af73d8a3d20",
         "name": "Device exist",
-        "func": "let devicesMap = global.get('devicesMap');\nmsg.mac = msg.payload.header.mac;\n\nlet device = devicesMap.get(msg.mac);\n\nif(device == null){\n    //Si le device n'est pas dans la liste il faut créer une \n    // nouvelle configuration.\n     return [msg, null];\n}else{\n    return [null, msg];\n}\n\n",
+        "func": "let devicesMap = global.get('devicesMap')|| [];\nmsg.mac = msg.payload.header.mac;\n\nmsg.device = devicesMap.get(msg.mac);\n\nif(msg.device == null){\n    //Si le device n'est pas dans la liste il faut créer une \n    // nouvelle configuration.\n     return [msg, null];\n}else{\n    return [null, msg];\n}\n\n",
         "outputs": 2,
         "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
-        "y": 2840,
+        "x": 370,
+        "y": 2780,
         "wires": [
             [
-                "1b2d90fb3207c856"
+                "1b2d90fb3207c856",
+                "b46d7561a233fae7"
             ],
             [
-                "3e8251f62ce3c3c7"
+                "3e8251f62ce3c3c7",
+                "ee416b1f0f20e4d8"
             ]
         ],
         "outputLabels": [
@@ -2874,8 +2944,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 2800,
+        "x": 600,
+        "y": 2690,
         "wires": [
             [
                 "8d1c099b642472fa"
@@ -2891,8 +2961,8 @@
         "sqlquery": "prepared",
         "sql": "INSERT INTO DEVICE (\n   mac,\n   location,\n   sleep_duration,\n   im_alive_period,\n   datetime\n)\nVALUES (\n   $mac,\n   \"ND\",\n   0,\n   3600,\n   datetime('now', 'localtime') \n);\n",
         "name": "Insert DEVICE",
-        "x": 900,
-        "y": 2800,
+        "x": 790,
+        "y": 2690,
         "wires": [
             [
                 "3b7b291f93b5dc9a",
@@ -2914,8 +2984,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1070,
-        "y": 2760,
+        "x": 1020,
+        "y": 2730,
         "wires": []
     },
     {
@@ -2941,7 +3011,7 @@
         "payload": "{\"header\":{\"mac\":\"01:02:03:04:05:06\",\"type\":\"START_SIGNAL\",\"version\":1,\"counter\":5,\"error\":\"\"},\"data\":{\"cycle_duration\":0}}",
         "payloadType": "json",
         "x": 170,
-        "y": 2900,
+        "y": 2840,
         "wires": [
             [
                 "bd481b8dd3e88e7d"
@@ -2958,8 +3028,8 @@
         "links": [
             "5e2d481f338e5d45"
         ],
-        "x": 1035,
-        "y": 2800,
+        "x": 975,
+        "y": 2690,
         "wires": []
     },
     {
@@ -2976,8 +3046,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 390,
-        "y": 2800,
+        "x": 360,
+        "y": 2720,
         "wires": []
     },
     {
@@ -2985,23 +3055,24 @@
         "type": "comment",
         "z": "57111ca025f638be",
         "g": "5d89e93885229fe1",
-        "name": "À revoir",
+        "name": "À revoir - Structurer le message du Gateway",
         "info": "",
-        "x": 200,
-        "y": 2480,
+        "x": 320,
+        "y": 2460,
         "wires": []
     },
     {
         "id": "27d79d1a4af37e13",
         "type": "sqlite",
         "z": "57111ca025f638be",
+        "d": true,
         "g": "5d89e93885229fe1",
         "mydb": "628739f370d1726d",
         "sqlquery": "prepared",
         "sql": "INSERT INTO SYSTEM_LOG (\n    id_device,\n    id_event_type,\n    log,\n    topic,\n    counter,\n    version,\n    datetime\n)\nVALUES (\n  $id_device,\n  $log,\n  $topic,\n  $counter,\n  $version,\n  datetime('now', 'localtime')\n);\n",
         "name": "SystemLog",
         "x": 940,
-        "y": 2560,
+        "y": 2540,
         "wires": [
             []
         ]
@@ -3386,7 +3457,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 430,
-        "y": 880,
+        "y": 850,
         "wires": []
     },
     {
@@ -3669,7 +3740,7 @@
         "sqlquery": "fixed",
         "sql": "SELECT id_sensor, mac, counter,  max(datetime ) as datetime\nFROM DATA_VIEW\nwhere  datetime > datetime('now', 'localtime', '-24 hours')\ngroup by id_sensor\norder by id_sensor, datetime ;",
         "name": "Most recent data temperature",
-        "x": 330,
+        "x": 350,
         "y": 1930,
         "wires": [
             [
@@ -3692,7 +3763,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 810,
+        "x": 830,
         "y": 1970,
         "wires": []
     },
@@ -3718,7 +3789,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 110,
+        "x": 130,
         "y": 1930,
         "wires": [
             [
@@ -3732,14 +3803,14 @@
         "z": "57111ca025f638be",
         "g": "b3735df348adb38e",
         "name": "Vérification du délai",
-        "func": "//Envoi une alerte à l'écran si les données ne sont pas reçues \n//  dans un délai acceptable.\nconst devicesMap = global.get('devicesMap');\n\nvar devices = [];\nlet data = msg.payload;\nmsg.payload = \"\";\n\ndata.forEach(function (element) {\n  let device = devicesMap.get(element.mac);\n  if (device.sleep_duration > 0) {\n    let dateNow = new Date();\n    let datetime = new Date(element.datetime);\n    let diff = (dateNow.getTime() - datetime.getTime()) / 1000;\n    //Si on dépasse le temps de sleep + 5 minutes.\n    if (diff > (device.sleep_duration + (5 * 60))) {\n      msg.payload = msg.payload + \" -- Délai de réception dépassé. \" + device.mac + \"\\n\\r\";\n      console.log(\"Now:\" + dateNow + \n        \" - Last received:\" + datetime +\n        \"diff: \" + diff);\n      console.log(msg.alert);\n    }\n  }\n});\n\nif (msg.alert != \"\") {\n  node.log(\"Alert Device: \" + msg.payload);\n  \n\n  return msg;\n}\n\n",
+        "func": "//Envoi une alerte à l'écran si les données ne sont pas reçues \n//  dans un délai acceptable.\nconst devicesMap = global.get('devicesMap');\n\nvar devices = [];\nlet data = msg.payload;\nmsg.payload = \"Vérification des délais.\\n\";\n\ndata.forEach(function (element) {\n  let device = devicesMap.get(element.mac);\n  if (device.sleep_duration > 0) {\n    let dateNow = new Date();\n    let datetime = new Date(element.datetime);\n    let diff = (dateNow.getTime() - datetime.getTime()) / 1000;\n    //Si on dépasse le temps de sleep + 5 minutes.\n    if (diff > (device.sleep_duration + (5 * 60))) {\n      msg.payload = msg.payload + \" -- Délai de réception dépassé. \" + device.mac + \"\\n\\r\";\n      console.log(\"Now:\" + dateNow + \n        \" - Last received:\" + datetime +\n        \"diff: \" + diff);\n      console.log(msg.alert);\n    }\n  }\n});\n\nif (msg.alert != \"\") {\n  if(msg.payload != \"\"){\n    node.log(\"Alert Device: \" + msg.payload);\n    return msg;\n  }\n}\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 590,
+        "x": 610,
         "y": 1930,
         "wires": [
             [
@@ -3765,7 +3836,7 @@
         "raw": true,
         "className": "",
         "name": "Erreur de réception",
-        "x": 830,
+        "x": 850,
         "y": 1930,
         "wires": []
     },
@@ -3808,8 +3879,8 @@
         "width": 6,
         "height": "4",
         "className": "msg.class",
-        "x": 1110,
-        "y": 1590,
+        "x": 1120,
+        "y": 1620,
         "wires": [
             []
         ]
@@ -3820,15 +3891,15 @@
         "z": "57111ca025f638be",
         "g": "4ac0d347446e702f",
         "name": "Params",
-        "func": "if (msg.dateSelected != undefined) {\n    flow.set('dateSelected', msg.dateSelected);\n}\n\n//On garde en mémoire la liste de mac.\nlet idList = context.get(\"idList\") || [];\n\nif (msg.devices != undefined) {\n    idList = [];\n    msg.devices.forEach(function (device) {\n        if (device.id_sensor != undefined) {\n            idList.push(device.id_sensor);\n            context.set(\"idList\", idList)\n        }\n    });\n}\n\nmsg.idsDevices = idList.toString();\nmsg.dateSelected = flow.get('dateSelected');\nlet nbHours = '+' + msg.dateSelected.slider + ' hours'\nlet dateSelected = msg.dateSelected.date;\n\nmsg.topic = \"SELECT id_device, mac, id_sensor, location, \"\n    + \" temperature, humidity, counter, datetime\"\n    + \" from DATA_VIEW\"\n    + \" where id_sensor in ( \" + idList.toString() + \"  )\"\n    + \" AND datetime > datetime('\"+ dateSelected + \"', 'localtime') \"\n    + \" AND datetime < datetime('\"+ dateSelected + \"', 'localtime', '\" + nbHours + \"') \"\n    + \" and role like 'TEMPERATURE'\"\n    + \" ORDER BY id_sensor, datetime asc;\"\n\n//    + \" and datetime > datetime('2024-04-15T04:00:00.000Z', 'localtime', '\" + nbHours + \"' )\"\nreturn msg;\n",
+        "func": "if (msg.dateSelected != undefined) {\n    flow.set('dateSelected', msg.dateSelected);\n}\n\n//On garde en mémoire la liste de mac.\nlet idList = context.get(\"idList\") || [];\n\nif (msg.devices != undefined) {\n    idList = [];\n    msg.devices.forEach(function (device) {\n        if (device.id_sensor != undefined) {\n            idList.push(device.id_sensor);\n            context.set(\"idList\", idList)\n        }\n    });\n}\n\nmsg.idsDevices = idList.toString();\n\nlet nbHours;\nlet dateSelected;\n\nmsg.dateSelected = flow.get('dateSelected');\nif(msg.dateSelected === undefined){\n    nbHours = '+24 hours'\n    const date = new Date();\n    date.setHours(0, 0, 0);\n    dateSelected = date;\n\n}else{\n    nbHours = '+' + msg.dateSelected.slider + ' hours'\n    dateSelected = msg.dateSelected.date;\n}\n\nmsg.topic = \"SELECT id_device, mac, id_sensor, location, \"\n    + \" temperature, humidity, counter, datetime\"\n    + \" from DATA_VIEW\"\n    + \" where id_sensor in ( \" + idList.toString() + \"  )\"\n    + \" AND datetime > datetime('\"+ dateSelected + \"', 'localtime') \"\n    + \" AND datetime < datetime('\"+ dateSelected + \"', 'localtime', '\" + nbHours + \"') \"\n    + \" and role like 'TEMPERATURE'\"\n    + \" ORDER BY id_sensor, datetime asc;\"\n\n//    + \" and datetime > datetime('2024-04-15T04:00:00.000Z', 'localtime', '\" + nbHours + \"' )\"\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 640,
-        "y": 1650,
+        "x": 690,
+        "y": 1680,
         "wires": [
             [
                 "1c2e8d33bf43083e"
@@ -3844,8 +3915,8 @@
         "sqlquery": "msg.topic",
         "sql": "SELECT mac, id_sensor, \ntemperature, humidity, counter, datetime\nfrom DATA_VIEW\nwhere id_device in ( $ids_devices)\nand datetime > datetime('now', 'localtime', $nbHours )\nand role like 'TEMPERATURE'\nORDER BY id_sensor, datetime asc;\n\n\n",
         "name": "Load temp sensor",
-        "x": 690,
-        "y": 1600,
+        "x": 700,
+        "y": 1630,
         "wires": [
             [
                 "e0694b109915343b"
@@ -3871,8 +3942,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 460,
-        "y": 1650,
+        "x": 470,
+        "y": 1680,
         "wires": [
             [
                 "0a4b76749339d8cd",
@@ -3891,7 +3962,6 @@
         "order": 2,
         "width": 0,
         "height": 0,
-        "passthru": false,
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -3902,8 +3972,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 100,
-        "y": 1650,
+        "x": 110,
+        "y": 1680,
         "wires": [
             [
                 "836e4535583ce900"
@@ -3928,7 +3998,7 @@
         "className": "",
         "name": "",
         "x": 620,
-        "y": 2610,
+        "y": 2590,
         "wires": []
     },
     {
@@ -3945,7 +4015,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 550,
+        "x": 570,
         "y": 1980,
         "wires": []
     },
@@ -3955,7 +4025,7 @@
         "z": "57111ca025f638be",
         "g": "70160f0a7636882f",
         "name": "Status MQTT 1",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4069,7 +4139,7 @@
         "showBorder": true,
         "showGlow": true,
         "x": 950,
-        "y": 2470,
+        "y": 2450,
         "wires": []
     },
     {
@@ -4086,7 +4156,7 @@
             "5fc3dcdaa67d4078"
         ],
         "x": 180,
-        "y": 2330,
+        "y": 2310,
         "wires": [
             [
                 "526010976c842e2c"
@@ -4123,7 +4193,7 @@
         "showBorder": true,
         "showGlow": true,
         "x": 560,
-        "y": 2330,
+        "y": 2310,
         "wires": []
     },
     {
@@ -4140,7 +4210,7 @@
         "finalize": "",
         "libs": [],
         "x": 380,
-        "y": 2330,
+        "y": 2310,
         "wires": [
             [
                 "44e59e8574df7bf8",
@@ -4163,7 +4233,7 @@
         "statusVal": "payload",
         "statusType": "auto",
         "x": 580,
-        "y": 2370,
+        "y": 2350,
         "wires": []
     },
     {
@@ -4265,8 +4335,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 110,
-        "y": 1710,
+        "x": 120,
+        "y": 1740,
         "wires": [
             [
                 "836e4535583ce900"
@@ -4286,14 +4356,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-col cols=\"5\">\n    <v-menu v-model=\"menu2\" :close-on-content-click=\"false\" :nudge-right=\"40\" transition=\"scale-transition\" offset-y\n      min-width=\"auto\">\n      <template v-slot:activator=\"{ props }\">\n        <v-text-field v-model=\"dateTextField\" label=\"Date\" prepend-icon=\"mdi-calendar\" readonly v-bind=\"props\">\n        </v-text-field>\n      </template>\n      <v-date-picker v-model=\"datePicker\" elevation=\"24\" :hide-weekdays=\"false\" @update:model-value=\"menu2=false\">\n      </v-date-picker>\n    </v-menu>\n  </v-col>\n  <v-slider v-model=\"slider\" label=\"Durée\" :max=\"max\" :min=\"min\" step=\"1\" v-on:end=\"onEnd\" class=\"align-center\"\n    hide-details thumb-label=\"always\" tick-size=1 hint=\"Durée en heure\">\n  </v-slider>\n</template>\n\n<script>\n  export default {\n        data() {\n      return {\n        min: 10,\n        max: 360,\n        step: 2,\n        slider: 24,\n        datePicker: new Date(), //this.setDatePicker(),\n        dateTextField: new Date(Date.now()).toLocaleDateString('fr-ca', {\n          weekday: 'long',\n          year: 'numeric',\n          month: 'short',\n          day: 'numeric',\n        }),\n        menu2: false,\n      }\n    },\n    watch: {\n      msg: function(){\n        this.datePicker = new Date();\n        this.datePicker.setHours(0);\n        this.sendData(\"msg:--\");\n        //this.send({action: \"msg\", slider: this.slider});\n      },\n      datePicker: function () {\n          this.dateTextField = this.datePicker.toLocaleDateString('fr-ca', {\n            weekday: 'long',\n            year: 'numeric',\n            month: 'short',\n            day: 'numeric',\n          });\n          this.sendData(\"dateChanged()--\");\n         // this.send({action: \"dateChanged()\",dateSelected: {slider: this.slider, date: this.datePicker}});\n      },\n    },\n    mounted() {\n      this.datePicker.setHours(0);\n      this.sendData(\"mounted()--\");\n     // this.send({action: \"mounted()\",dateSelected: {slider: this.slider, date: this.datePicker}});\n    },\n   methods: {\n      onEnd() {\n        this.sendData(\"onEnd()--\");\n        //this.send({action: \"onEnd()\",dateSelected: {slider: this.slider, date: this.datePicker}})\n      },\n      sendData(action){\n        this.send({action: action,dateSelected: {slider: this.slider, date: this.datePicker}});\n      },\n      setDatePicker(){\n        this.datePicker = new Date();\n        this.datePicker.setHours(0);\n        this.sendData(\"setDatePicker()--\");\n      },\n    },\n  }\n</script>",
+        "format": "<template>\n  <v-col cols=\"5\">\n    <v-menu v-model=\"menu2\" :close-on-content-click=\"false\" :nudge-right=\"40\" transition=\"scale-transition\" offset-y\n      min-width=\"auto\">\n      <template v-slot:activator=\"{ props }\">\n        <v-text-field v-model=\"dateTextField\" label=\"Date\" prepend-icon=\"mdi-calendar\" readonly v-bind=\"props\">\n        </v-text-field>\n      </template>\n      <v-date-picker v-model=\"datePicker\" elevation=\"24\" :hide-weekdays=\"false\" @update:model-value=\"menu2=false\">\n      </v-date-picker>\n    </v-menu>\n  </v-col>\n  <v-slider v-model=\"slider\" label=\"Durée\" :max=\"max\" :min=\"min\" step=\"1\" v-on:end=\"onEnd\" class=\"align-center\"\n    hide-details thumb-label=\"always\" tick-size=1 hint=\"Durée en heure\">\n  </v-slider>\n</template>\n\n<script>\n  export default {\n        data() {\n      return {\n        min: 10,\n        max: 360,\n        step: 2,\n        slider: 24,\n        datePicker: new Date(), //this.setDatePicker(),\n        dateTextField: new Date(Date.now()).toLocaleDateString('fr-ca', {\n          weekday: 'long',\n          year: 'numeric',\n          month: 'short',\n          day: 'numeric',\n        }),\n        menu2: false,\n      }\n    },\n    watch: {\n      msg: function(){\n        this.datePicker = new Date();\n        this.datePicker.setHours(0,0,0);\n        this.sendData(\"FromMsg\");\n      },\n      datePicker: function () {\n          this.dateTextField = this.datePicker.toLocaleDateString('fr-ca', {\n            weekday: 'long',\n            year: 'numeric',\n            month: 'short',\n            day: 'numeric',\n          });\n          this.sendData(\"dateChanged()\");\n      },\n    },\n    mounted() {\n      this.datePicker.setHours(0,0,0);\n      this.sendData(\"mounted()\");\n    },\n   methods: {\n      onEnd() {\n        this.sendData(\"onEnd()\");\n      },\n      sendData(action){\n        this.send({action: action,dateSelected: {slider: this.slider, date: this.datePicker}});\n      },\n      setDatePicker(){\n        this.datePicker = new Date();\n        this.datePicker.setHours(0,0,0);\n        this.sendData(\"setDatePicker()\");\n      },\n    },\n  }\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 440,
-        "y": 1700,
+        "x": 450,
+        "y": 1730,
         "wires": [
             [
                 "0a4b76749339d8cd",
@@ -4340,8 +4410,8 @@
         "width": 6,
         "height": "4",
         "className": "",
-        "x": 1100,
-        "y": 1720,
+        "x": 1110,
+        "y": 1750,
         "wires": [
             []
         ]
@@ -4359,8 +4429,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 870,
-        "y": 1780,
+        "x": 880,
+        "y": 1810,
         "wires": [
             [
                 "0866c283bc7f9752"
@@ -4379,8 +4449,8 @@
         "sqlquery": "prepared",
         "sql": "SELECT 'SiteWeb' as location, temperature, humidity, datetime\nFROM TEMPERATURE_EXTERNE\nwhere  datetime > datetime($dateSelected, 'localtime') \n     AND datetime < datetime($dateSelected, 'localtime', $nbHours) \n\n -- datetime >  datetime($dateSelected, 'localtime', $nbHours)\norder by datetime asc;",
         "name": "Load temp WEB",
-        "x": 670,
-        "y": 1780,
+        "x": 680,
+        "y": 1810,
         "wires": [
             [
                 "28c5da6a4d2da8ba"
@@ -4396,8 +4466,8 @@
         "sqlquery": "fixed",
         "sql": "SELECT DE.id_device,\n       DE.mac,\n       DE.location,\n       SE.id_sensor\n  FROM DEVICE DE\n       JOIN\n       SENSOR SE ON SE.id_device == DE.id_device\n WHERE EXISTS (\n           SELECT 1\n             FROM SENSOR_TEMPERATURE\n            WHERE id_sensor = SE.id_sensor\n       );\n",
         "name": "Load devices",
-        "x": 280,
-        "y": 1650,
+        "x": 290,
+        "y": 1680,
         "wires": [
             [
                 "f138d867ef859cef"
@@ -4417,8 +4487,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 640,
-        "y": 1740,
+        "x": 650,
+        "y": 1770,
         "wires": [
             [
                 "98e8f77ab6b80fce"
@@ -4432,8 +4502,8 @@
         "g": "4ac0d347446e702f",
         "name": "Data des sensors",
         "info": "",
-        "x": 450,
-        "y": 1600,
+        "x": 300,
+        "y": 1610,
         "wires": []
     },
     {
@@ -4443,40 +4513,9 @@
         "g": "4ac0d347446e702f",
         "name": " températures externes - site web",
         "info": "",
-        "x": 700,
-        "y": 1700,
+        "x": 850,
+        "y": 1760,
         "wires": []
-    },
-    {
-        "id": "6d2d92741ca4d67f",
-        "type": "inject",
-        "z": "57111ca025f638be",
-        "g": "4ac0d347446e702f",
-        "name": "Refresh",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "120",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "2",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 440,
-        "y": 1740,
-        "wires": [
-            [
-                "0a4b76749339d8cd",
-                "44c0d2d81fe59de0"
-            ]
-        ]
     },
     {
         "id": "e0694b109915343b",
@@ -4491,8 +4530,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
-        "y": 1600,
+        "x": 890,
+        "y": 1630,
         "wires": [
             [
                 "91ced026339a3eeb"
@@ -4524,8 +4563,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1080,
-        "y": 1640,
+        "x": 1090,
+        "y": 1670,
         "wires": [
             [
                 "91ced026339a3eeb"
@@ -4550,8 +4589,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1060,
-        "y": 1770,
+        "x": 1070,
+        "y": 1800,
         "wires": [
             [
                 "388cb232c9079e14"
@@ -4581,8 +4620,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 280,
-        "y": 1710,
+        "x": 290,
+        "y": 1740,
         "wires": [
             [
                 "9831a0922b955da6"
@@ -4607,53 +4646,514 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 570,
-        "y": 3780,
+        "x": 580,
+        "y": 3900,
         "wires": [
             []
         ]
     },
     {
-        "id": "1fe53e4c1f52bad3",
+        "id": "3fbc87fd28231303",
+        "type": "debug",
+        "z": "57111ca025f638be",
+        "g": "99b0856dd2e01ab4",
+        "name": "debug 170",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 4550,
+        "wires": []
+    },
+    {
+        "id": "0c97012507b7fb6d",
+        "type": "serial out",
+        "z": "57111ca025f638be",
+        "g": "99b0856dd2e01ab4",
+        "name": "Serial out",
+        "serial": "88425ab7cad6cc83",
+        "x": 900,
+        "y": 4510,
+        "wires": []
+    },
+    {
+        "id": "95339f57b2961011",
+        "type": "ui-text",
+        "z": "57111ca025f638be",
+        "g": "99b0856dd2e01ab4",
+        "group": "9f41fa0923a34ac2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Instruction",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 720,
+        "y": 4440,
+        "wires": []
+    },
+    {
+        "id": "8e3b455c0415942a",
+        "type": "inject",
+        "z": "57111ca025f638be",
+        "g": "99b0856dd2e01ab4",
+        "name": "Injection",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 400,
+        "y": 4440,
+        "wires": [
+            [
+                "ed85ba973cfbc3c1"
+            ]
+        ]
+    },
+    {
+        "id": "ed85ba973cfbc3c1",
         "type": "function",
         "z": "57111ca025f638be",
-        "name": "function 22",
-        "func": "{\"header\":{\"mac\":\"78:21:84:80:30:B8\",\"type\":\"CONFIG\"},\"device\":{\"id_device\":15,\"mac\":\"78:21:84:80:30:B8\",\"location\":\"Bureau\",\"sleep_duration\":3601,\"im_alive_period\":3600,\"sensors\":[{\"id_sensor\":18,\"sensor_role\":\"TEMPERATURE\",\"attributs\":[{\"id_attribut\":22,\"name\":\"pin\",\"value\":22}]}]}}\nreturn msg;",
+        "g": "99b0856dd2e01ab4",
+        "name": "Instruction",
+        "func": "msg.payload = \"Ces données sont transmises par le port série.\\n\"\n+ \"\"\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
-        "noerr": 17,
+        "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
-        "y": 4330,
+        "x": 560,
+        "y": 4440,
+        "wires": [
+            [
+                "95339f57b2961011"
+            ]
+        ]
+    },
+    {
+        "id": "2b47b1be61752b81",
+        "type": "function",
+        "z": "57111ca025f638be",
+        "g": "99b0856dd2e01ab4",
+        "name": "To serial port",
+        "func": "global.set(\"GatewayConfig\", msg.payload);\nmsg.payload = \"@\" + msg.topic + \":\" + msg.payload;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 4510,
+        "wires": [
+            [
+                "0c97012507b7fb6d"
+            ]
+        ]
+    },
+    {
+        "id": "65ebe7cecc4ac2d8",
+        "type": "ui-template",
+        "z": "57111ca025f638be",
+        "g": "99b0856dd2e01ab4",
+        "group": "9f41fa0923a34ac2",
+        "page": "",
+        "ui": "",
+        "name": "Last config",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <v-container>\n    <v-row>\n      <v-textarea v-model=\"message\" label=\"Message\" maxlength=\"120\" counter single-line></v-textarea>\n    </v-row>\n    <v-row>\n      <v-btn label=\"Copier data\" @click=\"onSubmit\">Copier data</v-btn>\n    </v-row>\n  </v-container>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        message: '',\n      }\n    },\n    watch: {\n            // watch for any changes of \"count\"\n            msg: function () {\n                this.message = this.msg.payload;\n                //this.message = JSON.stringify(this.msg.payload);\n            }\n        },\n    methods: {\n      onSubmit: function () {\n        \n        this.send({payload: this.message});\n      },\n    },\n  }\n</script>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 330,
+        "y": 4510,
+        "wires": [
+            [
+                "2c32dee76537bd86",
+                "469cc2e3af8f2112"
+            ]
+        ]
+    },
+    {
+        "id": "9ee742908744f209",
+        "type": "debug",
+        "z": "57111ca025f638be",
+        "g": "adca6ef2dfcba80e",
+        "name": "debug 172",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 4000,
+        "wires": []
+    },
+    {
+        "id": "469cc2e3af8f2112",
+        "type": "ui-template",
+        "z": "57111ca025f638be",
+        "g": "99b0856dd2e01ab4",
+        "group": "9f41fa0923a34ac2",
+        "page": "",
+        "ui": "",
+        "name": "Gateway config",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <v-form v-model=\"valid\" @submit.prevent=\"onSubmit\">\n    <v-container>\n      <div>\n        NETWORK\n        <v-row dense>\n          <v-col cols=\"6\">\n            <v-switch v-model=\"modeWireless\" color=\"primary\" label=\"Activation réseau\" hide-details></v-switch>\n          </v-col>\n        </v-row>\n      </div>\n      <div>\n        WIFI\n        <v-row dense>\n          <v-col cols=\"6\">\n            <v-text-field v-model=\"config.ssid\" @mousedown:control=\"showConfig\" density=\"compact\" :counter=\"15\"\n              label=\"SSID\" :disabled=\"!modeWireless\"></v-text-field>\n          </v-col>\n\n          <v-col cols=\"6\">\n            <v-text-field v-model=\"config.ssidPwd\" @mousedown:control=\"showConfig\" density=\"compact\" :counter=\"15\"\n              label=\"Mot de passe\" hide-details :disabled=\"!modeWireless\"></v-text-field>\n          </v-col>\n        </v-row>\n      </div>\n      <div>\n        MQTT server\n        <v-row dense>\n          <v-col cols=\"6\" md=\"6\">\n            <v-text-field v-model=\"config.mqttIpAddress\" @mousedown:control=\"showConfig\" density=\"compact\" :counter=\"15\"\n              label=\"Adresse IP\" :disabled=\"!modeWireless\"></v-text-field>\n          </v-col>\n\n          <v-col cols=\"3\" md=\"3\">\n            <v-text-field v-model=\"config.mqttPort\" @mousedown:control=\"showConfig\" density=\"compact\" :counter=\"4\"\n              label=\"Port\"  :disabled=\"!modeWireless\"></v-text-field>\n          </v-col>\n        </v-row>\n      </div>\n      <div>\n        MQTT usager\n        <v-row dense>\n          <v-col cols=\"6\">\n            <v-text-field v-model=\"config.mqttUserId\" @mousedown:control=\"showConfig\" density=\"compact\" :counter=\"15\"\n              label=\"ID\"  :disabled=\"!modeWireless\"></v-text-field>\n          </v-col>\n        </v-row>\n        <v-row dense>\n          <v-col cols=\"6\">\n            <v-text-field v-model=\"config.mqttUser\" @mousedown:control=\"showConfig\" density=\"compact\" :counter=\"15\"\n              label=\"User\"  :disabled=\"!modeWireless\"></v-text-field>\n          </v-col>\n          <v-col cols=\"6\">\n            <v-text-field v-model=\"config.mqttPassword\" @mousedown:control=\"showConfig\" density=\"compact\" :counter=\"15\"\n              label=\"Mot de passe\"  :disabled=\"!modeWireless\">\n            </v-text-field>\n          </v-col>\n        </v-row>\n      </div>\n      <v-container>\n        <v-textarea v-model=\"message\" :readonly=\"true\" label=\"Message\" maxlength=\"120\" counter single-line></v-textarea>\n      </v-container>\n      <v-row>\n        <v-btn type=\"submit\" :loading=\"loading\">OK</v-btn>\n      </v-row>\n    </v-container>\n  </v-form>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        valid: false,\n        modeWireless: true,\n        config: {\n          ssid: '',\n          ssidPwd: '',\n          mqttIpAddress: '',\n          mqttPort: '',\n          mqttUserId: '',\n          mqttUser: '',\n          mqttPassword: '',\n        },\n       \n        message: '',\n        loading: false\n      }\n    },\n    watch: {\n      // watch for any changes of \"count\"\n      msg: function () {\n          //this.message = this.msg.payload;\n          this.message = this.msg.payload;\n          const msgConfig = JSON.parse(this.msg.payload);\n          //this.send(msgConfig);\n          this.modeWireless = msgConfig.modeWireless;\n          this.config.ssid = msgConfig.data.ssid;\n          this.config.ssidPwd = msgConfig.data.ssidPwd;\n\n          this.config.mqttIpAddress = msgConfig.data.mqttIpAddress;\n          this.config.mqttPort = msgConfig.data.mqttPort;\n\n          this.config.mqttUserId = msgConfig.data.mqttUserId;\n          this.config.mqttUser = msgConfig.data.mqttUser;\n          this.config.mqttPassword = msgConfig.data.mqttPassword;\n\n      },\n    },\n    methods: {\n      showConfig: function () {\n        this.message = JSON.stringify(this.config, null, 4)\n      },\n      onSubmit: function () {\n        //this.loading = true;\n        //setTimeout(() => (this.loading = false), 2000);\n\n        let infoObj = {\n          \"header\": { \"type\": \"ConfigGateway\", \"modeWireless\": this.modeWireless },\n          \"data\": this.config \n        };\n        \n        this.message = \"Topic: dom-sys.server/gateway_config\\n \"\n          + \"Config:\\n\" + JSON.stringify(infoObj, null, 4);\n     \n        this.send({payload: JSON.stringify(infoObj), topic:\"dom-sys.server/gateway_config\"});\n      },\n    },\n  }\n</script>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 510,
+        "y": 4510,
+        "wires": [
+            [
+                "2b47b1be61752b81",
+                "3fbc87fd28231303"
+            ]
+        ]
+    },
+    {
+        "id": "5826ad71ca8be439",
+        "type": "inject",
+        "z": "57111ca025f638be",
+        "g": "99b0856dd2e01ab4",
+        "name": "SetConfig",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "GatewayConfig",
+        "payloadType": "global",
+        "x": 150,
+        "y": 4510,
+        "wires": [
+            [
+                "65ebe7cecc4ac2d8",
+                "2c32dee76537bd86"
+            ]
+        ]
+    },
+    {
+        "id": "2c32dee76537bd86",
+        "type": "debug",
+        "z": "57111ca025f638be",
+        "g": "99b0856dd2e01ab4",
+        "name": "debug 173",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 4570,
+        "wires": []
+    },
+    {
+        "id": "51ee3605ff9d80e0",
+        "type": "file",
+        "z": "57111ca025f638be",
+        "g": "fa8d72ad90e71a48",
+        "name": "Log ESP",
+        "filename": "/home/pi-md/log/esp32.log",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 460,
+        "y": 3210,
         "wires": [
             []
         ]
     },
     {
-        "id": "fd53dd7c7dbdb183",
-        "type": "ui-text-input",
+        "id": "41e9b0574e55c0c8",
+        "type": "function",
         "z": "57111ca025f638be",
-        "group": "e4203d846baf0d72",
-        "name": "",
-        "label": "text",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "textarea",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": false,
-        "className": "",
-        "x": 620,
-        "y": 4320,
+        "g": "fa8d72ad90e71a48",
+        "name": "Add Date",
+        "func": "if(msg.payload.trim().length > 0){\n    let date = new Date();\n    let dateString = date.toLocaleDateString('fr-ca', {month: 'numeric', day: 'numeric'});\n    let timeString = date.toTimeString().slice(0, 8);\n\n    msg.payload = \"[\" + timeString + \"]\" \n       + \" \" + msg.payload\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 3210,
         "wires": [
+            [
+                "51ee3605ff9d80e0"
+            ]
+        ]
+    },
+    {
+        "id": "855c0e1ea702f2cf",
+        "type": "watch",
+        "z": "57111ca025f638be",
+        "g": "fa8d72ad90e71a48",
+        "name": "Surveiller log",
+        "files": "/home/pi-md/log/esp32.log",
+        "recursive": "",
+        "x": 180,
+        "y": 3260,
+        "wires": [
+            [
+                "b4133a029132e1bc",
+                "187ba9d2889dfd5c"
+            ]
+        ]
+    },
+    {
+        "id": "f1f19a0d827e452e",
+        "type": "exec",
+        "z": "57111ca025f638be",
+        "g": "fa8d72ad90e71a48",
+        "command": "logrotate -s /home/pi-md/log/status /home/pi-md/log/logrotate.conf",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "LogRotate",
+        "x": 590,
+        "y": 3260,
+        "wires": [
+            [
+                "2b905ff025d2f0a9"
+            ],
+            [
+                "2b905ff025d2f0a9"
+            ],
             []
+        ]
+    },
+    {
+        "id": "b4133a029132e1bc",
+        "type": "function",
+        "z": "57111ca025f638be",
+        "g": "fa8d72ad90e71a48",
+        "name": "Executer rotation log",
+        "func": "if(msg.size > 1000000){\n    return msg;\n\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 3260,
+        "wires": [
+            [
+                "f1f19a0d827e452e"
+            ]
+        ]
+    },
+    {
+        "id": "187ba9d2889dfd5c",
+        "type": "debug",
+        "z": "57111ca025f638be",
+        "g": "fa8d72ad90e71a48",
+        "name": "debug 176",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 3300,
+        "wires": []
+    },
+    {
+        "id": "2b905ff025d2f0a9",
+        "type": "debug",
+        "z": "57111ca025f638be",
+        "g": "fa8d72ad90e71a48",
+        "name": "debug 177",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 3260,
+        "wires": []
+    },
+    {
+        "id": "ee416b1f0f20e4d8",
+        "type": "function",
+        "z": "57111ca025f638be",
+        "g": "2ff47af73d8a3d20",
+        "name": "Send config",
+        "func": "let devicesMap = global.get('devicesMap');\n\n\nif(msg.payload.header.type == \"ASK_CONFIG\"){\n    msg.device = devicesMap.get(msg.mac);\n    \n    let device = {\n    \"header\":{\"mac\":msg.mac,\"type\":\"CONFIG\"},\n    \"device\": msg.device\n    }\n    msg.payload = device;\n\n    return msg; \n}\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 2790,
+        "wires": [
+            [
+                "ba7bd09e9170283f"
+            ]
+        ]
+    },
+    {
+        "id": "b46d7561a233fae7",
+        "type": "delay",
+        "z": "57111ca025f638be",
+        "g": "2ff47af73d8a3d20",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 560,
+        "y": 2750,
+        "wires": [
+            [
+                "ee416b1f0f20e4d8"
+            ]
+        ]
+    },
+    {
+        "id": "ba7bd09e9170283f",
+        "type": "json",
+        "z": "57111ca025f638be",
+        "g": "2ff47af73d8a3d20",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": false,
+        "x": 870,
+        "y": 2790,
+        "wires": [
+            [
+                "ed7c07d39dda883d",
+                "8952a96107cd9181"
+            ]
+        ]
+    },
+    {
+        "id": "ed7c07d39dda883d",
+        "type": "mqtt out",
+        "z": "57111ca025f638be",
+        "g": "2ff47af73d8a3d20",
+        "name": "",
+        "topic": "dom-sys.server/update_config",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "application/json",
+        "userProps": "",
+        "correl": "",
+        "expiry": "60",
+        "broker": "c6a29fab98717cbb",
+        "x": 1080,
+        "y": 2790,
+        "wires": []
+    },
+    {
+        "id": "8952a96107cd9181",
+        "type": "debug",
+        "z": "57111ca025f638be",
+        "g": "2ff47af73d8a3d20",
+        "name": "debug 178",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 2840,
+        "wires": []
+    },
+    {
+        "id": "6c48e35750a5c6be",
+        "type": "link in",
+        "z": "57111ca025f638be",
+        "g": "4ac0d347446e702f",
+        "name": "link in 1",
+        "links": [
+            "e4aecc6f336ce4bc"
+        ],
+        "x": 475,
+        "y": 1780,
+        "wires": [
+            [
+                "0a4b76749339d8cd",
+                "44c0d2d81fe59de0"
+            ]
         ]
     },
     {
@@ -5073,7 +5573,7 @@
         "z": "f178d5dee9c95e1e",
         "g": "429317fe9e4bcd87",
         "name": "Vérification du délai",
-        "func": "//Envoi une alerte à l'écran si les données ne sont pas reçues \n//  dans un délai acceptable.\nconst devicesMap = global.get('devicesMap');\n\nvar devices = [];\nlet data = msg.payload;\nmsg.payload = \"\";\n\ndata.forEach(function (element) {\n  let device = devicesMap.get(element.mac);\n  if (device.sleep_duration > 0) {\n    let dateNow = new Date();\n    let datetime = new Date(element.datetime);\n    let diff = (dateNow.getTime() - datetime.getTime()) / 1000;\n    //Si on dépasse le temps de sleep + 5 minutes.\n    if (diff > (device.sleep_duration + (5 * 60))) {\n      msg.payload = msg.payload + \" -- Délai de réception dépassé. \" + device.mac + \"\\n\\r\";\n      console.log(\"Now:\" + dateNow + \n        \" - Last received:\" + datetime +\n        \"diff: \" + diff);\n      console.log(msg.alert);\n    }\n  }\n});\n\nif (msg.alert != \"\") {\n  node.log(\"Alert Device: \" + msg.payload);\n  \n\n  return msg;\n}\n\n",
+        "func": "//Envoi une alerte à l'écran si les données ne sont pas reçues \n//  dans un délai acceptable.\nconst devicesMap = global.get('devicesMap');\n\nvar devices = [];\nlet data = msg.payload;\nmsg.payload = \"Àrevoir --> Vérification des délais.\\n \";\n\ndata.forEach(function (element) {\n  let device = devicesMap.get(element.mac);\n  if (device.sleep_duration > 0) {\n    let dateNow = new Date();\n    let datetime = new Date(element.datetime);\n    let diff = (dateNow.getTime() - datetime.getTime()) / 1000;\n    //Si on dépasse le temps de sleep + 5 minutes.\n    if (diff > (device.sleep_duration + (5 * 60))) {\n      msg.payload = msg.payload + \" -- Délai de réception dépassé. \" + device.mac + \"\\n\\r\";\n      console.log(\"Now:\" + dateNow + \n        \" - Last received:\" + datetime +\n        \"diff: \" + diff);\n      console.log(msg.payload);\n    }\n  }\n});\n\nif (msg.payload != \"\") {\n   if(msg.payload != \"\"){\n    node.log(\"Alert Device: \" + msg.payload);\n    return msg;\n  }\n}\n\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -5578,6 +6078,7 @@
         "id": "7f206d7175eeb9c6",
         "type": "inject",
         "z": "a9c9090b.478498",
+        "d": true,
         "g": "49aed5c6020fd230",
         "name": "",
         "props": [
@@ -5608,6 +6109,7 @@
         "id": "db981d4c910296e4",
         "type": "function",
         "z": "a9c9090b.478498",
+        "d": true,
         "g": "49aed5c6020fd230",
         "name": "function 20",
         "func": "msg.payload = [\n          {\n            name: 'Frozen Yogurt',\n            calories: 159,\n            fat: 6.0,\n            carbs: 24,\n            protein: 4.0,\n            iron: 1,\n          },\n          {\n            name: 'Ice cream sandwich',\n            calories: 237,\n            fat: 9.0,\n            carbs: 37,\n            protein: 4.3,\n            iron: 1,\n          },\n          {\n            name: 'Eclair',\n            calories: 262,\n            fat: 16.0,\n            carbs: 23,\n            protein: 6.0,\n            iron: 7,\n          },\n          {\n            name: 'Cupcake',\n            calories: 305,\n            fat: 3.7,\n            carbs: 67,\n            protein: 4.3,\n            iron: 8,\n          },\n          {\n            name: 'Gingerbread',\n            calories: 356,\n            fat: 16.0,\n            carbs: 49,\n            protein: 3.9,\n            iron: 16,\n          },\n          {\n            name: 'Jelly bean',\n            calories: 375,\n            fat: 0.0,\n            carbs: 94,\n            protein: 0.0,\n            iron: 0,\n          },\n          {\n            name: 'Lollipop',\n            calories: 392,\n            fat: 0.2,\n            carbs: 98,\n            protein: 0,\n            iron: 2,\n          },\n          {\n            name: 'Honeycomb',\n            calories: 408,\n            fat: 3.2,\n            carbs: 87,\n            protein: 6.5,\n            iron: 45,\n          },\n          {\n            name: 'Donut',\n            calories: 452,\n            fat: 25.0,\n            carbs: 51,\n            protein: 4.9,\n            iron: 22,\n          },\n          {\n            name: 'KitKat',\n            calories: 518,\n            fat: 26.0,\n            carbs: 65,\n            protein: 7,\n            iron: 6,\n          }\n        ];\nreturn msg;",
@@ -5629,6 +6131,7 @@
         "id": "50cc735154d103a3",
         "type": "catch",
         "z": "a9c9090b.478498",
+        "d": true,
         "g": "49aed5c6020fd230",
         "name": "",
         "scope": null,
@@ -5645,6 +6148,7 @@
         "id": "987a44bd9a6154e7",
         "type": "debug",
         "z": "a9c9090b.478498",
+        "d": true,
         "g": "49aed5c6020fd230",
         "name": "debug 148",
         "active": true,
@@ -5663,6 +6167,7 @@
         "id": "b73ee2792d4f5473",
         "type": "ui-template",
         "z": "a9c9090b.478498",
+        "d": true,
         "g": "49aed5c6020fd230",
         "group": "5b69d242410edd23",
         "page": "",
@@ -5685,23 +6190,43 @@
         ]
     },
     {
-        "id": "538058d7a3abaa57",
-        "type": "sqlite",
+        "id": "47f5073909bee0a2",
+        "type": "ui-template",
         "z": "a9c9090b.478498",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "fixed",
-        "sql": "SELECT 'SiteWeb' as location, temperature, humidity, datetime\nFROM TEMPERATURE_EXTERNE\nwhere  datetime >  datetime('now', 'localtime', '-48 hours')\norder by datetime asc;",
-        "name": "Load temp WEB",
-        "x": 440,
-        "y": 540,
+        "d": true,
+        "g": "49aed5c6020fd230",
+        "group": "5b69d242410edd23",
+        "page": "",
+        "ui": "",
+        "name": "Bouton barre du haut",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <Teleport v-if=\"mounted\" to=\"#app-bar-actions\">\n        <v-btn>My Action</v-btn>\n    </Teleport>\n</template>\n<script>\n    export default {\n        data() {\n            return {\n                mounted: false\n            }\n        },\n        mounted() {\n            this.mounted = true\n        }\n    }\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 260,
+        "y": 260,
         "wires": [
-            [
-                "623ae241a5292864"
-            ]
+            []
         ]
     },
     {
-        "id": "1f2400a346e5c163",
+        "id": "993a1d17b68cf824",
+        "type": "restart",
+        "z": "a9c9090b.478498",
+        "d": true,
+        "name": "",
+        "x": 480,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "33160e7dad384fd2",
         "type": "inject",
         "z": "a9c9090b.478498",
         "name": "",
@@ -5721,27 +6246,138 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 250,
-        "y": 540,
+        "x": 260,
+        "y": 500,
         "wires": [
             [
-                "538058d7a3abaa57"
+                "993a1d17b68cf824",
+                "355572eae47bb5b8"
             ]
         ]
     },
     {
-        "id": "623ae241a5292864",
+        "id": "7be8e9a5f812950b",
+        "type": "rpi-mouse",
+        "z": "a9c9090b.478498",
+        "name": "",
+        "butt": "1",
+        "x": 320,
+        "y": 610,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "db405b3a31072f48",
+        "type": "rpi-gpio out",
+        "z": "a9c9090b.478498",
+        "d": true,
+        "name": "",
+        "pin": "14",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 780,
+        "y": 610,
+        "wires": []
+    },
+    {
+        "id": "355572eae47bb5b8",
+        "type": "shutdown",
+        "z": "a9c9090b.478498",
+        "name": "",
+        "x": 490,
+        "y": 450,
+        "wires": []
+    },
+    {
+        "id": "ecbccd54980ecba4",
+        "type": "rpi-gpio in",
+        "z": "a9c9090b.478498",
+        "d": true,
+        "name": "",
+        "pin": "15",
+        "intype": "tri",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 470,
+        "y": 670,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "67442326259348aa",
         "type": "debug",
         "z": "a9c9090b.478498",
-        "name": "debug 169",
+        "name": "debug 175",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 620,
+        "x": 730,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "b8120943ca5fc8c3",
+        "type": "inject",
+        "z": "a9c9090b.478498",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Test",
+        "payloadType": "str",
+        "x": 540,
+        "y": 610,
+        "wires": [
+            [
+                "990b0579b542c758"
+            ]
+        ]
+    },
+    {
+        "id": "9d011191721fd81a",
+        "type": "serial in",
+        "z": "a9c9090b.478498",
+        "d": true,
+        "name": "",
+        "serial": "338b8e1916d50651",
+        "x": 540,
+        "y": 730,
+        "wires": [
+            [
+                "67442326259348aa"
+            ]
+        ]
+    },
+    {
+        "id": "990b0579b542c758",
+        "type": "serial out",
+        "z": "a9c9090b.478498",
+        "d": true,
+        "name": "",
+        "serial": "338b8e1916d50651",
+        "x": 830,
         "y": 530,
         "wires": []
     },
@@ -5831,10 +6467,11 @@
         "id": "73d33be37d3e6847",
         "type": "ui-chart",
         "z": "97407293d780965c",
+        "d": true,
         "group": "5b69d242410edd23",
         "name": "",
         "label": "chart",
-        "order": 9007199254740991,
+        "order": 5,
         "chartType": "line",
         "category": "topic",
         "categoryType": "msg",
@@ -5908,7 +6545,7 @@
         "z": "97407293d780965c",
         "group": "5b69d242410edd23",
         "name": "",
-        "order": 0,
+        "order": 3,
         "width": 0,
         "height": 0,
         "content": "# Markdown Content\n\nGoes here...",
@@ -5918,5 +6555,899 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "3275df79b545312c",
+        "type": "ui-table",
+        "z": "97407293d780965c",
+        "group": "5b69d242410edd23",
+        "name": "Teable",
+        "label": "text",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": true,
+        "selectionType": "checkbox",
+        "columns": [],
+        "x": 570,
+        "y": 80,
+        "wires": [
+            [
+                "f6fea65c26a21581"
+            ]
+        ]
+    },
+    {
+        "id": "f6fea65c26a21581",
+        "type": "debug",
+        "z": "97407293d780965c",
+        "name": "debug 179",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 150,
+        "wires": []
+    },
+    {
+        "id": "1a072bbe9d05514f",
+        "type": "inject",
+        "z": "97407293d780965c",
+        "name": "Setup",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 90,
+        "wires": [
+            [
+                "e9f2489b1b98c0b8"
+            ]
+        ]
+    },
+    {
+        "id": "e9f2489b1b98c0b8",
+        "type": "sqlite",
+        "z": "97407293d780965c",
+        "mydb": "628739f370d1726d",
+        "sqlquery": "fixed",
+        "sql": "SELECT DE.id_device,\n       DE.mac,\n       DE.location,\n       SE.id_sensor\n  FROM DEVICE DE\n       JOIN\n       SENSOR SE ON SE.id_device == DE.id_device\n WHERE EXISTS (\n           SELECT 1\n             FROM SENSOR_TEMPERATURE\n            WHERE id_sensor = SE.id_sensor\n       );\n",
+        "name": "Load devices",
+        "x": 380,
+        "y": 80,
+        "wires": [
+            [
+                "3275df79b545312c"
+            ]
+        ]
+    },
+    {
+        "id": "abc828f5f9afb920",
+        "type": "inject",
+        "z": "46d1b53664c89cde",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "72",
+        "payloadType": "num",
+        "x": 540,
+        "y": 130,
+        "wires": [
+            [
+                "3015306811712d47"
+            ]
+        ]
+    },
+    {
+        "id": "3015306811712d47",
+        "type": "ui-gauge",
+        "z": "46d1b53664c89cde",
+        "name": "Temperature",
+        "group": "5b69d242410edd23",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gauge-34",
+        "gstyle": "needle",
+        "title": "gauge",
+        "units": "°F",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#3d10e0"
+            },
+            {
+                "from": "65",
+                "color": "#00ff4c"
+            },
+            {
+                "from": "73",
+                "color": "#ea5353"
+            }
+        ],
+        "min": "0",
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 700,
+        "y": 130,
+        "wires": []
+    },
+    {
+        "id": "2793124b2d1a40d4",
+        "type": "ui-form",
+        "z": "46d1b53664c89cde",
+        "name": "",
+        "group": "5b69d242410edd23",
+        "label": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Temp",
+                "key": "Temp",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "test",
+                "key": "test",
+                "type": "text",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Temp": "",
+            "test": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "clear",
+        "resetOnSubmit": false,
+        "topic": "payload",
+        "topicType": "msg",
+        "splitLayout": true,
+        "className": "",
+        "x": 340,
+        "y": 190,
+        "wires": [
+            [
+                "74d8a82b9af45c89"
+            ]
+        ]
+    },
+    {
+        "id": "74d8a82b9af45c89",
+        "type": "change",
+        "z": "46d1b53664c89cde",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Temp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 190,
+        "wires": [
+            [
+                "97a92a17a55731fc"
+            ]
+        ]
+    },
+    {
+        "id": "97a92a17a55731fc",
+        "type": "ui-gauge",
+        "z": "46d1b53664c89cde",
+        "name": "Temperature",
+        "group": "5b69d242410edd23",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gauge-34",
+        "gstyle": "needle",
+        "title": "gauge",
+        "units": "°F",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#3d10e0"
+            },
+            {
+                "from": "65",
+                "color": "#00ff4c"
+            },
+            {
+                "from": "73",
+                "color": "#ea5353"
+            }
+        ],
+        "min": "0",
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 700,
+        "y": 190,
+        "wires": []
+    },
+    {
+        "id": "bd22eb640e7d9b5a",
+        "type": "ui-text-input",
+        "z": "46d1b53664c89cde",
+        "group": "5b69d242410edd23",
+        "name": "Temp Setpoint",
+        "label": "Number",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "number",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 510,
+        "y": 250,
+        "wires": [
+            [
+                "fba784d729757a93"
+            ]
+        ]
+    },
+    {
+        "id": "fba784d729757a93",
+        "type": "debug",
+        "z": "46d1b53664c89cde",
+        "name": "debug 19",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 250,
+        "wires": []
+    },
+    {
+        "id": "a44261b22c1dc210",
+        "type": "ui-button",
+        "z": "46d1b53664c89cde",
+        "group": "5b69d242410edd23",
+        "name": "",
+        "label": "Enter",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 340,
+        "y": 250,
+        "wires": [
+            [
+                "bd22eb640e7d9b5a"
+            ]
+        ]
+    },
+    {
+        "id": "dea03c4d76d37dc7",
+        "type": "ui-dropdown",
+        "z": "46d1b53664c89cde",
+        "group": "5b69d242410edd23",
+        "name": "Speed Setting",
+        "label": "Select Option:",
+        "tooltip": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Low Speed Setting",
+                "value": "23",
+                "type": "str"
+            },
+            {
+                "label": "Medium Speed Setting",
+                "value": "28",
+                "type": "str"
+            },
+            {
+                "label": "High Speed Setting",
+                "value": "32",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 510,
+        "y": 310,
+        "wires": [
+            [
+                "8c2a2d046eedd247"
+            ]
+        ]
+    },
+    {
+        "id": "8c2a2d046eedd247",
+        "type": "debug",
+        "z": "46d1b53664c89cde",
+        "name": "debug 20",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 310,
+        "wires": []
+    },
+    {
+        "id": "2bfc6860bec256ca",
+        "type": "inject",
+        "z": "46d1b53664c89cde",
+        "name": "",
+        "props": [
+            {
+                "p": "options",
+                "v": "[{\"value\":\"cheddar\",\"label\":\"Cheddar\"},{\"value\":\"brie\",\"label\":\"Brie\"},{\"value\":\"parmesan\",\"label\":\"Parmesan\"},{\"value\":\"gruyere\",\"label\":\"Gruyere\"}]",
+                "vt": "json"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 340,
+        "y": 410,
+        "wires": [
+            [
+                "bd0f7443cbe4e922"
+            ]
+        ]
+    },
+    {
+        "id": "bd0f7443cbe4e922",
+        "type": "ui-dropdown",
+        "z": "46d1b53664c89cde",
+        "group": "5b69d242410edd23",
+        "name": "",
+        "label": "Select Option:",
+        "tooltip": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 530,
+        "y": 410,
+        "wires": [
+            [
+                "ad76572323b4441c"
+            ]
+        ]
+    },
+    {
+        "id": "ad76572323b4441c",
+        "type": "debug",
+        "z": "46d1b53664c89cde",
+        "name": "debug 21",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 410,
+        "wires": []
+    },
+    {
+        "id": "6db2d92cd83dc4de",
+        "type": "ui-radio-group",
+        "z": "46d1b53664c89cde",
+        "group": "5b69d242410edd23",
+        "name": "Emotion Meter",
+        "label": "Select Option:",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "columns": 1,
+        "passthru": false,
+        "options": [
+            {
+                "label": "Happy",
+                "value": "Happy",
+                "type": "str"
+            },
+            {
+                "label": "Sad",
+                "value": "Sad",
+                "type": "str"
+            },
+            {
+                "label": "Scared",
+                "value": "Scared",
+                "type": "str"
+            },
+            {
+                "label": "Indifferent",
+                "value": "Indifferent",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 530,
+        "y": 470,
+        "wires": [
+            [
+                "d5c910900992b44e"
+            ]
+        ]
+    },
+    {
+        "id": "d5c910900992b44e",
+        "type": "ui-text",
+        "z": "46d1b53664c89cde",
+        "group": "5b69d242410edd23",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Emotion:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 710,
+        "y": 470,
+        "wires": []
+    },
+    {
+        "id": "70adf93ecf61d5b2",
+        "type": "ui-switch",
+        "z": "46d1b53664c89cde",
+        "name": "",
+        "label": "switch",
+        "group": "5b69d242410edd23",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "Machine Started",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "Machine Stopped",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 560,
+        "y": 530,
+        "wires": [
+            [
+                "65a8f783dc068274"
+            ]
+        ]
+    },
+    {
+        "id": "65a8f783dc068274",
+        "type": "ui-notification",
+        "z": "46d1b53664c89cde",
+        "ui": "d4c9d9e9b37824ea",
+        "position": "top right",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 0,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 740,
+        "y": 530,
+        "wires": []
+    },
+    {
+        "id": "d54a8f212b0d3625",
+        "type": "ui-table",
+        "z": "46d1b53664c89cde",
+        "group": "5b69d242410edd23",
+        "name": "",
+        "label": "text",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "maxrows": 0,
+        "autocols": true,
+        "selectionType": "click",
+        "columns": [],
+        "x": 700,
+        "y": 570,
+        "wires": [
+            [
+                "19ccec487d960b22"
+            ]
+        ]
+    },
+    {
+        "id": "f0f3808e4db532b6",
+        "type": "inject",
+        "z": "46d1b53664c89cde",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"id\":\"abc123\",\"value\":75,\"zip_code\":\"10001\",\"latitude\":40.748817,\"longitude\":-73.985428},{\"id\":\"def456\",\"value\":42,\"zip_code\":\"90210\",\"latitude\":34.0901,\"longitude\":-118.4065},{\"id\":\"ghi789\",\"value\":90,\"zip_code\":\"94103\",\"latitude\":37.7749,\"longitude\":-122.4194}]",
+        "payloadType": "json",
+        "x": 560,
+        "y": 570,
+        "wires": [
+            [
+                "d54a8f212b0d3625"
+            ]
+        ]
+    },
+    {
+        "id": "89ec46fe0702f9db",
+        "type": "ui-chart",
+        "z": "46d1b53664c89cde",
+        "group": "5b69d242410edd23",
+        "name": "",
+        "label": "chart",
+        "order": 9007199254740991,
+        "chartType": "line",
+        "category": "location",
+        "categoryType": "property",
+        "xAxisProperty": "datestamp",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "time",
+        "yAxisProperty": "temp",
+        "ymin": "",
+        "ymax": "",
+        "action": "append",
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "x": 700,
+        "y": 630,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b670822d0031aed5",
+        "type": "inject",
+        "z": "46d1b53664c89cde",
+        "name": "Line chart temp for 3 different locations",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"location\":\"New York\",\"temp\":56,\"datestamp\":1643784000},{\"location\":\"Los Angeles\",\"temp\":67,\"datestamp\":1643784000},{\"location\":\"Chicago\",\"temp\":44,\"datestamp\":1643784000},{\"location\":\"New York\",\"temp\":60,\"datestamp\":1643798400},{\"location\":\"Los Angeles\",\"temp\":71,\"datestamp\":1643798400},{\"location\":\"Chicago\",\"temp\":48,\"datestamp\":1643798400},{\"location\":\"New York\",\"temp\":65,\"datestamp\":1643812800},{\"location\":\"Los Angeles\",\"temp\":74,\"datestamp\":1643812800},{\"location\":\"Chicago\",\"temp\":52,\"datestamp\":1643812800},{\"location\":\"New York\",\"temp\":69,\"datestamp\":1643827200},{\"location\":\"Los Angeles\",\"temp\":77,\"datestamp\":1643827200},{\"location\":\"Chicago\",\"temp\":56,\"datestamp\":1643827200},{\"location\":\"New York\",\"temp\":73,\"datestamp\":1643841600},{\"location\":\"Los Angeles\",\"temp\":80,\"datestamp\":1643841600},{\"location\":\"Chicago\",\"temp\":60,\"datestamp\":1643841600},{\"location\":\"New York\",\"temp\":77,\"datestamp\":1643856000},{\"location\":\"Los Angeles\",\"temp\":82,\"datestamp\":1643856000},{\"location\":\"Chicago\",\"temp\":64,\"datestamp\":1643856000},{\"location\":\"New York\",\"temp\":80,\"datestamp\":1643870400},{\"location\":\"Los Angeles\",\"temp\":84,\"datestamp\":1643870400},{\"location\":\"Chicago\",\"temp\":68,\"datestamp\":1643870400},{\"location\":\"New York\",\"temp\":83,\"datestamp\":1643884800},{\"location\":\"Los Angeles\",\"temp\":86,\"datestamp\":1643884800},{\"location\":\"Chicago\",\"temp\":72,\"datestamp\":1643884800},{\"location\":\"New York\",\"temp\":86,\"datestamp\":1643899200},{\"location\":\"Los Angeles\",\"temp\":88,\"datestamp\":1643899200},{\"location\":\"Chicago\",\"temp\":76,\"datestamp\":1643899200},{\"location\":\"New York\",\"temp\":89,\"datestamp\":1643913600},{\"location\":\"Los Angeles\",\"temp\":89,\"datestamp\":1643913600},{\"location\":\"Chicago\",\"temp\":80,\"datestamp\":1643913600},{\"location\":\"New York\",\"temp\":89,\"datestamp\":1643928000},{\"location\":\"Los Angeles\",\"temp\":88,\"datestamp\":1643928000},{\"location\":\"Chicago\",\"temp\":84,\"datestamp\":1643928000},{\"location\":\"New York\",\"temp\":86,\"datestamp\":1643942400},{\"location\":\"Los Angeles\",\"temp\":86,\"datestamp\":1643942400},{\"location\":\"Chicago\",\"temp\":88,\"datestamp\":1643942400},{\"location\":\"New York\",\"temp\":83,\"datestamp\":1643956800},{\"location\":\"Los Angeles\",\"temp\":84,\"datestamp\":1643956800},{\"location\":\"Chicago\",\"temp\":92,\"datestamp\":1643956800},{\"location\":\"New York\",\"temp\":79,\"datestamp\":1643971200},{\"location\":\"Los Angeles\",\"temp\":82,\"datestamp\":1643971200},{\"location\":\"Chicago\",\"temp\":96,\"datestamp\":1643971200},{\"location\":\"New York\",\"temp\":73,\"datestamp\":1643985600},{\"location\":\"Los Angeles\",\"temp\":80,\"datestamp\":1643985600},{\"location\":\"Chicago\",\"temp\":100,\"datestamp\":1643985600},{\"location\":\"New York\",\"temp\":66,\"datestamp\":1644000000},{\"location\":\"Los Angeles\",\"temp\":78,\"datestamp\":1644000000},{\"location\":\"Chicago\",\"temp\":96,\"datestamp\":1644000000},{\"location\":\"New York\",\"temp\":59,\"datestamp\":1644014400},{\"location\":\"Los Angeles\",\"temp\":76,\"datestamp\":1644014400},{\"location\":\"Chicago\",\"temp\":92,\"datestamp\":1644014400},{\"location\":\"New York\",\"temp\":53,\"datestamp\":1644028800},{\"location\":\"Los Angeles\",\"temp\":74,\"datestamp\":1644028800},{\"location\":\"Chicago\",\"temp\":88,\"datestamp\":1644028800},{\"location\":\"New York\",\"temp\":47,\"datestamp\":1644043200},{\"location\":\"Los Angeles\",\"temp\":72,\"datestamp\":1644043200},{\"location\":\"Chicago\",\"temp\":84,\"datestamp\":1644043200},{\"location\":\"New York\",\"temp\":42,\"datestamp\":1644057600},{\"location\":\"Los Angeles\",\"temp\":70,\"datestamp\":1644057600},{\"location\":\"Chicago\",\"temp\":80,\"datestamp\":1644057600},{\"location\":\"New York\",\"temp\":39,\"datestamp\":1644072000},{\"location\":\"Los Angeles\",\"temp\":68,\"datestamp\":1644072000},{\"location\":\"Chicago\",\"temp\":76,\"datestamp\":1644072000},{\"location\":\"New York\",\"temp\":37,\"datestamp\":1644086400},{\"location\":\"Los Angeles\",\"temp\":66,\"datestamp\":1644086400},{\"location\":\"Chicago\",\"temp\":72,\"datestamp\":1644086400},{\"location\":\"New York\",\"temp\":36,\"datestamp\":1644100800},{\"location\":\"Los Angeles\",\"temp\":64,\"datestamp\":1644100800},{\"location\":\"Chicago\",\"temp\":68,\"datestamp\":1644100800},{\"location\":\"New York\",\"temp\":37,\"datestamp\":1644115200},{\"location\":\"Los Angeles\",\"temp\":62,\"datestamp\":1644115200},{\"location\":\"Chicago\",\"temp\":64,\"datestamp\":1644115200}]",
+        "payloadType": "json",
+        "x": 460,
+        "y": 630,
+        "wires": [
+            [
+                "89ec46fe0702f9db"
+            ]
+        ]
+    },
+    {
+        "id": "d4a63bebb36a9c47",
+        "type": "ui-chart",
+        "z": "46d1b53664c89cde",
+        "group": "5b69d242410edd23",
+        "name": "",
+        "label": "Sales in Million",
+        "order": 9007199254740991,
+        "chartType": "bar",
+        "category": "location",
+        "categoryType": "property",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "category",
+        "yAxisProperty": "sales_millions",
+        "ymin": "",
+        "ymax": "",
+        "action": "append",
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": false,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "x": 730,
+        "y": 690,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f42c6b4544b22381",
+        "type": "inject",
+        "z": "46d1b53664c89cde",
+        "name": "Bar Chart for Sales",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"location\":\"New York\",\"sales_millions\":3.2},{\"location\":\"Los Angeles\",\"sales_millions\":2.5},{\"location\":\"Chicago\",\"sales_millions\":1.8},{\"location\":\"Houston\",\"sales_millions\":2.9},{\"location\":\"Miami\",\"sales_millions\":2.1}]",
+        "payloadType": "json",
+        "x": 460,
+        "y": 690,
+        "wires": [
+            [
+                "d4a63bebb36a9c47"
+            ]
+        ]
+    },
+    {
+        "id": "acaec4d7853239c7",
+        "type": "ui-chart",
+        "z": "46d1b53664c89cde",
+        "group": "5b69d242410edd23",
+        "name": "",
+        "label": "chart",
+        "order": 9007199254740991,
+        "chartType": "scatter",
+        "category": "",
+        "categoryType": "str",
+        "xAxisProperty": "x",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "linear",
+        "yAxisProperty": "y",
+        "ymin": "",
+        "ymax": "",
+        "action": "replace",
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "x": 700,
+        "y": 750,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a8f5b245173d37a3",
+        "type": "inject",
+        "z": "46d1b53664c89cde",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"x\":0.5,\"y\":45.2},{\"x\":1.3,\"y\":48.7},{\"x\":2.1,\"y\":52.4},{\"x\":3.7,\"y\":56.8},{\"x\":4.2,\"y\":60.3},{\"x\":5.5,\"y\":63.6},{\"x\":6.2,\"y\":67.1},{\"x\":7.3,\"y\":69.5},{\"x\":8.4,\"y\":71.9},{\"x\":9.1,\"y\":74.3},{\"x\":10,\"y\":75.7},{\"x\":10.7,\"y\":76.9},{\"x\":11.5,\"y\":78.2},{\"x\":12.2,\"y\":79.6},{\"x\":13.4,\"y\":81.1},{\"x\":14.7,\"y\":82.9},{\"x\":15.1,\"y\":84.1},{\"x\":16.5,\"y\":85.3},{\"x\":17.3,\"y\":86.5},{\"x\":18.6,\"y\":87.6},{\"x\":19.2,\"y\":88.7},{\"x\":20.4,\"y\":89.7},{\"x\":21.1,\"y\":90.6},{\"x\":22.3,\"y\":91.4},{\"x\":23.7,\"y\":92.1},{\"x\":24.2,\"y\":92.8},{\"x\":25.6,\"y\":93.4},{\"x\":26.3,\"y\":94},{\"x\":27.5,\"y\":94.5},{\"x\":28.1,\"y\":94.9},{\"x\":29.4,\"y\":95.2},{\"x\":30.2,\"y\":95.5},{\"x\":31.6,\"y\":95.7},{\"x\":32.3,\"y\":95.8},{\"x\":33.5,\"y\":95.9},{\"x\":34.2,\"y\":96},{\"x\":35.4,\"y\":96},{\"x\":36.1,\"y\":96},{\"x\":37.3,\"y\":95.9},{\"x\":38.7,\"y\":95.8},{\"x\":39.2,\"y\":95.6},{\"x\":40.5,\"y\":95.4},{\"x\":41.2,\"y\":95.1},{\"x\":42.4,\"y\":94.7},{\"x\":43.7,\"y\":94.3},{\"x\":44.1,\"y\":93.8},{\"x\":45.5,\"y\":93.3},{\"x\":46.3,\"y\":92.8},{\"x\":47.6,\"y\":92.2},{\"x\":48.1,\"y\":91.6},{\"x\":49.4,\"y\":91},{\"x\":50.2,\"y\":90.3},{\"x\":51.5,\"y\":89.6},{\"x\":52.2,\"y\":88.8},{\"x\":53.4,\"y\":88},{\"x\":54.7,\"y\":87.2},{\"x\":55.1,\"y\":86.3},{\"x\":56.5,\"y\":85.4},{\"x\":57.3,\"y\":84.4},{\"x\":58.6,\"y\":83.4},{\"x\":59.2,\"y\":82.4},{\"x\":60.4,\"y\":81.3},{\"x\":61.1,\"y\":80.2},{\"x\":62.3,\"y\":79},{\"x\":63.7,\"y\":77.8},{\"x\":64.2,\"y\":76.6},{\"x\":65.6,\"y\":75.4},{\"x\":66.3,\"y\":74.1},{\"x\":67.5,\"y\":72.8},{\"x\":68.1,\"y\":71.5},{\"x\":69.4,\"y\":70.1},{\"x\":70.2,\"y\":68.7},{\"x\":71.6,\"y\":67.3},{\"x\":72.3,\"y\":65.8},{\"x\":73.5,\"y\":64.3},{\"x\":74.2,\"y\":62.8},{\"x\":75.4,\"y\":61.2},{\"x\":76.7,\"y\":59.6},{\"x\":77.1,\"y\":58},{\"x\":78.5,\"y\":56.4},{\"x\":79.3,\"y\":54.8},{\"x\":80.6,\"y\":53.1},{\"x\":81.2,\"y\":51.4},{\"x\":82.4,\"y\":49.7},{\"x\":83.7,\"y\":47.9},{\"x\":84.1,\"y\":46.2},{\"x\":85.5,\"y\":44.4},{\"x\":86.3,\"y\":42.6},{\"x\":87.6,\"y\":40.8},{\"x\":88.1,\"y\":39},{\"x\":89.4,\"y\":37.1},{\"x\":90.2,\"y\":35.3},{\"x\":91.6,\"y\":33.4},{\"x\":92.3,\"y\":31.6},{\"x\":93.5,\"y\":29.7},{\"x\":94.2,\"y\":27.8},{\"x\":95.4,\"y\":25.9},{\"x\":96.7,\"y\":24},{\"x\":97.1,\"y\":22.1},{\"x\":98.5,\"y\":20.2},{\"x\":99.3,\"y\":18.3},{\"x\":100,\"y\":16.4}]",
+        "payloadType": "json",
+        "x": 500,
+        "y": 750,
+        "wires": [
+            [
+                "acaec4d7853239c7"
+            ]
+        ]
+    },
+    {
+        "id": "8b467ccdc8767eb9",
+        "type": "ui-markdown",
+        "z": "46d1b53664c89cde",
+        "group": "5b69d242410edd23",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "content": "# Dashboard 2.0 Documentation\n\n## Quick start Guides Below:\n\n[Getting Started](https://dashboard.flowfuse.com/getting-started.html)\n\n[Migration Guide](https://dashboard.flowfuse.com/user/migration.html)\n\n[UI Template Examples](https://dashboard.flowfuse.com/user/template-examples.html)\n\n[Charts](https://dashboard.flowfuse.com/nodes/widgets/ui-chart.html)\n\n## [Issues](https://github.com/FlowFuse/node-red-dashboard/issues)\n\n## [Contributions](https://dashboard.flowfuse.com/contributing/)\n\n## [FlowFuse](https://flowfuse.com/)\n",
+        "className": "",
+        "x": 720,
+        "y": 810,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "19ccec487d960b22",
+        "type": "debug",
+        "z": "46d1b53664c89cde",
+        "name": "debug 180",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 570,
+        "wires": []
     }
 ]
