@@ -204,7 +204,7 @@
         "x": 28,
         "y": 273,
         "w": 1074,
-        "h": 394
+        "h": 374
     },
     {
         "id": "ac3db6b9ccb43199",
@@ -314,10 +314,10 @@
             "fa8d72ad90e71a48",
             "d0932bcd6a5ec1f6"
         ],
-        "x": 48,
+        "x": 38,
         "y": 3073,
-        "w": 854,
-        "h": 444,
+        "w": 864,
+        "h": 474,
         "info": "# Redirection des donnnées\r\n## Message entrant sur le port série\r\n - On vérifie si les données commence par @\r\n - Si non , on rejette le messge.\r\n - Si oui, on extrait le topic pour l'envoyer vers MQTT.\r\n"
     },
     {
@@ -558,7 +558,6 @@
         "nodes": [
             "da939ff73faa3d33",
             "16071ac81dfe26dd",
-            "2f1a1b4973aaf053",
             "edba9caae115a851",
             "51ee3605ff9d80e0",
             "41e9b0574e55c0c8",
@@ -568,10 +567,10 @@
             "187ba9d2889dfd5c",
             "2b905ff025d2f0a9"
         ],
-        "x": 74,
+        "x": 84,
         "y": 3099,
-        "w": 802,
-        "h": 242
+        "w": 792,
+        "h": 252
     },
     {
         "id": "d0932bcd6a5ec1f6",
@@ -591,8 +590,8 @@
             "7a1a4351ec72b9b3",
             "e27a25756c4ae984"
         ],
-        "x": 74,
-        "y": 3369,
+        "x": 64,
+        "y": 3399,
         "w": 752,
         "h": 122
     },
@@ -615,8 +614,8 @@
             "562a0ef8b0073349",
             "b5fb53396f247251"
         ],
-        "x": 74,
-        "y": 559,
+        "x": 64,
+        "y": 539,
         "w": 872,
         "h": 82
     },
@@ -1825,7 +1824,7 @@
         "z": "57111ca025f638be",
         "g": "590af8aa1ccb96c4",
         "name": "debug 31",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2410,8 +2409,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 180,
-        "y": 600,
+        "x": 170,
+        "y": 580,
         "wires": [
             [
                 "bed8c9ea7fe6b13c"
@@ -2430,8 +2429,8 @@
         "city": "Montreal",
         "country": "CA",
         "language": "fr",
-        "x": 330,
-        "y": 600,
+        "x": 320,
+        "y": 580,
         "wires": [
             [
                 "0bd7f81e66d83a2a"
@@ -2451,8 +2450,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
-        "y": 600,
+        "x": 470,
+        "y": 580,
         "wires": [
             [
                 "562a0ef8b0073349"
@@ -2566,8 +2565,8 @@
         "sqlquery": "prepared",
         "sql": "INSERT INTO TEMPERATURE_EXTERNE (\n  temperature,\n  humidity,\n  datetime\n)\nVALUES (\n  $temperature,\n  $humidity,\n  datetime('now', 'localtime')\n);\n",
         "name": "Insert data",
-        "x": 650,
-        "y": 600,
+        "x": 640,
+        "y": 580,
         "wires": [
             [
                 "b5fb53396f247251"
@@ -2588,8 +2587,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 830,
-        "y": 600,
+        "x": 820,
+        "y": 580,
         "wires": []
     },
     {
@@ -2677,8 +2676,8 @@
         "g": "fa8d72ad90e71a48",
         "name": "Serial in",
         "serial": "88425ab7cad6cc83",
-        "x": 160,
-        "y": 3150,
+        "x": 180,
+        "y": 3140,
         "wires": [
             [
                 "edba9caae115a851",
@@ -2701,25 +2700,7 @@
         "correl": "",
         "expiry": "",
         "broker": "c6a29fab98717cbb",
-        "x": 620,
-        "y": 3180,
-        "wires": []
-    },
-    {
-        "id": "2f1a1b4973aaf053",
-        "type": "debug",
-        "z": "57111ca025f638be",
-        "g": "fa8d72ad90e71a48",
-        "name": "debug 113",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 630,
+        "x": 540,
         "y": 3140,
         "wires": []
     },
@@ -2736,11 +2717,10 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
-        "y": 3150,
+        "x": 350,
+        "y": 3140,
         "wires": [
             [
-                "2f1a1b4973aaf053",
                 "16071ac81dfe26dd"
             ]
         ]
@@ -2759,8 +2739,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 180,
-        "y": 3450,
+        "x": 170,
+        "y": 3480,
         "wires": [
             [
                 "7a1a4351ec72b9b3"
@@ -2774,8 +2754,8 @@
         "g": "d0932bcd6a5ec1f6",
         "name": "Serial out",
         "serial": "88425ab7cad6cc83",
-        "x": 720,
-        "y": 3450,
+        "x": 710,
+        "y": 3480,
         "wires": []
     },
     {
@@ -2791,8 +2771,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 3450,
+        "x": 340,
+        "y": 3480,
         "wires": [
             [
                 "4aafe259275fd99f"
@@ -2817,8 +2797,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 520,
-        "y": 3450,
+        "x": 510,
+        "y": 3480,
         "wires": [
             [
                 "d2b39a2251d4d124",
@@ -2832,7 +2812,7 @@
         "z": "57111ca025f638be",
         "g": "d0932bcd6a5ec1f6",
         "name": "debug 33",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2840,8 +2820,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 720,
-        "y": 3410,
+        "x": 710,
+        "y": 3440,
         "wires": []
     },
     {
@@ -2907,7 +2887,7 @@
         "z": "57111ca025f638be",
         "g": "2ff47af73d8a3d20",
         "name": "Device exist",
-        "func": "let devicesMap = global.get('devicesMap')|| [];\nmsg.mac = msg.payload.header.mac;\n\nmsg.device = devicesMap.get(msg.mac);\n\nif(msg.device == null){\n    //Si le device n'est pas dans la liste il faut créer une \n    // nouvelle configuration.\n     return [msg, null];\n}else{\n    return [null, msg];\n}\n\n",
+        "func": "let devicesMap = global.get('devicesMap')|| new Map();\nmsg.mac = msg.payload.header.mac;\n\nmsg.device = devicesMap.get(msg.mac);\n\nif(msg.device == null){\n    //Si le device n'est pas dans la liste il faut créer une \n    // nouvelle configuration.\n     return [msg, null];\n}else{\n    return [null, msg];\n}\n\n",
         "outputs": 2,
         "timeout": "",
         "noerr": 0,
@@ -4910,8 +4890,8 @@
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 460,
-        "y": 3210,
+        "x": 510,
+        "y": 3220,
         "wires": [
             []
         ]
@@ -4922,7 +4902,7 @@
         "z": "57111ca025f638be",
         "g": "fa8d72ad90e71a48",
         "name": "Add Date",
-        "func": "if(msg.payload.trim().length > 0){\n    let date = new Date();\n    let dateString = date.toLocaleDateString('fr-ca', {month: 'numeric', day: 'numeric'});\n    let timeString = date.toTimeString().slice(0, 8);\n\n    msg.payload = \"[\" + timeString + \"]\" \n       + \" \" + msg.payload\n    return msg;\n}",
+        "func": "\n\nif(msg.payload.trim().length > 0){\n\n  if(msg.payload.charAt(0) !=  \"@\"){\n\n    const regex = /\\[ *[0-9]+\\](.*)/;\n    msg.match = regex.exec(msg.payload);\n    msg.payload = msg.match[1]; \n\n\n    let date = new Date();\n    let dateString = date.toLocaleDateString('fr-ca', {month: 'numeric', day: 'numeric'});\n    let timeString = date.toTimeString().slice(0, 8);\n\n    msg.payload = \"[\" + timeString + \"]\" \n          + \" \" + msg.payload + '\\n'\n  }\n\n  return msg;\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4930,7 +4910,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 3210,
+        "y": 3220,
         "wires": [
             [
                 "51ee3605ff9d80e0"
@@ -4946,7 +4926,7 @@
         "files": "/home/pi-md/log/esp32.log",
         "recursive": "",
         "x": 180,
-        "y": 3260,
+        "y": 3270,
         "wires": [
             [
                 "b4133a029132e1bc",
@@ -4968,7 +4948,7 @@
         "oldrc": false,
         "name": "LogRotate",
         "x": 590,
-        "y": 3260,
+        "y": 3270,
         "wires": [
             [
                 "2b905ff025d2f0a9"
@@ -4993,7 +4973,7 @@
         "finalize": "",
         "libs": [],
         "x": 400,
-        "y": 3260,
+        "y": 3270,
         "wires": [
             [
                 "f1f19a0d827e452e"
@@ -5015,7 +4995,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 380,
-        "y": 3300,
+        "y": 3310,
         "wires": []
     },
     {
@@ -5033,7 +5013,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 760,
-        "y": 3260,
+        "y": 3270,
         "wires": []
     },
     {
@@ -5042,7 +5022,7 @@
         "z": "57111ca025f638be",
         "g": "2ff47af73d8a3d20",
         "name": "Send config",
-        "func": "let devicesMap = global.get('devicesMap');\n\n\nif(msg.payload.header.type == \"ASK_CONFIG\"){\n    msg.device = devicesMap.get(msg.mac);\n    \n    let device = {\n    \"header\":{\"mac\":msg.mac,\"type\":\"CONFIG\"},\n    \"device\": msg.device\n    }\n    msg.payload = device;\n\n    return msg; \n}\n",
+        "func": "let devicesMap = global.get('devicesMap'|| new Map());\n\n\nif(msg.payload.header.type == \"ASK_CONFIG\"){\n    msg.device = devicesMap.get(msg.mac);\n    \n    let device = {\n    \"header\":{\"mac\":msg.mac,\"type\":\"CONFIG\"},\n    \"device\": msg.device\n    }\n    msg.payload = device;\n\n    return msg; \n}\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
