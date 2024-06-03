@@ -8,6 +8,14 @@
         "env": []
     },
     {
+        "id": "797d9b2a7151f089",
+        "type": "tab",
+        "label": "I/O to serial",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "f178d5dee9c95e1e",
         "type": "tab",
         "label": "Gestion BD",
@@ -111,29 +119,6 @@
         "h": 262
     },
     {
-        "id": "1be746086bdfe3c5",
-        "type": "group",
-        "z": "57111ca025f638be",
-        "name": "Statut  dashboard",
-        "style": {
-            "stroke": "#001f60",
-            "label": true,
-            "color": "#ff3f3f",
-            "fill": "#ffefbf"
-        },
-        "nodes": [
-            "0920307b07c98b02",
-            "2ff47af73d8a3d20",
-            "5d89e93885229fe1",
-            "8feba00f9cb9532b",
-            "70160f0a7636882f"
-        ],
-        "x": 18,
-        "y": 2073,
-        "w": 1244,
-        "h": 984
-    },
-    {
         "id": "f6ba6aa35208baae",
         "type": "group",
         "z": "57111ca025f638be",
@@ -220,8 +205,8 @@
             "80973421c6f485ce",
             "3302394b3b687c42"
         ],
-        "x": 44,
-        "y": 4059,
+        "x": 34,
+        "y": 3169,
         "w": 422,
         "h": 82
     },
@@ -246,8 +231,8 @@
             "5180a561ec14a9ed",
             "a664ec23f24b83a5"
         ],
-        "x": 54,
-        "y": 3539,
+        "x": 34,
+        "y": 2379,
         "w": 772,
         "h": 282
     },
@@ -267,58 +252,12 @@
             "540255522bc77ebb",
             "c1a2983aa0ad8848",
             "0ac1df192d659735",
-            "6f9680d0ad8fca2f",
             "9ee742908744f209"
         ],
-        "x": 44,
-        "y": 3839,
-        "w": 1122,
+        "x": 34,
+        "y": 2709,
+        "w": 922,
         "h": 202
-    },
-    {
-        "id": "1ac8901d46c5ba2e",
-        "type": "group",
-        "z": "57111ca025f638be",
-        "name": "",
-        "style": {
-            "stroke": "#ff0000",
-            "stroke-opacity": "0.62",
-            "label": true,
-            "fill": "#ffefbf"
-        },
-        "nodes": [
-            "9959f4808132a6cd",
-            "bf4642f50e76fafa",
-            "a96e3e35bf7460c8",
-            "505a3510bfa564d7",
-            "1d2d9ac81f4f1544",
-            "be076470ca66bb51",
-            "82eeb9c38de3cf32"
-        ],
-        "x": 44,
-        "y": 4199,
-        "w": 862,
-        "h": 182
-    },
-    {
-        "id": "73a1234c821730ec",
-        "type": "group",
-        "z": "57111ca025f638be",
-        "name": "Réception/transmission des données via port série/MQTT",
-        "style": {
-            "label": true,
-            "fill": "#c8e7a7",
-            "color": "#001f60"
-        },
-        "nodes": [
-            "fa8d72ad90e71a48",
-            "d0932bcd6a5ec1f6"
-        ],
-        "x": 38,
-        "y": 3073,
-        "w": 864,
-        "h": 474,
-        "info": "# Redirection des donnnées\r\n## Message entrant sur le port série\r\n - On vérifie si les données commence par @\r\n - Si non , on rejette le messge.\r\n - Si oui, on extrait le topic pour l'envoyer vers MQTT.\r\n"
     },
     {
         "id": "37395d53ca3ec675",
@@ -424,10 +363,11 @@
             "88e67d8f05a4d9a5",
             "49a66220910d81ef",
             "4970576a104ab876",
-            "568e97383e4285fa"
+            "568e97383e4285fa",
+            "53915f2f274e75b9"
         ],
         "x": 34,
-        "y": 1889,
+        "y": 1869,
         "w": 932,
         "h": 132
     },
@@ -515,8 +455,8 @@
             "469cc2e3af8f2112",
             "2c32dee76537bd86"
         ],
-        "x": 44,
-        "y": 4399,
+        "x": 34,
+        "y": 2929,
         "w": 942,
         "h": 212
     },
@@ -543,57 +483,6 @@
         "y": 619,
         "w": 792,
         "h": 172
-    },
-    {
-        "id": "fa8d72ad90e71a48",
-        "type": "group",
-        "z": "57111ca025f638be",
-        "g": "73a1234c821730ec",
-        "name": "Transmission du port série vers MQTT",
-        "style": {
-            "label": true,
-            "fill": "#e3f3d3",
-            "color": "#000000"
-        },
-        "nodes": [
-            "da939ff73faa3d33",
-            "16071ac81dfe26dd",
-            "edba9caae115a851",
-            "51ee3605ff9d80e0",
-            "41e9b0574e55c0c8",
-            "855c0e1ea702f2cf",
-            "f1f19a0d827e452e",
-            "b4133a029132e1bc",
-            "187ba9d2889dfd5c",
-            "2b905ff025d2f0a9"
-        ],
-        "x": 84,
-        "y": 3099,
-        "w": 792,
-        "h": 252
-    },
-    {
-        "id": "d0932bcd6a5ec1f6",
-        "type": "group",
-        "z": "57111ca025f638be",
-        "g": "73a1234c821730ec",
-        "name": "Transmission du MQTT vers port série",
-        "style": {
-            "fill": "#e3f3d3",
-            "label": true,
-            "color": "#001f60"
-        },
-        "nodes": [
-            "d2b39a2251d4d124",
-            "848f84e24987bc2f",
-            "4aafe259275fd99f",
-            "7a1a4351ec72b9b3",
-            "e27a25756c4ae984"
-        ],
-        "x": 64,
-        "y": 3399,
-        "w": 752,
-        "h": 122
     },
     {
         "id": "f53bba5e293da6fb",
@@ -648,130 +537,6 @@
         "y": 299,
         "w": 1022,
         "h": 212
-    },
-    {
-        "id": "0920307b07c98b02",
-        "type": "group",
-        "z": "57111ca025f638be",
-        "g": "1be746086bdfe3c5",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "c5916798f69680e3"
-        ],
-        "x": 84,
-        "y": 2949,
-        "w": 212,
-        "h": 82
-    },
-    {
-        "id": "2ff47af73d8a3d20",
-        "type": "group",
-        "z": "57111ca025f638be",
-        "g": "1be746086bdfe3c5",
-        "name": "Sensor messages",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "72f534142f1ef687",
-            "3e8251f62ce3c3c7",
-            "b34c8e94140bbb12",
-            "97c2bcd44f43299c",
-            "bd481b8dd3e88e7d",
-            "1b2d90fb3207c856",
-            "8d1c099b642472fa",
-            "3b7b291f93b5dc9a",
-            "f37c33f5cc57547c",
-            "a147248bb7549068",
-            "ac85b8d4daad3a29",
-            "ee416b1f0f20e4d8",
-            "b46d7561a233fae7",
-            "ba7bd09e9170283f",
-            "ed7c07d39dda883d",
-            "8952a96107cd9181"
-        ],
-        "x": 44,
-        "y": 2649,
-        "w": 1192,
-        "h": 262
-    },
-    {
-        "id": "5d89e93885229fe1",
-        "type": "group",
-        "z": "57111ca025f638be",
-        "g": "1be746086bdfe3c5",
-        "name": "Gateway messages",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "10c91a7058986c2a",
-            "68020bb809a9d64b",
-            "01804589863ba34e",
-            "558eb47c0c8cd19f",
-            "9bb6a0be709aef65",
-            "d23177f02750759c",
-            "0bdbc43f27e4bb08",
-            "a2df31a6143f0148",
-            "60d4bb2262ebf375",
-            "27d79d1a4af37e13",
-            "c1c1ebd04c6e798e",
-            "4805c368e2c34a0c"
-        ],
-        "x": 74,
-        "y": 2409,
-        "w": 1002,
-        "h": 222
-    },
-    {
-        "id": "8feba00f9cb9532b",
-        "type": "group",
-        "z": "57111ca025f638be",
-        "g": "1be746086bdfe3c5",
-        "name": "Statut port série",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "1784ee5849a07738",
-            "44e59e8574df7bf8",
-            "526010976c842e2c",
-            "0cbbba078e7506a7"
-        ],
-        "x": 74,
-        "y": 2269,
-        "w": 622,
-        "h": 122
-    },
-    {
-        "id": "70160f0a7636882f",
-        "type": "group",
-        "z": "57111ca025f638be",
-        "g": "1be746086bdfe3c5",
-        "name": "Statut MQTT ",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "0efe0dc629d83c81",
-            "04129f17346830c7",
-            "375f5d90204152ea",
-            "037ff0d4ccce8f8a",
-            "d95bc61b71d72cb2",
-            "441a41af679a65f8"
-        ],
-        "x": 74,
-        "y": 2099,
-        "w": 802,
-        "h": 142
     },
     {
         "id": "c123dda748f0409f",
@@ -840,6 +605,265 @@
         "y": 1029,
         "w": 1212,
         "h": 342
+    },
+    {
+        "id": "73a1234c821730ec",
+        "type": "group",
+        "z": "797d9b2a7151f089",
+        "name": "Réception/transmission des données via port série/MQTT",
+        "style": {
+            "label": true,
+            "fill": "#c8e7a7",
+            "color": "#001f60"
+        },
+        "nodes": [
+            "fa8d72ad90e71a48",
+            "d0932bcd6a5ec1f6"
+        ],
+        "x": 42,
+        "y": 33,
+        "w": 916,
+        "h": 514,
+        "info": "# Redirection des donnnées\r\n## Message entrant sur le port série\r\n - On vérifie si les données commence par @\r\n - Si non , on rejette le messge.\r\n - Si oui, on extrait le topic pour l'envoyer vers MQTT.\r\n"
+    },
+    {
+        "id": "fa8d72ad90e71a48",
+        "type": "group",
+        "z": "797d9b2a7151f089",
+        "g": "73a1234c821730ec",
+        "name": "Transmission du port série vers MQTT - Logger",
+        "style": {
+            "label": true,
+            "fill": "#e3f3d3",
+            "color": "#000000"
+        },
+        "nodes": [
+            "da939ff73faa3d33",
+            "16071ac81dfe26dd",
+            "edba9caae115a851",
+            "51ee3605ff9d80e0",
+            "41e9b0574e55c0c8",
+            "76b97aaea830e452",
+            "beefa0c6950593db"
+        ],
+        "x": 68,
+        "y": 59,
+        "w": 864,
+        "h": 328
+    },
+    {
+        "id": "d0932bcd6a5ec1f6",
+        "type": "group",
+        "z": "797d9b2a7151f089",
+        "g": "73a1234c821730ec",
+        "name": "Transmission du MQTT vers port série",
+        "style": {
+            "fill": "#e3f3d3",
+            "label": true,
+            "color": "#001f60"
+        },
+        "nodes": [
+            "d2b39a2251d4d124",
+            "848f84e24987bc2f",
+            "4aafe259275fd99f",
+            "7a1a4351ec72b9b3",
+            "e27a25756c4ae984"
+        ],
+        "x": 74,
+        "y": 399,
+        "w": 752,
+        "h": 122
+    },
+    {
+        "id": "e53915e26e2f69d5",
+        "type": "group",
+        "z": "797d9b2a7151f089",
+        "name": "Catch erreurs",
+        "style": {
+            "label": true,
+            "color": "#000000",
+            "fill": "#ffbfbf"
+        },
+        "nodes": [
+            "b07bf152a6d21710",
+            "c2a5a48d61080e22"
+        ],
+        "x": 54,
+        "y": 1389,
+        "w": 422,
+        "h": 82
+    },
+    {
+        "id": "1be746086bdfe3c5",
+        "type": "group",
+        "z": "797d9b2a7151f089",
+        "name": "Statut  dashboard",
+        "style": {
+            "stroke": "#001f60",
+            "label": true,
+            "color": "#ff3f3f",
+            "fill": "#ffefbf"
+        },
+        "nodes": [
+            "5d89e93885229fe1",
+            "8feba00f9cb9532b",
+            "70160f0a7636882f"
+        ],
+        "x": 38,
+        "y": 563,
+        "w": 1054,
+        "h": 794
+    },
+    {
+        "id": "5d89e93885229fe1",
+        "type": "group",
+        "z": "797d9b2a7151f089",
+        "g": "1be746086bdfe3c5",
+        "name": "Gateway messages",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "68020bb809a9d64b",
+            "01804589863ba34e",
+            "558eb47c0c8cd19f",
+            "9bb6a0be709aef65",
+            "d23177f02750759c",
+            "0bdbc43f27e4bb08",
+            "a2df31a6143f0148",
+            "60d4bb2262ebf375",
+            "27d79d1a4af37e13",
+            "c1c1ebd04c6e798e",
+            "4805c368e2c34a0c",
+            "b261acdf1fd36081",
+            "2105846b8c12cb48",
+            "58258ca1cbedc8f2",
+            "8023d15b2d55ccda"
+        ],
+        "x": 64,
+        "y": 1059,
+        "w": 1002,
+        "h": 272
+    },
+    {
+        "id": "8feba00f9cb9532b",
+        "type": "group",
+        "z": "797d9b2a7151f089",
+        "g": "1be746086bdfe3c5",
+        "name": "Statut port série",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1784ee5849a07738",
+            "44e59e8574df7bf8",
+            "526010976c842e2c",
+            "0cbbba078e7506a7"
+        ],
+        "x": 64,
+        "y": 929,
+        "w": 622,
+        "h": 122
+    },
+    {
+        "id": "70160f0a7636882f",
+        "type": "group",
+        "z": "797d9b2a7151f089",
+        "g": "1be746086bdfe3c5",
+        "name": "Statut MQTT ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0efe0dc629d83c81",
+            "375f5d90204152ea",
+            "037ff0d4ccce8f8a",
+            "d95bc61b71d72cb2",
+            "441a41af679a65f8",
+            "0f27b5b866c9b4a4",
+            "5426475307091e39",
+            "e1f758553dcda8db",
+            "2298e5a1f57713dc",
+            "8064670dc96dfa2d",
+            "4e4b504034ad202f"
+        ],
+        "x": 64,
+        "y": 589,
+        "w": 868,
+        "h": 328,
+        "info": "# Description\r\n\r\n## Vérifier statut\r\nSi le statut change un message sera émis.\r\n\r\n## Redémarrer Mosquitto\r\nSi le statut n'est pas Connecté un redémarrage de Mosquitto sera exécuté."
+    },
+    {
+        "id": "2ff47af73d8a3d20",
+        "type": "group",
+        "z": "57111ca025f638be",
+        "name": "Sensor messages",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "72f534142f1ef687",
+            "3e8251f62ce3c3c7",
+            "b34c8e94140bbb12",
+            "97c2bcd44f43299c",
+            "bd481b8dd3e88e7d",
+            "1b2d90fb3207c856",
+            "8d1c099b642472fa",
+            "3b7b291f93b5dc9a",
+            "f37c33f5cc57547c",
+            "a147248bb7549068",
+            "ac85b8d4daad3a29",
+            "ee416b1f0f20e4d8",
+            "b46d7561a233fae7",
+            "ba7bd09e9170283f",
+            "ed7c07d39dda883d",
+            "8952a96107cd9181"
+        ],
+        "x": 34,
+        "y": 2059,
+        "w": 1192,
+        "h": 262
+    },
+    {
+        "id": "beefa0c6950593db",
+        "type": "group",
+        "z": "797d9b2a7151f089",
+        "g": "fa8d72ad90e71a48",
+        "name": "Gestion fichier LOG",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "855c0e1ea702f2cf",
+            "b4133a029132e1bc",
+            "187ba9d2889dfd5c",
+            "f1f19a0d827e452e",
+            "2b905ff025d2f0a9"
+        ],
+        "x": 94,
+        "y": 231.5,
+        "w": 812,
+        "h": 129.5
+    },
+    {
+        "id": "5426475307091e39",
+        "type": "group",
+        "z": "797d9b2a7151f089",
+        "g": "70160f0a7636882f",
+        "name": "Redémarrer Mosquitto",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b06e8d799cfe5b7e",
+            "1e15606728d3ede4",
+            "3f153da6282bee3d",
+            "a19214ca2cfc9795"
+        ],
+        "x": 264,
+        "y": 769,
+        "w": 642,
+        "h": 122
     },
     {
         "id": "6eec73c7bfa2af4a",
@@ -1235,48 +1259,6 @@
         ]
     },
     {
-        "id": "0efe0dc629d83c81",
-        "type": "status",
-        "z": "57111ca025f638be",
-        "g": "70160f0a7636882f",
-        "name": "Status MQTT",
-        "scope": [
-            "68020bb809a9d64b",
-            "1b2663185a65a48f",
-            "56d1fae213c30e8a"
-        ],
-        "x": 170,
-        "y": 2150,
-        "wires": [
-            [
-                "d95bc61b71d72cb2",
-                "375f5d90204152ea"
-            ]
-        ]
-    },
-    {
-        "id": "375f5d90204152ea",
-        "type": "function",
-        "z": "57111ca025f638be",
-        "g": "70160f0a7636882f",
-        "name": "Statut MQTT",
-        "func": "\n//msg.class=\"my-class\"\n\nswitch (msg.status.text) {\n   case \"node-red:common.status.connected\":\n      msg.payload = \"connected\";\n      break;\n   case \"node-red:common.status.connecting\":\n      msg.payload = \"connecting\";\n    //  msg.class=\"my-class\"\n      break;\n   case \"node-red:common.status.disconnected\":\n      msg.payload = \"connecting\";\n      break;\n   default:\n      msg.payload = msg.status.text;\n}\n\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 560,
-        "y": 2150,
-        "wires": [
-            [
-                "037ff0d4ccce8f8a",
-                "441a41af679a65f8"
-            ]
-        ]
-    },
-    {
         "id": "0ca0d73d6c97fd4e",
         "type": "comment",
         "z": "57111ca025f638be",
@@ -1286,104 +1268,6 @@
         "x": 130,
         "y": 60,
         "wires": []
-    },
-    {
-        "id": "68020bb809a9d64b",
-        "type": "mqtt in",
-        "z": "57111ca025f638be",
-        "g": "5d89e93885229fe1",
-        "name": "",
-        "topic": "dom-sys.gw/#",
-        "qos": "0",
-        "datatype": "auto",
-        "broker": "c6a29fab98717cbb",
-        "nl": false,
-        "rap": false,
-        "rh": 0,
-        "inputs": 0,
-        "x": 180,
-        "y": 2500,
-        "wires": [
-            [
-                "558eb47c0c8cd19f",
-                "10c91a7058986c2a"
-            ]
-        ]
-    },
-    {
-        "id": "9bb6a0be709aef65",
-        "type": "trigger",
-        "z": "57111ca025f638be",
-        "g": "5d89e93885229fe1",
-        "name": "ImAlive",
-        "op1": "IM_ALIVE",
-        "op2": "IM_ALIVE_MISSING",
-        "op1type": "str",
-        "op2type": "str",
-        "duration": "6",
-        "extend": true,
-        "overrideDelay": false,
-        "units": "min",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 1,
-        "x": 590,
-        "y": 2500,
-        "wires": [
-            [
-                "d23177f02750759c",
-                "0bdbc43f27e4bb08"
-            ]
-        ]
-    },
-    {
-        "id": "037ff0d4ccce8f8a",
-        "type": "debug",
-        "z": "57111ca025f638be",
-        "g": "70160f0a7636882f",
-        "name": "Status MQTT",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 750,
-        "y": 2180,
-        "wires": [],
-        "info": "# Plus grand"
-    },
-    {
-        "id": "d23177f02750759c",
-        "type": "function",
-        "z": "57111ca025f638be",
-        "g": "5d89e93885229fe1",
-        "name": "Statut server",
-        "func": "switch (msg.payload) {\n    case \"IM_ALIVE_MISSING\":\n        node.status({ fill: \"red\", shape: \"ring\", text: \"IM_ALIVE_MISSING\" });\n\n        msg.payload = \"ImAlive missing\";\n        msg.icon = \"visibility_off\";\n        msg.color = \"red\";\n        \n        msg.params = {\n            $EventType: \"ERROR\",\n            $EventData: msg.payload\n        }\n        return [msg, msg];\n\n    case \"IM_ALIVE_OK\":\n        node.status({ fill: \"green\", shape: \"ring\", text: \"IM_ALIVE_OK\" });\n        msg.payload = \"ImAlive OK\";\n        msg.icon = \"visibility\";\n        msg.color = \"green\";        \n        return [msg, null];\n\n    default:\n        msg.payload = \"Passerelle\";\n        msg.icon = \"visibility_off\";\n        msg.color = \"yellow\";\n}\n",
-        "outputs": 2,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 760,
-        "y": 2500,
-        "wires": [
-            [
-                "4805c368e2c34a0c"
-            ],
-            [
-                "a2df31a6143f0148",
-                "27d79d1a4af37e13"
-            ]
-        ],
-        "outputLabels": [
-            "IM_ALIVE_OK",
-            "IM_ALIVE_ERROR"
-        ]
     },
     {
         "id": "1559f9fd4805b155",
@@ -1531,8 +1415,8 @@
         "name": "",
         "scope": null,
         "uncaught": false,
-        "x": 130,
-        "y": 4100,
+        "x": 120,
+        "y": 3210,
         "wires": [
             [
                 "3302394b3b687c42"
@@ -1553,8 +1437,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 370,
-        "y": 4100,
+        "x": 360,
+        "y": 3210,
         "wires": []
     },
     {
@@ -1583,8 +1467,8 @@
         "g": "36653046b6da3c92",
         "name": "À la réception de données --> rafraîchir la colonne ACTIF de UI-table device",
         "info": "",
-        "x": 510,
-        "y": 3580,
+        "x": 490,
+        "y": 2420,
         "wires": []
     },
     {
@@ -1597,8 +1481,8 @@
             "ae66752cc2cb3d48",
             "92d3ed46ab95f44f"
         ],
-        "x": 95,
-        "y": 3640,
+        "x": 75,
+        "y": 2480,
         "wires": [
             [
                 "bdb9a365e5db2244"
@@ -1620,8 +1504,8 @@
             "6d3dfd710f793bfa",
             "f736f7a43d075aec"
         ],
-        "x": 785,
-        "y": 3640,
+        "x": 765,
+        "y": 2480,
         "wires": []
     },
     {
@@ -1637,8 +1521,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
-        "y": 3620,
+        "x": 460,
+        "y": 2460,
         "wires": [
             [
                 "bc77bc47e5d767ee"
@@ -1774,8 +1658,8 @@
         "checkall": "false",
         "repair": true,
         "outputs": 3,
-        "x": 210,
-        "y": 3640,
+        "x": 190,
+        "y": 2480,
         "wires": [
             [
                 "b0c9163b98018ad6"
@@ -1799,8 +1683,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
-        "y": 3680,
+        "x": 470,
+        "y": 2520,
         "wires": [
             [
                 "bc77bc47e5d767ee"
@@ -1850,8 +1734,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 160,
-        "y": 3940,
+        "x": 150,
+        "y": 2810,
         "wires": [
             [
                 "ed0e40f994ac39b6"
@@ -1871,8 +1755,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
-        "y": 3940,
+        "x": 420,
+        "y": 2810,
         "wires": [
             [
                 "540255522bc77ebb"
@@ -1897,8 +1781,8 @@
         "topic": "",
         "payload": "GET_DEVICES_CONFIG",
         "payloadType": "str",
-        "x": 240,
-        "y": 4000,
+        "x": 210,
+        "y": 2870,
         "wires": [
             [
                 "ed0e40f994ac39b6"
@@ -1914,8 +1798,8 @@
         "property": "payload",
         "action": "str",
         "pretty": false,
-        "x": 760,
-        "y": 3940,
+        "x": 580,
+        "y": 2810,
         "wires": [
             [
                 "c1a2983aa0ad8848",
@@ -1938,8 +1822,8 @@
         "correl": "",
         "expiry": "60",
         "broker": "c6a29fab98717cbb",
-        "x": 1010,
-        "y": 3940,
+        "x": 800,
+        "y": 2810,
         "wires": []
     },
     {
@@ -1949,137 +1833,9 @@
         "g": "adca6ef2dfcba80e",
         "name": "Réception des requêtes de la passerelle",
         "info": "",
-        "x": 230,
-        "y": 3880,
+        "x": 220,
+        "y": 2750,
         "wires": []
-    },
-    {
-        "id": "9959f4808132a6cd",
-        "type": "mqtt out",
-        "z": "57111ca025f638be",
-        "g": "1ac8901d46c5ba2e",
-        "name": "",
-        "topic": "request/get_config",
-        "qos": "2",
-        "retain": "false",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "c6a29fab98717cbb",
-        "x": 790,
-        "y": 4280,
-        "wires": []
-    },
-    {
-        "id": "bf4642f50e76fafa",
-        "type": "inject",
-        "z": "57111ca025f638be",
-        "g": "1ac8901d46c5ba2e",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 160,
-        "y": 4280,
-        "wires": [
-            [
-                "1d2d9ac81f4f1544"
-            ]
-        ]
-    },
-    {
-        "id": "a96e3e35bf7460c8",
-        "type": "json",
-        "z": "57111ca025f638be",
-        "g": "1ac8901d46c5ba2e",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 550,
-        "y": 4280,
-        "wires": [
-            [
-                "505a3510bfa564d7",
-                "9959f4808132a6cd"
-            ]
-        ]
-    },
-    {
-        "id": "505a3510bfa564d7",
-        "type": "debug",
-        "z": "57111ca025f638be",
-        "g": "1ac8901d46c5ba2e",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 670,
-        "y": 4340,
-        "wires": []
-    },
-    {
-        "id": "1d2d9ac81f4f1544",
-        "type": "function",
-        "z": "57111ca025f638be",
-        "g": "1ac8901d46c5ba2e",
-        "name": "Rafarichir config",
-        "func": "msg.payload = {id:{}, request:{}};\n \nmsg.payload.id.mac = \"*\";\n// Demande de transmission des configurations.\nmsg.payload.request = \"SendConfig\";\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 360,
-        "y": 4280,
-        "wires": [
-            [
-                "a96e3e35bf7460c8"
-            ]
-        ]
-    },
-    {
-        "id": "be076470ca66bb51",
-        "type": "comment",
-        "z": "57111ca025f638be",
-        "g": "1ac8901d46c5ba2e",
-        "name": "À revoir - Requête au capteurs",
-        "info": "",
-        "x": 210,
-        "y": 4240,
-        "wires": []
-    },
-    {
-        "id": "82eeb9c38de3cf32",
-        "type": "comment",
-        "z": "57111ca025f638be",
-        "g": "1ac8901d46c5ba2e",
-        "name": "Non fonctionnel",
-        "info": "",
-        "x": 500,
-        "y": 4240,
-        "wires": [],
-        "icon": "font-awesome/fa-arrows-alt"
     },
     {
         "id": "b1961cc8c9a46d65",
@@ -2088,8 +1844,8 @@
         "g": "36653046b6da3c92",
         "name": "En absence de données --> rafraîchir la colonne ACTIF de UI-table device",
         "info": "",
-        "x": 400,
-        "y": 3740,
+        "x": 380,
+        "y": 2580,
         "wires": []
     },
     {
@@ -2115,8 +1871,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 210,
-        "y": 3780,
+        "x": 190,
+        "y": 2620,
         "wires": [
             [
                 "5180a561ec14a9ed"
@@ -2136,8 +1892,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
-        "y": 3780,
+        "x": 410,
+        "y": 2620,
         "wires": [
             [
                 "a664ec23f24b83a5"
@@ -2154,35 +1910,9 @@
         "links": [
             "e8cb5a4a786e5193"
         ],
-        "x": 615,
-        "y": 3780,
+        "x": 595,
+        "y": 2620,
         "wires": []
-    },
-    {
-        "id": "04129f17346830c7",
-        "type": "trigger",
-        "z": "57111ca025f638be",
-        "g": "70160f0a7636882f",
-        "name": "",
-        "op1": "1",
-        "op2": "0",
-        "op1type": "str",
-        "op2type": "str",
-        "duration": "20",
-        "extend": true,
-        "overrideDelay": false,
-        "units": "s",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 1,
-        "x": 370,
-        "y": 2150,
-        "wires": [
-            [
-                "375f5d90204152ea"
-            ]
-        ]
     },
     {
         "id": "c577d0a5c186b549",
@@ -2459,104 +2189,6 @@
         ]
     },
     {
-        "id": "558eb47c0c8cd19f",
-        "type": "function",
-        "z": "57111ca025f638be",
-        "g": "5d89e93885229fe1",
-        "name": "Dispatcher",
-        "func": "//node.warn(msg);\n\nswitch (msg.topic) {\n    case \"dom-sys.gw/status\":\n        switch (msg.payload) {\n            case \"IM_ALIVE\":\n                //on ne log pas ce message\n                return [msg, null, null];\n                break;\n            case \"GATEWAY_START\":\n            case \"GATEWAY_RESTART\":\n                msg.params = {\n                    $EventType: msg.payload,\n                    $EventData: \"\"\n                }\n                return [msg, msg, null];\n                break;\n            default:\n                msgInconnu();\n        }\n        break;\n    case \"dom-sys.gw/request\":\n        break;\n    default:\n        msgInconnu();\n}\n\nfunction msgInconnu() {\n    msg.topic = \"Passerelle\"\n    msg.payload = \"Message statut inconnu: \" + msg.payload;\n    return [null, null, msg];\n}\n",
-        "outputs": 3,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
-        "y": 2540,
-        "wires": [
-            [
-                "9bb6a0be709aef65"
-            ],
-            [
-                "27d79d1a4af37e13"
-            ],
-            [
-                "c1c1ebd04c6e798e"
-            ]
-        ],
-        "outputLabels": [
-            "IM_ALIVE",
-            "TO LOG",
-            "INCONNU"
-        ]
-    },
-    {
-        "id": "01804589863ba34e",
-        "type": "inject",
-        "z": "57111ca025f638be",
-        "g": "5d89e93885229fe1",
-        "name": "Test",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{\"status\":\"ESPNOW_DATA\", \"type\":\"START_SIGNAL\",\"mac\":\"C8:C9:A3:C8:35:9C\"}",
-        "payloadType": "str",
-        "x": 170,
-        "y": 2570,
-        "wires": [
-            [
-                "558eb47c0c8cd19f"
-            ]
-        ]
-    },
-    {
-        "id": "a2df31a6143f0148",
-        "type": "debug",
-        "z": "57111ca025f638be",
-        "g": "5d89e93885229fe1",
-        "name": "debug 102",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 960,
-        "y": 2500,
-        "wires": []
-    },
-    {
-        "id": "0bdbc43f27e4bb08",
-        "type": "debug",
-        "z": "57111ca025f638be",
-        "g": "5d89e93885229fe1",
-        "name": "debug 103",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 760,
-        "y": 2460,
-        "wires": []
-    },
-    {
         "id": "562a0ef8b0073349",
         "type": "sqlite",
         "z": "57111ca025f638be",
@@ -2592,239 +2224,6 @@
         "wires": []
     },
     {
-        "id": "b34c8e94140bbb12",
-        "type": "debug",
-        "z": "57111ca025f638be",
-        "g": "2ff47af73d8a3d20",
-        "name": "debug 109",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 720,
-        "y": 2870,
-        "wires": []
-    },
-    {
-        "id": "72f534142f1ef687",
-        "type": "mqtt in",
-        "z": "57111ca025f638be",
-        "g": "2ff47af73d8a3d20",
-        "name": "",
-        "topic": "dom-sys.sensor/#",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "c6a29fab98717cbb",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 160,
-        "y": 2780,
-        "wires": [
-            [
-                "bd481b8dd3e88e7d",
-                "ac85b8d4daad3a29"
-            ]
-        ]
-    },
-    {
-        "id": "97c2bcd44f43299c",
-        "type": "sqlite",
-        "z": "57111ca025f638be",
-        "g": "2ff47af73d8a3d20",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "prepared",
-        "sql": "INSERT INTO SYSTEM_LOG (\n    id_device,\n    id_event_type,\n    log,\n    topic,\n    counter,\n    version,\n    datetime\n)\nVALUES (\n  ( SELECT id_device \n    FROM DEVICE \n    WHERE DEVICE.mac LIKE $mac ),\n  ( SELECT id_event_type\n    FROM EVENT_TYPE\n    WHERE event_type LIKE $event_type),\n  $log,\n  $topic,\n  $counter,\n  $version,\n  datetime('now', 'localtime')\n);\n",
-        "name": "SystemLog",
-        "x": 710,
-        "y": 2830,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3e8251f62ce3c3c7",
-        "type": "function",
-        "z": "57111ca025f638be",
-        "g": "2ff47af73d8a3d20",
-        "name": "GatewayLog",
-        "func": "\nlet message = JSON.stringify(msg.payload);\n\nswitch (msg.topic) {\n    case \"dom-sys.sensor/status\":\n        msg.params = {\n            $mac: msg.mac,\n            $log: message,\n            $topic: msg.topic,\n            $event_type: msg.payload.header.type,\n            $counter: msg.payload.header.counter,\n            $version: msg.payload.header.version\n        }\n        return msg;\n\n    default:\n        \n}\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 530,
-        "y": 2830,
-        "wires": [
-            [
-                "97c2bcd44f43299c",
-                "b34c8e94140bbb12"
-            ]
-        ]
-    },
-    {
-        "id": "da939ff73faa3d33",
-        "type": "serial in",
-        "z": "57111ca025f638be",
-        "g": "fa8d72ad90e71a48",
-        "name": "Serial in",
-        "serial": "88425ab7cad6cc83",
-        "x": 180,
-        "y": 3140,
-        "wires": [
-            [
-                "edba9caae115a851",
-                "41e9b0574e55c0c8"
-            ]
-        ]
-    },
-    {
-        "id": "16071ac81dfe26dd",
-        "type": "mqtt out",
-        "z": "57111ca025f638be",
-        "g": "fa8d72ad90e71a48",
-        "name": "",
-        "topic": "",
-        "qos": "0",
-        "retain": "false",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "c6a29fab98717cbb",
-        "x": 540,
-        "y": 3140,
-        "wires": []
-    },
-    {
-        "id": "edba9caae115a851",
-        "type": "function",
-        "z": "57111ca025f638be",
-        "g": "fa8d72ad90e71a48",
-        "name": "To MQTT",
-        "func": "\nlet message = \"\";\nmessage = msg.payload;\n\n// Si les conditions ne sont pas valides le message est rejeté.\nif(message.length > 0){\n    if (message.startsWith(\"@\")){\n        let index = message.indexOf(\":\");\n        \n        if(index >= 0){\n            msg.topic = message.substring(1, index);\n            msg.payload = message.substring(index+1).trimEnd();\n            return msg;\n        }\n    }\n\n}\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 350,
-        "y": 3140,
-        "wires": [
-            [
-                "16071ac81dfe26dd"
-            ]
-        ]
-    },
-    {
-        "id": "e27a25756c4ae984",
-        "type": "mqtt in",
-        "z": "57111ca025f638be",
-        "g": "d0932bcd6a5ec1f6",
-        "name": "",
-        "topic": "dom-sys.server/#",
-        "qos": "1",
-        "datatype": "utf8",
-        "broker": "c6a29fab98717cbb",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 170,
-        "y": 3480,
-        "wires": [
-            [
-                "7a1a4351ec72b9b3"
-            ]
-        ]
-    },
-    {
-        "id": "d2b39a2251d4d124",
-        "type": "serial out",
-        "z": "57111ca025f638be",
-        "g": "d0932bcd6a5ec1f6",
-        "name": "Serial out",
-        "serial": "88425ab7cad6cc83",
-        "x": 710,
-        "y": 3480,
-        "wires": []
-    },
-    {
-        "id": "7a1a4351ec72b9b3",
-        "type": "function",
-        "z": "57111ca025f638be",
-        "g": "d0932bcd6a5ec1f6",
-        "name": "To serial port",
-        "func": "\n\nmsg.payload = \"@\" + msg.topic + \"::\" + msg.payload;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 340,
-        "y": 3480,
-        "wires": [
-            [
-                "4aafe259275fd99f"
-            ]
-        ]
-    },
-    {
-        "id": "4aafe259275fd99f",
-        "type": "delay",
-        "z": "57111ca025f638be",
-        "g": "d0932bcd6a5ec1f6",
-        "name": "",
-        "pauseType": "rate",
-        "timeout": "2",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": ".5",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 510,
-        "y": 3480,
-        "wires": [
-            [
-                "d2b39a2251d4d124",
-                "848f84e24987bc2f"
-            ]
-        ]
-    },
-    {
-        "id": "848f84e24987bc2f",
-        "type": "debug",
-        "z": "57111ca025f638be",
-        "g": "d0932bcd6a5ec1f6",
-        "name": "debug 33",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 710,
-        "y": 3440,
-        "wires": []
-    },
-    {
         "id": "5e2d481f338e5d45",
         "type": "link in",
         "z": "57111ca025f638be",
@@ -2841,220 +2240,6 @@
                 "5185ef5d8d8f239a",
                 "892a6d47089017b7"
             ]
-        ]
-    },
-    {
-        "id": "10c91a7058986c2a",
-        "type": "debug",
-        "z": "57111ca025f638be",
-        "g": "5d89e93885229fe1",
-        "name": "debug 117",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 400,
-        "y": 2480,
-        "wires": []
-    },
-    {
-        "id": "c5916798f69680e3",
-        "type": "mqtt in",
-        "z": "57111ca025f638be",
-        "g": "0920307b07c98b02",
-        "name": "",
-        "topic": "dom-sys.server/#",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "c6a29fab98717cbb",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 190,
-        "y": 2990,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bd481b8dd3e88e7d",
-        "type": "function",
-        "z": "57111ca025f638be",
-        "g": "2ff47af73d8a3d20",
-        "name": "Device exist",
-        "func": "let devicesMap = global.get('devicesMap')|| new Map();\nmsg.mac = msg.payload.header.mac;\n\nmsg.device = devicesMap.get(msg.mac);\n\nif(msg.device == null){\n    //Si le device n'est pas dans la liste il faut créer une \n    // nouvelle configuration.\n     return [msg, null];\n}else{\n    return [null, msg];\n}\n\n",
-        "outputs": 2,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 370,
-        "y": 2780,
-        "wires": [
-            [
-                "1b2d90fb3207c856",
-                "b46d7561a233fae7"
-            ],
-            [
-                "3e8251f62ce3c3c7",
-                "ee416b1f0f20e4d8"
-            ]
-        ],
-        "outputLabels": [
-            "Nouveau device",
-            "Device Existe"
-        ]
-    },
-    {
-        "id": "1b2d90fb3207c856",
-        "type": "function",
-        "z": "57111ca025f638be",
-        "g": "2ff47af73d8a3d20",
-        "name": "Params device",
-        "func": "\n//Set params pour insertion dans la table DEVICE.\nmsg.params = { $mac:msg.mac};\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 600,
-        "y": 2690,
-        "wires": [
-            [
-                "8d1c099b642472fa"
-            ]
-        ]
-    },
-    {
-        "id": "8d1c099b642472fa",
-        "type": "sqlite",
-        "z": "57111ca025f638be",
-        "g": "2ff47af73d8a3d20",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "prepared",
-        "sql": "INSERT INTO DEVICE (\n   mac,\n   location,\n   sleep_duration,\n   im_alive_period,\n   datetime\n)\nVALUES (\n   $mac,\n   \"ND\",\n   0,\n   3600,\n   datetime('now', 'localtime') \n);\n",
-        "name": "Insert DEVICE",
-        "x": 790,
-        "y": 2690,
-        "wires": [
-            [
-                "3b7b291f93b5dc9a",
-                "a147248bb7549068"
-            ]
-        ]
-    },
-    {
-        "id": "3b7b291f93b5dc9a",
-        "type": "debug",
-        "z": "57111ca025f638be",
-        "g": "2ff47af73d8a3d20",
-        "name": "debug 118",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1020,
-        "y": 2730,
-        "wires": []
-    },
-    {
-        "id": "f37c33f5cc57547c",
-        "type": "inject",
-        "z": "57111ca025f638be",
-        "g": "2ff47af73d8a3d20",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "dom-sys.sensor/status",
-        "payload": "{\"header\":{\"mac\":\"01:02:03:04:05:06\",\"type\":\"START_SIGNAL\",\"version\":1,\"counter\":5,\"error\":\"\"},\"data\":{\"cycle_duration\":0}}",
-        "payloadType": "json",
-        "x": 170,
-        "y": 2840,
-        "wires": [
-            [
-                "bd481b8dd3e88e7d"
-            ]
-        ]
-    },
-    {
-        "id": "a147248bb7549068",
-        "type": "link out",
-        "z": "57111ca025f638be",
-        "g": "2ff47af73d8a3d20",
-        "name": "New device",
-        "mode": "link",
-        "links": [
-            "5e2d481f338e5d45"
-        ],
-        "x": 975,
-        "y": 2690,
-        "wires": []
-    },
-    {
-        "id": "ac85b8d4daad3a29",
-        "type": "debug",
-        "z": "57111ca025f638be",
-        "g": "2ff47af73d8a3d20",
-        "name": "debug 119",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 360,
-        "y": 2720,
-        "wires": []
-    },
-    {
-        "id": "60d4bb2262ebf375",
-        "type": "comment",
-        "z": "57111ca025f638be",
-        "g": "5d89e93885229fe1",
-        "name": "À revoir - Structurer le message du Gateway",
-        "info": "",
-        "x": 320,
-        "y": 2460,
-        "wires": []
-    },
-    {
-        "id": "27d79d1a4af37e13",
-        "type": "sqlite",
-        "z": "57111ca025f638be",
-        "d": true,
-        "g": "5d89e93885229fe1",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "prepared",
-        "sql": "INSERT INTO SYSTEM_LOG (\n    id_device,\n    id_event_type,\n    log,\n    topic,\n    counter,\n    version,\n    datetime\n)\nVALUES (\n  $id_device,\n  $log,\n  $topic,\n  $counter,\n  $version,\n  datetime('now', 'localtime')\n);\n",
-        "name": "SystemLog",
-        "x": 940,
-        "y": 2540,
-        "wires": [
-            []
         ]
     },
     {
@@ -3718,10 +2903,10 @@
         "g": "b3735df348adb38e",
         "mydb": "628739f370d1726d",
         "sqlquery": "fixed",
-        "sql": "SELECT id_sensor, mac, counter,  max(datetime ) as datetime\nFROM DATA_VIEW\nwhere  datetime > datetime('now', 'localtime', '-24 hours')\ngroup by id_sensor\norder by id_sensor, datetime ;",
+        "sql": "SELECT id_sensor, mac, counter,  max(datetime ) as datetime\nFROM DATA_VIEW\nwhere  datetime > datetime('now', 'localtime', '-48 hours')\ngroup by id_sensor\norder by id_sensor, datetime ;",
         "name": "Most recent data temperature",
         "x": 350,
-        "y": 1930,
+        "y": 1910,
         "wires": [
             [
                 "49a66220910d81ef",
@@ -3744,7 +2929,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 830,
-        "y": 1970,
+        "y": 1950,
         "wires": []
     },
     {
@@ -3770,7 +2955,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 130,
-        "y": 1930,
+        "y": 1910,
         "wires": [
             [
                 "8f34a61029fac0cb"
@@ -3791,7 +2976,7 @@
         "finalize": "",
         "libs": [],
         "x": 610,
-        "y": 1930,
+        "y": 1910,
         "wires": [
             [
                 "577fd00e89cbfbe3",
@@ -3817,7 +3002,7 @@
         "className": "",
         "name": "Erreur de réception",
         "x": 850,
-        "y": 1930,
+        "y": 1910,
         "wires": []
     },
     {
@@ -3961,27 +3146,6 @@
         ]
     },
     {
-        "id": "c1c1ebd04c6e798e",
-        "type": "ui-notification",
-        "z": "57111ca025f638be",
-        "g": "5d89e93885229fe1",
-        "ui": "d4c9d9e9b37824ea",
-        "position": "top right",
-        "colorDefault": true,
-        "color": "#000000",
-        "displayTime": "0",
-        "showCountdown": true,
-        "outputs": 0,
-        "allowDismiss": true,
-        "dismissText": "Close",
-        "raw": false,
-        "className": "",
-        "name": "",
-        "x": 620,
-        "y": 2590,
-        "wires": []
-    },
-    {
         "id": "568e97383e4285fa",
         "type": "debug",
         "z": "57111ca025f638be",
@@ -3996,27 +3160,8 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 570,
-        "y": 1980,
+        "y": 1960,
         "wires": []
-    },
-    {
-        "id": "d95bc61b71d72cb2",
-        "type": "debug",
-        "z": "57111ca025f638be",
-        "g": "70160f0a7636882f",
-        "name": "Status MQTT 1",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 350,
-        "y": 2200,
-        "wires": [],
-        "info": "# Plus grand"
     },
     {
         "id": "933c6183c294acd4",
@@ -4050,171 +3195,6 @@
                 "75fb2eb7f4ea83be"
             ]
         ]
-    },
-    {
-        "id": "441a41af679a65f8",
-        "type": "ui-led",
-        "z": "57111ca025f638be",
-        "g": "70160f0a7636882f",
-        "name": "",
-        "group": "fd9c7176b0a431e9",
-        "order": 2,
-        "width": "0",
-        "height": "0",
-        "label": "MQTT",
-        "labelPlacement": "left",
-        "labelAlignment": "flex-start",
-        "states": [
-            {
-                "value": "disconnected",
-                "valueType": "str",
-                "color": "#ff0000"
-            },
-            {
-                "value": "connected",
-                "valueType": "str",
-                "color": "#00ff00"
-            },
-            {
-                "value": "connecting",
-                "valueType": "str",
-                "color": "#ffffa4"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "square",
-        "showBorder": true,
-        "showGlow": true,
-        "x": 760,
-        "y": 2140,
-        "wires": []
-    },
-    {
-        "id": "4805c368e2c34a0c",
-        "type": "ui-led",
-        "z": "57111ca025f638be",
-        "g": "5d89e93885229fe1",
-        "name": "",
-        "group": "fd9c7176b0a431e9",
-        "order": 2,
-        "width": "0",
-        "height": "0",
-        "label": "GW - I'm alive",
-        "labelPlacement": "left",
-        "labelAlignment": "flex-start",
-        "states": [
-            {
-                "value": "ImAlive missing",
-                "valueType": "str",
-                "color": "#ff0000"
-            },
-            {
-                "value": "ImAlive OK",
-                "valueType": "str",
-                "color": "#00ff00"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "square",
-        "showBorder": true,
-        "showGlow": true,
-        "x": 950,
-        "y": 2450,
-        "wires": []
-    },
-    {
-        "id": "1784ee5849a07738",
-        "type": "status",
-        "z": "57111ca025f638be",
-        "g": "8feba00f9cb9532b",
-        "name": "Status Serial port",
-        "scope": [
-            "56d1fae213c30e8a",
-            "da939ff73faa3d33",
-            "d2b39a2251d4d124",
-            "7a1a4351ec72b9b3",
-            "5fc3dcdaa67d4078"
-        ],
-        "x": 180,
-        "y": 2310,
-        "wires": [
-            [
-                "526010976c842e2c"
-            ]
-        ]
-    },
-    {
-        "id": "44e59e8574df7bf8",
-        "type": "ui-led",
-        "z": "57111ca025f638be",
-        "g": "8feba00f9cb9532b",
-        "name": "",
-        "group": "fd9c7176b0a431e9",
-        "order": 2,
-        "width": "0",
-        "height": "0",
-        "label": "Port série",
-        "labelPlacement": "left",
-        "labelAlignment": "flex-start",
-        "states": [
-            {
-                "value": "stopped",
-                "valueType": "str",
-                "color": "#ff0000"
-            },
-            {
-                "value": "connected",
-                "valueType": "str",
-                "color": "#00ff00"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "square",
-        "showBorder": true,
-        "showGlow": true,
-        "x": 560,
-        "y": 2310,
-        "wires": []
-    },
-    {
-        "id": "526010976c842e2c",
-        "type": "function",
-        "z": "57111ca025f638be",
-        "g": "8feba00f9cb9532b",
-        "name": "Statut port série",
-        "func": "\n//msg.class=\"my-class\"\n\nswitch (msg.status.text) {\n   case \"node-red:common.status.connected\":\n      msg.payload = \"connected\";\n      return msg;\n   case \"node-red:common.status.connecting\":\n      msg.payload = \"connecting\";\n      return msg;\n   case \"node-red:common.status.not-connected\":\n      msg.payload = \"stopped\";\n    //  msg.class=\"my-class\"\n      return msg;\n  \n   default:\n      //msg.payload = msg.status.text;\n}\n\n\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 380,
-        "y": 2310,
-        "wires": [
-            [
-                "44e59e8574df7bf8",
-                "0cbbba078e7506a7"
-            ]
-        ]
-    },
-    {
-        "id": "0cbbba078e7506a7",
-        "type": "debug",
-        "z": "57111ca025f638be",
-        "g": "8feba00f9cb9532b",
-        "name": "debug 164",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 580,
-        "y": 2350,
-        "wires": []
     },
     {
         "id": "8e085f8f049550ac",
@@ -4609,30 +3589,6 @@
         ]
     },
     {
-        "id": "6f9680d0ad8fca2f",
-        "type": "delay",
-        "z": "57111ca025f638be",
-        "g": "adca6ef2dfcba80e",
-        "name": "",
-        "pauseType": "rate",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": ".5",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 580,
-        "y": 3900,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "3fbc87fd28231303",
         "type": "debug",
         "z": "57111ca025f638be",
@@ -4646,8 +3602,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 710,
-        "y": 4550,
+        "x": 700,
+        "y": 3080,
         "wires": []
     },
     {
@@ -4657,8 +3613,8 @@
         "g": "99b0856dd2e01ab4",
         "name": "Serial out",
         "serial": "88425ab7cad6cc83",
-        "x": 900,
-        "y": 4510,
+        "x": 890,
+        "y": 3040,
         "wires": []
     },
     {
@@ -4679,8 +3635,8 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "",
-        "x": 720,
-        "y": 4440,
+        "x": 710,
+        "y": 2970,
         "wires": []
     },
     {
@@ -4705,8 +3661,8 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 400,
-        "y": 4440,
+        "x": 390,
+        "y": 2970,
         "wires": [
             [
                 "ed85ba973cfbc3c1"
@@ -4726,8 +3682,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 560,
-        "y": 4440,
+        "x": 550,
+        "y": 2970,
         "wires": [
             [
                 "95339f57b2961011"
@@ -4747,8 +3703,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 710,
-        "y": 4510,
+        "x": 700,
+        "y": 3040,
         "wires": [
             [
                 "0c97012507b7fb6d"
@@ -4774,8 +3730,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 330,
-        "y": 4510,
+        "x": 320,
+        "y": 3040,
         "wires": [
             [
                 "2c32dee76537bd86",
@@ -4797,8 +3753,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 940,
-        "y": 4000,
+        "x": 720,
+        "y": 2860,
         "wires": []
     },
     {
@@ -4820,8 +3776,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 510,
-        "y": 4510,
+        "x": 500,
+        "y": 3040,
         "wires": [
             [
                 "2b47b1be61752b81",
@@ -4851,8 +3807,8 @@
         "topic": "",
         "payload": "GatewayConfig",
         "payloadType": "global",
-        "x": 150,
-        "y": 4510,
+        "x": 140,
+        "y": 3040,
         "wires": [
             [
                 "65ebe7cecc4ac2d8",
@@ -4874,118 +3830,192 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 490,
-        "y": 4570,
+        "x": 480,
+        "y": 3100,
         "wires": []
     },
     {
-        "id": "51ee3605ff9d80e0",
-        "type": "file",
+        "id": "6c48e35750a5c6be",
+        "type": "link in",
         "z": "57111ca025f638be",
-        "g": "fa8d72ad90e71a48",
-        "name": "Log ESP",
-        "filename": "/home/pi-md/log/esp32.log",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 510,
-        "y": 3220,
+        "g": "4ac0d347446e702f",
+        "name": "link in 1",
+        "links": [
+            "e4aecc6f336ce4bc"
+        ],
+        "x": 475,
+        "y": 1780,
         "wires": [
-            []
+            [
+                "0a4b76749339d8cd",
+                "44c0d2d81fe59de0"
+            ]
         ]
     },
     {
-        "id": "41e9b0574e55c0c8",
+        "id": "53915f2f274e75b9",
+        "type": "comment",
+        "z": "57111ca025f638be",
+        "g": "b3735df348adb38e",
+        "name": "À développer",
+        "info": "À développer",
+        "x": 140,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "72f534142f1ef687",
+        "type": "mqtt in",
+        "z": "57111ca025f638be",
+        "g": "2ff47af73d8a3d20",
+        "name": "",
+        "topic": "dom-sys.sensor/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c6a29fab98717cbb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 2190,
+        "wires": [
+            [
+                "bd481b8dd3e88e7d",
+                "ac85b8d4daad3a29"
+            ]
+        ]
+    },
+    {
+        "id": "3e8251f62ce3c3c7",
         "type": "function",
         "z": "57111ca025f638be",
-        "g": "fa8d72ad90e71a48",
-        "name": "Add Date",
-        "func": "\n\nif(msg.payload.trim().length > 0){\n\n  if(msg.payload.charAt(0) !=  \"@\"){\n\n    const regex = /\\[ *[0-9]+\\](.*)/;\n    msg.match = regex.exec(msg.payload);\n    msg.payload = msg.match[1]; \n\n\n    let date = new Date();\n    let dateString = date.toLocaleDateString('fr-ca', {month: 'numeric', day: 'numeric'});\n    let timeString = date.toTimeString().slice(0, 8);\n\n    msg.payload = \"[\" + timeString + \"]\" \n          + \" \" + msg.payload + '\\n'\n  }\n\n  return msg;\n}",
+        "g": "2ff47af73d8a3d20",
+        "name": "GatewayLog",
+        "func": "\nlet message = JSON.stringify(msg.payload);\n\nswitch (msg.topic) {\n    case \"dom-sys.sensor/status\":\n        msg.params = {\n            $mac: msg.mac,\n            $log: message,\n            $topic: msg.topic,\n            $event_type: msg.payload.header.type,\n            $counter: msg.payload.header.counter,\n            $version: msg.payload.header.version\n        }\n        return msg;\n\n    default:\n        \n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 3220,
+        "x": 520,
+        "y": 2240,
         "wires": [
             [
-                "51ee3605ff9d80e0"
+                "97c2bcd44f43299c",
+                "b34c8e94140bbb12"
             ]
         ]
     },
     {
-        "id": "855c0e1ea702f2cf",
-        "type": "watch",
+        "id": "b34c8e94140bbb12",
+        "type": "debug",
         "z": "57111ca025f638be",
-        "g": "fa8d72ad90e71a48",
-        "name": "Surveiller log",
-        "files": "/home/pi-md/log/esp32.log",
-        "recursive": "",
-        "x": 180,
-        "y": 3270,
+        "g": "2ff47af73d8a3d20",
+        "name": "debug 109",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 2280,
+        "wires": []
+    },
+    {
+        "id": "97c2bcd44f43299c",
+        "type": "sqlite",
+        "z": "57111ca025f638be",
+        "g": "2ff47af73d8a3d20",
+        "mydb": "628739f370d1726d",
+        "sqlquery": "prepared",
+        "sql": "INSERT INTO SYSTEM_LOG (\n    id_device,\n    id_event_type,\n    log,\n    topic,\n    counter,\n    version,\n    datetime\n)\nVALUES (\n  ( SELECT id_device \n    FROM DEVICE \n    WHERE DEVICE.mac LIKE $mac ),\n  ( SELECT id_event_type\n    FROM EVENT_TYPE\n    WHERE event_type LIKE $event_type),\n  $log,\n  $topic,\n  $counter,\n  $version,\n  datetime('now', 'localtime')\n);\n",
+        "name": "SystemLog",
+        "x": 700,
+        "y": 2240,
         "wires": [
-            [
-                "b4133a029132e1bc",
-                "187ba9d2889dfd5c"
-            ]
+            []
         ]
     },
     {
-        "id": "f1f19a0d827e452e",
-        "type": "exec",
+        "id": "bd481b8dd3e88e7d",
+        "type": "function",
         "z": "57111ca025f638be",
-        "g": "fa8d72ad90e71a48",
-        "command": "logrotate -s /home/pi-md/log/status /home/pi-md/log/logrotate.conf",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "LogRotate",
+        "g": "2ff47af73d8a3d20",
+        "name": "Device exist",
+        "func": "let devicesMap = global.get('devicesMap')|| new Map();\nmsg.mac = msg.payload.header.mac;\n\nmsg.device = devicesMap.get(msg.mac);\n\nif(msg.device == null){\n    //Si le device n'est pas dans la liste il faut créer une \n    // nouvelle configuration.\n     return [msg, null];\n}else{\n    return [null, msg];\n}\n\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 2190,
+        "wires": [
+            [
+                "1b2d90fb3207c856",
+                "b46d7561a233fae7"
+            ],
+            [
+                "3e8251f62ce3c3c7",
+                "ee416b1f0f20e4d8"
+            ]
+        ],
+        "outputLabels": [
+            "Nouveau device",
+            "Device Existe"
+        ]
+    },
+    {
+        "id": "1b2d90fb3207c856",
+        "type": "function",
+        "z": "57111ca025f638be",
+        "g": "2ff47af73d8a3d20",
+        "name": "Params device",
+        "func": "\n//Set params pour insertion dans la table DEVICE.\nmsg.params = { $mac:msg.mac};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 590,
-        "y": 3270,
+        "y": 2100,
         "wires": [
             [
-                "2b905ff025d2f0a9"
-            ],
-            [
-                "2b905ff025d2f0a9"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "b4133a029132e1bc",
-        "type": "function",
-        "z": "57111ca025f638be",
-        "g": "fa8d72ad90e71a48",
-        "name": "Executer rotation log",
-        "func": "if(msg.size > 1000000){\n    return msg;\n\n}",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 400,
-        "y": 3270,
-        "wires": [
-            [
-                "f1f19a0d827e452e"
+                "8d1c099b642472fa"
             ]
         ]
     },
     {
-        "id": "187ba9d2889dfd5c",
+        "id": "8d1c099b642472fa",
+        "type": "sqlite",
+        "z": "57111ca025f638be",
+        "g": "2ff47af73d8a3d20",
+        "mydb": "628739f370d1726d",
+        "sqlquery": "prepared",
+        "sql": "INSERT INTO DEVICE (\n   mac,\n   location,\n   sleep_duration,\n   im_alive_period,\n   datetime\n)\nVALUES (\n   $mac,\n   \"ND\",\n   0,\n   3600,\n   datetime('now', 'localtime') \n);\n",
+        "name": "Insert DEVICE",
+        "x": 780,
+        "y": 2100,
+        "wires": [
+            [
+                "3b7b291f93b5dc9a",
+                "a147248bb7549068"
+            ]
+        ]
+    },
+    {
+        "id": "3b7b291f93b5dc9a",
         "type": "debug",
         "z": "57111ca025f638be",
-        "g": "fa8d72ad90e71a48",
-        "name": "debug 176",
+        "g": "2ff47af73d8a3d20",
+        "name": "debug 118",
         "active": false,
         "tosidebar": true,
         "console": false,
@@ -4994,16 +4024,60 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 380,
-        "y": 3310,
+        "x": 1010,
+        "y": 2140,
         "wires": []
     },
     {
-        "id": "2b905ff025d2f0a9",
+        "id": "f37c33f5cc57547c",
+        "type": "inject",
+        "z": "57111ca025f638be",
+        "g": "2ff47af73d8a3d20",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "dom-sys.sensor/status",
+        "payload": "{\"header\":{\"mac\":\"01:02:03:04:05:06\",\"type\":\"START_SIGNAL\",\"version\":1,\"counter\":5,\"error\":\"\"},\"data\":{\"cycle_duration\":0}}",
+        "payloadType": "json",
+        "x": 160,
+        "y": 2250,
+        "wires": [
+            [
+                "bd481b8dd3e88e7d"
+            ]
+        ]
+    },
+    {
+        "id": "a147248bb7549068",
+        "type": "link out",
+        "z": "57111ca025f638be",
+        "g": "2ff47af73d8a3d20",
+        "name": "New device",
+        "mode": "link",
+        "links": [
+            "5e2d481f338e5d45"
+        ],
+        "x": 965,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "ac85b8d4daad3a29",
         "type": "debug",
         "z": "57111ca025f638be",
-        "g": "fa8d72ad90e71a48",
-        "name": "debug 177",
+        "g": "2ff47af73d8a3d20",
+        "name": "debug 119",
         "active": false,
         "tosidebar": true,
         "console": false,
@@ -5012,8 +4086,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 760,
-        "y": 3270,
+        "x": 350,
+        "y": 2130,
         "wires": []
     },
     {
@@ -5029,8 +4103,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 720,
-        "y": 2790,
+        "x": 710,
+        "y": 2200,
         "wires": [
             [
                 "ba7bd09e9170283f"
@@ -5055,8 +4129,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 560,
-        "y": 2750,
+        "x": 550,
+        "y": 2160,
         "wires": [
             [
                 "ee416b1f0f20e4d8"
@@ -5072,8 +4146,8 @@
         "property": "payload",
         "action": "str",
         "pretty": false,
-        "x": 870,
-        "y": 2790,
+        "x": 860,
+        "y": 2200,
         "wires": [
             [
                 "ed7c07d39dda883d",
@@ -5096,8 +4170,8 @@
         "correl": "",
         "expiry": "60",
         "broker": "c6a29fab98717cbb",
-        "x": 1080,
-        "y": 2790,
+        "x": 1070,
+        "y": 2200,
         "wires": []
     },
     {
@@ -5114,25 +4188,1149 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1030,
-        "y": 2840,
+        "x": 1020,
+        "y": 2250,
         "wires": []
     },
     {
-        "id": "6c48e35750a5c6be",
-        "type": "link in",
-        "z": "57111ca025f638be",
-        "g": "4ac0d347446e702f",
-        "name": "link in 1",
-        "links": [
-            "e4aecc6f336ce4bc"
-        ],
-        "x": 475,
-        "y": 1780,
+        "id": "da939ff73faa3d33",
+        "type": "serial in",
+        "z": "797d9b2a7151f089",
+        "g": "fa8d72ad90e71a48",
+        "name": "Serial in",
+        "serial": "88425ab7cad6cc83",
+        "x": 160,
+        "y": 140,
         "wires": [
             [
-                "0a4b76749339d8cd",
-                "44c0d2d81fe59de0"
+                "edba9caae115a851",
+                "41e9b0574e55c0c8"
+            ]
+        ]
+    },
+    {
+        "id": "16071ac81dfe26dd",
+        "type": "mqtt out",
+        "z": "797d9b2a7151f089",
+        "g": "fa8d72ad90e71a48",
+        "name": "",
+        "topic": "",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c6a29fab98717cbb",
+        "x": 610,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "edba9caae115a851",
+        "type": "function",
+        "z": "797d9b2a7151f089",
+        "g": "fa8d72ad90e71a48",
+        "name": "To MQTT",
+        "func": "\nlet message = \"\";\nmessage = msg.payload;\n\n// Si les conditions ne sont pas valides le message est rejeté.\nif(message.length > 0){\n    if (message.startsWith(\"@\")){\n        let index = message.indexOf(\":\");\n        \n        if(index >= 0){\n            msg.topic = message.substring(1, index);\n            msg.payload = message.substring(index+1).trimEnd();\n            return msg;\n        }\n    }\n\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 140,
+        "wires": [
+            [
+                "16071ac81dfe26dd",
+                "76b97aaea830e452"
+            ]
+        ]
+    },
+    {
+        "id": "51ee3605ff9d80e0",
+        "type": "file",
+        "z": "797d9b2a7151f089",
+        "g": "fa8d72ad90e71a48",
+        "name": "Logger ESP",
+        "filename": "/home/pi-md/log/esp32.log",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 510,
+        "y": 190,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "41e9b0574e55c0c8",
+        "type": "function",
+        "z": "797d9b2a7151f089",
+        "g": "fa8d72ad90e71a48",
+        "name": "Add Date",
+        "func": "\n\nif(msg.payload.trim().length > 0){\n\n  //Les messages commençant par @ sont des commandes destinées au serveur.\n  //Elles sont enregistrées sans ajouter de date.\n  if(msg.payload.charAt(0) !=  \"@\" \n    && msg.payload.charAt(0) != \"-\" && msg.payload.charAt(0) != \" \"){\n\n    const regex = /\\[ *[0-9]+\\](.*)/;\n    msg.match = regex.exec(msg.payload);\n    msg.payload = msg.match[1]; \n\n\n    let date = new Date();\n    let dateString = date.toLocaleDateString('fr-ca', {month: 'numeric', day: 'numeric'});\n    let timeString = date.toTimeString().slice(0, 8);\n\n    msg.payload = \"[\" + timeString + \"]\" \n          + \" \" + msg.payload + '\\n'\n  }\n\n  return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 190,
+        "wires": [
+            [
+                "51ee3605ff9d80e0"
+            ]
+        ]
+    },
+    {
+        "id": "855c0e1ea702f2cf",
+        "type": "watch",
+        "z": "797d9b2a7151f089",
+        "g": "beefa0c6950593db",
+        "name": "Surveiller fichier log",
+        "files": "/home/pi-md/log/esp32.log",
+        "recursive": "",
+        "x": 210,
+        "y": 280,
+        "wires": [
+            [
+                "b4133a029132e1bc",
+                "187ba9d2889dfd5c"
+            ]
+        ]
+    },
+    {
+        "id": "f1f19a0d827e452e",
+        "type": "exec",
+        "z": "797d9b2a7151f089",
+        "g": "beefa0c6950593db",
+        "command": "logrotate -s /home/pi-md/log/status /home/pi-md/log/logrotate.conf",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "LogRotate",
+        "x": 620,
+        "y": 280,
+        "wires": [
+            [
+                "2b905ff025d2f0a9"
+            ],
+            [
+                "2b905ff025d2f0a9"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b4133a029132e1bc",
+        "type": "function",
+        "z": "797d9b2a7151f089",
+        "g": "beefa0c6950593db",
+        "name": "Executer rotation log",
+        "func": "if(msg.size > 1000000){\n    return msg;\n\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 280,
+        "wires": [
+            [
+                "f1f19a0d827e452e"
+            ]
+        ]
+    },
+    {
+        "id": "187ba9d2889dfd5c",
+        "type": "debug",
+        "z": "797d9b2a7151f089",
+        "g": "beefa0c6950593db",
+        "name": "debug 176",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "2b905ff025d2f0a9",
+        "type": "debug",
+        "z": "797d9b2a7151f089",
+        "g": "beefa0c6950593db",
+        "name": "debug 177",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d2b39a2251d4d124",
+        "type": "serial out",
+        "z": "797d9b2a7151f089",
+        "g": "d0932bcd6a5ec1f6",
+        "name": "Serial out",
+        "serial": "88425ab7cad6cc83",
+        "x": 720,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "848f84e24987bc2f",
+        "type": "debug",
+        "z": "797d9b2a7151f089",
+        "g": "d0932bcd6a5ec1f6",
+        "name": "debug 33",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "4aafe259275fd99f",
+        "type": "delay",
+        "z": "797d9b2a7151f089",
+        "g": "d0932bcd6a5ec1f6",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": ".5",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 520,
+        "y": 480,
+        "wires": [
+            [
+                "d2b39a2251d4d124",
+                "848f84e24987bc2f"
+            ]
+        ]
+    },
+    {
+        "id": "7a1a4351ec72b9b3",
+        "type": "function",
+        "z": "797d9b2a7151f089",
+        "g": "d0932bcd6a5ec1f6",
+        "name": "To serial port",
+        "func": "\n\nmsg.payload = \"@\" + msg.topic + \"::\" + msg.payload;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 480,
+        "wires": [
+            [
+                "4aafe259275fd99f"
+            ]
+        ]
+    },
+    {
+        "id": "e27a25756c4ae984",
+        "type": "mqtt in",
+        "z": "797d9b2a7151f089",
+        "g": "d0932bcd6a5ec1f6",
+        "name": "",
+        "topic": "dom-sys.server/#",
+        "qos": "1",
+        "datatype": "utf8",
+        "broker": "c6a29fab98717cbb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 480,
+        "wires": [
+            [
+                "7a1a4351ec72b9b3"
+            ]
+        ]
+    },
+    {
+        "id": "b07bf152a6d21710",
+        "type": "catch",
+        "z": "797d9b2a7151f089",
+        "g": "e53915e26e2f69d5",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 140,
+        "y": 1430,
+        "wires": [
+            [
+                "c2a5a48d61080e22"
+            ]
+        ]
+    },
+    {
+        "id": "c2a5a48d61080e22",
+        "type": "debug",
+        "z": "797d9b2a7151f089",
+        "g": "e53915e26e2f69d5",
+        "name": "Catch ",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 1430,
+        "wires": []
+    },
+    {
+        "id": "76b97aaea830e452",
+        "type": "debug",
+        "z": "797d9b2a7151f089",
+        "g": "fa8d72ad90e71a48",
+        "name": "debug 181",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "68020bb809a9d64b",
+        "type": "mqtt in",
+        "z": "797d9b2a7151f089",
+        "g": "5d89e93885229fe1",
+        "name": "",
+        "topic": "dom-sys.gw/#",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "c6a29fab98717cbb",
+        "nl": false,
+        "rap": false,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 1240,
+        "wires": [
+            [
+                "558eb47c0c8cd19f"
+            ]
+        ]
+    },
+    {
+        "id": "01804589863ba34e",
+        "type": "inject",
+        "z": "797d9b2a7151f089",
+        "g": "5d89e93885229fe1",
+        "name": "Test",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"status\":\"ESPNOW_DATA\", \"type\":\"START_SIGNAL\",\"mac\":\"C8:C9:A3:C8:35:9C\"}",
+        "payloadType": "str",
+        "x": 160,
+        "y": 1290,
+        "wires": [
+            [
+                "558eb47c0c8cd19f"
+            ]
+        ]
+    },
+    {
+        "id": "558eb47c0c8cd19f",
+        "type": "function",
+        "z": "797d9b2a7151f089",
+        "g": "5d89e93885229fe1",
+        "name": "Dispatcher",
+        "func": "//node.warn(msg);\n\nswitch (msg.topic) {\n    case \"dom-sys.gw/status\":\n        switch (msg.payload) {\n            case \"IM_ALIVE\":\n                //on ne log pas ce message\n                return [msg, null, null];\n                break;\n            case \"GATEWAY_START\":\n            case \"GATEWAY_RESTART\":\n                msg.params = {\n                    $EventType: msg.payload,\n                    $EventData: \"\"\n                }\n                return [msg, msg, null];\n                break;\n            default:\n                msgInconnu();\n        }\n        break;\n    case \"dom-sys.gw/request\":\n        break;\n    default:\n        msgInconnu();\n}\n\nfunction msgInconnu() {\n    msg.topic = \"Passerelle\"\n    msg.payload = \"Message statut inconnu: \" + msg.payload;\n    return [null, null, msg];\n}\n",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 1270,
+        "wires": [
+            [],
+            [
+                "27d79d1a4af37e13"
+            ],
+            [
+                "c1c1ebd04c6e798e"
+            ]
+        ],
+        "outputLabels": [
+            "IM_ALIVE",
+            "TO LOG",
+            "INCONNU"
+        ]
+    },
+    {
+        "id": "9bb6a0be709aef65",
+        "type": "trigger",
+        "z": "797d9b2a7151f089",
+        "g": "5d89e93885229fe1",
+        "name": "ImAlive",
+        "op1": "IM_ALIVE",
+        "op2": "IM_ALIVE_MISSING",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "topic",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 540,
+        "y": 1140,
+        "wires": [
+            [
+                "d23177f02750759c",
+                "0bdbc43f27e4bb08"
+            ]
+        ]
+    },
+    {
+        "id": "d23177f02750759c",
+        "type": "function",
+        "z": "797d9b2a7151f089",
+        "g": "5d89e93885229fe1",
+        "name": "Statut server",
+        "func": "switch (msg.payload) {\n    case \"IM_ALIVE_MISSING\":\n        node.status({ fill: \"red\", shape: \"ring\", text: \"IM_ALIVE_MISSING\" });\n\n        msg.payload = \"IM_ALIVE_MISSING\";\n        msg.icon = \"visibility_off\";\n        msg.color = \"red\";\n        \n        msg.params = {\n            $EventType: \"ERROR\",\n            $EventData: msg.payload\n        }\n        return [msg, msg];\n\n    case \"IM_ALIVE\":\n        node.status({ fill: \"green\", shape: \"ring\", text: \"IM_ALIVE_OK\" });\n        msg.payload = \"IM_ALIVE\";\n        msg.icon = \"visibility\";\n        msg.color = \"green\";        \n        return [msg, null];\n\n    default:\n        msg.payload = \"Passerelle\";\n        msg.icon = \"visibility_off\";\n        msg.color = \"yellow\";\n}\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 1170,
+        "wires": [
+            [
+                "4805c368e2c34a0c"
+            ],
+            [
+                "a2df31a6143f0148",
+                "27d79d1a4af37e13"
+            ]
+        ],
+        "outputLabels": [
+            "IM_ALIVE_OK",
+            "IM_ALIVE_ERROR"
+        ]
+    },
+    {
+        "id": "0bdbc43f27e4bb08",
+        "type": "debug",
+        "z": "797d9b2a7151f089",
+        "g": "5d89e93885229fe1",
+        "name": "debug 103",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 1130,
+        "wires": []
+    },
+    {
+        "id": "a2df31a6143f0148",
+        "type": "debug",
+        "z": "797d9b2a7151f089",
+        "g": "5d89e93885229fe1",
+        "name": "debug 102",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "60d4bb2262ebf375",
+        "type": "comment",
+        "z": "797d9b2a7151f089",
+        "g": "5d89e93885229fe1",
+        "name": "À revoir - Structurer le message du Gateway",
+        "info": "",
+        "x": 400,
+        "y": 1230,
+        "wires": []
+    },
+    {
+        "id": "27d79d1a4af37e13",
+        "type": "sqlite",
+        "z": "797d9b2a7151f089",
+        "d": true,
+        "g": "5d89e93885229fe1",
+        "mydb": "628739f370d1726d",
+        "sqlquery": "prepared",
+        "sql": "INSERT INTO SYSTEM_LOG (\n    id_device,\n    id_event_type,\n    log,\n    topic,\n    counter,\n    version,\n    datetime\n)\nVALUES (\n  $id_device,\n  $log,\n  $topic,\n  $counter,\n  $version,\n  datetime('now', 'localtime')\n);\n",
+        "name": "SystemLog",
+        "x": 930,
+        "y": 1230,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c1c1ebd04c6e798e",
+        "type": "ui-notification",
+        "z": "797d9b2a7151f089",
+        "g": "5d89e93885229fe1",
+        "ui": "d4c9d9e9b37824ea",
+        "position": "top right",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "0",
+        "showCountdown": true,
+        "outputs": 0,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 610,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "4805c368e2c34a0c",
+        "type": "ui-led",
+        "z": "797d9b2a7151f089",
+        "g": "5d89e93885229fe1",
+        "name": "",
+        "group": "fd9c7176b0a431e9",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "label": "GW - I'm alive",
+        "labelPlacement": "left",
+        "labelAlignment": "flex-start",
+        "states": [
+            {
+                "value": "IM_ALIVE_MISSING",
+                "valueType": "str",
+                "color": "#ff0000"
+            },
+            {
+                "value": "IM_ALIVE",
+                "valueType": "str",
+                "color": "#00ff00"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showBorder": true,
+        "showGlow": true,
+        "x": 940,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "1784ee5849a07738",
+        "type": "status",
+        "z": "797d9b2a7151f089",
+        "g": "8feba00f9cb9532b",
+        "name": "Status Serial port",
+        "scope": [
+            "56d1fae213c30e8a",
+            "da939ff73faa3d33",
+            "d2b39a2251d4d124",
+            "7a1a4351ec72b9b3",
+            "5fc3dcdaa67d4078"
+        ],
+        "x": 170,
+        "y": 970,
+        "wires": [
+            [
+                "526010976c842e2c"
+            ]
+        ]
+    },
+    {
+        "id": "44e59e8574df7bf8",
+        "type": "ui-led",
+        "z": "797d9b2a7151f089",
+        "g": "8feba00f9cb9532b",
+        "name": "",
+        "group": "fd9c7176b0a431e9",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "label": "Port série",
+        "labelPlacement": "left",
+        "labelAlignment": "flex-start",
+        "states": [
+            {
+                "value": "stopped",
+                "valueType": "str",
+                "color": "#ff0000"
+            },
+            {
+                "value": "connected",
+                "valueType": "str",
+                "color": "#00ff00"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showBorder": true,
+        "showGlow": true,
+        "x": 550,
+        "y": 970,
+        "wires": []
+    },
+    {
+        "id": "526010976c842e2c",
+        "type": "function",
+        "z": "797d9b2a7151f089",
+        "g": "8feba00f9cb9532b",
+        "name": "Statut port série",
+        "func": "\n//msg.class=\"my-class\"\n\nswitch (msg.status.text) {\n   case \"node-red:common.status.connected\":\n      msg.payload = \"connected\";\n      return msg;\n   case \"node-red:common.status.connecting\":\n      msg.payload = \"connecting\";\n      return msg;\n   case \"node-red:common.status.not-connected\":\n      msg.payload = \"stopped\";\n    //  msg.class=\"my-class\"\n      return msg;\n  \n   default:\n      //msg.payload = msg.status.text;\n}\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 970,
+        "wires": [
+            [
+                "44e59e8574df7bf8",
+                "0cbbba078e7506a7"
+            ]
+        ]
+    },
+    {
+        "id": "0cbbba078e7506a7",
+        "type": "debug",
+        "z": "797d9b2a7151f089",
+        "g": "8feba00f9cb9532b",
+        "name": "debug 164",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 570,
+        "y": 1010,
+        "wires": []
+    },
+    {
+        "id": "0efe0dc629d83c81",
+        "type": "status",
+        "z": "797d9b2a7151f089",
+        "g": "70160f0a7636882f",
+        "name": "Status MQTT",
+        "scope": [
+            "68020bb809a9d64b",
+            "1b2663185a65a48f",
+            "56d1fae213c30e8a"
+        ],
+        "x": 170,
+        "y": 670,
+        "wires": [
+            [
+                "d95bc61b71d72cb2",
+                "0f27b5b866c9b4a4"
+            ]
+        ]
+    },
+    {
+        "id": "375f5d90204152ea",
+        "type": "function",
+        "z": "797d9b2a7151f089",
+        "g": "70160f0a7636882f",
+        "name": "Statut MQTT",
+        "func": "\nswitch (msg.status.text) {\n   case \"node-red:common.status.connected\":\n\n      msg.payload = \"connected\";\n      //Pour la gestion du délai\n      msg.reset = 1;\n      msg.delay = 0;\n      break;\n   case \"node-red:common.status.connecting\":\n      msg.payload = \"connecting\";\n      msg.delay = 10000;\n      break;\n   case \"node-red:common.status.disconnected\":\n      msg.payload = \"disconnected\";\n      break;\n   default:\n      msg.payload = msg.status.text;\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 670,
+        "wires": [
+            [
+                "037ff0d4ccce8f8a",
+                "441a41af679a65f8",
+                "b06e8d799cfe5b7e"
+            ]
+        ]
+    },
+    {
+        "id": "037ff0d4ccce8f8a",
+        "type": "debug",
+        "z": "797d9b2a7151f089",
+        "g": "70160f0a7636882f",
+        "name": "Status MQTT",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 770,
+        "y": 630,
+        "wires": [],
+        "info": "# Plus grand"
+    },
+    {
+        "id": "d95bc61b71d72cb2",
+        "type": "debug",
+        "z": "797d9b2a7151f089",
+        "g": "70160f0a7636882f",
+        "name": "Status MQTT 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 630,
+        "wires": [],
+        "info": "# Plus grand"
+    },
+    {
+        "id": "441a41af679a65f8",
+        "type": "ui-led",
+        "z": "797d9b2a7151f089",
+        "g": "70160f0a7636882f",
+        "name": "Statut MQTT",
+        "group": "fd9c7176b0a431e9",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "label": "MQTT",
+        "labelPlacement": "left",
+        "labelAlignment": "flex-start",
+        "states": [
+            {
+                "value": "disconnected",
+                "valueType": "str",
+                "color": "#ff0000"
+            },
+            {
+                "value": "connected",
+                "valueType": "str",
+                "color": "#00ff00"
+            },
+            {
+                "value": "connecting",
+                "valueType": "str",
+                "color": "#ffffa4"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showBorder": true,
+        "showGlow": true,
+        "x": 760,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "3f153da6282bee3d",
+        "type": "exec",
+        "z": "797d9b2a7151f089",
+        "g": "5426475307091e39",
+        "command": "sudo systemctl restart mosquitto",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Mosquitto restart",
+        "x": 590,
+        "y": 820,
+        "wires": [
+            [
+                "a19214ca2cfc9795"
+            ],
+            [
+                "a19214ca2cfc9795"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "0f27b5b866c9b4a4",
+        "type": "rbe",
+        "z": "797d9b2a7151f089",
+        "g": "70160f0a7636882f",
+        "name": "Vérifier statut",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "status",
+        "topi": "topic",
+        "x": 370,
+        "y": 670,
+        "wires": [
+            [
+                "375f5d90204152ea",
+                "2298e5a1f57713dc"
+            ]
+        ]
+    },
+    {
+        "id": "b06e8d799cfe5b7e",
+        "type": "delay",
+        "z": "797d9b2a7151f089",
+        "g": "5426475307091e39",
+        "name": "Delay Restart",
+        "pauseType": "delayv",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 810,
+        "wires": [
+            [
+                "3f153da6282bee3d"
+            ]
+        ]
+    },
+    {
+        "id": "a19214ca2cfc9795",
+        "type": "debug",
+        "z": "797d9b2a7151f089",
+        "g": "5426475307091e39",
+        "name": "debug 182",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "1e15606728d3ede4",
+        "type": "inject",
+        "z": "797d9b2a7151f089",
+        "g": "5426475307091e39",
+        "name": "Restart",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 390,
+        "y": 850,
+        "wires": [
+            [
+                "3f153da6282bee3d"
+            ]
+        ]
+    },
+    {
+        "id": "e1f758553dcda8db",
+        "type": "inject",
+        "z": "797d9b2a7151f089",
+        "g": "70160f0a7636882f",
+        "name": "Green",
+        "props": [
+            {
+                "p": "status",
+                "v": "{\"fill\":\"green\",\"shape\":\"dot\",\"text\":\"node-red:common.status.connected\",\"source\":{\"id\":\"68020bb809a9d64b\",\"type\":\"mqtt in\"}}",
+                "vt": "json"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 160,
+        "y": 770,
+        "wires": [
+            [
+                "0f27b5b866c9b4a4"
+            ]
+        ]
+    },
+    {
+        "id": "2298e5a1f57713dc",
+        "type": "debug",
+        "z": "797d9b2a7151f089",
+        "g": "70160f0a7636882f",
+        "name": "debug 183",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 630,
+        "wires": []
+    },
+    {
+        "id": "8064670dc96dfa2d",
+        "type": "inject",
+        "z": "797d9b2a7151f089",
+        "g": "70160f0a7636882f",
+        "name": "Red",
+        "props": [
+            {
+                "p": "status",
+                "v": "{\"fill\":\"red\",\"shape\":\"ring\",\"text\":\"node-red:common.status.disconnected\",\"source\":{\"id\":\"68020bb809a9d64b\",\"type\":\"mqtt in\"}}",
+                "vt": "json"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 160,
+        "y": 740,
+        "wires": [
+            [
+                "0f27b5b866c9b4a4"
+            ]
+        ]
+    },
+    {
+        "id": "4e4b504034ad202f",
+        "type": "inject",
+        "z": "797d9b2a7151f089",
+        "g": "70160f0a7636882f",
+        "name": "Yellow",
+        "props": [
+            {
+                "p": "status",
+                "v": "{\"fill\":\"yellow\",\"shape\":\"ring\",\"text\":\"node-red:common.status.connecting\",\"source\":{\"id\":\"68020bb809a9d64b\",\"type\":\"mqtt in\"}}",
+                "vt": "json"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 160,
+        "y": 710,
+        "wires": [
+            [
+                "0f27b5b866c9b4a4"
+            ]
+        ]
+    },
+    {
+        "id": "b261acdf1fd36081",
+        "type": "mqtt in",
+        "z": "797d9b2a7151f089",
+        "g": "5d89e93885229fe1",
+        "name": "",
+        "topic": "dom-sys.gw/status",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "c6a29fab98717cbb",
+        "nl": false,
+        "rap": false,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 1160,
+        "wires": [
+            [
+                "2105846b8c12cb48"
+            ]
+        ]
+    },
+    {
+        "id": "2105846b8c12cb48",
+        "type": "function",
+        "z": "797d9b2a7151f089",
+        "g": "5d89e93885229fe1",
+        "name": "Dispatcher",
+        "func": "\nswitch (msg.payload) {\n    case \"IM_ALIVE\":\n        //on ne log pas ce message\n        return [msg, null, null];\n        break;\n    case \"GATEWAY_START\":\n    case \"GATEWAY_RESTART\":\n        msg.params = {\n            $EventType: msg.payload,\n            $EventData: \"\"\n        }\n        return [msg, msg, null];\n        break;\n    default:\n        msgInconnu();\n}\n\n\nfunction msgInconnu() {\n    msg.topic = \"Passerelle\"\n    msg.payload = \"Message statut inconnu: \" + msg.payload;\n    return [null, null, msg];\n}\n",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 1160,
+        "wires": [
+            [
+                "9bb6a0be709aef65",
+                "58258ca1cbedc8f2"
+            ],
+            [],
+            []
+        ],
+        "outputLabels": [
+            "IM_ALIVE",
+            "TO LOG",
+            "INCONNU"
+        ]
+    },
+    {
+        "id": "58258ca1cbedc8f2",
+        "type": "debug",
+        "z": "797d9b2a7151f089",
+        "g": "5d89e93885229fe1",
+        "name": "debug 184",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "8023d15b2d55ccda",
+        "type": "inject",
+        "z": "797d9b2a7151f089",
+        "g": "5d89e93885229fe1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "IM_ALIVE",
+        "payloadType": "str",
+        "x": 180,
+        "y": 1120,
+        "wires": [
+            [
+                "2105846b8c12cb48"
             ]
         ]
     },
@@ -6360,6 +6558,93 @@
         "x": 830,
         "y": 530,
         "wires": []
+    },
+    {
+        "id": "6079638d.df403c",
+        "type": "inject",
+        "z": "a9c9090b.478498",
+        "name": "",
+        "props": [
+            {
+                "p": "payload",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 160,
+        "y": 810,
+        "wires": [
+            [
+                "87129503.c7b358"
+            ]
+        ]
+    },
+    {
+        "id": "87129503.c7b358",
+        "type": "rbe",
+        "z": "a9c9090b.478498",
+        "name": "report-by-exception",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 370,
+        "y": 830,
+        "wires": [
+            [
+                "5e2ffc27.c61dd4"
+            ]
+        ]
+    },
+    {
+        "id": "5e2ffc27.c61dd4",
+        "type": "debug",
+        "z": "a9c9090b.478498",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 580,
+        "y": 830,
+        "wires": []
+    },
+    {
+        "id": "2dc49f96.3070c",
+        "type": "inject",
+        "z": "a9c9090b.478498",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 160,
+        "y": 850,
+        "wires": [
+            [
+                "87129503.c7b358"
+            ]
+        ]
     },
     {
         "id": "6523e86042252710",
