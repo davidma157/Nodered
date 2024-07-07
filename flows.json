@@ -39,26 +39,27 @@
         "info": ""
     },
     {
-        "id": "d9faa645.5bfcf8",
-        "type": "tab",
-        "label": "loop",
-        "disabled": true,
-        "info": ""
-    },
-    {
-        "id": "a37ba4fb4c0f75b5",
-        "type": "tab",
-        "label": "each",
-        "disabled": false,
-        "info": ""
-    },
-    {
         "id": "63866adffcf16345",
         "type": "tab",
         "label": "Flux 1",
         "disabled": true,
         "info": "",
         "env": []
+    },
+    {
+        "id": "09b3d9adcf09ddda",
+        "type": "tab",
+        "label": "Flux 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8b50971b.a49d58",
+        "type": "tab",
+        "label": "task list",
+        "disabled": true,
+        "info": ""
     },
     {
         "id": "bc1a8754bbd79fc2",
@@ -576,129 +577,6 @@
         "h": 232
     },
     {
-        "id": "13801fdd6b5b4fa2",
-        "type": "group",
-        "z": "a37ba4fb4c0f75b5",
-        "name": "",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "9f805e9c08470329",
-            "bd3ea16681f75a48",
-            "6ed13f9be5e114b7",
-            "ec13c40821918014",
-            "3572247be8af7f3d",
-            "db011552a95b3c4b",
-            "e88ffe5ac5c0e1cc",
-            "f6abb27126a0451d",
-            "43ac74b2f62b1a00",
-            "c64e8966c886ed56",
-            "c848fbb8bcf13c73",
-            "fa6c84b86112dacf",
-            "6d3e7a5685df6118",
-            "88413b561f1fa8ad",
-            "8633e8cd8755d41e",
-            "0b679b604339a0f5",
-            "2c7a327d51775f1b",
-            "46f9cf59ba916358",
-            "fb86275488bfe72d",
-            "92577a77fc14f3df",
-            "0a01060611f50b89",
-            "9dd3cb82ca403cd8",
-            "6bd6b4852ebd8cef",
-            "2c687a8db5ad2d7d",
-            "7fe39e1936da5497"
-        ],
-        "x": 54,
-        "y": 39,
-        "w": 1112,
-        "h": 622
-    },
-    {
-        "id": "156e48294e15a399",
-        "type": "group",
-        "z": "a37ba4fb4c0f75b5",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "3df32a9ffbb5242a",
-            "a11a09b08407dc50",
-            "631d6b526bea7e4d",
-            "0a06ba357340e2d3",
-            "091b1cb23ef8485e",
-            "fa63bd549cae8b41",
-            "e33fc812f873369b",
-            "333892a0ea4ade46",
-            "ba827510167634bd",
-            "004c984fdb5923ca",
-            "54c16615e721f476",
-            "9cb922e4f6891085",
-            "7572d26446ddf8f9"
-        ],
-        "x": 54,
-        "y": 1379,
-        "w": 1132,
-        "h": 342
-    },
-    {
-        "id": "9df54a142a4bddf1",
-        "type": "group",
-        "z": "a37ba4fb4c0f75b5",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "c712565fe629a8b5",
-            "89b76248799543f0",
-            "098245f2db6a16ce",
-            "59d31a51e31dd8aa",
-            "663353f613d517ab",
-            "4f69b439ce7b954e",
-            "6e060feb4ec85989",
-            "04b5a2ec2c7ea1b9",
-            "e74cafe822752aee",
-            "f657e43da9571001",
-            "dc2c9c21b92ad433",
-            "9be31c0756c32141",
-            "5d2debdf8162371b",
-            "d49352494dc53b12",
-            "80e1a07a26db735b",
-            "e75b5f7903ac8597",
-            "944458cb4ec11494",
-            "bf491cbe1425c4d2",
-            "d562b47c01c791c3",
-            "19015160fcdf862f",
-            "62b55aab9f60e142",
-            "da789c49f0b2f636",
-            "36ced97cf601143d",
-            "a4704c83cdbea31e",
-            "69a43c2e8b7b3aec",
-            "052c6324621a0ee4",
-            "83fbcfa575479023",
-            "4238567a740c868e",
-            "de5035e88890d192",
-            "f4d933bac346eff7"
-        ],
-        "x": 54,
-        "y": 719,
-        "w": 952,
-        "h": 622
-    },
-    {
         "id": "587ef4eef498a3b8",
         "type": "group",
         "z": "57111ca025f638be",
@@ -743,9 +621,9 @@
             "f94259e3284b277c",
             "fd68066b9df5be6d"
         ],
-        "x": 48,
+        "x": 58,
         "y": 193,
-        "w": 854,
+        "w": 844,
         "h": 418
     },
     {
@@ -855,21 +733,18 @@
             "b0ed271801ea7e6e",
             "111103eaa0204252",
             "64c4ac8396d7f0f4",
-            "9509d68d189d9475",
-            "7ba46936c7bed929",
             "2a792d039db9cefd",
             "4accc712270537ef",
-            "2f70446359b75607",
-            "424633ac249cfeb6",
             "b0ba40e0b297f67d",
             "fa7f14bdbb3856df",
             "d1b6ff483e36c482",
-            "e35ebe091943e2a7"
+            "e35ebe091943e2a7",
+            "0a8f9191ad61ab30"
         ],
-        "x": 4,
-        "y": 443,
-        "w": 1298,
-        "h": 914
+        "x": 24,
+        "y": 373,
+        "w": 1268,
+        "h": 954
     },
     {
         "id": "d186a865f8290820",
@@ -1205,9 +1080,9 @@
             "80653104c09f9d63",
             "bd7fea0d471990a7"
         ],
-        "x": 74,
+        "x": 84,
         "y": 219,
-        "w": 802,
+        "w": 792,
         "h": 172
     },
     {
@@ -1289,8 +1164,8 @@
             "c3d58f8e5bca1066",
             "1ed5aa676c941167"
         ],
-        "x": 504,
-        "y": 469,
+        "x": 494,
+        "y": 399,
         "w": 772,
         "h": 162
     },
@@ -1306,17 +1181,21 @@
             "color": "#000000"
         },
         "nodes": [
-            "e1d52d5637a180e9",
             "8ea9a28d16829721",
-            "96e713b668ed40f3",
             "59413bdba1203faa",
-            "5efaa91147f7e306",
-            "eac87292ec5e26a9"
+            "eac87292ec5e26a9",
+            "be35ffe0569746ab",
+            "cd1430b315afff7f",
+            "bc6c6cd719e20f61",
+            "dabf78c524cc40e1",
+            "b123210f7db0e10b",
+            "ff75fc44f3cbe7b6",
+            "b7da68673e05346d"
         ],
-        "x": 404,
-        "y": 849,
-        "w": 542,
-        "h": 182
+        "x": 484,
+        "y": 819,
+        "w": 712,
+        "h": 212
     },
     {
         "id": "b0ed271801ea7e6e",
@@ -1335,8 +1214,8 @@
             "e37c4f7cb86c4dce",
             "6c9f7c455b93752f"
         ],
-        "x": 164,
-        "y": 1249,
+        "x": 174,
+        "y": 1219,
         "w": 752,
         "h": 82
     },
@@ -1357,8 +1236,8 @@
         "nodes": [
             "be4e6fa367e01c91"
         ],
-        "x": 1144,
-        "y": 939,
+        "x": 1134,
+        "y": 1039,
         "w": 82,
         "h": 82
     },
@@ -1376,15 +1255,17 @@
             "cd9c88bb81c9febb",
             "5dc538862649faad",
             "628a55e0d9682d2f",
-            "c62292d7e7c6b5b8",
             "8383da9b105ef498",
-            "dc4c701aa663bf1a",
-            "6ef1c4af27e5bfc1"
+            "0d4ac5b91285c29e",
+            "6df860f3d88e7e14",
+            "d99eb86e34066d1c",
+            "80119027c1098b18",
+            "14c57979f8bea78f"
         ],
-        "x": 364,
-        "y": 629,
-        "w": 712,
-        "h": 192
+        "x": 494,
+        "y": 589,
+        "w": 742,
+        "h": 212
     },
     {
         "id": "e35ebe091943e2a7",
@@ -1403,8 +1284,8 @@
             "dbc4bd0f4a50d8cb",
             "fe8c85c4fde7fce2"
         ],
-        "x": 164,
-        "y": 1069,
+        "x": 394,
+        "y": 1049,
         "w": 712,
         "h": 122
     },
@@ -9203,8 +9084,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
-        "y": 550,
+        "x": 570,
+        "y": 480,
         "wires": [
             [
                 "92f799c2f6ba50c6"
@@ -9226,8 +9107,10 @@
         "name": "Changements",
         "tasks": [
             "Device changed",
-            "ToDelete",
-            "ToUpdate",
+            "AttributsToDelete",
+            "SensorsToDelete",
+            "SensorsToUpdate",
+            "AttributsToUpdate",
             "Insert Sensors",
             "Insert Attributs"
         ],
@@ -9238,19 +9121,25 @@
         "doneOutput": true,
         "firstValueOutput": false,
         "lastValueOutput": false,
-        "outputs": 6,
+        "outputs": 8,
         "_version": "0.4.1",
-        "x": 220,
-        "y": 750,
+        "x": 310,
+        "y": 740,
         "wires": [
             [
                 "1ed5aa676c941167"
             ],
             [
-                "dc4c701aa663bf1a"
+                "0d4ac5b91285c29e"
             ],
             [
-                "96e713b668ed40f3"
+                "14c57979f8bea78f"
+            ],
+            [
+                "cd1430b315afff7f"
+            ],
+            [
+                "be35ffe0569746ab"
             ],
             [
                 "fe8c85c4fde7fce2"
@@ -9267,84 +9156,28 @@
         "name": "",
         "mode": "done",
         "saveValue": false,
-        "x": 1200,
-        "y": 510,
+        "x": 1190,
+        "y": 440,
         "wires": []
-    },
-    {
-        "id": "7ba46936c7bed929",
-        "type": "function",
-        "z": "a9c9090b.478498",
-        "g": "a5b04cf60d670697",
-        "name": "Insert",
-        "func": "\nif(msg.sensor.id_sensor === -1){\n    return msg;\n}\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 250,
-        "y": 940,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "4accc712270537ef",
         "type": "inject",
         "z": "a9c9090b.478498",
         "g": "a5b04cf60d670697",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
+        "name": "Simulation",
+        "props": [],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 150,
-        "y": 540,
+        "x": 130,
+        "y": 670,
         "wires": [
             [
                 "fa7f14bdbb3856df"
             ]
-        ]
-    },
-    {
-        "id": "9509d68d189d9475",
-        "type": "do",
-        "z": "a9c9090b.478498",
-        "g": "a5b04cf60d670697",
-        "name": "ToUpdate",
-        "tasks": [
-            "update",
-            "Attributs",
-            "Insert",
-            "LastID"
-        ],
-        "mode": "each",
-        "each": "device.sensors",
-        "eachType": "msg",
-        "yield": "indexValue",
-        "doneOutput": true,
-        "firstValueOutput": false,
-        "lastValueOutput": false,
-        "outputs": 5,
-        "_version": "0.4.1",
-        "x": 100,
-        "y": 910,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            []
         ]
     },
     {
@@ -9366,8 +9199,8 @@
         "lastValueOutput": false,
         "outputs": 3,
         "_version": "0.4.1",
-        "x": 250,
-        "y": 1120,
+        "x": 480,
+        "y": 1100,
         "wires": [
             [
                 "dbc4bd0f4a50d8cb"
@@ -9412,8 +9245,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 890,
-        "y": 520,
+        "x": 880,
+        "y": 450,
         "wires": [
             [
                 "540cfc2a38c73116"
@@ -9429,8 +9262,8 @@
         "sqlquery": "prepared",
         "sql": "UPDATE DEVICE \nSET sleep_duration = $sleep_duration,\n  im_alive_period = $im_alive_period,\n  datetime = strftime('%s','now')\nWHERE id_device = $id_device;",
         "name": "Update",
-        "x": 1060,
-        "y": 510,
+        "x": 1050,
+        "y": 440,
         "wires": [
             [
                 "c754a60ba19efacd"
@@ -9463,8 +9296,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 3,
-        "x": 740,
-        "y": 530,
+        "x": 730,
+        "y": 460,
         "wires": [
             [
                 "7b9d61eb6156dccd"
@@ -9495,8 +9328,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 890,
-        "y": 560,
+        "x": 880,
+        "y": 490,
         "wires": [
             [
                 "25b2bcf42a64aea2"
@@ -9512,85 +9345,13 @@
         "sqlquery": "prepared",
         "sql": "DELETE FROM DEVICE\nWHERE id_device = $id_device;",
         "name": "Delete",
-        "x": 1050,
-        "y": 560,
+        "x": 1040,
+        "y": 490,
         "wires": [
             [
                 "78c16118d6e14e7b"
             ]
         ]
-    },
-    {
-        "id": "424633ac249cfeb6",
-        "type": "switch",
-        "z": "a9c9090b.478498",
-        "g": "a5b04cf60d670697",
-        "name": "Action",
-        "property": "action",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "update",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "insert",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "delete",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 3,
-        "x": 240,
-        "y": 880,
-        "wires": [
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "e1d52d5637a180e9",
-        "type": "change",
-        "z": "a9c9090b.478498",
-        "g": "64c4ac8396d7f0f4",
-        "name": "Params",
-        "rules": [
-            {
-                "t": "set",
-                "p": "params.$id_sensor",
-                "pt": "msg",
-                "to": "sensor.id_sensor",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "params.$sensor_role",
-                "pt": "msg",
-                "to": "sensor.sensor_role",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 640,
-        "y": 890,
-        "wires": [
-            [
-                "8ea9a28d16829721"
-            ]
-        ],
-        "info": "Update"
     },
     {
         "id": "85d647afd37b63fe",
@@ -9600,10 +9361,15 @@
         "name": "Params",
         "rules": [
             {
+                "t": "delete",
+                "p": "params",
+                "pt": "msg"
+            },
+            {
                 "t": "set",
                 "p": "params.$id_sensor",
                 "pt": "msg",
-                "to": "id",
+                "to": "payload",
                 "tot": "msg"
             }
         ],
@@ -9612,8 +9378,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 780,
-        "y": 740,
+        "x": 770,
+        "y": 720,
         "wires": [
             [
                 "cd9c88bb81c9febb"
@@ -9629,10 +9395,12 @@
         "sqlquery": "prepared",
         "sql": "DELETE FROM SENSOR\nWHERE id_sensor = $id_sensor;",
         "name": "Delete sensor",
-        "x": 960,
-        "y": 740,
+        "x": 940,
+        "y": 720,
         "wires": [
-            []
+            [
+                "80119027c1098b18"
+            ]
         ]
     },
     {
@@ -9644,10 +9412,12 @@
         "sqlquery": "prepared",
         "sql": "UPDATE SENSOR\nSET id_role = \n    (SELECT id_role \n     FROM SENSOR_ROLE\n     where role like $sensor_role)\n WHERE id_sensor = $id_sensor;\n",
         "name": "Update Sensor",
-        "x": 830,
-        "y": 890,
+        "x": 940,
+        "y": 860,
         "wires": [
-            []
+            [
+                "dabf78c524cc40e1"
+            ]
         ]
     },
     {
@@ -9684,8 +9454,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 250,
-        "y": 1290,
+        "x": 260,
+        "y": 1260,
         "wires": [
             [
                 "7fc6273e8dc78f81"
@@ -9703,7 +9473,7 @@
                 "t": "set",
                 "p": "params.$id_attribut",
                 "pt": "msg",
-                "to": "id",
+                "to": "payload",
                 "tot": "msg"
             }
         ],
@@ -9712,8 +9482,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 780,
-        "y": 690,
+        "x": 810,
+        "y": 630,
         "wires": [
             [
                 "628a55e0d9682d2f"
@@ -9729,10 +9499,12 @@
         "sqlquery": "prepared",
         "sql": "DELETE FROM SENSOR_ATTRIBUT\nWHERE id_attribut = $id_attribut;",
         "name": "Delete attribut",
-        "x": 970,
-        "y": 690,
+        "x": 990,
+        "y": 630,
         "wires": [
-            []
+            [
+                "d99eb86e34066d1c"
+            ]
         ]
     },
     {
@@ -9744,8 +9516,8 @@
         "sqlquery": "prepared",
         "sql": "INSERT INTO SENSOR_ATTRIBUT (\n    id_sensor,\n    name,\n    value)\nVALUES (\n    $id_sensor,\n    $name,\n    $value);\n",
         "name": "Insert Attribut",
-        "x": 410,
-        "y": 1290,
+        "x": 420,
+        "y": 1260,
         "wires": [
             [
                 "e37c4f7cb86c4dce"
@@ -9761,8 +9533,8 @@
         "sqlquery": "fixed",
         "sql": "SELECT last_insert_rowid();",
         "name": "Get last ID",
-        "x": 610,
-        "y": 1290,
+        "x": 620,
+        "y": 1260,
         "wires": [
             [
                 "6c9f7c455b93752f"
@@ -9780,8 +9552,8 @@
             "43c18597783c3def",
             "8fd9c5378d3a5525"
         ],
-        "x": 1185,
-        "y": 980,
+        "x": 1175,
+        "y": 1080,
         "wires": []
     },
     {
@@ -9792,28 +9564,9 @@
         "name": "",
         "mode": "abort",
         "saveValue": false,
-        "x": 1180,
-        "y": 560,
+        "x": 1170,
+        "y": 490,
         "wires": []
-    },
-    {
-        "id": "2f70446359b75607",
-        "type": "rbe",
-        "z": "a9c9090b.478498",
-        "g": "a5b04cf60d670697",
-        "name": "",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "septopics": true,
-        "property": "payload",
-        "topi": "topic",
-        "x": 80,
-        "y": 970,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "c3d58f8e5bca1066",
@@ -9823,80 +9576,29 @@
         "name": "",
         "mode": "done",
         "saveValue": false,
-        "x": 720,
-        "y": 590,
+        "x": 710,
+        "y": 520,
         "wires": []
-    },
-    {
-        "id": "c62292d7e7c6b5b8",
-        "type": "function",
-        "z": "a9c9090b.478498",
-        "g": "b0ba40e0b297f67d",
-        "name": "ToDelete",
-        "func": "\nmsg.changements.attributsToDelete.forEach(function (attrId) {\n  msg.id = attrId;\n  node.send([msg, null, null]);\n});\n\nmsg.changements.sensorsToDelete.forEach(function (sensorId) {\n  msg.id = sensorId;\n  node.send([null, msg, null]);\n});\n\nreturn [null, null, msg];",
-        "outputs": 3,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 450,
-        "y": 760,
-        "wires": [
-            [],
-            [
-                "85d647afd37b63fe"
-            ],
-            [
-                "8383da9b105ef498"
-            ]
-        ]
     },
     {
         "id": "fa7f14bdbb3856df",
         "type": "function",
         "z": "a9c9090b.478498",
         "g": "a5b04cf60d670697",
-        "name": "function 22",
-        "func": "\nmsg = {\"device\":{\"id_device\":13,\"mac\":\"78:21:84:7F:EB:2C\",\"sleep_duration\":1666,\"im_alive_period\":3600,\"sensors\":[{\"id_sensor\":15,\"sensor_role\":\"TEMPERATURE\",\"attributs\":[{\"id_attribut\":19,\"name\":\"pin\",\"value\":22}]}],\"sensorsToDelete\":[]},\"changements\":{\"deviceToUpdate\":false,\"sensorsToUpdate\":[11,22,33,44],\"attributsToUpdate\":[2,3,4],\"sensorsToDelete\":[119,1,2,3],\"attributsToDelete\":[178,1,2,3]},\"_dashboard\":{\"sourceId\":\"457086935cb6673a\",\"templateId\":\"457086935cb6673a\"},\"_client\":{\"socketId\":\"5UvBo2b05sbT9eP5AAAD\",\"socketIp\":\"169.254.109.98\"},\"_msgid\":\"9e9c81602daab2d7\"}\n\nreturn msg;",
+        "name": "Simulation",
+        "func": "\nmsg = { \"device\": { \"id_device\": 13, \"mac\": \"78:21:84:7F:EB:2C\", \"sleep_duration\": 1666, \"im_alive_period\": 3600, \"sensors\": [{ \"id_sensor\": 15, \"sensor_role\": \"TEMPERATURE\", \"attributs\": [{ \"id_attribut\": 19, \"name\": \"pin\", \"value\": 22 }] }], \"sensorsToDelete\": [] }, \"changements\": { \"deviceToUpdate\": false, \"sensorsToUpdate\": [1100, 2200, 3300, 4400], \"attributsToUpdate\": [2000, 3000, 4000], \"sensorsToDelete\": [1190, 1000, 2000, 3000], \"attributsToDelete\": [1780, 1000, 2000, 3000] }, \"_dashboard\": { \"sourceId\": \"457086935cb6673a\", \"templateId\": \"457086935cb6673a\" }, \"_client\": { \"socketId\": \"5UvBo2b05sbT9eP5AAAD\", \"socketIp\": \"169.254.109.98\" }, \"_msgid\": \"9e9c81602daab2d7\" }\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 160,
-        "y": 590,
+        "x": 120,
+        "y": 740,
         "wires": [
             [
+                "0a8f9191ad61ab30",
                 "2a792d039db9cefd"
-            ]
-        ]
-    },
-    {
-        "id": "96e713b668ed40f3",
-        "type": "function",
-        "z": "a9c9090b.478498",
-        "g": "64c4ac8396d7f0f4",
-        "name": "ToUpdate",
-        "func": "\nmsg.changements.attributsToUpdate.forEach(function (attrId) {\n  msg.id = attrId;\n  node.send([msg, null, null]);\n});\n\nmsg.changements.attributsToUpdate.forEach(function (sensorId) {\n  msg.id = sensorId;\n  node.send([null, msg, null]);\n});\n\nreturn [null, null, msg];",
-        "outputs": 3,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 490,
-        "y": 910,
-        "wires": [
-            [
-                "e1d52d5637a180e9"
-            ],
-            [
-                "5efaa91147f7e306"
-            ],
-            [
-                "59413bdba1203faa"
             ]
         ]
     },
@@ -9908,8 +9610,8 @@
         "name": "",
         "mode": "done",
         "saveValue": false,
-        "x": 750,
-        "y": 780,
+        "x": 770,
+        "y": 760,
         "wires": []
     },
     {
@@ -9920,51 +9622,9 @@
         "name": "",
         "mode": "done",
         "saveValue": false,
-        "x": 620,
-        "y": 990,
+        "x": 880,
+        "y": 900,
         "wires": []
-    },
-    {
-        "id": "5efaa91147f7e306",
-        "type": "change",
-        "z": "a9c9090b.478498",
-        "g": "64c4ac8396d7f0f4",
-        "name": "Params",
-        "rules": [
-            {
-                "t": "set",
-                "p": "params.$id_attribut",
-                "pt": "msg",
-                "to": "attribut.id_attribut",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "params.$name",
-                "pt": "msg",
-                "to": "attribut.name",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "params.$value",
-                "pt": "msg",
-                "to": "attribut.value",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 650,
-        "y": 940,
-        "wires": [
-            [
-                "eac87292ec5e26a9"
-            ]
-        ]
     },
     {
         "id": "eac87292ec5e26a9",
@@ -9975,10 +9635,12 @@
         "sqlquery": "prepared",
         "sql": "UPDATE SENSOR_ATTRIBUT\nSET name = $name,\n    value = $value\nWHERE id_attribut = $id_attribut;",
         "name": "Update  Attribut",
-        "x": 840,
+        "x": 950,
         "y": 940,
         "wires": [
-            []
+            [
+                "ff75fc44f3cbe7b6"
+            ]
         ]
     },
     {
@@ -10008,8 +9670,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 600,
-        "y": 1110,
+        "x": 830,
+        "y": 1090,
         "wires": [
             [
                 "6b6299aacfded0ae"
@@ -10025,8 +9687,8 @@
         "sqlquery": "prepared",
         "sql": "INSERT INTO SENSOR (\n    id_device,\n    id_role)\nVALUES( \n    $id_device,\n    (   SELECT id_role \n        FROM SENSOR_ROLE\n        where role like $sensor_role)\n);\n",
         "name": "Insert Sensor",
-        "x": 770,
-        "y": 1110,
+        "x": 1000,
+        "y": 1090,
         "wires": [
             []
         ]
@@ -10040,8 +9702,8 @@
         "sqlquery": "fixed",
         "sql": "SELECT last_insert_rowid();",
         "name": "Get last ID",
-        "x": 440,
-        "y": 1150,
+        "x": 670,
+        "y": 1130,
         "wires": [
             [
                 "686152736de39533"
@@ -10075,8 +9737,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 610,
-        "y": 1150,
+        "x": 840,
+        "y": 1130,
         "wires": [
             []
         ]
@@ -10108,8 +9770,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 820,
-        "y": 1290,
+        "x": 830,
+        "y": 1260,
         "wires": [
             []
         ]
@@ -10127,8 +9789,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 440,
-        "y": 1110,
+        "x": 670,
+        "y": 1090,
         "wires": [
             [
                 "883edc52c0bd0f03"
@@ -10136,238 +9798,11 @@
         ]
     },
     {
-        "id": "dc4c701aa663bf1a",
-        "type": "split",
-        "z": "a9c9090b.478498",
-        "g": "b0ba40e0b297f67d",
-        "name": "",
-        "splt": "\\n",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 460,
-        "y": 680,
-        "wires": [
-            [
-                "6ef1c4af27e5bfc1"
-            ]
-        ]
-    },
-    {
-        "id": "6ef1c4af27e5bfc1",
+        "id": "0a8f9191ad61ab30",
         "type": "debug",
         "z": "a9c9090b.478498",
-        "g": "b0ba40e0b297f67d",
-        "name": "debug 208",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 620,
-        "y": 670,
-        "wires": []
-    },
-    {
-        "id": "18a66fd.9292f9",
-        "type": "do",
-        "z": "d9faa645.5bfcf8",
-        "name": "",
-        "tasks": [
-            "default"
-        ],
-        "mode": "msg",
-        "each": "",
-        "eachType": "",
-        "yield": "",
-        "doneOutput": true,
-        "firstValueOutput": "",
-        "lastValueOutput": "",
-        "outputs": 2,
-        "_version": "0.4.1",
-        "x": 330,
-        "y": 130,
-        "wires": [
-            [
-                "c24065ab.7c41e8"
-            ],
-            [
-                "6ae4c26e.7de8dc"
-            ]
-        ]
-    },
-    {
-        "id": "76ad755e.45063c",
-        "type": "do-return",
-        "z": "d9faa645.5bfcf8",
-        "name": "",
-        "mode": "continue",
-        "saveValue": false,
-        "x": 900,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "61725a2d.4971a4",
-        "type": "debug",
-        "z": "d9faa645.5bfcf8",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 740,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "c24065ab.7c41e8",
-        "type": "change",
-        "z": "d9faa645.5bfcf8",
-        "name": "puncture balloon :)",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "msg.payload - 1",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 520,
-        "y": 130,
-        "wires": [
-            [
-                "d4063b53.69ee08"
-            ]
-        ]
-    },
-    {
-        "id": "bfd89a3a.160f88",
-        "type": "inject",
-        "z": "d9faa645.5bfcf8",
-        "name": "99 red balloons",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "9",
-        "payloadType": "num",
-        "x": 120,
-        "y": 130,
-        "wires": [
-            [
-                "18a66fd.9292f9"
-            ]
-        ]
-    },
-    {
-        "id": "d4063b53.69ee08",
-        "type": "switch",
-        "z": "d9faa645.5bfcf8",
-        "name": "more balloons?",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "gt",
-                "v": "0",
-                "vt": "num"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 720,
-        "y": 130,
-        "wires": [
-            [
-                "76ad755e.45063c",
-                "3595dfe50ada3704"
-            ],
-            [
-                "8816b1c8.08343"
-            ]
-        ]
-    },
-    {
-        "id": "8816b1c8.08343",
-        "type": "do-return",
-        "z": "d9faa645.5bfcf8",
-        "name": "",
-        "mode": "done",
-        "x": 900,
-        "y": 180,
-        "wires": []
-    },
-    {
-        "id": "6ae4c26e.7de8dc",
-        "type": "change",
-        "z": "d9faa645.5bfcf8",
-        "name": "no more balloons :(",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "That was fun! But now I already punctured all the balloons. :/ Do you have me some more?",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 550,
-        "y": 240,
-        "wires": [
-            [
-                "61725a2d.4971a4"
-            ]
-        ]
-    },
-    {
-        "id": "4ac62b51.1d8d04",
-        "type": "comment",
-        "z": "d9faa645.5bfcf8",
-        "name": "Description of Loop-Example",
-        "info": "Loops are the most basic usecase for the do-return-nodes. Just drag the do-node onto the canvas and wire its first output (task output) to whatever shall be repeatedly done and the second output (done-output) to where the flow shall continue after the loop ended. Using the return node you can decide whether you want to execute the loop once again (continue mode) or to end it (done mode).",
-        "x": 160,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "3595dfe50ada3704",
-        "type": "debug",
-        "z": "d9faa645.5bfcf8",
-        "name": "",
+        "g": "a5b04cf60d670697",
+        "name": "debug 209",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -10376,1485 +9811,252 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 910,
-        "y": 130,
+        "x": 160,
+        "y": 820,
         "wires": []
     },
     {
-        "id": "9f805e9c08470329",
-        "type": "inject",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "start",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "the inject value",
-        "payloadType": "str",
-        "x": 190,
-        "y": 220,
-        "wires": [
-            [
-                "fa6c84b86112dacf"
-            ]
-        ]
-    },
-    {
-        "id": "bd3ea16681f75a48",
+        "id": "0d4ac5b91285c29e",
         "type": "do",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "",
+        "z": "a9c9090b.478498",
+        "g": "b0ba40e0b297f67d",
+        "name": "Delete Attributs",
         "tasks": [
-            "Task0",
-            "Task1"
+            "delete"
         ],
         "mode": "each",
-        "each": "balloons",
+        "each": "changements.attributsToDelete",
         "eachType": "msg",
         "yield": "value",
         "doneOutput": true,
         "firstValueOutput": false,
         "lastValueOutput": false,
-        "outputs": 3,
+        "outputs": 2,
         "_version": "0.4.1",
-        "x": 460,
-        "y": 220,
+        "x": 610,
+        "y": 650,
         "wires": [
             [
-                "ec13c40821918014"
+                "5dc538862649faad"
             ],
             [
-                "e88ffe5ac5c0e1cc"
-            ],
-            [
-                "c848fbb8bcf13c73"
+                "6df860f3d88e7e14"
             ]
         ]
     },
     {
-        "id": "6ed13f9be5e114b7",
-        "type": "debug",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "balloons :)",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 930,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "ec13c40821918014",
-        "type": "function",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "shout ballons",
-        "func": "if (msg._do.keys) {\n    const ballonColor = msg._do.keys[msg._do.index]\n    const amount = msg.payload[ballonColor]\n    \n    msg.payload = 'Wow there are ' + amount + ' ' +  ballonColor + ' baloons!'\n    return msg;    \n} else {\n    msg.payload = \"Wow it's a \" + msg.payload + ' balloon!'\n    return msg;\n}\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 710,
-        "y": 120,
-        "wires": [
-            [
-                "6ed13f9be5e114b7",
-                "db011552a95b3c4b"
-            ]
-        ]
-    },
-    {
-        "id": "3572247be8af7f3d",
-        "type": "comment",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "Iterate",
-        "info": "You can iterate through a collection.\nThis means each value of your collection will walk through all tasks. Then the next value will do the same.\nThe first and last value are marked in msg._do.isFirstMsg / isLastMsg.\n\nIn this example we iterate an array and send a msg in the debugger with the current color. We don't change the value.",
-        "x": 150,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "c712565fe629a8b5",
-        "type": "do",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
+        "id": "6df860f3d88e7e14",
+        "type": "do-return",
+        "z": "a9c9090b.478498",
+        "g": "b0ba40e0b297f67d",
         "name": "",
+        "mode": "done",
+        "saveValue": false,
+        "x": 780,
+        "y": 670,
+        "wires": []
+    },
+    {
+        "id": "d99eb86e34066d1c",
+        "type": "do-return",
+        "z": "a9c9090b.478498",
+        "g": "b0ba40e0b297f67d",
+        "name": "",
+        "mode": "done",
+        "saveValue": false,
+        "x": 1160,
+        "y": 630,
+        "wires": []
+    },
+    {
+        "id": "80119027c1098b18",
+        "type": "do-return",
+        "z": "a9c9090b.478498",
+        "g": "b0ba40e0b297f67d",
+        "name": "",
+        "mode": "done",
+        "saveValue": false,
+        "x": 1130,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "14c57979f8bea78f",
+        "type": "do",
+        "z": "a9c9090b.478498",
+        "g": "b0ba40e0b297f67d",
+        "name": "Delete Sensors",
         "tasks": [
-            "Task0"
+            "delete"
         ],
         "mode": "each",
-        "each": "payload",
+        "each": "changements.sensorsToDelete",
         "eachType": "msg",
         "yield": "value",
-        "doneOutput": true,
-        "firstValueOutput": "",
-        "lastValueOutput": "",
-        "outputs": 2,
-        "_version": "0.4.1",
-        "x": 480,
-        "y": 820,
-        "wires": [
-            [
-                "59d31a51e31dd8aa"
-            ],
-            [
-                "6e060feb4ec85989"
-            ]
-        ]
-    },
-    {
-        "id": "89b76248799543f0",
-        "type": "do-return",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "",
-        "mode": "done",
-        "saveValue": true,
-        "x": 910,
-        "y": 800,
-        "wires": []
-    },
-    {
-        "id": "098245f2db6a16ce",
-        "type": "comment",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "Change value",
-        "info": "In this example we get each value of an array and want to overwrite it with 'red'.",
-        "x": 150,
-        "y": 760,
-        "wires": []
-    },
-    {
-        "id": "59d31a51e31dd8aa",
-        "type": "change",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "paint it red",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "red",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 690,
-        "y": 800,
-        "wires": [
-            [
-                "89b76248799543f0"
-            ]
-        ]
-    },
-    {
-        "id": "663353f613d517ab",
-        "type": "change",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "array",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "['white','blue','green', 'red', 'yellow', 'brown']",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 310,
-        "y": 820,
-        "wires": [
-            [
-                "c712565fe629a8b5"
-            ]
-        ]
-    },
-    {
-        "id": "4f69b439ce7b954e",
-        "type": "inject",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "painting",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "paint",
-        "payload": "",
-        "payloadType": "date",
-        "x": 150,
-        "y": 820,
-        "wires": [
-            [
-                "663353f613d517ab"
-            ]
-        ]
-    },
-    {
-        "id": "3df32a9ffbb5242a",
-        "type": "inject",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "156e48294e15a399",
-        "name": "remove from array",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "remove",
-        "payloadType": "date",
-        "x": 190,
-        "y": 1480,
-        "wires": [
-            [
-                "631d6b526bea7e4d"
-            ]
-        ]
-    },
-    {
-        "id": "a11a09b08407dc50",
-        "type": "do",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "156e48294e15a399",
-        "name": "each value-index",
-        "tasks": [
-            "Task0"
-        ],
-        "mode": "each",
-        "each": "payload",
-        "eachType": "msg",
-        "yield": "indexValue",
-        "doneOutput": true,
-        "firstValueOutput": "",
-        "lastValueOutput": "",
-        "outputs": 2,
-        "_version": "0.4.1",
-        "x": 630,
-        "y": 1480,
-        "wires": [
-            [
-                "091b1cb23ef8485e"
-            ],
-            [
-                "fa63bd549cae8b41"
-            ]
-        ]
-    },
-    {
-        "id": "631d6b526bea7e4d",
-        "type": "change",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "156e48294e15a399",
-        "name": "ballons :)",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "['white','blue','green', 'red', 'yellow', 'brown']",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 420,
-        "y": 1480,
-        "wires": [
-            [
-                "a11a09b08407dc50"
-            ]
-        ]
-    },
-    {
-        "id": "db011552a95b3c4b",
-        "type": "do-return",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "",
-        "mode": "done",
-        "saveValue": false,
-        "x": 910,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "e88ffe5ac5c0e1cc",
-        "type": "switch",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "is last balloon?",
-        "property": "_do.isLastMsg",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "true"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 640,
-        "y": 220,
-        "wires": [
-            [
-                "c64e8966c886ed56"
-            ],
-            [
-                "43ac74b2f62b1a00"
-            ]
-        ]
-    },
-    {
-        "id": "f6abb27126a0451d",
-        "type": "debug",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "stop watching",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1040,
-        "y": 210,
-        "wires": []
-    },
-    {
-        "id": "43ac74b2f62b1a00",
-        "type": "do-return",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "",
-        "mode": "done",
-        "saveValue": false,
-        "x": 1010,
-        "y": 250,
-        "wires": []
-    },
-    {
-        "id": "c64e8966c886ed56",
-        "type": "change",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "stop watching",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Oh that's the last one! :(",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 850,
-        "y": 210,
-        "wires": [
-            [
-                "f6abb27126a0451d",
-                "43ac74b2f62b1a00"
-            ]
-        ]
-    },
-    {
-        "id": "c848fbb8bcf13c73",
-        "type": "debug",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "done -> let`s go on with the flow",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 770,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "0a06ba357340e2d3",
-        "type": "do-return",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "156e48294e15a399",
-        "name": "",
-        "mode": "done",
-        "saveValue": true,
-        "x": 1110,
-        "y": 1440,
-        "wires": []
-    },
-    {
-        "id": "091b1cb23ef8485e",
-        "type": "function",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "156e48294e15a399",
-        "name": "only red allowed",
-        "func": "const value = Object.values(msg.payload)[0]\n\nif (value !== 'red') msg.payload = { undefined: undefined }\nreturn msg",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 880,
-        "y": 1440,
-        "wires": [
-            [
-                "0a06ba357340e2d3"
-            ]
-        ]
-    },
-    {
-        "id": "fa63bd549cae8b41",
-        "type": "debug",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "156e48294e15a399",
-        "name": "remaining balloons",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 890,
-        "y": 1500,
-        "wires": []
-    },
-    {
-        "id": "6e060feb4ec85989",
-        "type": "debug",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "all balloons are red",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 710,
-        "y": 840,
-        "wires": []
-    },
-    {
-        "id": "04b5a2ec2c7ea1b9",
-        "type": "do",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "each key",
-        "tasks": [
-            "Task0"
-        ],
-        "mode": "each",
-        "each": "balloons",
-        "eachType": "msg",
-        "yield": "key",
-        "doneOutput": true,
-        "firstValueOutput": "",
-        "lastValueOutput": "",
-        "outputs": 2,
-        "_version": "0.4.1",
-        "x": 480,
-        "y": 980,
-        "wires": [
-            [
-                "dc2c9c21b92ad433"
-            ],
-            [
-                "5d2debdf8162371b"
-            ]
-        ]
-    },
-    {
-        "id": "e74cafe822752aee",
-        "type": "change",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "object",
-        "rules": [
-            {
-                "t": "set",
-                "p": "balloons",
-                "pt": "msg",
-                "to": "{\"red\":10,\"green\":12,\"blue\":15,\"lila\":7,\"purple\":5}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 310,
-        "y": 980,
-        "wires": [
-            [
-                "04b5a2ec2c7ea1b9"
-            ]
-        ]
-    },
-    {
-        "id": "f657e43da9571001",
-        "type": "inject",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "paint",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "paint",
-        "payloadType": "date",
-        "x": 150,
-        "y": 980,
-        "wires": [
-            [
-                "e74cafe822752aee"
-            ]
-        ]
-    },
-    {
-        "id": "dc2c9c21b92ad433",
-        "type": "function",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "paint white stripes",
-        "func": "msg.payload = msg.payload + \"_with_white_stripes\"    \nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 710,
-        "y": 960,
-        "wires": [
-            [
-                "9be31c0756c32141"
-            ]
-        ]
-    },
-    {
-        "id": "9be31c0756c32141",
-        "type": "do-return",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "",
-        "mode": "done",
-        "saveValue": true,
-        "x": 910,
-        "y": 960,
-        "wires": []
-    },
-    {
-        "id": "5d2debdf8162371b",
-        "type": "debug",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "all balloons are painted (msg.balloons)",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "balloons",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 770,
-        "y": 1000,
-        "wires": []
-    },
-    {
-        "id": "e33fc812f873369b",
-        "type": "do",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "156e48294e15a399",
-        "name": "each key",
-        "tasks": [
-            "Task0"
-        ],
-        "mode": "each",
-        "each": "payload",
-        "eachType": "msg",
-        "yield": "key",
         "doneOutput": true,
         "firstValueOutput": false,
         "lastValueOutput": false,
         "outputs": 2,
         "_version": "0.4.1",
         "x": 600,
-        "y": 1640,
+        "y": 730,
         "wires": [
             [
-                "004c984fdb5923ca"
+                "85d647afd37b63fe"
             ],
             [
-                "7572d26446ddf8f9"
+                "8383da9b105ef498"
             ]
         ]
     },
     {
-        "id": "333892a0ea4ade46",
-        "type": "change",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "156e48294e15a399",
-        "name": "object",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"red\":10,\"green\":12,\"blue\":15,\"lila\":7,\"purple\":5}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 410,
-        "y": 1640,
-        "wires": [
-            [
-                "e33fc812f873369b"
-            ]
-        ]
-    },
-    {
-        "id": "ba827510167634bd",
-        "type": "inject",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "156e48294e15a399",
-        "name": "remove keys from object",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "paint",
-        "payloadType": "date",
-        "x": 210,
-        "y": 1640,
-        "wires": [
-            [
-                "333892a0ea4ade46"
-            ]
-        ]
-    },
-    {
-        "id": "004c984fdb5923ca",
-        "type": "function",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "156e48294e15a399",
-        "name": "remove green and lila",
-        "func": "let checkThis = msg.payload\n\nif (typeof msg.payload !== 'string') {\n    checkThis = Object.keys(msg.payload)[0]\n}\nif (checkThis === 'green' || checkThis === 'lila') msg.payload = undefined    \n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 900,
-        "y": 1620,
-        "wires": [
-            [
-                "54c16615e721f476"
-            ]
-        ]
-    },
-    {
-        "id": "54c16615e721f476",
-        "type": "do-return",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "156e48294e15a399",
-        "name": "",
-        "mode": "done",
-        "saveValue": true,
-        "x": 1110,
-        "y": 1620,
-        "wires": []
-    },
-    {
-        "id": "9cb922e4f6891085",
-        "type": "comment",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "156e48294e15a399",
-        "name": "Remove",
-        "info": "Array: If you want to remove an index you have to set the index to undefined.\n\nObject: If you want to delete an key, set the key to undefined.",
-        "x": 140,
-        "y": 1420,
-        "wires": []
-    },
-    {
-        "id": "7572d26446ddf8f9",
-        "type": "debug",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "156e48294e15a399",
-        "name": "remaining balloons",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 890,
-        "y": 1680,
-        "wires": []
-    },
-    {
-        "id": "fa6c84b86112dacf",
-        "type": "change",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "array",
-        "rules": [
-            {
-                "t": "set",
-                "p": "balloons",
-                "pt": "msg",
-                "to": "['red','blue','green', 'yellow', 'brown']",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 310,
-        "y": 220,
-        "wires": [
-            [
-                "bd3ea16681f75a48"
-            ]
-        ]
-    },
-    {
-        "id": "6d3e7a5685df6118",
-        "type": "inject",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "start",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "my payload value",
-        "payloadType": "str",
-        "x": 150,
-        "y": 500,
-        "wires": [
-            [
-                "8633e8cd8755d41e"
-            ]
-        ]
-    },
-    {
-        "id": "88413b561f1fa8ad",
+        "id": "be35ffe0569746ab",
         "type": "do",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "",
+        "z": "a9c9090b.478498",
+        "g": "64c4ac8396d7f0f4",
+        "name": "Update Attributs",
         "tasks": [
-            "forgot to look"
+            "delete"
         ],
         "mode": "each",
-        "each": "balloons",
+        "each": "changements.attributsToUpdate",
         "eachType": "msg",
         "yield": "value",
         "doneOutput": true,
-        "firstValueOutput": true,
-        "lastValueOutput": true,
-        "outputs": 4,
-        "_version": "0.4.1",
-        "x": 460,
-        "y": 500,
-        "wires": [
-            [
-                "2c687a8db5ad2d7d"
-            ],
-            [
-                "6bd6b4852ebd8cef"
-            ],
-            [
-                "fb86275488bfe72d"
-            ],
-            [
-                "0a01060611f50b89"
-            ]
-        ]
-    },
-    {
-        "id": "8633e8cd8755d41e",
-        "type": "change",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "array",
-        "rules": [
-            {
-                "t": "set",
-                "p": "balloons",
-                "pt": "msg",
-                "to": "['red','blue','green', 'yellow', 'brown']",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 310,
-        "y": 500,
-        "wires": [
-            [
-                "88413b561f1fa8ad"
-            ]
-        ]
-    },
-    {
-        "id": "0b679b604339a0f5",
-        "type": "debug",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "first balloon spotted",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 970,
-        "y": 380,
-        "wires": []
-    },
-    {
-        "id": "2c7a327d51775f1b",
-        "type": "do-return",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "",
-        "mode": "done",
-        "saveValue": false,
-        "x": 930,
-        "y": 420,
-        "wires": []
-    },
-    {
-        "id": "46f9cf59ba916358",
-        "type": "do-return",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "",
-        "mode": "done",
-        "saveValue": false,
-        "x": 930,
-        "y": 500,
-        "wires": []
-    },
-    {
-        "id": "fb86275488bfe72d",
-        "type": "change",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "oh no the last one",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "'Oh no! I just saw the last balloon. It was a '  & msg.payload & ' one!'",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 710,
-        "y": 560,
-        "wires": [
-            [
-                "92577a77fc14f3df",
-                "9dd3cb82ca403cd8"
-            ]
-        ]
-    },
-    {
-        "id": "92577a77fc14f3df",
-        "type": "do-return",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "",
-        "mode": "done",
-        "saveValue": false,
-        "x": 930,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "0a01060611f50b89",
-        "type": "debug",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "done -> let`s go on with the flow",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 750,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "9dd3cb82ca403cd8",
-        "type": "debug",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "last balloon spotted",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 970,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "6bd6b4852ebd8cef",
-        "type": "change",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "missed balloon",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "\"I didn't noticed the \"  & msg.payload & \" balloon!\"",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 700,
-        "y": 480,
-        "wires": [
-            [
-                "46f9cf59ba916358",
-                "7fe39e1936da5497"
-            ]
-        ]
-    },
-    {
-        "id": "2c687a8db5ad2d7d",
-        "type": "change",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "spotted first ballon",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "'Wow! I saw a '  & msg.payload & ' balloon!'",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 710,
-        "y": 420,
-        "wires": [
-            [
-                "2c7a327d51775f1b",
-                "0b679b604339a0f5"
-            ]
-        ]
-    },
-    {
-        "id": "7fe39e1936da5497",
-        "type": "debug",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "13801fdd6b5b4fa2",
-        "name": "missed balloon",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 960,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "d49352494dc53b12",
-        "type": "do",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "each key",
-        "tasks": [
-            "Task0"
-        ],
-        "mode": "each",
-        "each": "payload",
-        "eachType": "msg",
-        "yield": "key",
-        "doneOutput": true,
-        "firstValueOutput": true,
-        "lastValueOutput": true,
-        "outputs": 4,
-        "_version": "0.4.1",
-        "x": 480,
-        "y": 1220,
-        "wires": [
-            [
-                "62b55aab9f60e142"
-            ],
-            [
-                "944458cb4ec11494"
-            ],
-            [
-                "da789c49f0b2f636"
-            ],
-            [
-                "d562b47c01c791c3"
-            ]
-        ]
-    },
-    {
-        "id": "80e1a07a26db735b",
-        "type": "change",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "object",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"red\":10,\"green\":12,\"blue\":15,\"lila\":7,\"purple\":5}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 310,
-        "y": 1220,
-        "wires": [
-            [
-                "d49352494dc53b12"
-            ]
-        ]
-    },
-    {
-        "id": "e75b5f7903ac8597",
-        "type": "inject",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "paint",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "paint",
-        "payloadType": "date",
-        "x": 150,
-        "y": 1220,
-        "wires": [
-            [
-                "80e1a07a26db735b"
-            ]
-        ]
-    },
-    {
-        "id": "944458cb4ec11494",
-        "type": "function",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "paint white stripes",
-        "func": "msg.payload = msg.payload + \"_with_white_stripes\"    \nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 710,
-        "y": 1220,
-        "wires": [
-            [
-                "bf491cbe1425c4d2"
-            ]
-        ]
-    },
-    {
-        "id": "bf491cbe1425c4d2",
-        "type": "do-return",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "",
-        "mode": "done",
-        "saveValue": true,
-        "x": 930,
-        "y": 1220,
-        "wires": []
-    },
-    {
-        "id": "d562b47c01c791c3",
-        "type": "debug",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "all balloons are painted",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 730,
-        "y": 1300,
-        "wires": []
-    },
-    {
-        "id": "19015160fcdf862f",
-        "type": "do-return",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "",
-        "mode": "done",
-        "saveValue": true,
-        "x": 930,
-        "y": 1180,
-        "wires": []
-    },
-    {
-        "id": "62b55aab9f60e142",
-        "type": "function",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "paint black stripes",
-        "func": "msg.payload = msg.payload + \"_with_black_stripes\"    \nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 710,
-        "y": 1180,
-        "wires": [
-            [
-                "19015160fcdf862f"
-            ]
-        ]
-    },
-    {
-        "id": "da789c49f0b2f636",
-        "type": "function",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "paint green stripes",
-        "func": "msg.payload = msg.payload + \"_with_green_stripes\"    \nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 710,
-        "y": 1260,
-        "wires": [
-            [
-                "36ced97cf601143d"
-            ]
-        ]
-    },
-    {
-        "id": "36ced97cf601143d",
-        "type": "do-return",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "",
-        "mode": "done",
-        "saveValue": true,
-        "x": 930,
-        "y": 1260,
-        "wires": []
-    },
-    {
-        "id": "a4704c83cdbea31e",
-        "type": "comment",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "handle first/last value different",
-        "info": "In this example we get each value of an array and want to overwrite it with 'red'.",
-        "x": 200,
-        "y": 1180,
-        "wires": []
-    },
-    {
-        "id": "69a43c2e8b7b3aec",
-        "type": "do",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "each key",
-        "tasks": [
-            "Task0"
-        ],
-        "mode": "each",
-        "each": "payload",
-        "eachType": "msg",
-        "yield": "keyValue",
-        "doneOutput": true,
-        "firstValueOutput": "",
-        "lastValueOutput": "",
+        "firstValueOutput": false,
+        "lastValueOutput": false,
         "outputs": 2,
         "_version": "0.4.1",
-        "x": 480,
-        "y": 1080,
+        "x": 590,
+        "y": 960,
         "wires": [
             [
-                "4238567a740c868e"
+                "b123210f7db0e10b"
             ],
             [
-                "f4d933bac346eff7"
+                "b7da68673e05346d"
             ]
         ]
     },
     {
-        "id": "052c6324621a0ee4",
-        "type": "change",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "object",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"red\":10,\"green\":12,\"blue\":15,\"lila\":7,\"purple\":5}",
-                "tot": "json"
-            }
+        "id": "cd1430b315afff7f",
+        "type": "do",
+        "z": "a9c9090b.478498",
+        "g": "64c4ac8396d7f0f4",
+        "name": "Update Sensors",
+        "tasks": [
+            "Update"
         ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 310,
-        "y": 1080,
+        "mode": "each",
+        "each": "changements.sensorsToUpdate",
+        "eachType": "msg",
+        "yield": "value",
+        "doneOutput": true,
+        "firstValueOutput": false,
+        "lastValueOutput": false,
+        "outputs": 2,
+        "_version": "0.4.1",
+        "x": 590,
+        "y": 880,
         "wires": [
             [
-                "69a43c2e8b7b3aec"
-            ]
-        ]
-    },
-    {
-        "id": "83fbcfa575479023",
-        "type": "inject",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "release",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "release",
-        "payload": "",
-        "payloadType": "date",
-        "x": 150,
-        "y": 1080,
-        "wires": [
+                "bc6c6cd719e20f61"
+            ],
             [
-                "052c6324621a0ee4"
+                "59413bdba1203faa"
             ]
         ]
     },
     {
-        "id": "4238567a740c868e",
+        "id": "bc6c6cd719e20f61",
         "type": "function",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "released balloons",
-        "func": "msg.payload[Object.keys(msg.payload)[0]] = 0\nreturn msg;",
-        "outputs": 1,
+        "z": "a9c9090b.478498",
+        "g": "64c4ac8396d7f0f4",
+        "name": "Params",
+        "func": "let sensor = msg.device.sensors.find(function (value) {\n    return value.id_sensor == msg.payload;\n});\n\nmsg.params = undefined;\nif(sensor != undefined){\n    msg.params.$id_sensor = sensor.id_sensor;\n    msg.params.$sensor_role = sensor.sensor_role;\n\n    return [msg,null];\n}\n\nreturn [null, msg];",
+        "outputs": 2,
+        "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 710,
-        "y": 1060,
+        "x": 750,
+        "y": 860,
         "wires": [
             [
-                "de5035e88890d192"
+                "8ea9a28d16829721"
+            ],
+            [
+                "59413bdba1203faa"
             ]
+        ],
+        "outputLabels": [
+            "Update",
+            "NoUpdate"
         ]
     },
     {
-        "id": "de5035e88890d192",
+        "id": "dabf78c524cc40e1",
         "type": "do-return",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
+        "z": "a9c9090b.478498",
+        "g": "64c4ac8396d7f0f4",
         "name": "",
         "mode": "done",
         "saveValue": false,
-        "x": 910,
-        "y": 1060,
+        "x": 1100,
+        "y": 860,
         "wires": []
     },
     {
-        "id": "f4d933bac346eff7",
-        "type": "debug",
-        "z": "a37ba4fb4c0f75b5",
-        "g": "9df54a142a4bddf1",
-        "name": "all balloons are released (msg.payload)",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 780,
-        "y": 1100,
+        "id": "b123210f7db0e10b",
+        "type": "function",
+        "z": "a9c9090b.478498",
+        "g": "64c4ac8396d7f0f4",
+        "name": "Params",
+        "func": "let attribut = {};\n\nmsg.device.sensors.forEach(function (sensor) {\n    attribut = sensor.attributs.find(function (attribut) {\n        return attribut.id_attribut == msg.payload;\n    });\n});\n\nmsg.params = undefined;\nif(attribut != undefined){\n    msg.params.$id_attribut = attribut.id_attribut;\n    msg.params.$name = attribut.name;\n    msg.params.$value = attribut.value;\n\n    return [msg,null];\n}\n\nreturn [null, msg];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 950,
+        "wires": [
+            [
+                "eac87292ec5e26a9"
+            ],
+            [
+                "b7da68673e05346d"
+            ]
+        ],
+        "outputLabels": [
+            "Update",
+            "NoUpdate"
+        ]
+    },
+    {
+        "id": "ff75fc44f3cbe7b6",
+        "type": "do-return",
+        "z": "a9c9090b.478498",
+        "g": "64c4ac8396d7f0f4",
+        "name": "",
+        "mode": "done",
+        "saveValue": false,
+        "x": 1120,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "b7da68673e05346d",
+        "type": "do-return",
+        "z": "a9c9090b.478498",
+        "g": "64c4ac8396d7f0f4",
+        "name": "",
+        "mode": "done",
+        "saveValue": false,
+        "x": 890,
+        "y": 990,
         "wires": []
     },
     {
@@ -11964,6 +10166,642 @@
         "complete": "false",
         "x": 680,
         "y": 260,
+        "wires": []
+    },
+    {
+        "id": "51b6194d.8394c8",
+        "type": "inject",
+        "z": "09b3d9adcf09ddda",
+        "name": "",
+        "props": [
+            {
+                "p": "payload",
+                "v": "",
+                "vt": "date"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 190,
+        "wires": [
+            [
+                "7c5bfa57.52ab04",
+                "89d4e418.c76b78",
+                "dca42256.3f9dd"
+            ]
+        ]
+    },
+    {
+        "id": "7c5bfa57.52ab04",
+        "type": "template",
+        "z": "09b3d9adcf09ddda",
+        "name": "Node 1",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "plain",
+        "template": "From the node 1.",
+        "x": 320,
+        "y": 130,
+        "wires": [
+            [
+                "61b60613.2bc3f8"
+            ]
+        ]
+    },
+    {
+        "id": "89d4e418.c76b78",
+        "type": "template",
+        "z": "09b3d9adcf09ddda",
+        "name": "Node 2",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "plain",
+        "template": "From the node 2.",
+        "x": 320,
+        "y": 190,
+        "wires": [
+            [
+                "fd663f05.de2ea"
+            ]
+        ]
+    },
+    {
+        "id": "dca42256.3f9dd",
+        "type": "template",
+        "z": "09b3d9adcf09ddda",
+        "name": "Node 3",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "plain",
+        "template": "From the node 3.",
+        "x": 320,
+        "y": 250,
+        "wires": [
+            [
+                "2bb0e8dd.0de0b8"
+            ]
+        ]
+    },
+    {
+        "id": "61b60613.2bc3f8",
+        "type": "delay",
+        "z": "09b3d9adcf09ddda",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 470,
+        "y": 130,
+        "wires": [
+            [
+                "3ae0134c.d855cc"
+            ]
+        ]
+    },
+    {
+        "id": "fd663f05.de2ea",
+        "type": "delay",
+        "z": "09b3d9adcf09ddda",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 470,
+        "y": 190,
+        "wires": [
+            [
+                "d129ea17.617688"
+            ]
+        ]
+    },
+    {
+        "id": "2bb0e8dd.0de0b8",
+        "type": "delay",
+        "z": "09b3d9adcf09ddda",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 470,
+        "y": 250,
+        "wires": [
+            [
+                "b5f09a3f.681d88"
+            ]
+        ]
+    },
+    {
+        "id": "af817eff.44d2c",
+        "type": "debug",
+        "z": "09b3d9adcf09ddda",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "6670162a.672408",
+        "type": "function",
+        "z": "09b3d9adcf09ddda",
+        "name": "Join",
+        "func": "let resolve = context.get('resolve') || undefined;\nif (undefined === resolve) {\n    resolve = {};\n    let promises = [];\n    promises.push(new Promise((res, rej) => { resolve['node1'] = res; }));\n    promises.push(new Promise((res, rej) => { resolve['node2'] = res; }));\n    promises.push(new Promise((res, rej) => { resolve['node3'] = res; }));\n    let pAll = Promise.all(promises);\n    pAll.then((...msgs) => node.send(msgs[0]));\n    context.set('resolve', resolve);\n}\nresolve[msg.topic](msg);\nreturn null;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 860,
+        "y": 190,
+        "wires": [
+            [
+                "af817eff.44d2c"
+            ]
+        ]
+    },
+    {
+        "id": "3ae0134c.d855cc",
+        "type": "function",
+        "z": "09b3d9adcf09ddda",
+        "name": "Set Topic for Node 1",
+        "func": "msg.topic = 'node1';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 660,
+        "y": 130,
+        "wires": [
+            [
+                "6670162a.672408"
+            ]
+        ]
+    },
+    {
+        "id": "d129ea17.617688",
+        "type": "function",
+        "z": "09b3d9adcf09ddda",
+        "name": "Set Topic for Node 2",
+        "func": "msg.topic = 'node2';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 660,
+        "y": 190,
+        "wires": [
+            [
+                "6670162a.672408"
+            ]
+        ]
+    },
+    {
+        "id": "b5f09a3f.681d88",
+        "type": "function",
+        "z": "09b3d9adcf09ddda",
+        "name": "Set Topic for Node 3",
+        "func": "msg.topic = 'node3';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 660,
+        "y": 250,
+        "wires": [
+            [
+                "6670162a.672408"
+            ]
+        ]
+    },
+    {
+        "id": "b473971a8851fad9",
+        "type": "function",
+        "z": "09b3d9adcf09ddda",
+        "name": "function 25",
+        "func": "function resolveAfter2Seconds(x) {\n  return new Promise((resolve) => {\n    setTimeout(() => {\n      resolve(x);\n    }, 6000);\n  });\n}\n\nasync function f1() {\n  const x = await resolveAfter2Seconds(3);\n  console.log(x); // 10\n  node.warn(x);\n  msg.payload = \"Terminé\";\n  return msg;\n}\n\nf1();\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 390,
+        "wires": [
+            [
+                "6a322497f5632ca4"
+            ]
+        ]
+    },
+    {
+        "id": "26292abd5203b6fe",
+        "type": "inject",
+        "z": "09b3d9adcf09ddda",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 390,
+        "wires": [
+            [
+                "b473971a8851fad9"
+            ]
+        ]
+    },
+    {
+        "id": "6a322497f5632ca4",
+        "type": "debug",
+        "z": "09b3d9adcf09ddda",
+        "name": "debug 210",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 390,
+        "wires": []
+    },
+    {
+        "id": "8f4d8f31.7603d",
+        "type": "do",
+        "z": "8b50971b.a49d58",
+        "name": "",
+        "tasks": [
+            "Paint white",
+            "Let balloon fly",
+            "Smile"
+        ],
+        "mode": "msg",
+        "each": "",
+        "eachType": "msg",
+        "yield": "keyValue",
+        "doneOutput": true,
+        "firstValueOutput": false,
+        "lastValueOutput": false,
+        "outputs": 4,
+        "_version": "0.4.1",
+        "x": 330,
+        "y": 130,
+        "wires": [
+            [
+                "edbf9150aa68c31b"
+            ],
+            [
+                "98e054a3.6efdb8"
+            ],
+            [
+                "c87c123d.7a65a"
+            ],
+            [
+                "42ab67d2.12a628"
+            ]
+        ]
+    },
+    {
+        "id": "3e77f475.9764ec",
+        "type": "do-return",
+        "z": "8b50971b.a49d58",
+        "name": "",
+        "mode": "continue",
+        "x": 1020,
+        "y": 170,
+        "wires": []
+    },
+    {
+        "id": "94766e4b.0424c",
+        "type": "do-return",
+        "z": "8b50971b.a49d58",
+        "name": "",
+        "mode": "done",
+        "x": 730,
+        "y": 270,
+        "wires": []
+    },
+    {
+        "id": "42ab67d2.12a628",
+        "type": "debug",
+        "z": "8b50971b.a49d58",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 570,
+        "y": 350,
+        "wires": []
+    },
+    {
+        "id": "c87c123d.7a65a",
+        "type": "change",
+        "z": "8b50971b.a49d58",
+        "name": "Smile",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "So many red balloons flying. Cool! :)",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 270,
+        "wires": [
+            [
+                "94766e4b.0424c"
+            ]
+        ]
+    },
+    {
+        "id": "48edc785.2d0098",
+        "type": "do-return",
+        "z": "8b50971b.a49d58",
+        "name": "",
+        "mode": "continue",
+        "x": 1220,
+        "y": 90,
+        "wires": []
+    },
+    {
+        "id": "855c920c.14b34",
+        "type": "switch",
+        "z": "8b50971b.a49d58",
+        "name": "more balloons?",
+        "property": "current_balloon",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "$count(msg.payload) - 1",
+                "vt": "jsonata"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1000,
+        "y": 110,
+        "wires": [
+            [
+                "48edc785.2d0098"
+            ],
+            [
+                "feeb0c66.b5931"
+            ]
+        ]
+    },
+    {
+        "id": "feeb0c66.b5931",
+        "type": "do-return",
+        "z": "8b50971b.a49d58",
+        "name": "",
+        "mode": "done",
+        "x": 1210,
+        "y": 130,
+        "wires": []
+    },
+    {
+        "id": "2db458ac.da41e8",
+        "type": "inject",
+        "z": "8b50971b.a49d58",
+        "name": "99 white balloons",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[\"white\",\"white\",\"white\",\"white\",\"white\",\"white\"]",
+        "payloadType": "json",
+        "x": 120,
+        "y": 130,
+        "wires": [
+            [
+                "8f4d8f31.7603d"
+            ]
+        ]
+    },
+    {
+        "id": "3c51a9de.e0d7b6",
+        "type": "do-return",
+        "z": "8b50971b.a49d58",
+        "name": "",
+        "mode": "done",
+        "x": 1010,
+        "y": 210,
+        "wires": []
+    },
+    {
+        "id": "7f3c80de.33b62",
+        "type": "change",
+        "z": "8b50971b.a49d58",
+        "name": "next balloon",
+        "rules": [
+            {
+                "t": "set",
+                "p": "current_balloon",
+                "pt": "msg",
+                "to": "msg.current_balloon >= 0 ? msg.current_balloon + 1 : 0",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 40,
+        "wires": [
+            [
+                "b65f5fea.ae4f2"
+            ]
+        ]
+    },
+    {
+        "id": "b65f5fea.ae4f2",
+        "type": "function",
+        "z": "8b50971b.a49d58",
+        "name": "paint red",
+        "func": "msg.payload[msg.current_balloon] = \"red\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 780,
+        "y": 110,
+        "wires": [
+            [
+                "855c920c.14b34"
+            ]
+        ]
+    },
+    {
+        "id": "98e054a3.6efdb8",
+        "type": "function",
+        "z": "8b50971b.a49d58",
+        "name": "let balloon fly",
+        "func": "msg.payload.pop();\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 570,
+        "y": 180,
+        "wires": [
+            [
+                "4247a2da.af362c"
+            ]
+        ]
+    },
+    {
+        "id": "4247a2da.af362c",
+        "type": "switch",
+        "z": "8b50971b.a49d58",
+        "name": "more balloons?",
+        "property": "payload.length",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 800,
+        "y": 190,
+        "wires": [
+            [
+                "3e77f475.9764ec"
+            ],
+            [
+                "3c51a9de.e0d7b6"
+            ]
+        ]
+    },
+    {
+        "id": "ae68f0e9.f06eb",
+        "type": "comment",
+        "z": "8b50971b.a49d58",
+        "name": "Description of Task-List-Example",
+        "info": "Like having a TODO-list, you can tell Node-RED to sequentially do some tasks (on the same message).\n\nTherefore you need to add more task-outputs in the do-node (by adding tasks in its configuration). Each time a return-node in done-mode is called, it returns to the do-node and continues with the next task. Returning in continue-mode loops the current task.",
+        "x": 180,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "edbf9150aa68c31b",
+        "type": "do",
+        "z": "8b50971b.a49d58",
+        "name": "",
+        "tasks": [
+            "Paint white",
+            "Let balloon fly"
+        ],
+        "mode": "msg",
+        "each": "",
+        "eachType": "msg",
+        "yield": "keyValue",
+        "doneOutput": true,
+        "firstValueOutput": false,
+        "lastValueOutput": false,
+        "outputs": 3,
+        "_version": "0.4.1",
+        "x": 490,
+        "y": 70,
+        "wires": [
+            [
+                "7f3c80de.33b62"
+            ],
+            [
+                "98e054a3.6efdb8"
+            ],
+            [
+                "eccfe3e627919297"
+            ]
+        ]
+    },
+    {
+        "id": "eccfe3e627919297",
+        "type": "do-return",
+        "z": "8b50971b.a49d58",
+        "name": "",
+        "mode": "done",
+        "x": 620,
+        "y": 110,
         "wires": []
     }
 ]
