@@ -47,6 +47,14 @@
         "env": []
     },
     {
+        "id": "aaaa9485612d7317",
+        "type": "tab",
+        "label": "Flux 5",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "bc1a8754bbd79fc2",
         "type": "subflow",
         "name": "Map Device",
@@ -554,12 +562,13 @@
             "ba7bd09e9170283f",
             "ed7c07d39dda883d",
             "f91b976e245dae35",
-            "33e27730c229d679"
+            "33e27730c229d679",
+            "e168397444a4efa5"
         ],
         "x": 34,
-        "y": 3299,
-        "w": 1302,
-        "h": 232
+        "y": 3319,
+        "w": 1092,
+        "h": 212
     },
     {
         "id": "587ef4eef498a3b8",
@@ -1455,12 +1464,10 @@
         "type": "ui-base",
         "name": "UI Base",
         "path": "/dashboard",
-        "includeClientData": true,
-        "acceptsClientConfig": [
-            "ui-notification",
-            "ui-control"
-        ],
+        "includeClientData": false,
+        "acceptsClientConfig": [],
         "showPathInSidebar": false,
+        "showPageTitle": true,
         "navigationStyle": "icon",
         "titleBarStyle": "default"
     },
@@ -1542,7 +1549,7 @@
         "name": "Device",
         "page": "59f68216b64feef8",
         "width": "6",
-        "height": "4",
+        "height": "1",
         "order": 1,
         "showTitle": false,
         "className": "",
@@ -2894,7 +2901,7 @@
         "z": "57111ca025f638be",
         "g": "c123dda748f0409f",
         "name": "debug 159",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3300,7 +3307,6 @@
         "g": "c123dda748f0409f",
         "name": "Send configuration in",
         "links": [
-            "0beb5ac9e1a01e39",
             "71f803b13863282d"
         ],
         "x": 85,
@@ -3830,7 +3836,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 630,
+        "x": 520,
         "y": 3480,
         "wires": [
             [
@@ -3847,7 +3853,7 @@
         "sqlquery": "prepared",
         "sql": "INSERT INTO SYSTEM_LOG (\n    id_device,\n    id_event_type,\n    log,\n    topic,\n    counter,\n    version,\n    datetime\n)\nVALUES (\n  ( SELECT id_device \n    FROM DEVICE \n    WHERE DEVICE.mac LIKE $mac ),\n  ( SELECT id_event_type\n    FROM EVENT_TYPE\n    WHERE event_type LIKE $event_type),\n  $log,\n  $topic,\n  $counter,\n  $version,\n  datetime('now', 'localtime')\n);\n",
         "name": "SystemLog",
-        "x": 810,
+        "x": 700,
         "y": 3480,
         "wires": [
             []
@@ -3866,7 +3872,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
+        "x": 360,
         "y": 3430,
         "wires": [
             [
@@ -3892,11 +3898,12 @@
         "sqlquery": "prepared",
         "sql": "INSERT INTO DEVICE (\n   mac,\n   sleep_duration,\n   im_alive_period,\n   datetime\n)\nVALUES (\n   $mac,\n   30,\n   3600,\n   datetime('now', 'localtime') \n);\n",
         "name": "Insert DEVICE",
-        "x": 860,
-        "y": 3340,
+        "x": 770,
+        "y": 3360,
         "wires": [
             [
-                "a147248bb7549068"
+                "a147248bb7549068",
+                "e168397444a4efa5"
             ]
         ]
     },
@@ -3922,7 +3929,7 @@
         "topic": "dom-sys.sensor/status",
         "payload": "{\"header\":{\"mac\":\"01:02:03:04:05:06\",\"type\":\"START_SIGNAL\",\"version\":1,\"counter\":5,\"error\":\"\"},\"data\":{\"cycle_duration\":0}}",
         "payloadType": "json",
-        "x": 270,
+        "x": 190,
         "y": 3490,
         "wires": [
             [
@@ -3940,8 +3947,8 @@
         "links": [
             "5e2d481f338e5d45"
         ],
-        "x": 985,
-        "y": 3340,
+        "x": 925,
+        "y": 3360,
         "wires": []
     },
     {
@@ -3957,7 +3964,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
+        "x": 750,
         "y": 3440,
         "wires": [
             [
@@ -3983,8 +3990,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 660,
-        "y": 3400,
+        "x": 590,
+        "y": 3410,
         "wires": [
             [
                 "ee416b1f0f20e4d8"
@@ -4000,7 +4007,7 @@
         "property": "payload",
         "action": "str",
         "pretty": false,
-        "x": 950,
+        "x": 900,
         "y": 3440,
         "wires": [
             [
@@ -4023,8 +4030,8 @@
         "correl": "",
         "expiry": "60",
         "broker": "c6a29fab98717cbb",
-        "x": 1180,
-        "y": 3440,
+        "x": 970,
+        "y": 3490,
         "wires": []
     },
     {
@@ -4133,7 +4140,7 @@
         "z": "57111ca025f638be",
         "g": "abbcf13b0652a794",
         "name": "debug 155",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4253,8 +4260,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 680,
-        "y": 3340,
+        "x": 570,
+        "y": 3360,
         "wires": [
             [
                 "8d1c099b642472fa"
@@ -4422,7 +4429,7 @@
         "z": "57111ca025f638be",
         "g": "abbcf13b0652a794",
         "name": "debug 199",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4684,7 +4691,6 @@
         "g": "b3bc735139a25964",
         "name": "Load locations",
         "links": [
-            "335768bf124d0394",
             "70beddcc675e5f7b"
         ],
         "x": 75,
@@ -4891,8 +4897,7 @@
         "g": "5e9fb9b860e186cb",
         "name": "BD- Location-Device",
         "links": [
-            "fc7b275d96271630",
-            "335768bf124d0394"
+            "fc7b275d96271630"
         ],
         "x": 325,
         "y": 2680,
@@ -4928,15 +4933,20 @@
         "name": "Params",
         "rules": [
             {
+                "t": "delete",
+                "p": "params",
+                "pt": "msg"
+            },
+            {
                 "t": "set",
-                "p": "param.$id_location",
+                "p": "params.$id_location",
                 "pt": "msg",
                 "to": "location.id_location",
                 "tot": "msg"
             },
             {
                 "t": "set",
-                "p": "param.$id_device",
+                "p": "params.$id_device",
                 "pt": "msg",
                 "to": "location.id_device",
                 "tot": "msg"
@@ -4962,10 +4972,7 @@
         "g": "5e9fb9b860e186cb",
         "name": "call Load locations",
         "mode": "link",
-        "links": [
-            "f17a5db9540691db",
-            "05ef91dab51f8089"
-        ],
+        "links": [],
         "x": 1025,
         "y": 2670,
         "wires": []
@@ -5002,8 +5009,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 260,
-        "y": 3350,
+        "x": 270,
+        "y": 3380,
         "wires": []
     },
     {
@@ -6058,7 +6065,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-data-table\n    :headers=\"headers\"\n    :items=\"devices\"\n    :items-per-page=\"10\"\n    class=\"elevation-1\"\n  >\n    <template v-slot:top>\n      <v-toolbar flat>\n        <v-toolbar-title>Devices</v-toolbar-title>\n        <v-divider class=\"mx-4\" inset vertical></v-divider>\n        <v-spacer></v-spacer>\n        <v-btn color=\"primary\" dark class=\"mb-2\" @click=\"dataRefresh\">\n          Refresh\n        </v-btn>\n      </v-toolbar>\n      <v-dialog v-model=\"dialog\" max-width=\"800px\">\n        <v-card>\n          <v-card-title>\n            <span class=\"text-h5\">{{ formTitle }}</span>\n          </v-card-title>\n          <v-card-text>\n            <v-container>\n              <v-row>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                    v-model=\"editedItem.id_device\"\n                    label=\"Device ID\"\n                    readonly\n                  ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                    v-model=\"editedItem.mac\"\n                    label=\"MAC Address\"\n                    readonly\n                  ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                    v-model=\"editedItem.location\"\n                    label=\"Location\"\n                    readonly\n                  ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                      v-model=\"editedItem.sleep_duration\"\n                      label=\"Sleep duration\"\n                      @update:model-value=\"changeDevice()\"\n                    ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                      v-model=\"editedItem.im_alive_period\"\n                      label=\"ImAlive\"\n                      @update:model-value=\"changeDevice()\"\n                    ></v-text-field>\n                </v-col>\n              </v-row>\n              <v-divider class=\"mt-2 mb-4\"></v-divider>\n              <h3 class=\"mb-2\">Sensors</h3>\n              <v-expansion-panels>\n                <v-expansion-panel\n                  v-for=\"(sensor, sensorIndex) in editedItem.sensors\"\n                  :key=\"sensorIndex\"\n                >\n                  <v-expansion-panel-title>\n                    Sensor {{ sensorIndex + 1 }}\n                    <template v-slot:actions>\n                      <v-btn\n                        icon\n                        small\n                        color=\"error\"\n                        @click.stop=\"removeSensor(sensorIndex)\"\n                      >\n                        <v-icon>mdi-delete</v-icon>\n                      </v-btn>\n                    </template>\n                  </v-expansion-panel-title>\n                  <v-expansion-panel-text>\n                    <v-row>\n                      <v-col cols=\"12\" sm=\"6\">\n                        <v-text-field\n                          v-model.number=\"sensor.id_sensor\"\n                          label=\"Sensor ID\"\n                          readonly\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"6\">\n                        <v-select v-model=\"sensor.sensor_role\" :items=\"roles\" \n                          label=\"Rôle\" \n                          @update:model-value=\"updateSensor(sensorIndex)\">\n                        </v-select>\n                      </v-col>\n                    </v-row>\n                    <v-divider class=\"mt-2 mb-4\"></v-divider>\n                    <h4 class=\"mb-2\">attributs</h4>\n                    <v-row\n                      v-for=\"(attr, attrIndex) in sensor.attributs\"\n                      :key=\"attrIndex\"\n                    >\n                      <v-col cols=\"12\" sm=\"4\">\n                        <v-text-field\n                          v-model.number=\"attr.id_attribut\"\n                          label=\"Attribute ID\"\n                          readonly\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"4\">\n                        <v-text-field\n                          v-model=\"attr.name\"\n                          label=\"Attribute Name\"\n                          @update:model-value=\"updateAttribut(sensor, attrIndex)\"\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"3\">\n                        <v-text-field\n                          v-model.number=\"attr.value\"\n                          label=\"Value\"\n                          @update:model-value=\"updateAttribut(sensor, attrIndex)\"\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"1\">\n                        <v-btn\n                          color=\"error\"\n                          small\n                          @click=\"removeAttribute(sensor, attrIndex)\"\n                          >X</v-btn\n                        >\n                      </v-col>\n                    </v-row>\n                    <v-btn color=\"success\" small @click=\"addAttribute(sensor)\"\n                      >Add Attribute</v-btn\n                    >\n                  </v-expansion-panel-text>\n                </v-expansion-panel>\n              </v-expansion-panels>\n              <v-btn color=\"success\" class=\"mt-4\" @click=\"addSensor\"\n                >Add Sensor</v-btn\n              >\n            </v-container>\n          </v-card-text>\n          <v-card-actions>\n            <v-spacer></v-spacer>\n            <v-btn color=\"blue darken-1\" @click=\"close\">Cancel</v-btn>\n            <v-btn color=\"blue darken-1\" @click=\"save\">Save</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </template>\n    <template v-slot:item.actions=\"{ item }\">\n      <v-icon small class=\"mr-2\" @click=\"editItem(item)\"> mdi-pencil </v-icon>\n       <v-icon small class=\"mr-2\" @click=\"sendConfig(item)\"> mdi-rss  </v-icon>\n    </template>\n    <template v-slot:item.sensors=\"{ item }\">\n      {{ item.sensors.length }} sensors\n      <v-tooltip bottom max-width=\"400\">\n        <template v-slot:activator=\"{ props }\">\n          <v-icon small v-bind=\"props\">mdi-information</v-icon>\n        </template>\n        <v-card>\n          <v-card-text>\n            <div\n              v-for=\"(sensor, sIndex) in item.sensors\"\n              :key=\"sensor.id_sensor\"\n              class=\"mb-4\"\n            >\n              <h2>Sensor {{ sIndex + 1 }}:</h2>\n              {{ sensor.id_sensor}} - {{ sensor.sensor_role }}\n              <v-divider class=\"my-2\"></v-divider>\n              <h4>attributs:</h4>\n              <v-table dense>\n                <template v-slot:default>\n                  <tbody>\n                    <tr\n                      v-for=\"attr in sensor.attributs\"\n                      :key=\"attr.id_attribut\"\n                    >\n                      <td>{{ attr.id_attribut }}</td>\n                      <td>{{ attr.name }}</td>\n                      <td>{{ attr.value }}</td>\n                    </tr>\n                  </tbody>\n                </template>\n              </v-table>\n            </div>\n          </v-card-text>\n        </v-card>\n      </v-tooltip>\n    </template>\n        <template v-slot:bottom>\n          <div class=\"text-center pt-2\">\n            <v-pagination :length=\"pageCount\"></v-pagination>\n          </div>\n        </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      dialog: false,\n      headers: [\n        { title: 'Device ID', key: 'id_device' },\n        { title: 'MAC Address', key: 'mac' },\n        { title: 'Location', key: 'location' },\n        { title: 'Sleep', key: 'sleep_duration' },\n        { title: 'ImAlive', key: 'im_alive_period' },\n        { title: 'Sensors', key: 'sensors' },\n        { title: 'Actions', key: 'actions', sortable: false },\n      ],\n      devices: [ ],\n      editedIndex: -1,\n      editedItem: {\n        id_device: 0,\n        mac: '',\n        sleep_duration: 0,\n        im_alive_period: 0,\n        location: '',\n        sensors: [],\n      },\n      defaultItem: {\n        id_device: 0,\n        mac: '',\n        sleep_duration: 0,\n        im_alive_period: 0,\n        location: '',\n        sensors: [],\n      },\n      changements: {\n        deviceToUpdate: false,\n        sensorsToUpdate: [],\n        attributsToUpdate: [],\n        sensorsToDelete: [],\n        attributsToDelete: [],\n      },\n      roles: ['INDETERMINE'],\n      itemsPerPage: 10,\n    }),\n  watch: {\n    //Sur la réception d'un msg.\n    msg: function(){\n     // this.locations = this.msg.locations;\n      this.devices = this.msg.devices;\n      this.roles = this.msg.rolesList;\n      console.log(\"msg received\");\n    },\n  },\n\n  computed: {\n      formTitle() {\n        return this.editedIndex === -1 ? 'Ajouter Device' : 'Edit Device'\n      },\n\n      pageCount() {\n        return  1; // Math.ceil(this.devices.length / this.itemsPerPage)\n      },\n    },\n\n    created() {\n    },\n\n    methods: {\n      dataRefresh() {\n        this.send({action: \"dataRefresh\"});\n      },\n\n      sendConfig(item){\n        this.send({action: \"sendConfig\", device: this.editedItem});\n      },\n\n      editItem(item) {\n        this.editedIndex = this.devices.indexOf(item)\n        this.editedItem = JSON.parse(JSON.stringify(item))\n        this.editedItem.sensorsToDelete = []\n        this.dialog = true\n      },\n\n      close() {\n        this.dialog = false\n        this.$nextTick(() => {\n          this.editedItem = JSON.parse(JSON.stringify(this.defaultItem))\n          this.editedIndex = -1\n        })\n        this.changements.deviceToUpdate = false\n        this.changements.sensorsToDelete = []\n        this.changements.sensorsToUpdate = []\n        this.changements.attributsToDelete = []\n        this.changements.attributsToUpdate = []\n      },\n\n      save() {\n        if (this.editedIndex > -1) {\n          this.send({action: \"dataSave\", device: this.editedItem, changements: this.changements});\n          Object.assign(this.devices[this.editedIndex], this.editedItem)\n        } else {\n          this.send({action: \"Unknown\", payload: \"editedIndex == -1 - Quoi faire\"});\n          this.devices.push(this.editedItem)\n        }\n        this.close()\n      },\n\n      changeDevice() {\n        this.changements.deviceToUpdate = true\n      },\n    \n      addSensor() {\n        this.editedItem.sensors.push({\n          id_sensor: -1,\n          name: \"INDETERMINE\",\n          attributs: [],\n        })\n      },\n     \n      removeSensor(index) {\n        let idSensor = this.editedItem.sensors[index].id_sensor\n        \n        if (!this.changements.sensorsToDelete.includes(idSensor)) {\n          this.changements.sensorsToDelete.push(idSensor)\n        }\n       \n        this.editedItem.sensors.splice(index, 1)\n      },\n\n      updateSensor(index) {\n        let idSensor = this.editedItem.sensors[index].id_sensor\n        \n        if(idSensor != -1){\n          if (!this.changements.sensorsToUpdate.includes(idSensor)) {\n            this.changements.sensorsToUpdate.push(idSensor)\n          }\n        }\n      },\n      \n      updateAttribut(sensor, attrIndex) {\n        let idAttribut = sensor.attributs[attrIndex].id_attribut\n\n        if(idAttribut != -1){\n          if (!this.changements.attributsToUpdate.includes(idAttribut)) {\n            this.changements.attributsToUpdate.push(idAttribut)\n          }\n        }\n      },\n\n      addAttribute(sensor) {\n        sensor.attributs.push({\n          id_attribut: -1,\n          name: '',\n          value: 0,\n        })\n      },\n\n      removeAttribute(sensor, attrIndex) {\n        let idAttribut = sensor.attributs[attrIndex].id_attribut\n        \n        if (!this.changements.attributsToDelete.includes(idAttribut)) {\n        this.changements.attributsToDelete.push(idAttribut)\n        }\n        \n        sensor.attributs.splice(attrIndex, 1)\n      },\n    },\n  }\n</script>\n",
+        "format": "<template>\n  <v-data-table\n    :headers=\"headers\"\n    :items=\"devices\"\n    :items-per-page=\"10\"\n    class=\"elevation-1\"\n  >\n    <template v-slot:top>\n      <v-toolbar flat>\n        <v-toolbar-title>Devices</v-toolbar-title>\n        <v-divider class=\"mx-4\" inset vertical></v-divider>\n        <v-spacer></v-spacer>\n        <v-btn color=\"primary\" dark class=\"mb-2\" @click=\"dataRefresh\">\n          Refresh\n        </v-btn>\n      </v-toolbar>\n      <v-dialog v-model=\"dialog\" max-width=\"800px\">\n        <v-card>\n          <v-card-title>\n            <span class=\"text-h5\">{{ formTitle }}</span>\n          </v-card-title>\n          <v-card-text>\n            <v-container>\n              <v-row>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                    v-model=\"editedItem.id_device\"\n                    label=\"Device ID\"\n                    readonly\n                  ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                    v-model=\"editedItem.mac\"\n                    label=\"MAC Address\"\n                    readonly\n                  ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                    v-model=\"editedItem.location\"\n                    label=\"Location\"\n                    readonly\n                  ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                      v-model=\"editedItem.sleep_duration\"\n                      label=\"Sleep duration\"\n                      @update:model-value=\"changeDevice()\"\n                    ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                      v-model=\"editedItem.im_alive_period\"\n                      label=\"ImAlive\"\n                      @update:model-value=\"changeDevice()\"\n                    ></v-text-field>\n                </v-col>\n              </v-row>\n              <v-divider class=\"mt-2 mb-4\"></v-divider>\n              <h3 class=\"mb-2\">Sensors</h3>\n              <v-expansion-panels>\n                <v-expansion-panel\n                  v-for=\"(sensor, sensorIndex) in editedItem.sensors\"\n                  :key=\"sensorIndex\"\n                >\n                  <v-expansion-panel-title>\n                    Sensor {{ sensorIndex + 1 }}\n                    <template v-slot:actions>\n                      <v-btn\n                        icon\n                        small\n                        color=\"error\"\n                        @click.stop=\"removeSensor(sensorIndex)\"\n                      >\n                        <v-icon>mdi-delete</v-icon>\n                      </v-btn>\n                    </template>\n                  </v-expansion-panel-title>\n                  <v-expansion-panel-text>\n                    <v-row>\n                      <v-col cols=\"12\" sm=\"6\">\n                        <v-text-field\n                          v-model.number=\"sensor.id_sensor\"\n                          label=\"Sensor ID\"\n                          readonly\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"6\">\n                        <v-select v-model=\"sensor.sensor_role\" :items=\"roles\" \n                          label=\"Rôle\" \n                          @update:model-value=\"updateSensor(sensorIndex)\">\n                        </v-select>\n                      </v-col>\n                    </v-row>\n                    <v-divider class=\"mt-2 mb-4\"></v-divider>\n                    <h4 class=\"mb-2\">attributs</h4>\n                    <v-row\n                      v-for=\"(attr, attrIndex) in sensor.attributs\"\n                      :key=\"attrIndex\"\n                    >\n                      <v-col cols=\"12\" sm=\"4\">\n                        <v-text-field\n                          v-model.number=\"attr.id_attribut\"\n                          label=\"Attribute ID\"\n                          readonly\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"4\">\n                        <v-text-field\n                          v-model=\"attr.name\"\n                          label=\"Attribute Name\"\n                          @update:model-value=\"updateAttribut(sensor, attrIndex)\"\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"3\">\n                        <v-text-field\n                          v-model.number=\"attr.value\"\n                          label=\"Value\"\n                          @update:model-value=\"updateAttribut(sensor, attrIndex)\"\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"1\">\n                        <v-btn\n                          color=\"error\"\n                          small\n                          @click=\"removeAttribute(sensor, attrIndex)\"\n                          >X</v-btn\n                        >\n                      </v-col>\n                    </v-row>\n                    <v-btn color=\"success\" small @click=\"addAttribute(sensor)\"\n                      >Add Attribute</v-btn\n                    >\n                  </v-expansion-panel-text>\n                </v-expansion-panel>\n              </v-expansion-panels>\n              <v-btn color=\"success\" class=\"mt-4\" @click=\"addSensor\"\n                >Add Sensor</v-btn\n              >\n            </v-container>\n          </v-card-text>\n          <v-card-actions>\n            <v-spacer></v-spacer>\n            <v-btn color=\"blue darken-1\" @click=\"close\">Cancel</v-btn>\n            <v-btn color=\"blue darken-1\" @click=\"save\">Save</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </template>\n    <template v-slot:item.actions=\"{ item }\">\n      <v-icon small class=\"mr-2\" @click=\"editItem(item)\"> mdi-pencil </v-icon>\n       <v-icon small class=\"mr-2\" @click=\"sendConfig(item)\"> mdi-rss  </v-icon>\n    </template>\n    <template v-slot:item.sensors=\"{ item }\">\n      {{ item.sensors.length }} sensors\n      <v-tooltip bottom max-width=\"400\">\n        <template v-slot:activator=\"{ props }\">\n          <v-icon small v-bind=\"props\">mdi-information</v-icon>\n        </template>\n        <v-card>\n          <v-card-text>\n            <div\n              v-for=\"(sensor, sIndex) in item.sensors\"\n              :key=\"sensor.id_sensor\"\n              class=\"mb-4\"\n            >\n              <h2>Sensor {{ sIndex + 1 }}:</h2>\n              {{ sensor.id_sensor}} - {{ sensor.sensor_role }}\n              <v-divider class=\"my-2\"></v-divider>\n              <h4>attributs:</h4>\n              <v-table dense>\n                <template v-slot:default>\n                  <tbody>\n                    <tr\n                      v-for=\"attr in sensor.attributs\"\n                      :key=\"attr.id_attribut\"\n                    >\n                      <td>{{ attr.id_attribut }}</td>\n                      <td>{{ attr.name }}</td>\n                      <td>{{ attr.value }}</td>\n                    </tr>\n                  </tbody>\n                </template>\n              </v-table>\n            </div>\n          </v-card-text>\n        </v-card>\n      </v-tooltip>\n    </template>\n        <template v-slot:bottom>\n          <div class=\"text-center pt-2\">\n            <v-pagination :length=\"pageCount\"></v-pagination>\n          </div>\n        </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      dialog: false,\n      headers: [\n        { title: 'Device ID', key: 'id_device' },\n        { title: 'MAC Address', key: 'mac' },\n        { title: 'Location', key: 'location' },\n        { title: 'Sleep', key: 'sleep_duration' },\n        { title: 'ImAlive', key: 'im_alive_period' },\n        { title: 'Sensors', key: 'sensors' },\n        { title: 'Actions', key: 'actions', sortable: false },\n      ],\n      devices: [ ],\n      editedIndex: -1,\n      editedItem: {\n        id_device: 0,\n        mac: '',\n        sleep_duration: 0,\n        im_alive_period: 0,\n        location: '',\n        sensors: [],\n      },\n      defaultItem: {\n        id_device: 0,\n        mac: '',\n        sleep_duration: 0,\n        im_alive_period: 0,\n        location: '',\n        sensors: [],\n      },\n      changements: {\n        deviceToUpdate: false,\n        sensorsToUpdate: [],\n        attributsToUpdate: [],\n        sensorsToDelete: [],\n        attributsToDelete: [],\n      },\n      roles: ['INDETERMINE'],\n      itemsPerPage: 10,\n    }),\n  watch: {\n    //Sur la réception d'un msg.\n    msg: function(){\n     // this.locations = this.msg.locations;\n      this.devices = this.msg.devices;\n      this.roles = this.msg.rolesList;\n      console.log(\"msg received\");\n    },\n  },\n\n  computed: {\n      formTitle() {\n        return this.editedIndex === -1 ? 'Ajouter Device' : 'Edit Device'\n      },\n\n      pageCount() {\n        return  1; // Math.ceil(this.devices.length / this.itemsPerPage)\n      },\n    },\n\n    created() {\n    },\n\n    methods: {\n      dataRefresh() {\n        this.send({action: \"dataRefresh\"});\n      },\n\n      sendConfig(item){\n        this.send({action: \"sendConfig\", device: item});\n      },\n\n      editItem(item) {\n        this.editedIndex = this.devices.indexOf(item)\n        this.editedItem = JSON.parse(JSON.stringify(item))\n        this.editedItem.sensorsToDelete = []\n        this.dialog = true\n      },\n\n      close() {\n        this.dialog = false\n        this.$nextTick(() => {\n          this.editedItem = JSON.parse(JSON.stringify(this.defaultItem))\n          this.editedIndex = -1\n        })\n        this.changements.deviceToUpdate = false\n        this.changements.sensorsToDelete = []\n        this.changements.sensorsToUpdate = []\n        this.changements.attributsToDelete = []\n        this.changements.attributsToUpdate = []\n      },\n\n      save() {\n        if (this.editedIndex > -1) {\n          this.send({action: \"dataSave\", device: this.editedItem, changements: this.changements});\n          Object.assign(this.devices[this.editedIndex], this.editedItem)\n        } else {\n          this.send({action: \"Unknown\", payload: \"editedIndex == -1 - Quoi faire\"});\n          this.devices.push(this.editedItem)\n        }\n        this.close()\n      },\n\n      changeDevice() {\n        this.changements.deviceToUpdate = true\n      },\n    \n      addSensor() {\n        this.editedItem.sensors.push({\n          id_sensor: -1,\n          name: \"INDETERMINE\",\n          attributs: [],\n        })\n      },\n     \n      removeSensor(index) {\n        let idSensor = this.editedItem.sensors[index].id_sensor\n        \n        if (!this.changements.sensorsToDelete.includes(idSensor)) {\n          this.changements.sensorsToDelete.push(idSensor)\n        }\n       \n        this.editedItem.sensors.splice(index, 1)\n      },\n\n      updateSensor(index) {\n        let idSensor = this.editedItem.sensors[index].id_sensor\n        \n        if(idSensor != -1){\n          if (!this.changements.sensorsToUpdate.includes(idSensor)) {\n            this.changements.sensorsToUpdate.push(idSensor)\n          }\n        }\n      },\n      \n      updateAttribut(sensor, attrIndex) {\n        let idAttribut = sensor.attributs[attrIndex].id_attribut\n\n        if(idAttribut != -1){\n          if (!this.changements.attributsToUpdate.includes(idAttribut)) {\n            this.changements.attributsToUpdate.push(idAttribut)\n          }\n        }\n      },\n\n      addAttribute(sensor) {\n        sensor.attributs.push({\n          id_attribut: -1,\n          name: '',\n          value: 0,\n        })\n      },\n\n      removeAttribute(sensor, attrIndex) {\n        let idAttribut = sensor.attributs[attrIndex].id_attribut\n        \n        if (!this.changements.attributsToDelete.includes(idAttribut)) {\n        this.changements.attributsToDelete.push(idAttribut)\n        }\n        \n        sensor.attributs.splice(attrIndex, 1)\n      },\n    },\n  }\n</script>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -6199,6 +6206,24 @@
         "wires": []
     },
     {
+        "id": "e168397444a4efa5",
+        "type": "debug",
+        "z": "57111ca025f638be",
+        "g": "2ff47af73d8a3d20",
+        "name": "debug 214",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 3400,
+        "wires": []
+    },
+    {
         "id": "da939ff73faa3d33",
         "type": "serial in",
         "z": "797d9b2a7151f089",
@@ -6210,7 +6235,8 @@
         "wires": [
             [
                 "edba9caae115a851",
-                "41e9b0574e55c0c8"
+                "41e9b0574e55c0c8",
+                "76b97aaea830e452"
             ]
         ]
     },
@@ -6250,8 +6276,7 @@
         "y": 140,
         "wires": [
             [
-                "16071ac81dfe26dd",
-                "76b97aaea830e452"
+                "16071ac81dfe26dd"
             ]
         ]
     },
@@ -6495,7 +6520,7 @@
         "z": "797d9b2a7151f089",
         "g": "fa8d72ad90e71a48",
         "name": "debug 181",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -6503,7 +6528,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 630,
+        "x": 460,
         "y": 100,
         "wires": []
     },
@@ -6654,7 +6679,7 @@
         "z": "797d9b2a7151f089",
         "g": "5d89e93885229fe1",
         "name": "debug 103",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -6848,7 +6873,7 @@
         "z": "797d9b2a7151f089",
         "g": "8feba00f9cb9532b",
         "name": "debug 164",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -9458,9 +9483,7 @@
         "g": "dfaa0e84286af4c3",
         "name": "Send configuration out",
         "mode": "link",
-        "links": [
-            "1889b9b8d90b705d"
-        ],
+        "links": [],
         "x": 285,
         "y": 470,
         "wires": []
@@ -10123,6 +10146,68 @@
         "statusType": "auto",
         "x": 270,
         "y": 130,
+        "wires": []
+    },
+    {
+        "id": "306d455509a3747e",
+        "type": "inject",
+        "z": "aaaa9485612d7317",
+        "name": "Inject the sample data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"timestamp\":\"2024-06-17T10:00:00Z\",\"temperature\":298.15},{\"timestamp\":\"2024-06-17T11:00:00Z\",\"temperature\":299.15},{\"timestamp\":\"2024-06-17T10:30:00Z\",\"temperature\":300.15},{\"timestamp\":\"2024-06-17T10:15:00Z\",\"temperature\":301.15},{\"timestamp\":\"2024-06-17T10:45:00Z\",\"temperature\":303.15},{\"timestamp\":\"2024-06-18T09:00:00Z\",\"temperature\":297.15},{\"timestamp\":\"2024-06-18T10:00:00Z\",\"temperature\":300.15},{\"timestamp\":\"2024-06-18T11:00:00Z\",\"temperature\":301.15},{\"timestamp\":\"2024-06-18T12:00:00Z\",\"temperature\":302.15},{\"timestamp\":\"2024-06-19T10:00:00Z\",\"temperature\":298.15},{\"timestamp\":\"2024-06-19T11:00:00Z\",\"temperature\":299.15}]",
+        "payloadType": "json",
+        "x": 240,
+        "y": 250,
+        "wires": [
+            [
+                "c58e1653fe5511eb"
+            ]
+        ]
+    },
+    {
+        "id": "c58e1653fe5511eb",
+        "type": "function",
+        "z": "aaaa9485612d7317",
+        "name": "Filtering, mapping, reducing and sorting data with traditional coding",
+        "func": "let sensorData = msg.payload;\n\nconst filteredData = sensorData\n    .filter(item => item.timestamp.startsWith(\"2024-06-17\"))\n    .map(item => ({\n        timestamp: item.timestamp,\n        temperature: item.temperature - 273.15\n    }));\n\nfilteredData.sort((a, b) => (a.timestamp > b.timestamp) ? 1 : ((b.timestamp > a.timestamp) ? -1 : 0));\n\nconst totalTemperature = filteredData.reduce((acc, entry) => acc + entry.temperature, 0);\nconst averageTemperature = totalTemperature / filteredData.length;\n\nmsg.payload = {\n    sensorData: filteredData,\n    averageTemperature: averageTemperature\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 250,
+        "wires": [
+            [
+                "827c7d2009eeb046"
+            ]
+        ]
+    },
+    {
+        "id": "827c7d2009eeb046",
+        "type": "debug",
+        "z": "aaaa9485612d7317",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 250,
         "wires": []
     }
 ]
