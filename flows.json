@@ -138,7 +138,20 @@
         "name": "Startup",
         "info": "",
         "category": "",
-        "in": [],
+        "in": [
+            {
+                "x": 130,
+                "y": 90,
+                "wires": [
+                    {
+                        "id": "558c815598a824f2"
+                    },
+                    {
+                        "id": "2db0904064c210ba"
+                    }
+                ]
+            }
+        ],
         "out": [
             {
                 "x": 710,
@@ -209,7 +222,8 @@
             "abbcf13b0652a794",
             "aecd825fcf9a94de",
             "42e44c3404350309",
-            "70bd71d2e21c7f4c"
+            "fa06f329ce0a3c15",
+            "287024651fc3c04b"
         ],
         "x": 24,
         "y": 19,
@@ -231,9 +245,9 @@
             "590af8aa1ccb96c4"
         ],
         "x": 28,
-        "y": 493,
-        "w": 1044,
-        "h": 374
+        "y": 413,
+        "w": 1234,
+        "h": 394
     },
     {
         "id": "ac3db6b9ccb43199",
@@ -426,7 +440,7 @@
         "x": 34,
         "y": 2829,
         "w": 1192,
-        "h": 292
+        "h": 262
     },
     {
         "id": "39f5d1f224b9de66",
@@ -494,10 +508,10 @@
             "fa8d72ad90e71a48",
             "d0932bcd6a5ec1f6"
         ],
-        "x": 42,
-        "y": 33,
-        "w": 916,
-        "h": 514,
+        "x": 22,
+        "y": 23,
+        "w": 952,
+        "h": 684,
         "info": "# Redirection des donnnées\r\n## Message entrant sur le port série\r\n - On vérifie si les données commence par @\r\n - Si non , on rejette le messge.\r\n - Si oui, on extrait le topic pour l'envoyer vers MQTT.\r\n"
     },
     {
@@ -514,8 +528,8 @@
             "b07bf152a6d21710",
             "c2a5a48d61080e22"
         ],
-        "x": 54,
-        "y": 1389,
+        "x": 44,
+        "y": 1559,
         "w": 422,
         "h": 82
     },
@@ -535,8 +549,8 @@
             "8feba00f9cb9532b",
             "70160f0a7636882f"
         ],
-        "x": 38,
-        "y": 563,
+        "x": 28,
+        "y": 753,
         "w": 1054,
         "h": 794
     },
@@ -603,22 +617,12 @@
             "color": "#000000"
         },
         "nodes": [
-            "a087fa5b04e2ed6a",
-            "e9f063af5b3dbd3d",
-            "497d93111671d420",
-            "571f0fb3a0c1cb2f",
-            "e9797086d33dca62",
-            "836f1c5e6a99b853",
-            "56c53ee58ee22f0a",
-            "9abd8010c264a120",
-            "d8da1221bf37f16a",
-            "f94259e3284b277c",
-            "fd68066b9df5be6d"
+            "836f1c5e6a99b853"
         ],
         "x": 58,
         "y": 193,
         "w": 844,
-        "h": 418
+        "h": 224
     },
     {
         "id": "066292f6cf9cbfbf",
@@ -674,7 +678,7 @@
             "47a1113ec0ec1e9b"
         ],
         "x": 34,
-        "y": 629,
+        "y": 529,
         "w": 1282,
         "h": 332
     },
@@ -703,7 +707,8 @@
             "d398c2685f10751f",
             "25b3fec436e514e5",
             "5e9fb9b860e186cb",
-            "b09a6baa4d77fc24"
+            "b09a6baa4d77fc24",
+            "1967c0792ce84596"
         ],
         "x": 34,
         "y": 2429,
@@ -743,6 +748,32 @@
         "h": 242
     },
     {
+        "id": "dfaa0e84286af4c3",
+        "type": "group",
+        "z": "ec6678ccf32cce98",
+        "name": "",
+        "style": {
+            "fill": "#bfdbef",
+            "label": true
+        },
+        "nodes": [
+            "4389fdd1091783d4",
+            "8243b44d05178527",
+            "43c18597783c3def",
+            "836dfbcc857f6e1b",
+            "0beb5ac9e1a01e39",
+            "fb3df188fb17ca18",
+            "2747294b54d3638e",
+            "14aece7b990ed601",
+            "33aac660f2f2aaf2",
+            "5281a6741f7934e9"
+        ],
+        "x": 94,
+        "y": 89,
+        "w": 1148,
+        "h": 578
+    },
+    {
         "id": "f53bba5e293da6fb",
         "type": "group",
         "z": "57111ca025f638be",
@@ -762,7 +793,7 @@
             "b5fb53396f247251"
         ],
         "x": 64,
-        "y": 759,
+        "y": 699,
         "w": 872,
         "h": 82
     },
@@ -789,12 +820,16 @@
             "97610149c73699c4",
             "e4aecc6f336ce4bc",
             "8244db89f6963d09",
-            "2174f125045eff9a"
+            "2174f125045eff9a",
+            "7e16302c92c374f6",
+            "e57ce7fb3618696f",
+            "63fc615bfac2e331",
+            "f73f445ee8c747ad"
         ],
         "x": 54,
-        "y": 519,
-        "w": 992,
-        "h": 202
+        "y": 439,
+        "w": 1182,
+        "h": 222
     },
     {
         "id": "c123dda748f0409f",
@@ -841,10 +876,10 @@
             "76b97aaea830e452",
             "beefa0c6950593db"
         ],
-        "x": 68,
-        "y": 59,
-        "w": 864,
-        "h": 295.5
+        "x": 48,
+        "y": 49,
+        "w": 900,
+        "h": 444
     },
     {
         "id": "d0932bcd6a5ec1f6",
@@ -864,8 +899,8 @@
             "7a1a4351ec72b9b3",
             "e27a25756c4ae984"
         ],
-        "x": 74,
-        "y": 399,
+        "x": 64,
+        "y": 559,
         "w": 752,
         "h": 122
     },
@@ -894,8 +929,8 @@
             "2105846b8c12cb48",
             "8023d15b2d55ccda"
         ],
-        "x": 64,
-        "y": 1079,
+        "x": 54,
+        "y": 1269,
         "w": 1002,
         "h": 252
     },
@@ -914,8 +949,8 @@
             "526010976c842e2c",
             "0cbbba078e7506a7"
         ],
-        "x": 64,
-        "y": 929,
+        "x": 54,
+        "y": 1119,
         "w": 622,
         "h": 122
     },
@@ -941,8 +976,8 @@
             "8064670dc96dfa2d",
             "4e4b504034ad202f"
         ],
-        "x": 64,
-        "y": 589,
+        "x": 54,
+        "y": 779,
         "w": 868,
         "h": 328,
         "info": "# Description\r\n\r\n## Vérifier statut\r\nSi le statut change un message sera émis.\r\n\r\n## Redémarrer Mosquitto\r\nSi le statut n'est pas Connecté un redémarrage de Mosquitto sera exécuté."
@@ -1054,72 +1089,6 @@
         "y": 2609,
         "w": 782,
         "h": 152
-    },
-    {
-        "id": "beefa0c6950593db",
-        "type": "group",
-        "z": "797d9b2a7151f089",
-        "g": "fa8d72ad90e71a48",
-        "name": "Gestion fichier LOG",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "855c0e1ea702f2cf",
-            "b4133a029132e1bc",
-            "f1f19a0d827e452e",
-            "2b905ff025d2f0a9"
-        ],
-        "x": 94,
-        "y": 231.5,
-        "w": 812,
-        "h": 97
-    },
-    {
-        "id": "5426475307091e39",
-        "type": "group",
-        "z": "797d9b2a7151f089",
-        "g": "70160f0a7636882f",
-        "name": "Redémarrer Mosquitto",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "b06e8d799cfe5b7e",
-            "1e15606728d3ede4",
-            "3f153da6282bee3d",
-            "93ac05f20fb98b77"
-        ],
-        "x": 264,
-        "y": 769,
-        "w": 642,
-        "h": 122
-    },
-    {
-        "id": "dfaa0e84286af4c3",
-        "type": "group",
-        "z": "ec6678ccf32cce98",
-        "name": "",
-        "style": {
-            "fill": "#bfdbef",
-            "label": true
-        },
-        "nodes": [
-            "4389fdd1091783d4",
-            "8243b44d05178527",
-            "43c18597783c3def",
-            "836dfbcc857f6e1b",
-            "0beb5ac9e1a01e39",
-            "fb3df188fb17ca18",
-            "2747294b54d3638e",
-            "14aece7b990ed601",
-            "33aac660f2f2aaf2",
-            "5281a6741f7934e9"
-        ],
-        "x": 94,
-        "y": 89,
-        "w": 1148,
-        "h": 578
     },
     {
         "id": "fb3df188fb17ca18",
@@ -1259,6 +1228,47 @@
         "h": 1014
     },
     {
+        "id": "beefa0c6950593db",
+        "type": "group",
+        "z": "797d9b2a7151f089",
+        "g": "fa8d72ad90e71a48",
+        "name": "Gestion fichier LOG",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "855c0e1ea702f2cf",
+            "b4133a029132e1bc",
+            "f1f19a0d827e452e",
+            "2b905ff025d2f0a9",
+            "869ebc417f12da40"
+        ],
+        "x": 74,
+        "y": 221.5,
+        "w": 848,
+        "h": 245.5
+    },
+    {
+        "id": "5426475307091e39",
+        "type": "group",
+        "z": "797d9b2a7151f089",
+        "g": "70160f0a7636882f",
+        "name": "Redémarrer Mosquitto",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b06e8d799cfe5b7e",
+            "1e15606728d3ede4",
+            "3f153da6282bee3d",
+            "93ac05f20fb98b77"
+        ],
+        "x": 254,
+        "y": 959,
+        "w": 642,
+        "h": 122
+    },
+    {
         "id": "b0ed271801ea7e6e",
         "type": "group",
         "z": "57111ca025f638be",
@@ -1386,6 +1396,29 @@
         "y": 1799,
         "w": 732,
         "h": 142
+    },
+    {
+        "id": "869ebc417f12da40",
+        "type": "group",
+        "z": "797d9b2a7151f089",
+        "g": "beefa0c6950593db",
+        "name": "Affichage du log",
+        "style": {
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "a51e48a550bcf90a",
+            "8f01265513527bfe",
+            "426044f103a446eb",
+            "2681d73e9020159d",
+            "507aba2cb3094c7f",
+            "50d31eaa2bed55ab"
+        ],
+        "x": 114,
+        "y": 309,
+        "w": 782,
+        "h": 132
     },
     {
         "id": "61e088ec657a83ab",
@@ -2014,32 +2047,6 @@
         ]
     },
     {
-        "id": "efe42724e4e31f30",
-        "type": "inject",
-        "z": "792784e9fde6f3b4",
-        "name": "Setup",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 130,
-        "y": 120,
-        "wires": [
-            [
-                "2db0904064c210ba",
-                "558c815598a824f2"
-            ]
-        ]
-    },
-    {
         "id": "0ca0d73d6c97fd4e",
         "type": "comment",
         "z": "57111ca025f638be",
@@ -2065,7 +2072,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 180,
-        "y": 600,
+        "y": 540,
         "wires": [
             [
                 "2fa7d3a1d07ea7f0",
@@ -2086,7 +2093,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 160,
-        "y": 680,
+        "y": 620,
         "wires": [
             [
                 "7b299ba00a6589b0"
@@ -2099,15 +2106,15 @@
         "z": "57111ca025f638be",
         "g": "590af8aa1ccb96c4",
         "name": "Params",
-        "func": "//Parametres pour prepared statement\nmsg.params = { \n  $id_sensor:msg.payload.data.id_sensor,\n  // (/10) On affiche un digit après le point.\n  $temperature:msg.payload.data.temperature/10,\n  $humidity:msg.payload.data.humidity/10,\n  $counter:msg.payload.header.counter\n}\n\nreturn msg;\n",
+        "func": "//Parametres pour prepared statement\nmsg.params = { \n  $id_location:msg.payload[0].id_location,\n  // (/10) On affiche un digit après le point.\n  $temperature:msg.temperature.data.temperature/10,\n  $humidity:msg.temperature.data.humidity/10,\n  $counter:msg.temperature.header.counter\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 600,
-        "y": 600,
+        "x": 610,
+        "y": 540,
         "wires": [
             [
                 "97610149c73699c4"
@@ -2131,7 +2138,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 680,
+        "y": 620,
         "wires": [
             [
                 "4b60c0e64f93d254"
@@ -2176,6 +2183,7 @@
         "id": "09b6ad2a2bf86dc1",
         "type": "function",
         "z": "57111ca025f638be",
+        "d": true,
         "g": "f6ba6aa35208baae",
         "name": "Flow functions",
         "func": "'use strict'\nlet Functions = {\n    getDateDiff : \n        function (date_1, date_2){\n            const millis = date_1 - date_2;\n            const diff = Math.floor(millis / 1000);\n            //    console.log(\\\"Diff: \\\" + diff);\n            return diff;\n        },\n    getActivityLevel : \n        function (lastReceiptTime, sleepDuration){\n            //console.log(\"lastReceiptTime: \" + lastReceiptTime );\n            \n            const millis = Date.now() - lastReceiptTime;\n            \n            //Diff est en secondes\n            const diff = Math.floor(millis / 1000);\n          //  console.log(\"Diff: \" + diff + \" - sleep: \" + sleepDuration);\n            \n            if( diff > (sleepDuration * 2)){\n                //La période de sleep est dépassée * 2. \n                // On mets au rouge.\n                return 0;\n               \n            }else if( diff > (sleepDuration * 1.2)){\n                //La période de sleep est dépassée * 1.2. \n                // On mets au jaune.\n                return 50;\n            }else{\n                //On a reçu du data à l'intérieure de la période de sleep. \n                // On mets au vert.\n                return 100;  \n            }\n        },\n    padTo2Digits :\n        function (num) {\n          return num.toString().padStart(2, '0');\n        },\n    formatDate : \n        function (date) {\n          return (\n            [\n             // date.getFullYear(),\n              Functions.padTo2Digits(date.getMonth() + 1),\n              Functions.padTo2Digits(date.getDate()),\n            ].join('/') +\n            ' ' +\n            [\n              Functions.padTo2Digits(date.getHours()),\n              Functions.padTo2Digits(date.getMinutes()),\n              Functions.padTo2Digits(date.getSeconds()),\n            ].join(':')\n          );\n        }\n    }\n\nflow.set('Functions', Functions);\nnode.status({fill:\"green\",shape:\"dot\",text:\"Functions Loaded\"});\n\nreturn msg;",
@@ -2295,10 +2303,10 @@
         "repair": true,
         "outputs": 3,
         "x": 410,
-        "y": 620,
+        "y": 560,
         "wires": [
             [
-                "c8184d1d79bb29dc"
+                "e57ce7fb3618696f"
             ],
             [
                 "92d3ed46ab95f44f"
@@ -2318,6 +2326,7 @@
         "id": "6ffc190a90909afc",
         "type": "change",
         "z": "57111ca025f638be",
+        "d": true,
         "g": "f6ba6aa35208baae",
         "name": "Clear flow variables",
         "rules": [
@@ -2366,7 +2375,7 @@
             "33de13a0cbc96465"
         ],
         "x": 575,
-        "y": 650,
+        "y": 590,
         "wires": []
     },
     {
@@ -2440,7 +2449,7 @@
         "name": "I'mAlive -- Alerte",
         "info": "On veut rafraichir le statut des données",
         "x": 690,
-        "y": 650,
+        "y": 590,
         "wires": []
     },
     {
@@ -2458,7 +2467,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 380,
-        "y": 560,
+        "y": 500,
         "wires": []
     },
     {
@@ -2651,6 +2660,7 @@
         "id": "fde5194a774e0236",
         "type": "sqlite",
         "z": "57111ca025f638be",
+        "d": true,
         "g": "f6ba6aa35208baae",
         "mydb": "628739f370d1726d",
         "sqlquery": "fixed",
@@ -2669,14 +2679,13 @@
         "g": "590af8aa1ccb96c4",
         "mydb": "628739f370d1726d",
         "sqlquery": "prepared",
-        "sql": "INSERT INTO TEMPERATURE\n  ( id_location, \n    temperature, \n    humidity,\n    counter,\n    datetime\n  )\nVALUES( \n   ( SELECT id_location\n   FROM LOCATION_DEVICE \n    where id_device = (select id_device \n                      from SENSOR \n                      where id_sensor = $id_sensor)),\n  $temperature,\n  $humidity,\n  $counter,\n  datetime('now', 'localtime') \n);\n",
+        "sql": "INSERT INTO TEMPERATURE\n  ( id_location, \n    temperature, \n    humidity,\n    counter,\n    datetime\n  )\nVALUES( \n  $id_location,\n  $temperature,\n  $humidity,\n  $counter,\n  datetime('now', 'localtime') \n);\n",
         "name": "Insert",
-        "x": 750,
-        "y": 600,
+        "x": 740,
+        "y": 540,
         "wires": [
             [
-                "8244db89f6963d09",
-                "2174f125045eff9a"
+                "8244db89f6963d09"
             ]
         ]
     },
@@ -2684,6 +2693,7 @@
         "id": "95bfa0ba0ca08529",
         "type": "function",
         "z": "57111ca025f638be",
+        "d": true,
         "g": "f6ba6aa35208baae",
         "name": "Sensor Roles",
         "func": "\n\nlet roles = [];\nmsg.payload.forEach(function (value) {\n     roles.push(value.role);\n});\n\nglobal.set('SENSOR_ROLES', roles);\n\nnode.status({fill:\"green\",shape:\"ring\",text:\"Roles chargés\"});\nreturn msg;",
@@ -2715,7 +2725,7 @@
             "4e388314dbb14984"
         ],
         "x": 1005,
-        "y": 600,
+        "y": 540,
         "wires": []
     },
     {
@@ -2727,11 +2737,12 @@
         "sqlquery": "fixed",
         "sql": "SELECT *\nFROM DATA_VIEW\nwhere id_temperature_data = (SELECT last_insert_rowid());",
         "name": "Get last ID",
-        "x": 890,
-        "y": 600,
+        "x": 880,
+        "y": 540,
         "wires": [
             [
-                "e4aecc6f336ce4bc"
+                "e4aecc6f336ce4bc",
+                "2174f125045eff9a"
             ]
         ]
     },
@@ -2758,7 +2769,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 170,
-        "y": 800,
+        "y": 740,
         "wires": [
             [
                 "bed8c9ea7fe6b13c"
@@ -2778,7 +2789,7 @@
         "country": "CA",
         "language": "fr",
         "x": 320,
-        "y": 800,
+        "y": 740,
         "wires": [
             [
                 "0bd7f81e66d83a2a"
@@ -2799,7 +2810,7 @@
         "finalize": "",
         "libs": [],
         "x": 470,
-        "y": 800,
+        "y": 740,
         "wires": [
             [
                 "562a0ef8b0073349"
@@ -2816,7 +2827,7 @@
         "sql": "INSERT INTO TEMPERATURE_EXTERNE (\n  temperature,\n  humidity,\n  datetime\n)\nVALUES (\n  $temperature,\n  $humidity,\n  datetime('now', 'localtime')\n);\n",
         "name": "Insert data",
         "x": 640,
-        "y": 800,
+        "y": 740,
         "wires": [
             [
                 "b5fb53396f247251"
@@ -2838,13 +2849,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 820,
-        "y": 800,
+        "y": 740,
         "wires": []
     },
     {
         "id": "75fb2eb7f4ea83be",
         "type": "sqlite",
         "z": "57111ca025f638be",
+        "d": true,
         "g": "f6ba6aa35208baae",
         "mydb": "628739f370d1726d",
         "sqlquery": "fixed",
@@ -3251,6 +3263,7 @@
         "id": "933c6183c294acd4",
         "type": "inject",
         "z": "57111ca025f638be",
+        "d": true,
         "g": "f6ba6aa35208baae",
         "name": "Setup",
         "props": [
@@ -3415,7 +3428,7 @@
         "height": "4",
         "className": "",
         "x": 1120,
-        "y": 3020,
+        "y": 2980,
         "wires": [
             []
         ]
@@ -3434,7 +3447,7 @@
         "finalize": "",
         "libs": [],
         "x": 890,
-        "y": 3080,
+        "y": 3000,
         "wires": [
             [
                 "0866c283bc7f9752"
@@ -3453,8 +3466,8 @@
         "sqlquery": "prepared",
         "sql": "SELECT 'SiteWeb' as location, temperature, humidity, datetime\nFROM TEMPERATURE_EXTERNE\nwhere  datetime > datetime($dateSelected, 'localtime') \n     AND datetime < datetime($dateSelected, 'localtime', $nbHours) \n\n -- datetime >  datetime($dateSelected, 'localtime', $nbHours)\norder by datetime asc;",
         "name": "Load temp WEB",
-        "x": 690,
-        "y": 3080,
+        "x": 710,
+        "y": 3000,
         "wires": [
             [
                 "28c5da6a4d2da8ba"
@@ -3491,8 +3504,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 640,
-        "y": 3040,
+        "x": 650,
+        "y": 3050,
         "wires": [
             [
                 "98e8f77ab6b80fce"
@@ -3518,7 +3531,7 @@
         "name": " températures externes - site web",
         "info": "",
         "x": 860,
-        "y": 3030,
+        "y": 3050,
         "wires": []
     },
     {
@@ -3593,8 +3606,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1080,
-        "y": 3070,
+        "x": 1060,
+        "y": 3030,
         "wires": [
             [
                 "388cb232c9079e14"
@@ -3781,7 +3794,7 @@
             "e4aecc6f336ce4bc"
         ],
         "x": 485,
-        "y": 3040,
+        "y": 3050,
         "wires": [
             [
                 "0a4b76749339d8cd",
@@ -4123,7 +4136,8 @@
             "a147248bb7549068",
             "aecd825fcf9a94de",
             "4b59343b5845de12",
-            "34394aded35a14f7"
+            "34394aded35a14f7",
+            "287024651fc3c04b"
         ],
         "x": 125,
         "y": 290,
@@ -4991,8 +5005,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 890,
-        "y": 560,
+        "x": 1050,
+        "y": 580,
         "wires": []
     },
     {
@@ -5017,6 +5031,7 @@
         "id": "aecd825fcf9a94de",
         "type": "link out",
         "z": "57111ca025f638be",
+        "d": true,
         "g": "f6ba6aa35208baae",
         "name": "link out 2",
         "mode": "link",
@@ -5037,27 +5052,9 @@
         "y": 170,
         "wires": [
             [
-                "70bd71d2e21c7f4c"
+                "287024651fc3c04b"
             ]
         ]
-    },
-    {
-        "id": "70bd71d2e21c7f4c",
-        "type": "debug",
-        "z": "57111ca025f638be",
-        "g": "f6ba6aa35208baae",
-        "name": "debug 204",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 430,
-        "y": 170,
-        "wires": []
     },
     {
         "id": "34bfc8c76f04a6d5",
@@ -6224,14 +6221,185 @@
         "wires": []
     },
     {
+        "id": "7e16302c92c374f6",
+        "type": "sqlite",
+        "z": "57111ca025f638be",
+        "g": "590af8aa1ccb96c4",
+        "mydb": "628739f370d1726d",
+        "sqlquery": "prepared",
+        "sql": " SELECT id_location\nFROM LOCATION_DEVICE \nwhere id_device = (\n  select id_device \n  from SENSOR \n  where id_sensor = $id_sensor);\n",
+        "name": "Get location",
+        "x": 710,
+        "y": 480,
+        "wires": [
+            [
+                "63fc615bfac2e331"
+            ]
+        ]
+    },
+    {
+        "id": "e57ce7fb3618696f",
+        "type": "change",
+        "z": "57111ca025f638be",
+        "g": "590af8aa1ccb96c4",
+        "name": "Params",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "temperature",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "params.$id_sensor",
+                "pt": "msg",
+                "to": "temperature.data.id_sensor",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 480,
+        "wires": [
+            [
+                "7e16302c92c374f6"
+            ]
+        ]
+    },
+    {
+        "id": "63fc615bfac2e331",
+        "type": "switch",
+        "z": "57111ca025f638be",
+        "g": "590af8aa1ccb96c4",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 880,
+        "y": 480,
+        "wires": [
+            [
+                "c8184d1d79bb29dc"
+            ],
+            [
+                "f73f445ee8c747ad"
+            ]
+        ]
+    },
+    {
+        "id": "f73f445ee8c747ad",
+        "type": "function",
+        "z": "57111ca025f638be",
+        "g": "590af8aa1ccb96c4",
+        "name": "Location indéfinie",
+        "func": "msg.payload = \"Location non définie\"\nnode.warn(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1967c0792ce84596",
+        "type": "ui-button",
+        "z": "57111ca025f638be",
+        "g": "b3bc735139a25964",
+        "group": "5dfbb318f0d542be",
+        "name": "",
+        "label": "refresh",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 200,
+        "y": 2480,
+        "wires": [
+            [
+                "b6d93e5a518a187d"
+            ]
+        ]
+    },
+    {
+        "id": "fa06f329ce0a3c15",
+        "type": "inject",
+        "z": "57111ca025f638be",
+        "g": "f6ba6aa35208baae",
+        "name": "Setup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 170,
+        "wires": [
+            [
+                "42e44c3404350309"
+            ]
+        ]
+    },
+    {
+        "id": "287024651fc3c04b",
+        "type": "link out",
+        "z": "57111ca025f638be",
+        "g": "f6ba6aa35208baae",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "5e2d481f338e5d45"
+        ],
+        "x": 375,
+        "y": 170,
+        "wires": []
+    },
+    {
         "id": "da939ff73faa3d33",
         "type": "serial in",
         "z": "797d9b2a7151f089",
         "g": "fa8d72ad90e71a48",
         "name": "Serial in",
         "serial": "88425ab7cad6cc83",
-        "x": 160,
-        "y": 140,
+        "x": 140,
+        "y": 130,
         "wires": [
             [
                 "edba9caae115a851",
@@ -6255,8 +6423,8 @@
         "correl": "",
         "expiry": "",
         "broker": "c6a29fab98717cbb",
-        "x": 610,
-        "y": 140,
+        "x": 590,
+        "y": 130,
         "wires": []
     },
     {
@@ -6272,8 +6440,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 140,
+        "x": 340,
+        "y": 130,
         "wires": [
             [
                 "16071ac81dfe26dd"
@@ -6292,8 +6460,8 @@
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 510,
-        "y": 190,
+        "x": 490,
+        "y": 180,
         "wires": [
             []
         ]
@@ -6311,8 +6479,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 190,
+        "x": 340,
+        "y": 180,
         "wires": [
             [
                 "51ee3605ff9d80e0"
@@ -6327,8 +6495,8 @@
         "name": "Surveiller fichier log",
         "files": "/home/pi-md/log/esp32.log",
         "recursive": "",
-        "x": 210,
-        "y": 280,
+        "x": 190,
+        "y": 270,
         "wires": [
             [
                 "b4133a029132e1bc"
@@ -6348,8 +6516,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "LogRotate",
-        "x": 620,
-        "y": 280,
+        "x": 600,
+        "y": 270,
         "wires": [
             [
                 "2b905ff025d2f0a9"
@@ -6373,8 +6541,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
-        "y": 280,
+        "x": 410,
+        "y": 270,
         "wires": [
             [
                 "f1f19a0d827e452e"
@@ -6388,8 +6556,8 @@
         "g": "d0932bcd6a5ec1f6",
         "name": "Serial out",
         "serial": "88425ab7cad6cc83",
-        "x": 720,
-        "y": 480,
+        "x": 710,
+        "y": 640,
         "wires": []
     },
     {
@@ -6406,8 +6574,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 720,
-        "y": 440,
+        "x": 710,
+        "y": 600,
         "wires": []
     },
     {
@@ -6428,8 +6596,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 520,
-        "y": 480,
+        "x": 510,
+        "y": 640,
         "wires": [
             [
                 "d2b39a2251d4d124",
@@ -6450,8 +6618,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 480,
+        "x": 340,
+        "y": 640,
         "wires": [
             [
                 "4aafe259275fd99f"
@@ -6472,8 +6640,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 180,
-        "y": 480,
+        "x": 170,
+        "y": 640,
         "wires": [
             [
                 "7a1a4351ec72b9b3"
@@ -6488,8 +6656,8 @@
         "name": "",
         "scope": null,
         "uncaught": false,
-        "x": 140,
-        "y": 1430,
+        "x": 130,
+        "y": 1600,
         "wires": [
             [
                 "c2a5a48d61080e22"
@@ -6510,8 +6678,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 380,
-        "y": 1430,
+        "x": 370,
+        "y": 1600,
         "wires": []
     },
     {
@@ -6528,8 +6696,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 460,
-        "y": 100,
+        "x": 440,
+        "y": 90,
         "wires": []
     },
     {
@@ -6547,8 +6715,8 @@
         "rap": false,
         "rh": 0,
         "inputs": 0,
-        "x": 160,
-        "y": 1240,
+        "x": 150,
+        "y": 1430,
         "wires": [
             [
                 "558eb47c0c8cd19f"
@@ -6578,8 +6746,8 @@
         "topic": "",
         "payload": "{\"status\":\"ESPNOW_DATA\", \"type\":\"START_SIGNAL\",\"mac\":\"C8:C9:A3:C8:35:9C\"}",
         "payloadType": "str",
-        "x": 160,
-        "y": 1290,
+        "x": 150,
+        "y": 1480,
         "wires": [
             [
                 "558eb47c0c8cd19f"
@@ -6600,8 +6768,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
-        "y": 1270,
+        "x": 380,
+        "y": 1460,
         "wires": [
             [],
             [
@@ -6635,8 +6803,8 @@
         "bytopic": "topic",
         "topic": "topic",
         "outputs": 1,
-        "x": 540,
-        "y": 1140,
+        "x": 530,
+        "y": 1330,
         "wires": [
             [
                 "d23177f02750759c",
@@ -6657,8 +6825,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 750,
-        "y": 1170,
+        "x": 740,
+        "y": 1360,
         "wires": [
             [
                 "4805c368e2c34a0c"
@@ -6687,8 +6855,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 720,
-        "y": 1120,
+        "x": 710,
+        "y": 1310,
         "wires": []
     },
     {
@@ -6705,8 +6873,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 950,
-        "y": 1180,
+        "x": 940,
+        "y": 1370,
         "wires": []
     },
     {
@@ -6716,8 +6884,8 @@
         "g": "5d89e93885229fe1",
         "name": "À revoir - Structurer le message du Gateway",
         "info": "",
-        "x": 860,
-        "y": 1260,
+        "x": 850,
+        "y": 1450,
         "wires": []
     },
     {
@@ -6730,8 +6898,8 @@
         "sqlquery": "prepared",
         "sql": "INSERT INTO SYSTEM_LOG (\n    id_device,\n    id_event_type,\n    log,\n    topic,\n    counter,\n    version,\n    datetime\n)\nVALUES (\n  $id_device,\n  $log,\n  $topic,\n  $counter,\n  $version,\n  datetime('now', 'localtime')\n);\n",
         "name": "SystemLog",
-        "x": 930,
-        "y": 1230,
+        "x": 920,
+        "y": 1420,
         "wires": [
             []
         ]
@@ -6754,8 +6922,8 @@
         "raw": false,
         "className": "",
         "name": "",
-        "x": 610,
-        "y": 1280,
+        "x": 600,
+        "y": 1470,
         "wires": []
     },
     {
@@ -6787,8 +6955,8 @@
         "shape": "square",
         "showBorder": true,
         "showGlow": true,
-        "x": 940,
-        "y": 1140,
+        "x": 930,
+        "y": 1330,
         "wires": []
     },
     {
@@ -6804,8 +6972,8 @@
             "7a1a4351ec72b9b3",
             "5fc3dcdaa67d4078"
         ],
-        "x": 170,
-        "y": 970,
+        "x": 160,
+        "y": 1160,
         "wires": [
             [
                 "526010976c842e2c"
@@ -6841,8 +7009,8 @@
         "shape": "square",
         "showBorder": true,
         "showGlow": true,
-        "x": 550,
-        "y": 970,
+        "x": 540,
+        "y": 1160,
         "wires": []
     },
     {
@@ -6858,8 +7026,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 970,
+        "x": 360,
+        "y": 1160,
         "wires": [
             [
                 "44e59e8574df7bf8",
@@ -6873,7 +7041,7 @@
         "z": "797d9b2a7151f089",
         "g": "8feba00f9cb9532b",
         "name": "debug 164",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -6881,8 +7049,8 @@
         "targetType": "full",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 570,
-        "y": 1010,
+        "x": 560,
+        "y": 1200,
         "wires": []
     },
     {
@@ -6896,8 +7064,8 @@
             "68020bb809a9d64b",
             "e27a25756c4ae984"
         ],
-        "x": 170,
-        "y": 670,
+        "x": 160,
+        "y": 860,
         "wires": [
             [
                 "d95bc61b71d72cb2",
@@ -6918,8 +7086,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 550,
-        "y": 670,
+        "x": 540,
+        "y": 860,
         "wires": [
             [
                 "037ff0d4ccce8f8a",
@@ -6942,8 +7110,8 @@
         "targetType": "full",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 770,
-        "y": 630,
+        "x": 760,
+        "y": 820,
         "wires": [],
         "info": "# Plus grand"
     },
@@ -6961,8 +7129,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 340,
-        "y": 630,
+        "x": 330,
+        "y": 820,
         "wires": [],
         "info": "# Plus grand"
     },
@@ -7000,8 +7168,8 @@
         "shape": "square",
         "showBorder": true,
         "showGlow": true,
-        "x": 760,
-        "y": 680,
+        "x": 750,
+        "y": 870,
         "wires": []
     },
     {
@@ -7017,8 +7185,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "Mosquitto restart",
-        "x": 590,
-        "y": 820,
+        "x": 580,
+        "y": 1010,
         "wires": [
             [
                 "93ac05f20fb98b77"
@@ -7042,8 +7210,8 @@
         "septopics": true,
         "property": "status",
         "topi": "topic",
-        "x": 370,
-        "y": 670,
+        "x": 360,
+        "y": 860,
         "wires": [
             [
                 "375f5d90204152ea",
@@ -7069,8 +7237,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 370,
-        "y": 810,
+        "x": 360,
+        "y": 1000,
         "wires": [
             [
                 "3f153da6282bee3d"
@@ -7099,8 +7267,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 390,
-        "y": 850,
+        "x": 380,
+        "y": 1040,
         "wires": [
             [
                 "3f153da6282bee3d"
@@ -7129,8 +7297,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 160,
-        "y": 770,
+        "x": 150,
+        "y": 960,
         "wires": [
             [
                 "0f27b5b866c9b4a4"
@@ -7143,7 +7311,7 @@
         "z": "797d9b2a7151f089",
         "g": "70160f0a7636882f",
         "name": "debug 183",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7151,8 +7319,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 560,
-        "y": 630,
+        "x": 550,
+        "y": 820,
         "wires": []
     },
     {
@@ -7177,8 +7345,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 160,
-        "y": 740,
+        "x": 150,
+        "y": 930,
         "wires": [
             [
                 "0f27b5b866c9b4a4"
@@ -7207,8 +7375,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 160,
-        "y": 710,
+        "x": 150,
+        "y": 900,
         "wires": [
             [
                 "0f27b5b866c9b4a4"
@@ -7229,8 +7397,8 @@
         "rap": false,
         "rh": 0,
         "inputs": 0,
-        "x": 180,
-        "y": 1160,
+        "x": 170,
+        "y": 1350,
         "wires": [
             [
                 "2105846b8c12cb48"
@@ -7250,8 +7418,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 1160,
+        "x": 360,
+        "y": 1350,
         "wires": [
             [
                 "9bb6a0be709aef65"
@@ -7287,8 +7455,8 @@
         "topic": "",
         "payload": "IM_ALIVE",
         "payloadType": "str",
-        "x": 180,
-        "y": 1120,
+        "x": 170,
+        "y": 1310,
         "wires": [
             [
                 "2105846b8c12cb48"
@@ -7301,8 +7469,8 @@
         "z": "797d9b2a7151f089",
         "g": "5426475307091e39",
         "name": "",
-        "x": 810,
-        "y": 820,
+        "x": 800,
+        "y": 1010,
         "wires": []
     },
     {
@@ -7319,8 +7487,152 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 790,
-        "y": 280,
+        "x": 770,
+        "y": 270,
+        "wires": []
+    },
+    {
+        "id": "426044f103a446eb",
+        "type": "ui-text-input",
+        "z": "797d9b2a7151f089",
+        "d": true,
+        "g": "869ebc417f12da40",
+        "group": "5b69d242410edd23",
+        "name": "Afficher",
+        "label": "ESP32 log",
+        "order": 3,
+        "width": "9",
+        "height": "12",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "textarea",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": false,
+        "sendOnBlur": false,
+        "sendOnEnter": false,
+        "className": "",
+        "x": 780,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8f01265513527bfe",
+        "type": "function",
+        "z": "797d9b2a7151f089",
+        "g": "869ebc417f12da40",
+        "name": "Buffer",
+        "func": "let lines = flow.get(\"esplog32\") || [];\n//let lines = [];\nconst max = 200;\n\nlines.unshift(msg.payload + '\\n');\n\nif(lines.length  >= max){\n    lines.pop();\n}\n\nmsg.payload = lines;\n\nflow.set(\"esplog32\", lines);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 400,
+        "wires": [
+            [
+                "507aba2cb3094c7f"
+            ]
+        ]
+    },
+    {
+        "id": "a51e48a550bcf90a",
+        "type": "tail-file",
+        "z": "797d9b2a7151f089",
+        "g": "869ebc417f12da40",
+        "filename": "/home/pi-md/log/esp32.log",
+        "createFile": false,
+        "mode": "",
+        "encoding": "utf-8",
+        "split": true,
+        "separator": "",
+        "fromBeginning": false,
+        "flushAtEOF": false,
+        "rememberLast": true,
+        "limitSize": true,
+        "maxBytes": "",
+        "skipBlank": false,
+        "useTrim": true,
+        "sendError": false,
+        "interval": "1000",
+        "name": "",
+        "x": 260,
+        "y": 400,
+        "wires": [
+            [
+                "50d31eaa2bed55ab",
+                "8f01265513527bfe"
+            ]
+        ]
+    },
+    {
+        "id": "2681d73e9020159d",
+        "type": "ui-text",
+        "z": "797d9b2a7151f089",
+        "d": true,
+        "g": "869ebc417f12da40",
+        "group": "5b69d242410edd23",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "La ligne du haut est  la plus récente.",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 720,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "507aba2cb3094c7f",
+        "type": "ui-template",
+        "z": "797d9b2a7151f089",
+        "g": "869ebc417f12da40",
+        "group": "5b69d242410edd23",
+        "page": "",
+        "ui": "",
+        "name": "Afficher fichier",
+        "order": 1,
+        "width": "10",
+        "height": "4",
+        "head": "",
+        "format": "<template>\n  <v-container fluid>\n    <v-row>\n      <v-col cols=\"12\">\n        <v-textarea\n          :model-value=\"value\"\n          label=\"ESPLOG\"\n          rows=\"20\"\n          no-resize\n          variant=\"filled\"\n          shaped\n        ></v-textarea>\n      </v-col>\n    </v-row>\n  </v-container>\n</template>\n<script>\n  export default {\n    data: () => ({\n      value: ''\n    }),\n    watch: {\n      msg: function(){\n        this.value = this.msg.payload\n      },\n    }\n  }\n</script>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 620,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "50d31eaa2bed55ab",
+        "type": "debug",
+        "z": "797d9b2a7151f089",
+        "g": "869ebc417f12da40",
+        "name": "debug 215",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 350,
         "wires": []
     },
     {
@@ -7362,122 +7674,6 @@
         "x": 360,
         "y": 100,
         "wires": []
-    },
-    {
-        "id": "a087fa5b04e2ed6a",
-        "type": "exec",
-        "z": "8c02b6694634723d",
-        "g": "37395d53ca3ec675",
-        "command": "./nodered.sh",
-        "addpay": "payload",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "Backup BD",
-        "x": 360,
-        "y": 530,
-        "wires": [
-            [
-                "e9797086d33dca62"
-            ],
-            [
-                "e9f063af5b3dbd3d"
-            ],
-            [
-                "497d93111671d420"
-            ]
-        ],
-        "info": "Lance le script 'nodered.sh' sur le serveur."
-    },
-    {
-        "id": "e9f063af5b3dbd3d",
-        "type": "debug",
-        "z": "8c02b6694634723d",
-        "g": "37395d53ca3ec675",
-        "name": "debug 124",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 540,
-        "y": 530,
-        "wires": []
-    },
-    {
-        "id": "497d93111671d420",
-        "type": "debug",
-        "z": "8c02b6694634723d",
-        "g": "37395d53ca3ec675",
-        "name": "debug 125",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 540,
-        "y": 570,
-        "wires": []
-    },
-    {
-        "id": "571f0fb3a0c1cb2f",
-        "type": "inject",
-        "z": "8c02b6694634723d",
-        "g": "37395d53ca3ec675",
-        "name": "Backup",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "00 09 * * *",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 210,
-        "y": 530,
-        "wires": [
-            [
-                "a087fa5b04e2ed6a"
-            ]
-        ]
-    },
-    {
-        "id": "e9797086d33dca62",
-        "type": "function",
-        "z": "8c02b6694634723d",
-        "g": "37395d53ca3ec675",
-        "name": "Résultat du script",
-        "func": "msg.backup = JSON.parse(msg.payload);\n\nmsg.backup.forEach(function (value) {\n    let date = new Date(value.date);\n     value.date = String(date.getMonth()+1).padStart(2, '0') \n        + \"/\" + String(date.getDate()).padStart(2, '0') + \" \" \n        + date.getHours() + \":\" +  String(date.getMinutes()).padStart(2, '0');\n});\n\nlet date = new Date();\n\nmsg.date = String(date.getMonth()+1).padStart(2, '0') \n        + \"/\" + String(date.getDate()).padStart(2, '0') + \" \" \n        + date.getHours() + \":\" +  String(date.getMinutes()).padStart(2, '0');\nreturn msg;\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 560,
-        "y": 490,
-        "wires": [
-            [
-                "56c53ee58ee22f0a",
-                "f94259e3284b277c"
-            ]
-        ]
     },
     {
         "id": "798c8432df02e379",
@@ -7624,121 +7820,6 @@
         ]
     },
     {
-        "id": "56c53ee58ee22f0a",
-        "type": "debug",
-        "z": "8c02b6694634723d",
-        "g": "37395d53ca3ec675",
-        "name": "debug 168",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 780,
-        "y": 530,
-        "wires": []
-    },
-    {
-        "id": "9abd8010c264a120",
-        "type": "function",
-        "z": "8c02b6694634723d",
-        "g": "37395d53ca3ec675",
-        "name": "function 21",
-        "func": "msg.payload ='[ '\n+'{\\\"type\\\":\\\"SOURCE\\\",\\\"name\\\":\\\"nodered.db\\\",\\\"date\\\":\\\"2024-04-05T12:29:34\\\",\\\"size\\\":\\\"1150976\\\" },'\n+'{\\\"type\\\":\\\"SQL\\\",\\\"name\\\":\\\"nodered.bk.sql.gz\\\",\\\"date\\\":\\\"2024-04-05T17:07:23\\\",\\\"size\\\":\\\"56067\\\" },'\n+'{\\\"type\\\":\\\"BACKUP_BIN\\\",\\\"name\\\":\\\"nodered.bk.db\\\",\\\"date\\\":\\\"2024-04-05T17:07:23\\\",\\\"size\\\":\\\"1150976\\\" }]'\n\n\nmsg.backup = JSON.parse(msg.payload);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 327,
-        "y": 461,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d8da1221bf37f16a",
-        "type": "inject",
-        "z": "8c02b6694634723d",
-        "g": "37395d53ca3ec675",
-        "name": "Test",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 177,
-        "y": 461,
-        "wires": [
-            [
-                "9abd8010c264a120"
-            ]
-        ]
-    },
-    {
-        "id": "f94259e3284b277c",
-        "type": "ui-template",
-        "z": "8c02b6694634723d",
-        "g": "37395d53ca3ec675",
-        "group": "336cf0cb878743a0",
-        "page": "",
-        "ui": "",
-        "name": "Backup BD",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n  <v-card title=\"Rapport du script 'nodered.sh'\" :text=\"dateNow\" flat> </v-card>\n  <v-data-table  :headers=\"headers\" \n    :items=\"resultats\"  items-per-page=\"10\"\n    density=\"compact\"\n    select-strategy=\"page\"  \n    >\n   \n    <template v-slot:bottom>\n      <div class=\"text-center pt-2\">\n        <v-pagination :length=\"pageCount\"></v-pagination>\n      </div>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n\n    data: () => ({\n      \n      selected: [],\n      dateNow: \"\",\n      headers: [\n        { title: 'Type', sortable: false, maxWidth:1, key: 'type' },\n        { title: 'name', key: 'name', maxWidth:2, sortable: false},\n        { title: 'date', key: 'date', maxWidth:1, sortable: false},\n        { title: 'size', key: 'size', maxWidth:1, sortable: false},\n      ],\n      resultats: [],\n    }),\n\n    watch: {\n       msg: function(){\n        this.resultats = this.msg.backup;\n        this.dateNow = this.msg.date;\n      },\n      \n    },\n    \n    computed: {\n      pageCount() {\n        return Math.ceil(this.resultats.length / this.itemsPerPage)\n      },\n    },\n  \n  }\n</script>",
-        "storeOutMessages": true,
-        "passthru": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 760,
-        "y": 490,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fd68066b9df5be6d",
-        "type": "ui-table",
-        "z": "8c02b6694634723d",
-        "g": "37395d53ca3ec675",
-        "group": "336cf0cb878743a0",
-        "name": "",
-        "label": "text",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "maxrows": 0,
-        "passthru": false,
-        "autocols": true,
-        "showSearch": true,
-        "selectionType": "none",
-        "columns": [],
-        "x": 770,
-        "y": 430,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "6549eeb2ee54469e",
         "type": "do",
         "z": "8c02b6694634723d",
@@ -7760,7 +7841,7 @@
         "outputs": 5,
         "_version": "0.4.1",
         "x": 260,
-        "y": 780,
+        "y": 680,
         "wires": [
             [
                 "ddbf68cc2831b078"
@@ -7793,7 +7874,7 @@
         "oldrc": false,
         "name": "",
         "x": 590,
-        "y": 730,
+        "y": 630,
         "wires": [
             [
                 "544099c20ffe1462",
@@ -7829,7 +7910,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 130,
-        "y": 780,
+        "y": 680,
         "wires": [
             [
                 "6549eeb2ee54469e"
@@ -7845,7 +7926,7 @@
         "mode": "abort",
         "saveValue": false,
         "x": 1080,
-        "y": 750,
+        "y": 650,
         "wires": []
     },
     {
@@ -7863,7 +7944,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 730,
-        "y": 690,
+        "y": 590,
         "wires": []
     },
     {
@@ -7875,7 +7956,7 @@
         "mode": "done",
         "saveValue": false,
         "x": 1240,
-        "y": 720,
+        "y": 620,
         "wires": []
     },
     {
@@ -7900,7 +7981,7 @@
         "repair": false,
         "outputs": 2,
         "x": 760,
-        "y": 730,
+        "y": 630,
         "wires": [
             [
                 "a4c2ec9c436689c4"
@@ -7925,7 +8006,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 430,
-        "y": 890,
+        "y": 790,
         "wires": []
     },
     {
@@ -7941,7 +8022,7 @@
         "template": "sqlite3 {{{env.DatabasePath}}}/{{{env.DatabaseName}}} .dump | gzip -c > {{{env.DatabasePath}}}/{{{env.DatabaseSqlName}}}",
         "output": "str",
         "x": 430,
-        "y": 750,
+        "y": 650,
         "wires": [
             [
                 "a00b7f1773b75f0d"
@@ -7961,7 +8042,7 @@
         "template": "stat {{{env.DatabasePath}}}/{{{env.DatabaseBkName}}}",
         "output": "str",
         "x": 450,
-        "y": 800,
+        "y": 700,
         "wires": [
             [
                 "d395a6c415a67023"
@@ -7981,7 +8062,7 @@
         "template": "sqlite3 {{{env.DatabasePath}}}/{{{env.DatabaseName}}} \".backup {{{env.DatabasePath}}}/{{{env.DatabaseBkName}}}\"",
         "output": "str",
         "x": 410,
-        "y": 710,
+        "y": 610,
         "wires": [
             [
                 "a00b7f1773b75f0d"
@@ -8002,7 +8083,7 @@
         "oldrc": false,
         "name": "",
         "x": 630,
-        "y": 830,
+        "y": 730,
         "wires": [
             [
                 "db5638e57c00e678",
@@ -8028,7 +8109,7 @@
         "finalize": "",
         "libs": [],
         "x": 820,
-        "y": 870,
+        "y": 770,
         "wires": [
             [
                 "a77a1fd598ea37f3"
@@ -8057,7 +8138,7 @@
         "repair": false,
         "outputs": 2,
         "x": 790,
-        "y": 820,
+        "y": 720,
         "wires": [
             [
                 "997bea237d58c378"
@@ -8080,7 +8161,7 @@
         "template": "stat {{{env.DatabasePath}}}/{{{env.DatabaseSqlName}}}",
         "output": "str",
         "x": 450,
-        "y": 840,
+        "y": 740,
         "wires": [
             [
                 "d395a6c415a67023"
@@ -8122,7 +8203,7 @@
         "to": "",
         "reg": false,
         "x": 1000,
-        "y": 870,
+        "y": 770,
         "wires": [
             [
                 "363e4e7cfed7fbdd"
@@ -8139,7 +8220,7 @@
         "sql": "INSERT INTO LOG_BD_BACKUP (\n   file_name,\n   file_size,\n   file_date,\n   datetime\n)\nVALUES (\n   $file_name, \n   $file_size,\n   $file_date,\n   datetime('now', 'localtime') \n);\n",
         "name": "Insert LOG_BD_BACKUP",
         "x": 940,
-        "y": 920,
+        "y": 820,
         "wires": [
             [
                 "a4c2ec9c436689c4",
@@ -8162,7 +8243,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1180,
-        "y": 920,
+        "y": 820,
         "wires": []
     },
     {
@@ -8173,7 +8254,7 @@
         "name": "Backup nodered.db + Dump SQL",
         "info": "Les résultats des copies sont sauvegardées en BD.",
         "x": 310,
-        "y": 670,
+        "y": 570,
         "wires": []
     },
     {
@@ -8183,97 +8264,8 @@
         "g": "32755367b37500ea",
         "name": "",
         "x": 780,
-        "y": 780,
+        "y": 680,
         "wires": []
-    },
-    {
-        "id": "426044f103a446eb",
-        "type": "ui-text-input",
-        "z": "8c02b6694634723d",
-        "group": "5b69d242410edd23",
-        "name": "",
-        "label": "ESP32 log",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "textarea",
-        "delay": 300,
-        "passthru": false,
-        "sendOnDelay": false,
-        "sendOnBlur": false,
-        "sendOnEnter": false,
-        "className": "",
-        "x": 610,
-        "y": 1040,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0ee790247b2145db",
-        "type": "file in",
-        "z": "8c02b6694634723d",
-        "name": "esp32.log",
-        "filename": "/home/pi-md/log/esp32.log",
-        "filenameType": "str",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 430,
-        "y": 1040,
-        "wires": [
-            [
-                "426044f103a446eb"
-            ]
-        ]
-    },
-    {
-        "id": "bb16c923d3677e3e",
-        "type": "watch",
-        "z": "8c02b6694634723d",
-        "name": "Surveiller fichier log",
-        "files": "/home/pi-md/log/esp32.log",
-        "recursive": "",
-        "x": 240,
-        "y": 1090,
-        "wires": [
-            [
-                "0ee790247b2145db"
-            ]
-        ]
-    },
-    {
-        "id": "a68a150fdf8aa287",
-        "type": "inject",
-        "z": "8c02b6694634723d",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 250,
-        "y": 1040,
-        "wires": [
-            [
-                "0ee790247b2145db"
-            ]
-        ]
     },
     {
         "id": "d54da9e0b749cd05",
@@ -8983,7 +8975,7 @@
         "page": "",
         "ui": "",
         "name": "TEST Alert",
-        "order": 3,
+        "order": 5,
         "width": 0,
         "height": 0,
         "head": "",
@@ -9003,13 +8995,12 @@
         "id": "47f5073909bee0a2",
         "type": "ui-template",
         "z": "a9c9090b.478498",
-        "d": true,
         "g": "49aed5c6020fd230",
         "group": "5b69d242410edd23",
         "page": "",
         "ui": "",
         "name": "Bouton barre du haut",
-        "order": 4,
+        "order": 6,
         "width": 0,
         "height": 0,
         "head": "",
@@ -9242,7 +9233,7 @@
         "page": "",
         "ui": "",
         "name": "",
-        "order": 5,
+        "order": 7,
         "width": 0,
         "height": 0,
         "head": "",
@@ -9262,10 +9253,11 @@
         "id": "03409f4c678bf6af",
         "type": "ui-markdown",
         "z": "a9c9090b.478498",
+        "d": true,
         "g": "d186a865f8290820",
         "group": "5b69d242410edd23",
         "name": "",
-        "order": 1,
+        "order": 4,
         "width": 0,
         "height": 0,
         "content": "# Markdown Content\n\nGoes here...",
