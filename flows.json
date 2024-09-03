@@ -318,26 +318,6 @@
         "h": 142
     },
     {
-        "id": "429317fe9e4bcd87",
-        "type": "group",
-        "z": "f178d5dee9c95e1e",
-        "name": "A revoir --- Surveillance réception données",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "074648f75d87c22c",
-            "02a13a4670cc3b6d",
-            "57b46483de958a15",
-            "3517ba53be3b782f",
-            "ab844b65273cf9b7"
-        ],
-        "x": 44,
-        "y": 609,
-        "w": 852,
-        "h": 162
-    },
-    {
         "id": "49aed5c6020fd230",
         "type": "group",
         "z": "a9c9090b.478498",
@@ -435,12 +415,15 @@
             "75ba57a9059087ae",
             "6c48e35750a5c6be",
             "5079e04311e50d49",
-            "5b762b2b39d0624e"
+            "5b762b2b39d0624e",
+            "26a7091179b63304",
+            "444ead931773a916",
+            "9fb9964429dab2aa"
         ],
         "x": 34,
         "y": 2829,
         "w": 1192,
-        "h": 262
+        "h": 322
     },
     {
         "id": "39f5d1f224b9de66",
@@ -874,12 +857,14 @@
             "51ee3605ff9d80e0",
             "41e9b0574e55c0c8",
             "76b97aaea830e452",
-            "beefa0c6950593db"
+            "beefa0c6950593db",
+            "9bef50d59cc9996a",
+            "16e678c55b9af1c2"
         ],
         "x": 48,
         "y": 49,
         "w": 900,
-        "h": 444
+        "h": 474
     },
     {
         "id": "d0932bcd6a5ec1f6",
@@ -1244,7 +1229,7 @@
             "869ebc417f12da40"
         ],
         "x": 74,
-        "y": 221.5,
+        "y": 251.5,
         "w": 848,
         "h": 245.5
     },
@@ -1341,9 +1326,9 @@
             "ff75fc44f3cbe7b6",
             "b7da68673e05346d"
         ],
-        "x": 524,
+        "x": 514,
         "y": 1549,
-        "w": 662,
+        "w": 682,
         "h": 222
     },
     {
@@ -1369,9 +1354,9 @@
             "80119027c1098b18",
             "14c57979f8bea78f"
         ],
-        "x": 524,
+        "x": 514,
         "y": 1339,
-        "w": 672,
+        "w": 692,
         "h": 202
     },
     {
@@ -1416,7 +1401,7 @@
             "50d31eaa2bed55ab"
         ],
         "x": 114,
-        "y": 309,
+        "y": 339,
         "w": 782,
         "h": 132
     },
@@ -1775,6 +1760,96 @@
         "className": "",
         "visible": "true",
         "disabled": "false"
+    },
+    {
+        "id": "c1499e10fc3a9745",
+        "type": "ui-group",
+        "name": "Flow Viewer",
+        "page": "85043ba28e0273fe",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "85043ba28e0273fe",
+        "type": "ui-page",
+        "name": "Third Party Widgets",
+        "ui": "d4c9d9e9b37824ea",
+        "path": "/third-party",
+        "icon": "account-group",
+        "layout": "grid",
+        "theme": "129e99574def90a3",
+        "order": 6,
+        "className": "",
+        "visible": true,
+        "disabled": "false"
+    },
+    {
+        "id": "129e99574def90a3",
+        "type": "ui-theme",
+        "name": "Custom Theme",
+        "colors": {
+            "surface": "#000000",
+            "primary": "#ff4000",
+            "bgPage": "#f0f0f0",
+            "groupBg": "#ffffff",
+            "groupOutline": "#d9d9d9"
+        },
+        "sizes": {
+            "pagePadding": "24px",
+            "groupGap": "12px",
+            "groupBorderRadius": "9px",
+            "widgetGap": "6px"
+        }
+    },
+    {
+        "id": "9508bb8465b1b1e5",
+        "type": "ui-group",
+        "name": "Default Notification",
+        "page": "0fe97ec4631a4c92",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "0fe97ec4631a4c92",
+        "type": "ui-page",
+        "name": "Notification",
+        "ui": "d4c9d9e9b37824ea",
+        "path": "/notification",
+        "icon": "bell-badge-outline",
+        "layout": "notebook",
+        "theme": "9d8bfd7e0d216779",
+        "order": 7,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "9d8bfd7e0d216779",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#15617e",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
     },
     {
         "id": "babb6d48868671a6",
@@ -2961,7 +3036,7 @@
         "head": "",
         "format": "<template>\n  <div class=\"text-center pa-4\">\n    <v-dialog v-model=\"dialog\" width=\"auto\">\n      <template v-slot:activator=\"{ props: activatorProps }\">\n        <v-btn  text=\"Send configuration\" \n          v-show=\"false\"></v-btn>\n      </template>\n      <v-card max-width=\"400\" prepend-icon=\"mdi-update\" text=\"Transmettre les changements au device\"\n        title=\"Transmission de la configuration\">\n        ({{device.id_device}}) - {{device.mac}} - Location:{{device.location}}\n        <template v-slot:actions>\n          <v-btn class=\"ms-auto\" text=\"OK\" @click=\"onOk()\"></v-btn>\n          <v-btn class=\"ms-auto\" text=\"Annuler\" @click=\"dialog = false\"></v-btn>\n        </template>\n      </v-card>\n    </v-dialog>\n  </div>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      dialog: false,\n      device:{id:\"222\"},\n    }),\n    mounted() {\n      this.dialog = false;\n      this.device = {};\n      console.log(\"mounted\");\n    },\n    activated() {\n      this.dialog = false;\n      this.device = {};\n    },\n\n    watch: {\n      msg: function(){\n        this.dialog = false;\n        if(this.msg.action != undefined && this.msg.action === \"sendConfig\"){\n          if(this.msg.device != undefined){\n            this.device = this.msg.device;\n            this.dialog = true;\n          }\n        }\n      }\n    },\n    methods:{\n      onOk(){\n        this.send({payload: \"OK\", device: this.device});\n        this.dialog = false;\n      },\n    },\n  }\n</script>",
         "storeOutMessages": true,
-        "passthru": true,
+        "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "widget:page",
         "className": "",
@@ -3109,17 +3184,22 @@
         "group": "ec83ebd45553c336",
         "name": "Température",
         "label": "Température",
-        "order": 1,
+        "order": 2,
         "chartType": "line",
         "category": "topic",
         "categoryType": "msg",
+        "xAxisLabel": "",
         "xAxisProperty": "x",
         "xAxisPropertyType": "msg",
         "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "ccc HH:mm",
+        "yAxisLabel": "",
         "yAxisProperty": "y",
         "ymin": "",
         "ymax": "",
         "action": "replace",
+        "stackSeries": false,
         "pointShape": "circle",
         "pointRadius": 4,
         "showLegend": true,
@@ -3137,6 +3217,14 @@
             "#9467bd",
             "#c5b0d5"
         ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
         "width": 6,
         "height": "4",
         "className": "msg.class",
@@ -3369,7 +3457,7 @@
         "page": "",
         "ui": "",
         "name": "Slider",
-        "order": 3,
+        "order": 4,
         "width": 0,
         "height": 0,
         "head": "",
@@ -3396,17 +3484,22 @@
         "group": "ec83ebd45553c336",
         "name": "Humidité",
         "label": "Humidité",
-        "order": 2,
+        "order": 3,
         "chartType": "line",
         "category": "topic",
         "categoryType": "msg",
+        "xAxisLabel": "",
         "xAxisProperty": "x",
         "xAxisPropertyType": "msg",
         "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "ccc HH:mm",
+        "yAxisLabel": "",
         "yAxisProperty": "y",
         "ymin": "",
         "ymax": "",
         "action": "replace",
+        "stackSeries": false,
         "pointShape": "circle",
         "pointRadius": 4,
         "showLegend": true,
@@ -3424,6 +3517,14 @@
             "#9467bd",
             "#c5b0d5"
         ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
         "width": 6,
         "height": "4",
         "className": "",
@@ -3635,13 +3736,14 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
+        "payload": "24",
+        "payloadType": "num",
         "x": 300,
         "y": 3010,
         "wires": [
             [
-                "9831a0922b955da6"
+                "9831a0922b955da6",
+                "26a7091179b63304"
             ]
         ]
     },
@@ -4463,7 +4565,7 @@
         "page": "",
         "ui": "",
         "name": "Locations",
-        "order": 1,
+        "order": 2,
         "width": 0,
         "height": 0,
         "head": "",
@@ -4809,7 +4911,7 @@
         "z": "57111ca025f638be",
         "g": "5e9fb9b860e186cb",
         "name": "debug 201",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5419,7 +5521,7 @@
         "sqlquery": "prepared",
         "sql": "UPDATE SENSOR\nSET id_role = \n    (SELECT id_role \n     FROM SENSOR_ROLE\n     where role like $sensor_role)\n WHERE id_sensor = $id_sensor;\n",
         "name": "Update Sensor",
-        "x": 960,
+        "x": 970,
         "y": 1590,
         "wires": [
             [
@@ -5435,7 +5537,7 @@
         "name": "",
         "mode": "done",
         "saveValue": false,
-        "x": 940,
+        "x": 950,
         "y": 1640,
         "wires": []
     },
@@ -5448,7 +5550,7 @@
         "sqlquery": "prepared",
         "sql": "UPDATE SENSOR_ATTRIBUT\nSET name = $name,\n    value = $value\nWHERE id_attribut = $id_attribut;",
         "name": "Update  Attribut",
-        "x": 960,
+        "x": 970,
         "y": 1680,
         "wires": [
             [
@@ -5461,7 +5563,7 @@
         "type": "do",
         "z": "57111ca025f638be",
         "g": "64c4ac8396d7f0f4",
-        "name": "Update Attributs",
+        "name": "Do Update Attributs",
         "tasks": [
             "delete"
         ],
@@ -5490,7 +5592,7 @@
         "type": "do",
         "z": "57111ca025f638be",
         "g": "64c4ac8396d7f0f4",
-        "name": "Update Sensors",
+        "name": "Do Update Sensors",
         "tasks": [
             "Update"
         ],
@@ -5527,7 +5629,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 790,
+        "x": 800,
         "y": 1600,
         "wires": [
             [
@@ -5550,7 +5652,7 @@
         "name": "",
         "mode": "done",
         "saveValue": false,
-        "x": 1110,
+        "x": 1120,
         "y": 1590,
         "wires": []
     },
@@ -5567,7 +5669,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 790,
+        "x": 800,
         "y": 1690,
         "wires": [
             [
@@ -5590,7 +5692,7 @@
         "name": "",
         "mode": "done",
         "saveValue": false,
-        "x": 1110,
+        "x": 1120,
         "y": 1680,
         "wires": []
     },
@@ -5602,7 +5704,7 @@
         "name": "",
         "mode": "done",
         "saveValue": false,
-        "x": 940,
+        "x": 950,
         "y": 1730,
         "wires": []
     },
@@ -5611,7 +5713,7 @@
         "type": "do",
         "z": "57111ca025f638be",
         "g": "a5b04cf60d670697",
-        "name": "Changements",
+        "name": "Do Save Data",
         "tasks": [
             "Device changed",
             "AttributsToDelete",
@@ -5630,7 +5732,7 @@
         "lastValueOutput": false,
         "outputs": 8,
         "_version": "0.4.1",
-        "x": 360,
+        "x": 350,
         "y": 1590,
         "wires": [
             [
@@ -5704,7 +5806,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 790,
+        "x": 800,
         "y": 1460,
         "wires": [
             [
@@ -5721,7 +5823,7 @@
         "sqlquery": "prepared",
         "sql": "DELETE FROM SENSOR\nWHERE id_sensor = $id_sensor;",
         "name": "Delete sensor",
-        "x": 950,
+        "x": 960,
         "y": 1460,
         "wires": [
             [
@@ -5749,7 +5851,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 800,
+        "x": 810,
         "y": 1380,
         "wires": [
             [
@@ -5766,7 +5868,7 @@
         "sqlquery": "prepared",
         "sql": "DELETE FROM SENSOR_ATTRIBUT\nWHERE id_attribut = $id_attribut;",
         "name": "Delete attribut",
-        "x": 970,
+        "x": 980,
         "y": 1380,
         "wires": [
             [
@@ -5782,7 +5884,7 @@
         "name": "",
         "mode": "done",
         "saveValue": false,
-        "x": 780,
+        "x": 790,
         "y": 1500,
         "wires": []
     },
@@ -5791,7 +5893,7 @@
         "type": "do",
         "z": "57111ca025f638be",
         "g": "b0ba40e0b297f67d",
-        "name": "Delete Attributs",
+        "name": "Do Delete Attributs",
         "tasks": [
             "delete"
         ],
@@ -5804,7 +5906,7 @@
         "lastValueOutput": false,
         "outputs": 2,
         "_version": "0.4.1",
-        "x": 630,
+        "x": 640,
         "y": 1400,
         "wires": [
             [
@@ -5823,7 +5925,7 @@
         "name": "",
         "mode": "done",
         "saveValue": false,
-        "x": 790,
+        "x": 800,
         "y": 1420,
         "wires": []
     },
@@ -5835,7 +5937,7 @@
         "name": "",
         "mode": "done",
         "saveValue": false,
-        "x": 1120,
+        "x": 1130,
         "y": 1380,
         "wires": []
     },
@@ -5847,7 +5949,7 @@
         "name": "",
         "mode": "done",
         "saveValue": false,
-        "x": 1100,
+        "x": 1110,
         "y": 1460,
         "wires": []
     },
@@ -5856,7 +5958,7 @@
         "type": "do",
         "z": "57111ca025f638be",
         "g": "b0ba40e0b297f67d",
-        "name": "Delete Sensors",
+        "name": "Do Delete Sensors",
         "tasks": [
             "delete"
         ],
@@ -6086,7 +6188,7 @@
         "links": [
             "5e2d481f338e5d45"
         ],
-        "x": 345,
+        "x": 435,
         "y": 1730,
         "wires": []
     },
@@ -6158,7 +6260,7 @@
         "z": "57111ca025f638be",
         "g": "a5b04cf60d670697",
         "name": "debug 212",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -6308,7 +6410,7 @@
         "z": "57111ca025f638be",
         "g": "590af8aa1ccb96c4",
         "name": "Location indéfinie",
-        "func": "msg.payload = \"Location non définie\"\nnode.warn(msg.payload);\nreturn msg;",
+        "func": "msg.payload = msg.temperature.header.mac + \" -- Location non définie\"\nnode.warn(msg.payload);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6329,7 +6431,7 @@
         "group": "5dfbb318f0d542be",
         "name": "",
         "label": "refresh",
-        "order": 0,
+        "order": 1,
         "width": 0,
         "height": 0,
         "emulateClick": false,
@@ -6392,6 +6494,91 @@
         "wires": []
     },
     {
+        "id": "26a7091179b63304",
+        "type": "ui-slider",
+        "z": "57111ca025f638be",
+        "g": "4ac0d347446e702f",
+        "group": "ec83ebd45553c336",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "always",
+        "min": 0,
+        "max": "96",
+        "step": 1,
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "x": 320,
+        "y": 3070,
+        "wires": [
+            [
+                "444ead931773a916"
+            ]
+        ]
+    },
+    {
+        "id": "444ead931773a916",
+        "type": "debug",
+        "z": "57111ca025f638be",
+        "g": "4ac0d347446e702f",
+        "name": "debug 217",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 560,
+        "y": 3100,
+        "wires": []
+    },
+    {
+        "id": "9fb9964429dab2aa",
+        "type": "ui-text-input",
+        "z": "57111ca025f638be",
+        "g": "4ac0d347446e702f",
+        "group": "ec83ebd45553c336",
+        "name": "",
+        "label": "text",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "datetime-local",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 170,
+        "y": 3110,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "da939ff73faa3d33",
         "type": "serial in",
         "z": "797d9b2a7151f089",
@@ -6404,7 +6591,8 @@
             [
                 "edba9caae115a851",
                 "41e9b0574e55c0c8",
-                "76b97aaea830e452"
+                "76b97aaea830e452",
+                "16e678c55b9af1c2"
             ]
         ]
     },
@@ -6461,7 +6649,7 @@
         "overwriteFile": "false",
         "encoding": "none",
         "x": 490,
-        "y": 180,
+        "y": 210,
         "wires": [
             []
         ]
@@ -6480,7 +6668,7 @@
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 180,
+        "y": 210,
         "wires": [
             [
                 "51ee3605ff9d80e0"
@@ -6496,7 +6684,7 @@
         "files": "/home/pi-md/log/esp32.log",
         "recursive": "",
         "x": 190,
-        "y": 270,
+        "y": 300,
         "wires": [
             [
                 "b4133a029132e1bc"
@@ -6517,7 +6705,7 @@
         "oldrc": false,
         "name": "LogRotate",
         "x": 600,
-        "y": 270,
+        "y": 300,
         "wires": [
             [
                 "2b905ff025d2f0a9"
@@ -6542,7 +6730,7 @@
         "finalize": "",
         "libs": [],
         "x": 410,
-        "y": 270,
+        "y": 300,
         "wires": [
             [
                 "f1f19a0d827e452e"
@@ -7488,7 +7676,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 770,
-        "y": 270,
+        "y": 300,
         "wires": []
     },
     {
@@ -7513,7 +7701,7 @@
         "sendOnEnter": false,
         "className": "",
         "x": 780,
-        "y": 400,
+        "y": 430,
         "wires": [
             []
         ]
@@ -7532,7 +7720,7 @@
         "finalize": "",
         "libs": [],
         "x": 460,
-        "y": 400,
+        "y": 430,
         "wires": [
             [
                 "507aba2cb3094c7f"
@@ -7561,7 +7749,7 @@
         "interval": "1000",
         "name": "",
         "x": 260,
-        "y": 400,
+        "y": 430,
         "wires": [
             [
                 "50d31eaa2bed55ab",
@@ -7589,7 +7777,7 @@
         "color": "#717171",
         "className": "",
         "x": 720,
-        "y": 360,
+        "y": 390,
         "wires": []
     },
     {
@@ -7612,7 +7800,7 @@
         "templateScope": "local",
         "className": "",
         "x": 620,
-        "y": 400,
+        "y": 430,
         "wires": [
             []
         ]
@@ -7632,8 +7820,45 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 460,
-        "y": 350,
+        "y": 380,
         "wires": []
+    },
+    {
+        "id": "9bef50d59cc9996a",
+        "type": "debug",
+        "z": "797d9b2a7151f089",
+        "g": "fa8d72ad90e71a48",
+        "name": "debug 216",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "16e678c55b9af1c2",
+        "type": "function",
+        "z": "797d9b2a7151f089",
+        "g": "fa8d72ad90e71a48",
+        "name": "Erreurs",
+        "func": "msg.payload.search(\"[E]\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 170,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "285f01bc26e7389b",
@@ -8480,114 +8705,6 @@
         "wires": []
     },
     {
-        "id": "074648f75d87c22c",
-        "type": "sqlite",
-        "z": "f178d5dee9c95e1e",
-        "g": "429317fe9e4bcd87",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "fixed",
-        "sql": "SELECT id_sensor, mac, counter,  max(datetime ) as datetime\nFROM DATA_VIEW\nwhere  datetime > datetime('now', 'localtime', '-10 hours')\ngroup by id_sensor\norder by id_sensor, datetime ;",
-        "name": "Most recent data temperature",
-        "x": 360,
-        "y": 650,
-        "wires": [
-            [
-                "02a13a4670cc3b6d",
-                "3517ba53be3b782f"
-            ]
-        ]
-    },
-    {
-        "id": "02a13a4670cc3b6d",
-        "type": "debug",
-        "z": "f178d5dee9c95e1e",
-        "g": "429317fe9e4bcd87",
-        "name": "debug 143",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 660,
-        "y": 650,
-        "wires": []
-    },
-    {
-        "id": "57b46483de958a15",
-        "type": "inject",
-        "z": "f178d5dee9c95e1e",
-        "g": "429317fe9e4bcd87",
-        "name": "Inject",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 140,
-        "y": 650,
-        "wires": [
-            [
-                "074648f75d87c22c"
-            ]
-        ]
-    },
-    {
-        "id": "3517ba53be3b782f",
-        "type": "function",
-        "z": "f178d5dee9c95e1e",
-        "g": "429317fe9e4bcd87",
-        "name": "Vérification du délai",
-        "func": "//Envoi une alerte à l'écran si les données ne sont pas reçues \n//  dans un délai acceptable.\nconst devicesMap = global.get('devicesMap');\n\nvar devices = [];\nlet data = msg.payload;\nmsg.payload = \"Àrevoir --> Vérification des délais.\\n \";\n\ndata.forEach(function (element) {\n  let device = devicesMap.get(element.mac);\n  if (device.sleep_duration > 0) {\n    let dateNow = new Date();\n    let datetime = new Date(element.datetime);\n    let diff = (dateNow.getTime() - datetime.getTime()) / 1000;\n    //Si on dépasse le temps de sleep + 5 minutes.\n    if (diff > (device.sleep_duration + (5 * 60))) {\n      msg.payload = msg.payload + \" -- Délai de réception dépassé. \" + device.mac + \"\\n\\r\";\n      console.log(\"Now:\" + dateNow + \n        \" - Last received:\" + datetime +\n        \"diff: \" + diff);\n      console.log(msg.payload);\n    }\n  }\n});\n\nif (msg.payload != \"\") {\n   if(msg.payload != \"\"){\n    node.log(\"Alert Device: \" + msg.payload);\n    return msg;\n  }\n}\n\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 550,
-        "y": 730,
-        "wires": [
-            [
-                "ab844b65273cf9b7"
-            ]
-        ]
-    },
-    {
-        "id": "ab844b65273cf9b7",
-        "type": "ui-notification",
-        "z": "f178d5dee9c95e1e",
-        "g": "429317fe9e4bcd87",
-        "ui": "d4c9d9e9b37824ea",
-        "position": "top right",
-        "colorDefault": true,
-        "color": "#000000",
-        "displayTime": "3",
-        "showCountdown": true,
-        "outputs": 0,
-        "allowDismiss": true,
-        "dismissText": "Close",
-        "raw": false,
-        "className": "",
-        "name": "",
-        "x": 780,
-        "y": 730,
-        "wires": []
-    },
-    {
         "id": "fab8a6f816b520df",
         "type": "sqlite",
         "z": "f178d5dee9c95e1e",
@@ -9343,6 +9460,80 @@
         "x": 710,
         "y": 1490,
         "wires": []
+    },
+    {
+        "id": "a5e04c4acd4c7138",
+        "type": "ui-button",
+        "z": "a9c9090b.478498",
+        "group": "9508bb8465b1b1e5",
+        "name": "Trigger Notification",
+        "label": "Send Notification",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "green",
+        "textColor": "white",
+        "iconColor": "",
+        "x": 220,
+        "y": 610,
+        "wires": [
+            [
+                "7b506d35fcfd9b97"
+            ]
+        ]
+    },
+    {
+        "id": "7b506d35fcfd9b97",
+        "type": "function",
+        "z": "a9c9090b.478498",
+        "name": "function 6",
+        "func": "msg.payload = \"Notification Triggered!\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 610,
+        "wires": [
+            [
+                "67c307711a8f6f52"
+            ]
+        ]
+    },
+    {
+        "id": "67c307711a8f6f52",
+        "type": "ui-notification",
+        "z": "a9c9090b.478498",
+        "ui": "d4c9d9e9b37824ea",
+        "position": "center center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "5",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "raw": false,
+        "className": "",
+        "name": "submit-notification",
+        "x": 580,
+        "y": 610,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "4389fdd1091783d4",
