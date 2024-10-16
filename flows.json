@@ -263,9 +263,9 @@
             "80973421c6f485ce",
             "3302394b3b687c42"
         ],
-        "x": 34,
+        "x": 24,
         "y": 4559,
-        "w": 422,
+        "w": 432,
         "h": 82
     },
     {
@@ -312,9 +312,9 @@
             "c1a2983aa0ad8848",
             "9ee742908744f209"
         ],
-        "x": 34,
+        "x": 24,
         "y": 4079,
-        "w": 922,
+        "w": 932,
         "h": 142
     },
     {
@@ -335,9 +335,9 @@
             "b73ee2792d4f5473",
             "47f5073909bee0a2"
         ],
-        "x": 64,
+        "x": 54,
         "y": 9,
-        "w": 632,
+        "w": 642,
         "h": 262
     },
     {
@@ -379,8 +379,8 @@
             "53915f2f274e75b9"
         ],
         "x": 34,
-        "y": 3389,
-        "w": 932,
+        "y": 3329,
+        "w": 942,
         "h": 132
     },
     {
@@ -413,7 +413,6 @@
             "6c48e35750a5c6be",
             "5079e04311e50d49",
             "5b762b2b39d0624e",
-            "444ead931773a916",
             "a3b3a725a704ea19",
             "25c84611b53c2c6f",
             "4e9d0c5c6bb4c0f6",
@@ -423,12 +422,16 @@
             "e36536a63d419b95",
             "59157c73ba907ed4",
             "6e21b41b46590719",
-            "7994bd95bcd2809d"
+            "a48ddca16eceb0d9",
+            "0f3b19615d2461dc",
+            "d3626a9698f6ee89",
+            "3f82e6aed13c8507",
+            "1301edfe0f59a0b1"
         ],
         "x": 24,
-        "y": 2829,
-        "w": 1202,
-        "h": 372
+        "y": 2839,
+        "w": 1342,
+        "h": 382
     },
     {
         "id": "39f5d1f224b9de66",
@@ -588,9 +591,9 @@
             "70beddcc675e5f7b",
             "b3720395df4a02fa"
         ],
-        "x": 24,
+        "x": 34,
         "y": 4419,
-        "w": 352,
+        "w": 342,
         "h": 122
     },
     {
@@ -1331,9 +1334,9 @@
             "ff75fc44f3cbe7b6",
             "b7da68673e05346d"
         ],
-        "x": 514,
+        "x": 504,
         "y": 1549,
-        "w": 682,
+        "w": 692,
         "h": 222
     },
     {
@@ -1427,8 +1430,8 @@
         "type": "junction",
         "z": "57111ca025f638be",
         "g": "4ac0d347446e702f",
-        "x": 550,
-        "y": 3060,
+        "x": 560,
+        "y": 3090,
         "wires": [
             [
                 "0a4b76749339d8cd"
@@ -1440,8 +1443,8 @@
         "type": "junction",
         "z": "57111ca025f638be",
         "g": "4ac0d347446e702f",
-        "x": 550,
-        "y": 3020,
+        "x": 570,
+        "y": 3050,
         "wires": [
             [
                 "a3b3a725a704ea19"
@@ -1453,8 +1456,8 @@
         "type": "junction",
         "z": "57111ca025f638be",
         "g": "4ac0d347446e702f",
-        "x": 650,
-        "y": 2980,
+        "x": 550,
+        "y": 3140,
         "wires": [
             [
                 "0a4b76749339d8cd",
@@ -1468,7 +1471,7 @@
         "z": "57111ca025f638be",
         "g": "4ac0d347446e702f",
         "x": 600,
-        "y": 2950,
+        "y": 2980,
         "wires": [
             [
                 "a3b3a725a704ea19",
@@ -3167,8 +3170,8 @@
         "sqlquery": "fixed",
         "sql": "SELECT id_location, DEV.mac, description, counter,  max(DV.datetime ) as datetime\nFROM DATA_VIEW DV\nLEFT JOIN\n  DEVICE DEV ON DEV.id_device = DV.id_device\nwhere  DV.datetime > datetime('now', 'localtime', '-48 hours')\ngroup by id_location\norder by id_location, datetime ;",
         "name": "Most recent data temperature",
-        "x": 350,
-        "y": 3430,
+        "x": 360,
+        "y": 3370,
         "wires": [
             [
                 "49a66220910d81ef",
@@ -3190,8 +3193,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 830,
-        "y": 3470,
+        "x": 840,
+        "y": 3410,
         "wires": []
     },
     {
@@ -3216,8 +3219,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 3430,
+        "x": 140,
+        "y": 3370,
         "wires": [
             [
                 "8f34a61029fac0cb"
@@ -3237,8 +3240,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 610,
-        "y": 3430,
+        "x": 620,
+        "y": 3370,
         "wires": [
             [
                 "577fd00e89cbfbe3",
@@ -3263,8 +3266,8 @@
         "raw": true,
         "className": "",
         "name": "Erreur de réception",
-        "x": 850,
-        "y": 3430,
+        "x": 860,
+        "y": 3370,
         "wires": []
     },
     {
@@ -3319,8 +3322,8 @@
         "width": "7",
         "height": "4",
         "className": "msg.class",
-        "x": 1130,
-        "y": 2890,
+        "x": 1230,
+        "y": 2920,
         "wires": [
             []
         ]
@@ -3332,14 +3335,13 @@
         "g": "4ac0d347446e702f",
         "mydb": "628739f370d1726d",
         "sqlquery": "msg.topic",
-        "sql": "SELECT mac, id_sensor, \ntemperature, humidity, counter, datetime\nfrom DATA_VIEW\nwhere id_device in ( $ids_devices)\nand datetime > datetime('now', 'localtime', $nbHours )\nand role like 'TEMPERATURE'\nORDER BY id_sensor, datetime asc;\n\n\n",
+        "sql": "SELECT id_location, acronyme, temperature, humidity, counter, datetime\nfrom DATA_VIEW\nwhere datetime > datetime($dateSelected) \nAND datetime < datetime($dateSelected, $nbHours) \nand role like 'TEMPERATURE'\nand id_location IN( $idList)\nORDER BY id_sensor, datetime asc;\n\n",
         "name": "Load temp sensor",
         "x": 710,
-        "y": 2900,
+        "y": 2930,
         "wires": [
             [
-                "e0694b109915343b",
-                "7994bd95bcd2809d"
+                "e0694b109915343b"
             ]
         ]
     },
@@ -3363,7 +3365,7 @@
         "templateScope": "local",
         "className": "",
         "x": 480,
-        "y": 2950,
+        "y": 2980,
         "wires": [
             [
                 "6e21b41b46590719"
@@ -3392,7 +3394,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 120,
-        "y": 2950,
+        "y": 2980,
         "wires": [
             [
                 "836e4535583ce900"
@@ -3413,8 +3415,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 570,
-        "y": 3480,
+        "x": 580,
+        "y": 3420,
         "wires": []
     },
     {
@@ -3511,7 +3513,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 130,
-        "y": 2990,
+        "y": 3020,
         "wires": [
             [
                 "836e4535583ce900"
@@ -3570,8 +3572,8 @@
         "width": "7",
         "height": "4",
         "className": "",
-        "x": 1120,
-        "y": 3040,
+        "x": 1240,
+        "y": 3060,
         "wires": [
             []
         ]
@@ -3589,8 +3591,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 890,
-        "y": 3080,
+        "x": 920,
+        "y": 3140,
         "wires": [
             [
                 "0866c283bc7f9752"
@@ -3607,14 +3609,13 @@
         "g": "4ac0d347446e702f",
         "mydb": "628739f370d1726d",
         "sqlquery": "prepared",
-        "sql": "SELECT 'SiteWeb' as location, temperature, humidity, datetime\nFROM TEMPERATURE_EXTERNE\nwhere  datetime > datetime($dateSelected) \n     AND datetime < datetime($dateSelected, $nbHours) \n\n -- datetime >  datetime($dateSelected, 'localtime', $nbHours)\norder by datetime asc;",
+        "sql": "SELECT 'SiteWeb' as location, temperature, humidity, datetime\nFROM TEMPERATURE_EXTERNE\nwhere  datetime BETWEEN datetime($dateSelected) \n     AND  datetime($dateSelected, $nbHours) \norder by datetime asc;",
         "name": "Load temp WEB",
-        "x": 720,
-        "y": 3080,
+        "x": 730,
+        "y": 3140,
         "wires": [
             [
-                "28c5da6a4d2da8ba",
-                "444ead931773a916"
+                "28c5da6a4d2da8ba"
             ]
         ]
     },
@@ -3628,7 +3629,7 @@
         "sql": "SELECT DE.id_device,\n      DE.mac,\n      SE.id_sensor, \n      LODE.id_location,\n      LOC.location,\n      LOC.description\n  FROM LOCATION LOC\n      JOIN \n      LOCATION_DEVICE LODE ON LODE.id_location = LOC.id_location\n      JOIN \n       DEVICE DE ON DE.id_device = LODE.id_device\n      JOIN\n      SENSOR SE ON SE.id_device = DE.id_device AND SE.id_role == 1\n WHERE EXISTS (\n      SELECT 1\n        FROM TEMPERATURE\n      WHERE id_location = LOC.id_location\n  )",
         "name": "Load devices",
         "x": 300,
-        "y": 2950,
+        "y": 2980,
         "wires": [
             [
                 "f138d867ef859cef"
@@ -3649,7 +3650,7 @@
         "finalize": "",
         "libs": [],
         "x": 730,
-        "y": 3040,
+        "y": 3080,
         "wires": [
             [
                 "98e8f77ab6b80fce"
@@ -3663,8 +3664,8 @@
         "g": "4ac0d347446e702f",
         "name": "Graphique temperature",
         "info": "",
-        "x": 360,
-        "y": 2870,
+        "x": 1240,
+        "y": 2960,
         "wires": []
     },
     {
@@ -3675,7 +3676,7 @@
         "name": " températures externes - site web",
         "info": "",
         "x": 830,
-        "y": 3000,
+        "y": 3180,
         "wires": []
     },
     {
@@ -3692,7 +3693,7 @@
         "finalize": "",
         "libs": [],
         "x": 900,
-        "y": 2900,
+        "y": 2930,
         "wires": [
             [
                 "91ced026339a3eeb"
@@ -3724,8 +3725,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1100,
-        "y": 3000,
+        "x": 1060,
+        "y": 3100,
         "wires": [
             [
                 "91ced026339a3eeb"
@@ -3750,8 +3751,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1070,
-        "y": 3090,
+        "x": 1060,
+        "y": 3150,
         "wires": [
             [
                 "388cb232c9079e14"
@@ -3908,7 +3909,7 @@
             "e4aecc6f336ce4bc"
         ],
         "x": 505,
-        "y": 3110,
+        "y": 3140,
         "wires": [
             [
                 "59157c73ba907ed4"
@@ -3922,8 +3923,8 @@
         "g": "b3735df348adb38e",
         "name": "À développer",
         "info": "À développer",
-        "x": 140,
-        "y": 3480,
+        "x": 150,
+        "y": 3420,
         "wires": []
     },
     {
@@ -4279,7 +4280,7 @@
             "70beddcc675e5f7b"
         ],
         "x": 75,
-        "y": 2910,
+        "y": 2940,
         "wires": [
             [
                 "5b762b2b39d0624e"
@@ -4350,7 +4351,7 @@
         "finalize": "",
         "libs": [],
         "x": 180,
-        "y": 2910,
+        "y": 2940,
         "wires": [
             [
                 "836e4535583ce900"
@@ -6494,24 +6495,6 @@
         "wires": []
     },
     {
-        "id": "444ead931773a916",
-        "type": "debug",
-        "z": "57111ca025f638be",
-        "g": "4ac0d347446e702f",
-        "name": "debug 217",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 870,
-        "y": 3160,
-        "wires": []
-    },
-    {
         "id": "a3b3a725a704ea19",
         "type": "function",
         "z": "57111ca025f638be",
@@ -6524,8 +6507,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 730,
-        "y": 2950,
+        "x": 740,
+        "y": 3000,
         "wires": [
             [
                 "1c2e8d33bf43083e"
@@ -6559,7 +6542,7 @@
         "iconPosition": "left",
         "iconInnerPosition": "inside",
         "x": 450,
-        "y": 3020,
+        "y": 3050,
         "wires": [
             [
                 "e982725746f62c93",
@@ -6595,7 +6578,7 @@
         "colorTrack": "green",
         "colorThumb": "",
         "x": 450,
-        "y": 3060,
+        "y": 3090,
         "wires": [
             [
                 "e982725746f62c93",
@@ -6617,7 +6600,7 @@
         "finalize": "",
         "libs": [],
         "x": 290,
-        "y": 3040,
+        "y": 3070,
         "wires": [
             [
                 "25c84611b53c2c6f"
@@ -6641,12 +6624,12 @@
             }
         ],
         "repeat": "",
-        "crontab": "",
+        "crontab": "00 00 * * *",
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
         "x": 130,
-        "y": 3040,
+        "y": 3070,
         "wires": [
             [
                 "64d643221c0ebd2a"
@@ -6654,21 +6637,90 @@
         ]
     },
     {
-        "id": "7994bd95bcd2809d",
-        "type": "debug",
+        "id": "a48ddca16eceb0d9",
+        "type": "function",
+        "z": "57111ca025f638be",
+        "d": true,
+        "g": "4ac0d347446e702f",
+        "name": "Params",
+        "func": "if (msg.topic === \"Slider\") {\n    flow.set('Slider', msg.payload);\n}\nif (msg.topic === \"DatePicker\") {\n    flow.set('DatePicker', msg.payload);\n}\n\n//On garde en mémoire la liste de mac.\nlet idList = context.get(\"idList\") || [];\n\nif (msg.devices != undefined) {\n    idList = [];\n    msg.devices.forEach(function (device) {\n        if (device.id_sensor != undefined) {\n            idList.push(device.id_location);\n            context.set(\"idList\", idList)\n        }\n    });\n}\n\nlet nbHours;\nlet dateSelected;\n\nnbHours = '+' +  flow.get('Slider') + ' hours'\ndateSelected =  flow.get('DatePicker');\n\n\nmsg.topic = \"SELECT id_location, acronyme, temperature, humidity, counter, datetime\"\n    + \" from DATA_VIEW\"\n    + \" where id_location in ( \" + idList.toString() + \"  )\"\n    + \" AND datetime > datetime('\"+ dateSelected + \"') \"\n    + \" AND datetime < datetime('\"+ dateSelected + \"', '\" + nbHours + \"') \"\n    + \" and role like 'TEMPERATURE'\"\n    + \" ORDER BY id_sensor, datetime asc;\"\n\n//    + \" and datetime > datetime('2024-04-15T04:00:00.000Z', 'localtime', '\" + nbHours + \"' )\"\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 2880,
+        "wires": [
+            [
+                "0f3b19615d2461dc"
+            ]
+        ]
+    },
+    {
+        "id": "0f3b19615d2461dc",
+        "type": "sqlite",
+        "z": "57111ca025f638be",
+        "d": true,
+        "g": "4ac0d347446e702f",
+        "mydb": "628739f370d1726d",
+        "sqlquery": "msg.topic",
+        "sql": "SELECT mac, id_sensor, \ntemperature, humidity, counter, datetime\nfrom DATA_VIEW\nwhere id_device in ( $ids_devices)\nand datetime > datetime('now', 'localtime', $nbHours )\nand role like 'TEMPERATURE'\nORDER BY id_sensor, datetime asc;\n\n\n",
+        "name": "Load temp sensor",
+        "x": 860,
+        "y": 2880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d3626a9698f6ee89",
+        "type": "function",
+        "z": "57111ca025f638be",
+        "d": true,
+        "g": "4ac0d347446e702f",
+        "name": "Params",
+        "func": "if (msg.topic === \"Slider\") {\n    flow.set('Slider', msg.payload);\n}\nif (msg.topic === \"DatePicker\") {\n    flow.set('DatePicker', msg.payload);\n}\n\n//On garde en mémoire la liste de mac.\nlet idList = context.get(\"idList\") || [];\n\nif (msg.devices != undefined) {\n    idList = [];\n    msg.devices.forEach(function (device) {\n        if (device.id_sensor != undefined) {\n            idList.push(device.id_location);\n            context.set(\"idList\", idList)\n        }\n    });\n}\n\nlet nbHours;\nlet dateSelected;\n\n//nbHours = '+' +  flow.get('Slider') + ' hours'\n//dateSelected =  flow.get('DatePicker');\n\nmsg.params = {\n    $idList: idList.toString(),\n //   $idList: \" IN (4,6)\",\n    $dateSelected: flow.get('DatePicker'),\n    $nbHours: '+' + flow.get('Slider') + ' hours'\n}\n\n/* msg.topic = \"SELECT id_location, acronyme, temperature, humidity, counter, datetime\"\n    + \" from DATA_VIEW\"\n    + \" where id_location in ( \" + idList.toString() + \"  )\"\n    + \" AND datetime > datetime('\"+ dateSelected + \"') \"\n    + \" AND datetime < datetime('\"+ dateSelected + \"', '\" + nbHours + \"') \"\n    + \" and role like 'TEMPERATURE'\"\n    + \" ORDER BY id_sensor, datetime asc;\"\n */\n//    + \" and datetime > datetime('2024-04-15T04:00:00.000Z', 'localtime', '\" + nbHours + \"' )\"\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 2880,
+        "wires": [
+            [
+                "3f82e6aed13c8507"
+            ]
+        ]
+    },
+    {
+        "id": "3f82e6aed13c8507",
+        "type": "sqlite",
+        "z": "57111ca025f638be",
+        "d": true,
+        "g": "4ac0d347446e702f",
+        "mydb": "628739f370d1726d",
+        "sqlquery": "prepared",
+        "sql": "SELECT id_location, acronyme, temperature, humidity, counter, datetime\nfrom DATA_VIEW\nwhere datetime > datetime($dateSelected) \nAND datetime < datetime($dateSelected, $nbHours) \nand role like 'TEMPERATURE'\nand id_location IN( $idList)\nORDER BY id_sensor, datetime asc;\n\n",
+        "name": "Load temp sensor",
+        "x": 1250,
+        "y": 2880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1301edfe0f59a0b1",
+        "type": "comment",
         "z": "57111ca025f638be",
         "g": "4ac0d347446e702f",
-        "name": "debug 222",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 920,
-        "y": 2950,
+        "name": "Graphique humidité",
+        "info": "",
+        "x": 1240,
+        "y": 3100,
         "wires": []
     },
     {
@@ -9838,6 +9890,43 @@
         "x": 710,
         "y": 520,
         "wires": []
+    },
+    {
+        "id": "9a358fede99924d0",
+        "type": "ui-button-group",
+        "z": "a9c9090b.478498",
+        "name": "",
+        "group": "5b69d242410edd23",
+        "order": 0,
+        "width": 6,
+        "height": 1,
+        "label": "button group",
+        "rounded": true,
+        "useThemeColors": true,
+        "passthru": false,
+        "options": [
+            {
+                "label": "1",
+                "icon": "",
+                "value": "option_0",
+                "valueType": "str",
+                "color": "#009933"
+            },
+            {
+                "label": "2",
+                "icon": "",
+                "value": "option_1",
+                "valueType": "str",
+                "color": "#999999"
+            }
+        ],
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1000,
+        "y": 240,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "4389fdd1091783d4",
