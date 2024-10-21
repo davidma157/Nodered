@@ -3334,8 +3334,8 @@
         "pointShape": "circle",
         "pointRadius": 4,
         "showLegend": true,
-        "removeOlder": "10",
-        "removeOlderUnit": "86400",
+        "removeOlder": "240",
+        "removeOlderUnit": "3600",
         "removeOlderPoints": "1000",
         "colors": [
             "#1f77b4",
@@ -6812,7 +6812,7 @@
         "pointRadius": 4,
         "showLegend": true,
         "removeOlder": "48",
-        "removeOlderUnit": "86400",
+        "removeOlderUnit": "3600",
         "removeOlderPoints": "",
         "colors": [
             "#1f77b4",
