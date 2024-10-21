@@ -3313,7 +3313,7 @@
         "label": "Température",
         "order": 1,
         "chartType": "line",
-        "category": "payload",
+        "category": "topic",
         "categoryType": "msg",
         "xAxisLabel": "",
         "xAxisProperty": "x",
