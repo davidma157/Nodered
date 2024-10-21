@@ -435,7 +435,8 @@
             "d3626a9698f6ee89",
             "3f82e6aed13c8507",
             "1301edfe0f59a0b1",
-            "50bc4f6c5feac4f8"
+            "50bc4f6c5feac4f8",
+            "a7888e8a0576cd47"
         ],
         "x": 24,
         "y": 2839,
@@ -3564,7 +3565,7 @@
         "group": "ec83ebd45553c336",
         "name": "Humidité",
         "label": "Humidité",
-        "order": 2,
+        "order": 3,
         "chartType": "line",
         "category": "topic",
         "categoryType": "msg",
@@ -3733,7 +3734,8 @@
         "wires": [
             [
                 "91ced026339a3eeb",
-                "50bc4f6c5feac4f8"
+                "50bc4f6c5feac4f8",
+                "a7888e8a0576cd47"
             ],
             [
                 "388cb232c9079e14"
@@ -6560,7 +6562,7 @@
         "group": "ec83ebd45553c336",
         "name": "",
         "label": "Date",
-        "order": 4,
+        "order": 5,
         "width": 0,
         "height": 0,
         "topic": "topic",
@@ -6596,7 +6598,7 @@
         "name": "",
         "label": "Durée",
         "tooltip": "",
-        "order": 3,
+        "order": 4,
         "width": "0",
         "height": "0",
         "passthru": true,
@@ -6777,6 +6779,68 @@
         "x": 1050,
         "y": 2990,
         "wires": []
+    },
+    {
+        "id": "a7888e8a0576cd47",
+        "type": "ui-chart",
+        "z": "57111ca025f638be",
+        "g": "4ac0d347446e702f",
+        "group": "ec83ebd45553c336",
+        "name": "",
+        "label": "chart",
+        "order": 2,
+        "chartType": "line",
+        "category": "Slider",
+        "categoryType": "str",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "property",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "",
+        "yAxisPropertyType": "property",
+        "ymin": "",
+        "ymax": "",
+        "bins": "",
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "x": 1230,
+        "y": 3010,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "da939ff73faa3d33",
@@ -10897,6 +10961,7 @@
         "xAxisFormatType": "auto",
         "yAxisLabel": "",
         "yAxisProperty": "",
+        "yAxisPropertyType": "property",
         "ymin": "",
         "ymax": "",
         "action": "append",
