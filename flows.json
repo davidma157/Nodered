@@ -6812,7 +6812,7 @@
         "pointRadius": 4,
         "showLegend": true,
         "removeOlder": "48",
-        "removeOlderUnit": "3600",
+        "removeOlderUnit": "86400",
         "removeOlderPoints": "",
         "colors": [
             "#1f77b4",
