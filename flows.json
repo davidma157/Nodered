@@ -3284,7 +3284,7 @@
         "xAxisPropertyType": "msg",
         "xAxisType": "time",
         "xAxisFormat": "",
-        "xAxisFormatType": "auto",
+        "xAxisFormatType": "HH:mm",
         "xmin": "",
         "xmax": "",
         "yAxisLabel": "",
