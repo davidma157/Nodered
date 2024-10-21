@@ -403,7 +403,6 @@
             "color": "#000000"
         },
         "nodes": [
-            "91ced026339a3eeb",
             "1c2e8d33bf43083e",
             "f138d867ef859cef",
             "caa469a26973d9d2",
@@ -3304,68 +3303,6 @@
         "wires": []
     },
     {
-        "id": "91ced026339a3eeb",
-        "type": "ui-chart",
-        "z": "57111ca025f638be",
-        "g": "4ac0d347446e702f",
-        "group": "ec83ebd45553c336",
-        "name": "Température",
-        "label": "Température",
-        "order": 1,
-        "chartType": "line",
-        "category": "topic",
-        "categoryType": "msg",
-        "xAxisLabel": "",
-        "xAxisProperty": "x",
-        "xAxisPropertyType": "msg",
-        "xAxisType": "time",
-        "xAxisFormat": "",
-        "xAxisFormatType": "auto",
-        "xmin": "",
-        "xmax": "",
-        "yAxisLabel": "",
-        "yAxisProperty": "y",
-        "yAxisPropertyType": "property",
-        "ymin": "",
-        "ymax": "",
-        "bins": "",
-        "action": "replace",
-        "stackSeries": false,
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": true,
-        "removeOlder": "240",
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "1000",
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "textColor": [
-            "#666666"
-        ],
-        "textColorDefault": true,
-        "gridColor": [
-            "#e5e5e5"
-        ],
-        "gridColorDefault": true,
-        "width": "7",
-        "height": "4",
-        "className": "",
-        "x": 1230,
-        "y": 2920,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "1c2e8d33bf43083e",
         "type": "sqlite",
         "z": "57111ca025f638be",
@@ -3733,7 +3670,6 @@
         "y": 2930,
         "wires": [
             [
-                "91ced026339a3eeb",
                 "50bc4f6c5feac4f8",
                 "a7888e8a0576cd47"
             ],
@@ -3767,9 +3703,7 @@
         "x": 1060,
         "y": 3100,
         "wires": [
-            [
-                "91ced026339a3eeb"
-            ]
+            []
         ]
     },
     {
@@ -6786,7 +6720,7 @@
         "z": "57111ca025f638be",
         "g": "4ac0d347446e702f",
         "group": "ec83ebd45553c336",
-        "name": "",
+        "name": "Temperature",
         "label": "chart",
         "order": 2,
         "chartType": "line",
@@ -6836,8 +6770,8 @@
         "width": 6,
         "height": 8,
         "className": "",
-        "x": 1230,
-        "y": 3010,
+        "x": 1150,
+        "y": 2920,
         "wires": [
             []
         ]
