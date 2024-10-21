@@ -6806,7 +6806,7 @@
         "ymin": "",
         "ymax": "",
         "bins": "",
-        "action": "append",
+        "action": "replace",
         "stackSeries": false,
         "pointShape": "circle",
         "pointRadius": 4,
