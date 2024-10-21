@@ -6790,7 +6790,7 @@
         "label": "chart",
         "order": 2,
         "chartType": "line",
-        "category": "payload",
+        "category": "topic",
         "categoryType": "msg",
         "xAxisLabel": "",
         "xAxisProperty": "x",
