@@ -1187,14 +1187,10 @@
         "type": "group",
         "z": "57111ca025f638be",
         "g": "e9631b841926facf",
+        "name": "Configuration",
         "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
             "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
+            "color": "#000000"
         },
         "nodes": [
             "b0ed271801ea7e6e",
