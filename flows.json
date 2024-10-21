@@ -407,7 +407,6 @@
             "f138d867ef859cef",
             "caa469a26973d9d2",
             "aa76751f0c815d88",
-            "388cb232c9079e14",
             "28c5da6a4d2da8ba",
             "98e8f77ab6b80fce",
             "836e4535583ce900",
@@ -435,7 +434,8 @@
             "3f82e6aed13c8507",
             "1301edfe0f59a0b1",
             "50bc4f6c5feac4f8",
-            "a7888e8a0576cd47"
+            "a7888e8a0576cd47",
+            "a6a58491fcb5b37b"
         ],
         "x": 24,
         "y": 2839,
@@ -3495,64 +3495,6 @@
         ]
     },
     {
-        "id": "388cb232c9079e14",
-        "type": "ui-chart",
-        "z": "57111ca025f638be",
-        "g": "4ac0d347446e702f",
-        "group": "ec83ebd45553c336",
-        "name": "Humidité",
-        "label": "Humidité",
-        "order": 3,
-        "chartType": "line",
-        "category": "topic",
-        "categoryType": "msg",
-        "xAxisLabel": "",
-        "xAxisProperty": "x",
-        "xAxisPropertyType": "msg",
-        "xAxisType": "time",
-        "xAxisFormat": "",
-        "xAxisFormatType": "ccc HH:mm",
-        "yAxisLabel": "",
-        "yAxisProperty": "y",
-        "ymin": "",
-        "ymax": "",
-        "action": "replace",
-        "stackSeries": false,
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": true,
-        "removeOlder": "10",
-        "removeOlderUnit": "86400",
-        "removeOlderPoints": "1000",
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "textColor": [
-            "#666666"
-        ],
-        "textColorDefault": false,
-        "gridColor": [
-            "#e5e5e5"
-        ],
-        "gridColorDefault": false,
-        "width": "7",
-        "height": "4",
-        "className": "",
-        "x": 1240,
-        "y": 3060,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "28c5da6a4d2da8ba",
         "type": "function",
         "z": "57111ca025f638be",
@@ -3638,8 +3580,8 @@
         "g": "4ac0d347446e702f",
         "name": "Graphique temperature",
         "info": "",
-        "x": 1240,
-        "y": 2960,
+        "x": 1180,
+        "y": 2930,
         "wires": []
     },
     {
@@ -3674,7 +3616,7 @@
                 "a7888e8a0576cd47"
             ],
             [
-                "388cb232c9079e14"
+                "a6a58491fcb5b37b"
             ]
         ],
         "outputLabels": [
@@ -3703,7 +3645,9 @@
         "x": 1060,
         "y": 3100,
         "wires": [
-            []
+            [
+                "a7888e8a0576cd47"
+            ]
         ]
     },
     {
@@ -3728,7 +3672,7 @@
         "y": 3150,
         "wires": [
             [
-                "388cb232c9079e14"
+                "a6a58491fcb5b37b"
             ]
         ],
         "info": "Délai\r\nCe délais est ajouté pour que la mise à jour du \r\ngraphique fonctionne.\r\nCeci permets de faire un update du graphique après que les sensors ont été chargés."
@@ -6693,7 +6637,7 @@
         "name": "Graphique humidité",
         "info": "",
         "x": 1240,
-        "y": 3100,
+        "y": 3050,
         "wires": []
     },
     {
@@ -6702,7 +6646,7 @@
         "z": "57111ca025f638be",
         "g": "4ac0d347446e702f",
         "name": "debug 222",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -6710,8 +6654,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1050,
-        "y": 2990,
+        "x": 940,
+        "y": 2980,
         "wires": []
     },
     {
@@ -6721,6 +6665,68 @@
         "g": "4ac0d347446e702f",
         "group": "ec83ebd45553c336",
         "name": "Temperature",
+        "label": "chart",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "x",
+        "xAxisPropertyType": "property",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "y",
+        "yAxisPropertyType": "property",
+        "ymin": "",
+        "ymax": "",
+        "bins": "",
+        "action": "replace",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "48",
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "x": 1210,
+        "y": 2970,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a6a58491fcb5b37b",
+        "type": "ui-chart",
+        "z": "57111ca025f638be",
+        "g": "4ac0d347446e702f",
+        "group": "ec83ebd45553c336",
+        "name": "Humidité",
         "label": "chart",
         "order": 2,
         "chartType": "line",
@@ -6770,8 +6776,8 @@
         "width": 6,
         "height": 8,
         "className": "",
-        "x": 1150,
-        "y": 2920,
+        "x": 1220,
+        "y": 3090,
         "wires": [
             []
         ]
