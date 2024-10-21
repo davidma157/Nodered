@@ -3322,7 +3322,7 @@
         "gridColorDefault": true,
         "width": "7",
         "height": "4",
-        "className": "msg.class",
+        "className": "",
         "x": 1230,
         "y": 2920,
         "wires": [
