@@ -718,8 +718,8 @@
             "2dc49f96.3070c",
             "03409f4c678bf6af"
         ],
-        "x": 44,
-        "y": 1529,
+        "x": 74,
+        "y": 729,
         "w": 932,
         "h": 242
     },
@@ -1267,6 +1267,58 @@
         "h": 132
     },
     {
+        "id": "a336ea4b50110cee",
+        "type": "group",
+        "z": "a9c9090b.478498",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "84222b92.d65d18",
+            "7b014430.dfd94c",
+            "b4b9f603.739598",
+            "672d3693.3cabd8",
+            "15f1f5aa.506ffa",
+            "2ab4eba8.267d64",
+            "caa9feabab137443",
+            "92322ac737d147d1"
+        ],
+        "x": 74,
+        "y": 449,
+        "w": 712,
+        "h": 242
+    },
+    {
+        "id": "bc36bc91c1d59edc",
+        "type": "group",
+        "z": "a9c9090b.478498",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "a5e04c4acd4c7138",
+            "7b506d35fcfd9b97",
+            "67c307711a8f6f52",
+            "524d9ccdadd66692"
+        ],
+        "x": 84,
+        "y": 339,
+        "w": 792,
+        "h": 82
+    },
+    {
         "id": "61e088ec657a83ab",
         "type": "junction",
         "z": "d770df178aec257a",
@@ -1426,10 +1478,32 @@
         "icon": "mdi-chart-timeline-variant",
         "layout": "grid",
         "theme": "a70602e73bbb2a95",
-        "order": 1,
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 3
+            },
+            {
+                "name": "Tablet",
+                "px": 576,
+                "cols": 6
+            },
+            {
+                "name": "Small Desktop",
+                "px": 768,
+                "cols": 9
+            },
+            {
+                "name": "Desktop",
+                "px": 1024,
+                "cols": 12
+            }
+        ],
+        "order": 2,
         "className": "",
-        "visible": "true",
-        "disabled": "false"
+        "visible": true,
+        "disabled": false
     },
     {
         "id": "ec83ebd45553c336",
@@ -1453,7 +1527,7 @@
         "icon": "mdi-cogs",
         "layout": "grid",
         "theme": "a70602e73bbb2a95",
-        "order": 2,
+        "order": 1,
         "className": "",
         "visible": true,
         "disabled": false
@@ -1694,6 +1768,24 @@
         "colors": {
             "surface": "#ffffff",
             "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "af1e007be91f255e",
+        "type": "ui-theme",
+        "name": "Theme Name",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
             "bgPage": "#eeeeee",
             "groupBg": "#ffffff",
             "groupOutline": "#cccccc"
@@ -3047,7 +3139,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-card title=\"Devices\" flat> </v-card>\n  <v-data-table v-model=\"selected\" :headers=\"headers\" \n    :items=\"devices\" item-value=\"id_device\" items-per-page=\"10\"\n    density=\"compact\"\n    select-strategy=\"page\" show-select return-object \n    >\n   \n    <template v-slot:bottom>\n      <div class=\"text-center pt-2\">\n        <v-pagination :length=\"pageCount\"></v-pagination>\n      </div>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      selected: [],\n      headers: [\n        { title: 'Location', key: 'location', maxWidth:2, sortable: false},\n        { title: 'mac', key: 'mac', maxWidth:2, sortable: false},\n        { title: 'id_device', sortable: false, maxWidth:1, key: 'id_device' },\n        { title: 'id_sensor', key: 'id_sensor', maxWidth:1, sortable: false},\n      ],\n      devices: [],\n    }),\n\n    watch: {\n       msg: function(){\n        this.devices = this.msg.payload\n        this.devices.push({id_device:-1, mac: \"SiteWeb\", location:\"\"});\n      },\n      selected: function () {\n        this.send({devices: this.selected})\n      // flow.set(\"DEVICE-TEST\", this.selected );\n        \n      },\n    },\n    mounted() {\n     // this.devices = this.msg?.payload\n    },\n    computed: {\n      pageCount() {\n        return Math.ceil(this.devices.length / this.itemsPerPage)\n      },\n    },\n  \n  }\n</script>",
+        "format": "<template>\n  <v-card title=\"Devices\" flat> </v-card>\n  <v-data-table v-model=\"selected\" :headers=\"headers\" \n    :items=\"devices\" item-value=\"id_device\" items-per-page=\"10\"\n    density=\"compact\"\n    select-strategy=\"page\" show-select return-object \n    >\n   \n    <template v-slot:bottom>\n      <div class=\"text-center pt-2\">\n        <v-pagination :length=\"pageCount\"></v-pagination>\n      </div>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      selected: [],\n      itemsPerPage: 10,\n      page: 1, \n      headers: [\n        { title: 'Location', key: 'location', maxWidth:2, sortable: false},\n        { title: 'mac', key: 'mac', maxWidth:2, sortable: false},\n        { title: 'id_device', sortable: false, maxWidth:1, key: 'id_device' },\n        { title: 'id_sensor', key: 'id_sensor', maxWidth:1, sortable: false},\n      ],\n      devices: [],\n    }),\n\n    watch: {\n       msg: function(){\n        this.devices = this.msg.payload\n        this.devices.push({id_device:-1, mac: \"SiteWeb\", location:\"\"});\n      },\n      selected: function () {\n        this.send({devices: this.selected})\n      // flow.set(\"DEVICE-TEST\", this.selected );\n        \n      },\n    },\n    mounted() {\n     // this.devices = this.msg?.payload\n    },\n    computed: {\n      pageCount() {\n        return Math.ceil(this.devices.length / this.itemsPerPage)\n      },\n    },\n  \n  }\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -3868,7 +3960,6 @@
         "g": "abbcf13b0652a794",
         "name": "IN-refresh Devices",
         "links": [
-            "836dfbcc857f6e1b",
             "a147248bb7549068",
             "aecd825fcf9a94de",
             "4b59343b5845de12",
@@ -4128,9 +4219,7 @@
         "g": "2a7669fef789d1e6",
         "name": "Load editor",
         "mode": "link",
-        "links": [
-            "43c18597783c3def"
-        ],
+        "links": [],
         "x": 545,
         "y": 1000,
         "wires": []
@@ -5365,7 +5454,7 @@
         "lastValueOutput": false,
         "outputs": 8,
         "_version": "0.4.1",
-        "x": 350,
+        "x": 360,
         "y": 1590,
         "wires": [
             [
@@ -5893,7 +5982,7 @@
         "z": "57111ca025f638be",
         "g": "a5b04cf60d670697",
         "name": "debug 212",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5925,7 +6014,7 @@
         "z": "57111ca025f638be",
         "g": "a5b04cf60d670697",
         "name": "debug 213",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -6427,8 +6516,9 @@
         ],
         "gridColorDefault": true,
         "width": 6,
-        "height": 8,
+        "height": "5",
         "className": "",
+        "interpolation": "linear",
         "x": 1210,
         "y": 2970,
         "wires": [
@@ -6489,8 +6579,9 @@
         ],
         "gridColorDefault": true,
         "width": 6,
-        "height": 8,
+        "height": "5",
         "className": "",
+        "interpolation": "linear",
         "x": 1220,
         "y": 3090,
         "wires": [
@@ -7626,7 +7717,7 @@
         "group": "5b69d242410edd23",
         "name": "Afficher",
         "label": "ESP32 log",
-        "order": 5,
+        "order": 3,
         "width": "9",
         "height": "12",
         "topic": "topic",
@@ -7702,7 +7793,7 @@
         "d": true,
         "g": "869ebc417f12da40",
         "group": "5b69d242410edd23",
-        "order": 4,
+        "order": 2,
         "width": 0,
         "height": 0,
         "name": "",
@@ -7727,7 +7818,7 @@
         "page": "",
         "ui": "",
         "name": "Afficher fichier",
-        "order": 3,
+        "order": 1,
         "width": "10",
         "height": "4",
         "head": "",
@@ -8949,7 +9040,7 @@
         "page": "",
         "ui": "",
         "name": "TEST Alert",
-        "order": 7,
+        "order": 5,
         "width": 0,
         "height": 0,
         "head": "",
@@ -8974,7 +9065,7 @@
         "page": "",
         "ui": "",
         "name": "Bouton barre du haut",
-        "order": 8,
+        "order": 6,
         "width": 0,
         "height": 0,
         "head": "",
@@ -8997,8 +9088,8 @@
         "d": true,
         "g": "d186a865f8290820",
         "name": "",
-        "x": 670,
-        "y": 1610,
+        "x": 700,
+        "y": 810,
         "wires": []
     },
     {
@@ -9023,8 +9114,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 450,
-        "y": 1570,
+        "x": 480,
+        "y": 770,
         "wires": [
             [
                 "993a1d17b68cf824",
@@ -9039,8 +9130,8 @@
         "g": "d186a865f8290820",
         "name": "",
         "butt": "1",
-        "x": 270,
-        "y": 1600,
+        "x": 300,
+        "y": 800,
         "wires": [
             []
         ]
@@ -9051,8 +9142,8 @@
         "z": "a9c9090b.478498",
         "g": "d186a865f8290820",
         "name": "",
-        "x": 660,
-        "y": 1570,
+        "x": 690,
+        "y": 770,
         "wires": []
     },
     {
@@ -9067,8 +9158,8 @@
         "debounce": "25",
         "read": false,
         "bcm": true,
-        "x": 370,
-        "y": 1640,
+        "x": 400,
+        "y": 840,
         "wires": [
             []
         ]
@@ -9087,8 +9178,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 840,
-        "y": 1610,
+        "x": 870,
+        "y": 810,
         "wires": []
     },
     {
@@ -9099,8 +9190,8 @@
         "g": "d186a865f8290820",
         "name": "",
         "serial": "338b8e1916d50651",
-        "x": 650,
-        "y": 1660,
+        "x": 680,
+        "y": 860,
         "wires": [
             [
                 "67442326259348aa"
@@ -9132,8 +9223,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 140,
-        "y": 1690,
+        "x": 170,
+        "y": 890,
         "wires": [
             [
                 "87129503.c7b358"
@@ -9153,8 +9244,8 @@
         "septopics": true,
         "property": "payload",
         "topi": "topic",
-        "x": 350,
-        "y": 1710,
+        "x": 380,
+        "y": 910,
         "wires": [
             [
                 "5e2ffc27.c61dd4"
@@ -9173,8 +9264,8 @@
         "tostatus": false,
         "complete": "payload",
         "targetType": "msg",
-        "x": 560,
-        "y": 1710,
+        "x": 590,
+        "y": 910,
         "wires": []
     },
     {
@@ -9190,37 +9281,12 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 140,
-        "y": 1730,
+        "x": 170,
+        "y": 930,
         "wires": [
             [
                 "87129503.c7b358"
             ]
-        ]
-    },
-    {
-        "id": "3747ef966e4122fd",
-        "type": "ui-template",
-        "z": "a9c9090b.478498",
-        "d": true,
-        "group": "5b69d242410edd23",
-        "page": "",
-        "ui": "",
-        "name": "",
-        "order": 9,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n  <v-data-table\n    :headers=\"headers\"\n    :items=\"devices\"\n    :items-per-page=\"5\"\n    class=\"elevation-1\"\n  >\n    <template v-slot:top>\n      <v-toolbar flat>\n        <v-toolbar-title>Devices</v-toolbar-title>\n        <v-divider class=\"mx-4\" inset vertical></v-divider>\n        <v-spacer></v-spacer>\n        <v-btn color=\"primary\" dark class=\"mb-2\" @click=\"addNewItem\">\n          Add New Device\n        </v-btn>\n      </v-toolbar>\n      <v-dialog v-model=\"dialog\" max-width=\"800px\">\n        <v-card>\n          <v-card-title>\n            <span class=\"text-h5\">{{ formTitle }}</span>\n          </v-card-title>\n          <v-card-text>\n            <v-container>\n              <v-row>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                    v-model=\"editedItem.id_device\"\n                    label=\"Device ID\"\n                  ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                    v-model=\"editedItem.mac_address\"\n                    label=\"MAC Address\"\n                  ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-select\n                    v-model=\"editedItem.location\"\n                    :items=\"locations\"\n                    label=\"Location\"\n                  ></v-select>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-select\n                    v-model=\"editedItem.status\"\n                    :items=\"['Online', 'Offline', 'Maintenance']\"\n                    label=\"Status\"\n                  ></v-select>\n                </v-col>\n              </v-row>\n              <v-divider class=\"mt-2 mb-4\"></v-divider>\n              <h3 class=\"mb-2\">Sensors</h3>\n              <v-expansion-panels>\n                <v-expansion-panel\n                  v-for=\"(sensor, sensorIndex) in editedItem.sensors\"\n                  :key=\"sensorIndex\"\n                >\n                  <v-expansion-panel-title>\n                    Sensor {{ sensorIndex + 1 }}\n                    <template v-slot:actions>\n                      <v-btn\n                        icon\n                        small\n                        color=\"error\"\n                        @click.stop=\"removeSensor(sensorIndex)\"\n                      >\n                        <v-icon>mdi-delete</v-icon>\n                      </v-btn>\n                    </template>\n                  </v-expansion-panel-title>\n                  <v-expansion-panel-text>\n                    <v-row>\n                      <v-col cols=\"12\" sm=\"6\">\n                        <v-text-field\n                          v-model.number=\"sensor.id_sensor\"\n                          label=\"Sensor ID\"\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"6\">\n                        <v-text-field\n                          v-model=\"sensor.name\"\n                          label=\"Sensor Name\"\n                        ></v-text-field>\n                      </v-col>\n                    </v-row>\n                    <v-divider class=\"mt-2 mb-4\"></v-divider>\n                    <h4 class=\"mb-2\">Attributes</h4>\n                    <v-row\n                      v-for=\"(attr, attrIndex) in sensor.attributes\"\n                      :key=\"attrIndex\"\n                    >\n                      <v-col cols=\"12\" sm=\"4\">\n                        <v-text-field\n                          v-model.number=\"attr.id_attr\"\n                          label=\"Attribute ID\"\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"4\">\n                        <v-text-field\n                          v-model=\"attr.name\"\n                          label=\"Attribute Name\"\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"3\">\n                        <v-text-field\n                          v-model.number=\"attr.value\"\n                          label=\"Value\"\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"1\">\n                        <v-btn\n                          color=\"error\"\n                          small\n                          @click=\"removeAttribute(sensor, attrIndex)\"\n                          >X</v-btn\n                        >\n                      </v-col>\n                    </v-row>\n                    <v-btn color=\"success\" small @click=\"addAttribute(sensor)\"\n                      >Add Attribute</v-btn\n                    >\n                  </v-expansion-panel-text>\n                </v-expansion-panel>\n              </v-expansion-panels>\n              <v-btn color=\"success\" class=\"mt-4\" @click=\"addSensor\"\n                >Add Sensor</v-btn\n              >\n            </v-container>\n          </v-card-text>\n          <v-card-actions>\n            <v-spacer></v-spacer>\n            <v-btn color=\"blue darken-1\" @click=\"close\">Cancel</v-btn>\n            <v-btn color=\"blue darken-1\" @click=\"save\">Save</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </template>\n    <template v-slot:item.actions=\"{ item }\">\n      <v-icon small class=\"mr-2\" @click=\"editItem(item)\"> mdi-pencil </v-icon>\n    </template>\n    <template v-slot:item.status=\"{ item }\">\n      <v-chip :color=\"getStatusColor(item.status)\" small>\n        {{ item.status }}\n      </v-chip>\n    </template>\n    <template v-slot:item.sensors=\"{ item }\">\n      {{ item.sensors.length }} sensors\n      <v-tooltip bottom max-width=\"400\">\n        <template v-slot:activator=\"{ props }\">\n          <v-icon small v-bind=\"props\">mdi-information</v-icon>\n        </template>\n        <v-card>\n          <v-card-text>\n            <div\n              v-for=\"(sensor, sIndex) in item.sensors\"\n              :key=\"sensor.id_sensor\"\n              class=\"mb-4\"\n            >\n              <h2>Sensor {{ sIndex + 1 }}:</h2>\n              {{ sensor.id_sensor}} - {{ sensor.name }}\n              <v-divider class=\"my-2\"></v-divider>\n              <h4>Attributes:</h4>\n              <v-table dense>\n                <template v-slot:default>\n                  <tbody>\n                    <tr v-for=\"attr in sensor.attributes\" :key=\"attr.id_attr\">\n                      <td>{{ attr.id_attr }}</td>\n                      <td>{{ attr.name }}</td>\n                      <td>{{ attr.value.toFixed(2) }}</td>\n                    </tr>\n                  </tbody>\n                </template>\n              </v-table>\n            </div>\n          </v-card-text>\n        </v-card>\n      </v-tooltip>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      dialog: false,\n      headers: [\n        { text: 'Device ID', value: 'id_device' },\n        { text: 'MAC Address', value: 'mac_address' },\n        { text: 'Location', value: 'location' },\n        { text: 'Status', value: 'status' },\n        { text: 'Sensors', value: 'sensors' },\n        { text: 'Actions', value: 'actions', sortable: false },\n      ],\n      devices: [],\n      editedIndex: -1,\n      editedItem: {\n        id_device: 0,\n        mac_address: '',\n        location: '',\n        status: 'Offline',\n        sensors: [],\n      },\n      defaultItem: {\n        id_device: 0,\n        mac_address: '',\n        location: '',\n        status: 'Offline',\n        sensors: [],\n      },\n      locations: ['PlaceA', 'Cuisine', 'Chambre', 'Terrasse'],\n    }),\n\n    computed: {\n      formTitle() {\n        return this.editedIndex === -1 ? 'New Device' : 'Edit Device'\n      },\n    },\n\n    created() {\n      this.addRandomDevices(3)\n    },\n    \n    mounted() {\n      this.addRandomDevices(3)\n    },\n\n    methods: {\n      addRandomDevices(count) {\n        const statuses = ['Online', 'Offline', 'Maintenance']\n        const sensorNames = ['Temperature', 'Humidity', 'Pressure', 'Light']\n        const attributeNames = ['Min', 'Max', 'Average', 'Current']\n        for (let i = 0; i < count; i++) {\n          const sensorCount = Math.floor(Math.random() * 3) + 1 // 1 to 3 sensors per device\n          const sensors = []\n          for (let j = 0; j < sensorCount; j++) {\n            const attributeCount = Math.floor(Math.random() * 3) + 1 // 1 to 3 attributes per sensor\n            const attributes = []\n            for (let k = 0; k < attributeCount; k++) {\n              attributes.push({\n                id_attr: this.generateRandomId(),\n                name: attributeNames[\n                  Math.floor(Math.random() * attributeNames.length)\n                ],\n                value: Math.random() * 100,\n              })\n            }\n            sensors.push({\n              id_sensor: this.generateRandomId(),\n              name: sensorNames[Math.floor(Math.random() * sensorNames.length)],\n              attributes: attributes,\n            })\n          }\n          this.devices.push({\n            id_device: this.generateRandomId(),\n            mac_address: this.generateRandomMac(),\n            location:\n              this.locations[Math.floor(Math.random() * this.locations.length)],\n            status: statuses[Math.floor(Math.random() * statuses.length)],\n            sensors: sensors,\n          })\n        }\n      },\n\n      generateRandomId() {\n        return Math.floor(Math.random() * 10000)\n      },\n\n      generateRandomMac() {\n        return 'XX:XX:XX:XX:XX:XX'.replace(/X/g, () => {\n          return '0123456789ABCDEF'.charAt(Math.floor(Math.random() * 16))\n        })\n      },\n\n      getStatusColor(status) {\n        if (status === 'Online') return 'green'\n        if (status === 'Offline') return 'red'\n        return 'orange'\n      },\n\n      addNewItem() {\n        this.editedIndex = -1\n        this.editedItem = JSON.parse(JSON.stringify(this.defaultItem))\n        this.dialog = true\n      },\n\n      editItem(item) {\n        this.editedIndex = this.devices.indexOf(item)\n        this.editedItem = JSON.parse(JSON.stringify(item))\n        this.dialog = true\n      },\n\n      close() {\n        this.dialog = false\n        this.$nextTick(() => {\n          this.editedItem = JSON.parse(JSON.stringify(this.defaultItem))\n          this.editedIndex = -1\n        })\n      },\n      removeSensor(index) {\n        this.editedItem.sensors.splice(index, 1)\n      },\n\n\n      save() {\n        if (this.editedIndex > -1) {\n          Object.assign(this.devices[this.editedIndex], this.editedItem)\n        } else {\n          this.devices.push(this.editedItem)\n        }\n        this.close()\n      },\n\n      addSensor() {\n        this.editedItem.sensors.push({\n          id_sensor: this.generateRandomId(),\n          name: '',\n          attributes: [],\n        })\n      },\n\n      addAttribute(sensor) {\n        sensor.attributes.push({\n          id_attr: this.generateRandomId(),\n          name: '',\n          value: 0,\n        })\n      },\n\n      removeAttribute(sensor, attrIndex) {\n        sensor.attributes.splice(attrIndex, 1)\n      },\n    },\n  }\n</script>\n",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 140,
-        "y": 300,
-        "wires": [
-            []
         ]
     },
     {
@@ -9231,101 +9297,26 @@
         "g": "d186a865f8290820",
         "group": "5b69d242410edd23",
         "name": "",
-        "order": 6,
+        "order": 4,
         "width": 0,
         "height": 0,
         "content": "# Markdown Content\n\nGoes here...",
         "className": "",
-        "x": 880,
-        "y": 1670,
+        "x": 910,
+        "y": 870,
         "wires": [
             []
         ]
     },
     {
-        "id": "c9031ce11cdbdb03",
-        "type": "function",
-        "z": "a9c9090b.478498",
-        "name": "Simulation",
-        "func": "\nmsg = { \"device\": { \"id_device\": 2, \"mac\": \"C0:49:EF:CC:37:4C\", \"sleep_duration\": 1666, \"im_alive_period\": 3600, \n\"sensors\": [{ \"id_sensor\": -1, \"sensor_role\": \"TEMPERATURE\", \n    \"attributs\": [{ \"id_attribut\": 19, \"name\": \"pin\", \"value\": 22 }] }, \n    { \"id_sensor\": -1, \"sensor_role\": \"TEMPERATURE\", \n    \"attributs\": [{ \"id_attribut\": 19, \"name\": \"pin\", \"value\": 22 }] }], \n\"sensorsToDelete\": [] }, \"changements\": { \"deviceToUpdate\": false, \"sensorsToUpdate\": [1100, 2200, 3300, 4400], \"attributsToUpdate\": [2000, 3000, 4000], \"sensorsToDelete\": [1190, 1000, 2000, 3000], \"attributsToDelete\": [1780, 1000, 2000, 3000] }, \"_dashboard\": { \"sourceId\": \"457086935cb6673a\", \"templateId\": \"457086935cb6673a\" }, \"_client\": { \"socketId\": \"5UvBo2b05sbT9eP5AAAD\", \"socketIp\": \"169.254.109.98\" }, \"_msgid\": \"9e9c81602daab2d7\" }\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 360,
-        "y": 1490,
-        "wires": [
-            [
-                "45bd715516f670af"
-            ]
-        ]
-    },
-    {
-        "id": "507d080a20d6ad8d",
-        "type": "inject",
-        "z": "a9c9090b.478498",
-        "name": "Simulation",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 170,
-        "y": 1500,
-        "wires": [
-            [
-                "c9031ce11cdbdb03"
-            ]
-        ]
-    },
-    {
-        "id": "45bd715516f670af",
-        "type": "split",
-        "z": "a9c9090b.478498",
-        "name": "",
-        "splt": "\\n",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "sensor",
-        "property": "device.sensors",
-        "x": 550,
-        "y": 1490,
-        "wires": [
-            [
-                "befd847ae4e19935"
-            ]
-        ]
-    },
-    {
-        "id": "befd847ae4e19935",
-        "type": "debug",
-        "z": "a9c9090b.478498",
-        "name": "debug 211",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 710,
-        "y": 1490,
-        "wires": []
-    },
-    {
         "id": "a5e04c4acd4c7138",
         "type": "ui-button",
         "z": "a9c9090b.478498",
+        "g": "bc36bc91c1d59edc",
         "group": "5b69d242410edd23",
         "name": "Trigger Notification",
         "label": "Send Notification",
-        "order": 10,
+        "order": 7,
         "width": "3",
         "height": "1",
         "emulateClick": false,
@@ -9349,8 +9340,8 @@
         "enablePointerup": false,
         "pointerupPayload": "",
         "pointerupPayloadType": "str",
-        "x": 220,
-        "y": 610,
+        "x": 200,
+        "y": 380,
         "wires": [
             [
                 "7b506d35fcfd9b97"
@@ -9361,6 +9352,7 @@
         "id": "7b506d35fcfd9b97",
         "type": "function",
         "z": "a9c9090b.478498",
+        "g": "bc36bc91c1d59edc",
         "name": "function 6",
         "func": "msg.payload = \"Notification Triggered!\";\nreturn msg;",
         "outputs": 1,
@@ -9369,8 +9361,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
-        "y": 610,
+        "x": 370,
+        "y": 380,
         "wires": [
             [
                 "67c307711a8f6f52"
@@ -9381,6 +9373,7 @@
         "id": "67c307711a8f6f52",
         "type": "ui-notification",
         "z": "a9c9090b.478498",
+        "g": "bc36bc91c1d59edc",
         "ui": "d4c9d9e9b37824ea",
         "position": "top right",
         "colorDefault": true,
@@ -9395,8 +9388,8 @@
         "raw": false,
         "className": "",
         "name": "submit-notification",
-        "x": 580,
-        "y": 610,
+        "x": 560,
+        "y": 380,
         "wires": [
             [
                 "524d9ccdadd66692"
@@ -9404,53 +9397,10 @@
         ]
     },
     {
-        "id": "9a358fede99924d0",
-        "type": "ui-button-group",
-        "z": "a9c9090b.478498",
-        "name": "",
-        "group": "5b69d242410edd23",
-        "order": 2,
-        "width": 6,
-        "height": 1,
-        "label": "button group",
-        "rounded": false,
-        "useThemeColors": true,
-        "passthru": false,
-        "options": [
-            {
-                "label": "1",
-                "icon": "",
-                "value": "option_0",
-                "valueType": "str",
-                "color": "#009933"
-            },
-            {
-                "label": "2",
-                "icon": "",
-                "value": "option_1",
-                "valueType": "str",
-                "color": "#999999"
-            },
-            {
-                "label": "3",
-                "icon": "",
-                "value": "option_2",
-                "valueType": "str",
-                "color": "#ff6666"
-            }
-        ],
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 340,
-        "y": 470,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "524d9ccdadd66692",
         "type": "debug",
         "z": "a9c9090b.478498",
+        "g": "bc36bc91c1d59edc",
         "name": "debug 223",
         "active": true,
         "tosidebar": true,
@@ -9460,39 +9410,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 780,
-        "y": 610,
+        "x": 760,
+        "y": 380,
         "wires": []
-    },
-    {
-        "id": "41551acb361ea299",
-        "type": "ui-table",
-        "z": "a9c9090b.478498",
-        "group": "5b69d242410edd23",
-        "name": "Table",
-        "label": "text",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "maxrows": "10",
-        "passthru": false,
-        "autocols": true,
-        "showSearch": true,
-        "selectionType": "none",
-        "columns": [],
-        "mobileBreakpoint": "lg",
-        "mobileBreakpointType": "defaults",
-        "action": "append",
-        "x": 650,
-        "y": 370,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "84222b92.d65d18",
         "type": "inject",
         "z": "a9c9090b.478498",
+        "g": "a336ea4b50110cee",
         "name": "",
         "props": [
             {
@@ -9510,8 +9436,8 @@
         "topic": "",
         "payload": "Hello, World!",
         "payloadType": "str",
-        "x": 270,
-        "y": 780,
+        "x": 230,
+        "y": 570,
         "wires": [
             [
                 "b4b9f603.739598"
@@ -9522,16 +9448,18 @@
         "id": "7b014430.dfd94c",
         "type": "comment",
         "z": "a9c9090b.478498",
+        "g": "a336ea4b50110cee",
         "name": "Watch changes of a file",
         "info": "Watch node can watch and report changes of a file.",
-        "x": 240,
-        "y": 700,
+        "x": 200,
+        "y": 490,
         "wires": []
     },
     {
         "id": "b4b9f603.739598",
         "type": "file",
         "z": "a9c9090b.478498",
+        "g": "a336ea4b50110cee",
         "name": "",
         "filename": "/home/pi-md/hello.txt",
         "filenameType": "str",
@@ -9539,8 +9467,8 @@
         "createDir": false,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 480,
-        "y": 780,
+        "x": 440,
+        "y": 570,
         "wires": [
             [
                 "caa9feabab137443"
@@ -9551,21 +9479,23 @@
         "id": "672d3693.3cabd8",
         "type": "comment",
         "z": "a9c9090b.478498",
+        "g": "a336ea4b50110cee",
         "name": "↓write to /tmp/hello.txt",
         "info": "",
-        "x": 480,
-        "y": 740,
+        "x": 440,
+        "y": 530,
         "wires": []
     },
     {
         "id": "15f1f5aa.506ffa",
         "type": "watch",
         "z": "a9c9090b.478498",
+        "g": "a336ea4b50110cee",
         "name": "",
         "files": "/home/pi-md/hello.txt",
         "recursive": "",
-        "x": 480,
-        "y": 820,
+        "x": 440,
+        "y": 610,
         "wires": [
             [
                 "92322ac737d147d1"
@@ -9576,16 +9506,18 @@
         "id": "2ab4eba8.267d64",
         "type": "comment",
         "z": "a9c9090b.478498",
+        "g": "a336ea4b50110cee",
         "name": "↑watch changes of  /tmp/hello.txt",
         "info": "",
-        "x": 510,
-        "y": 860,
+        "x": 470,
+        "y": 650,
         "wires": []
     },
     {
         "id": "caa9feabab137443",
         "type": "debug",
         "z": "a9c9090b.478498",
+        "g": "a336ea4b50110cee",
         "name": "debug 224",
         "active": true,
         "tosidebar": true,
@@ -9595,14 +9527,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 710,
-        "y": 780,
+        "x": 670,
+        "y": 570,
         "wires": []
     },
     {
         "id": "92322ac737d147d1",
         "type": "debug",
         "z": "a9c9090b.478498",
+        "g": "a336ea4b50110cee",
         "name": "debug 225",
         "active": true,
         "tosidebar": true,
@@ -9612,25 +9545,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 710,
-        "y": 820,
+        "x": 670,
+        "y": 610,
         "wires": []
-    },
-    {
-        "id": "6ea28e5b66a64f09",
-        "type": "html",
-        "z": "a9c9090b.478498",
-        "name": "",
-        "property": "payload",
-        "outproperty": "payload",
-        "tag": "",
-        "ret": "html",
-        "as": "single",
-        "chr": "_",
-        "x": 840,
-        "y": 340,
-        "wires": [
-            []
-        ]
     }
 ]
