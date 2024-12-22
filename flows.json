@@ -39,22 +39,6 @@
         "info": ""
     },
     {
-        "id": "ec6678ccf32cce98",
-        "type": "tab",
-        "label": "Backup",
-        "disabled": true,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "aaaa9485612d7317",
-        "type": "tab",
-        "label": "Flux 5",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "bc1a8754bbd79fc2",
         "type": "subflow",
         "name": "Map Device",
@@ -195,9 +179,9 @@
             "e15536583e9491fc",
             "69e746f64c3d00bd"
         ],
-        "x": 34,
+        "x": 24,
         "y": 19,
-        "w": 1012,
+        "w": 1022,
         "h": 292
     },
     {
@@ -247,7 +231,7 @@
         "x": 28,
         "y": 413,
         "w": 1234,
-        "h": 394
+        "h": 434
     },
     {
         "id": "ac3db6b9ccb43199",
@@ -378,8 +362,8 @@
             "568e97383e4285fa",
             "53915f2f274e75b9"
         ],
-        "x": 34,
-        "y": 3389,
+        "x": 44,
+        "y": 3329,
         "w": 932,
         "h": 132
     },
@@ -395,12 +379,10 @@
             "color": "#000000"
         },
         "nodes": [
-            "91ced026339a3eeb",
             "1c2e8d33bf43083e",
             "f138d867ef859cef",
             "caa469a26973d9d2",
             "aa76751f0c815d88",
-            "388cb232c9079e14",
             "28c5da6a4d2da8ba",
             "98e8f77ab6b80fce",
             "836e4535583ce900",
@@ -413,7 +395,6 @@
             "6c48e35750a5c6be",
             "5079e04311e50d49",
             "5b762b2b39d0624e",
-            "444ead931773a916",
             "a3b3a725a704ea19",
             "25c84611b53c2c6f",
             "4e9d0c5c6bb4c0f6",
@@ -423,12 +404,19 @@
             "e36536a63d419b95",
             "59157c73ba907ed4",
             "6e21b41b46590719",
-            "7994bd95bcd2809d"
+            "a48ddca16eceb0d9",
+            "0f3b19615d2461dc",
+            "d3626a9698f6ee89",
+            "3f82e6aed13c8507",
+            "1301edfe0f59a0b1",
+            "50bc4f6c5feac4f8",
+            "a7888e8a0576cd47",
+            "a6a58491fcb5b37b"
         ],
         "x": 24,
-        "y": 2829,
-        "w": 1202,
-        "h": 372
+        "y": 2839,
+        "w": 1342,
+        "h": 382
     },
     {
         "id": "39f5d1f224b9de66",
@@ -610,7 +598,7 @@
         "x": 58,
         "y": 193,
         "w": 844,
-        "h": 224
+        "h": 184
     },
     {
         "id": "066292f6cf9cbfbf",
@@ -730,36 +718,10 @@
             "2dc49f96.3070c",
             "03409f4c678bf6af"
         ],
-        "x": 44,
-        "y": 1529,
+        "x": 74,
+        "y": 729,
         "w": 932,
         "h": 242
-    },
-    {
-        "id": "dfaa0e84286af4c3",
-        "type": "group",
-        "z": "ec6678ccf32cce98",
-        "name": "",
-        "style": {
-            "fill": "#bfdbef",
-            "label": true
-        },
-        "nodes": [
-            "4389fdd1091783d4",
-            "8243b44d05178527",
-            "43c18597783c3def",
-            "836dfbcc857f6e1b",
-            "0beb5ac9e1a01e39",
-            "fb3df188fb17ca18",
-            "2747294b54d3638e",
-            "14aece7b990ed601",
-            "33aac660f2f2aaf2",
-            "5281a6741f7934e9"
-        ],
-        "x": 94,
-        "y": 89,
-        "w": 1148,
-        "h": 578
     },
     {
         "id": "f53bba5e293da6fb",
@@ -778,12 +740,13 @@
             "bed8c9ea7fe6b13c",
             "0bd7f81e66d83a2a",
             "562a0ef8b0073349",
-            "b5fb53396f247251"
+            "b5fb53396f247251",
+            "a49aadec797dbbda"
         ],
-        "x": 64,
+        "x": 74,
         "y": 699,
-        "w": 872,
-        "h": 82
+        "w": 862,
+        "h": 122
     },
     {
         "id": "590af8aa1ccb96c4",
@@ -863,7 +826,6 @@
             "41e9b0574e55c0c8",
             "76b97aaea830e452",
             "beefa0c6950593db",
-            "9bef50d59cc9996a",
             "16e678c55b9af1c2"
         ],
         "x": 48,
@@ -1012,16 +974,13 @@
         "nodes": [
             "798c8432df02e379",
             "1f65d9d6029c1383",
-            "e9d695451b8cd4d1",
-            "267b2d2e30b9fb61",
             "f71406035e082c3c",
-            "80653104c09f9d63",
-            "bd7fea0d471990a7"
+            "80653104c09f9d63"
         ],
         "x": 84,
         "y": 219,
         "w": 792,
-        "h": 172
+        "h": 132
     },
     {
         "id": "2a7669fef789d1e6",
@@ -1081,117 +1040,14 @@
         "h": 152
     },
     {
-        "id": "fb3df188fb17ca18",
-        "type": "group",
-        "z": "ec6678ccf32cce98",
-        "g": "dfaa0e84286af4c3",
-        "name": "Device",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "94a25f5f0f5bbf85",
-            "05ca023428f3e56d",
-            "c4e724fa73826a50",
-            "3769bcc99dded902",
-            "684ea77c83d9bbdd"
-        ],
-        "x": 384,
-        "y": 129,
-        "w": 482,
-        "h": 132
-    },
-    {
-        "id": "2747294b54d3638e",
-        "type": "group",
-        "z": "ec6678ccf32cce98",
-        "g": "dfaa0e84286af4c3",
-        "name": "Sensor",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "64aab75dcd444ffc",
-            "28ac10ee8cd542e9",
-            "1ef6f5d174974bb6",
-            "e1085faa4c4230a7",
-            "52ab5441b29220e9",
-            "563615fee670206d",
-            "5b31bf3dedcd5291",
-            "3ffa0607e4012b62"
-        ],
-        "x": 384,
-        "y": 269,
-        "w": 582,
-        "h": 182
-    },
-    {
-        "id": "14aece7b990ed601",
-        "type": "group",
-        "z": "ec6678ccf32cce98",
-        "g": "dfaa0e84286af4c3",
-        "name": "Attribut",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "e1a553834b10e213",
-            "a865f2936640d964",
-            "9438a863f991294a",
-            "7d807c553d8cc4f8",
-            "12e9604421c4d5b1",
-            "8016eb6039e164b2",
-            "e3e138d6a224ed69",
-            "1660a5a757851231"
-        ],
-        "x": 384,
-        "y": 459,
-        "w": 582,
-        "h": 182
-    },
-    {
-        "id": "33aac660f2f2aaf2",
-        "type": "group",
-        "z": "ec6678ccf32cce98",
-        "g": "dfaa0e84286af4c3",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "842a98af577b1697",
-            "bcfdd06c8e9bf4bf",
-            "c019c31104c9e3fb"
-        ],
-        "x": 974,
-        "y": 379,
-        "w": 242,
-        "h": 132
-    },
-    {
         "id": "a5b04cf60d670697",
         "type": "group",
         "z": "57111ca025f638be",
         "g": "e9631b841926facf",
+        "name": "Configuration",
         "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
             "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
+            "color": "#000000"
         },
         "nodes": [
             "b0ed271801ea7e6e",
@@ -1411,6 +1267,58 @@
         "h": 132
     },
     {
+        "id": "a336ea4b50110cee",
+        "type": "group",
+        "z": "a9c9090b.478498",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "84222b92.d65d18",
+            "7b014430.dfd94c",
+            "b4b9f603.739598",
+            "672d3693.3cabd8",
+            "15f1f5aa.506ffa",
+            "2ab4eba8.267d64",
+            "caa9feabab137443",
+            "92322ac737d147d1"
+        ],
+        "x": 74,
+        "y": 449,
+        "w": 712,
+        "h": 242
+    },
+    {
+        "id": "bc36bc91c1d59edc",
+        "type": "group",
+        "z": "a9c9090b.478498",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "a5e04c4acd4c7138",
+            "7b506d35fcfd9b97",
+            "67c307711a8f6f52",
+            "524d9ccdadd66692"
+        ],
+        "x": 84,
+        "y": 339,
+        "w": 792,
+        "h": 82
+    },
+    {
         "id": "61e088ec657a83ab",
         "type": "junction",
         "z": "d770df178aec257a",
@@ -1427,8 +1335,8 @@
         "type": "junction",
         "z": "57111ca025f638be",
         "g": "4ac0d347446e702f",
-        "x": 550,
-        "y": 3060,
+        "x": 560,
+        "y": 3090,
         "wires": [
             [
                 "0a4b76749339d8cd"
@@ -1440,8 +1348,8 @@
         "type": "junction",
         "z": "57111ca025f638be",
         "g": "4ac0d347446e702f",
-        "x": 550,
-        "y": 3020,
+        "x": 570,
+        "y": 3050,
         "wires": [
             [
                 "a3b3a725a704ea19"
@@ -1453,8 +1361,8 @@
         "type": "junction",
         "z": "57111ca025f638be",
         "g": "4ac0d347446e702f",
-        "x": 650,
-        "y": 2980,
+        "x": 550,
+        "y": 3140,
         "wires": [
             [
                 "0a4b76749339d8cd",
@@ -1468,7 +1376,7 @@
         "z": "57111ca025f638be",
         "g": "4ac0d347446e702f",
         "x": 600,
-        "y": 2950,
+        "y": 2980,
         "wires": [
             [
                 "a3b3a725a704ea19",
@@ -1570,10 +1478,32 @@
         "icon": "mdi-chart-timeline-variant",
         "layout": "grid",
         "theme": "a70602e73bbb2a95",
-        "order": 1,
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 3
+            },
+            {
+                "name": "Tablet",
+                "px": 576,
+                "cols": 6
+            },
+            {
+                "name": "Small Desktop",
+                "px": 768,
+                "cols": 9
+            },
+            {
+                "name": "Desktop",
+                "px": 1024,
+                "cols": 12
+            }
+        ],
+        "order": 2,
         "className": "",
-        "visible": "true",
-        "disabled": "false"
+        "visible": true,
+        "disabled": false
     },
     {
         "id": "ec83ebd45553c336",
@@ -1597,7 +1527,7 @@
         "icon": "mdi-cogs",
         "layout": "grid",
         "theme": "a70602e73bbb2a95",
-        "order": 2,
+        "order": 1,
         "className": "",
         "visible": true,
         "disabled": false
@@ -1674,19 +1604,6 @@
         "disabled": "false"
     },
     {
-        "id": "336cf0cb878743a0",
-        "type": "ui-group",
-        "name": "Rapport système",
-        "page": "2d31725154be688c",
-        "width": "6",
-        "height": "1",
-        "order": 2,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
         "id": "2d31725154be688c",
         "type": "ui-page",
         "name": "Système",
@@ -1699,18 +1616,6 @@
         "className": "",
         "visible": true,
         "disabled": "false"
-    },
-    {
-        "id": "074b315414230834",
-        "type": "ui-theme",
-        "name": "Theme Name",
-        "colors": {
-            "surface": "#ffffff",
-            "primary": "#0094ce",
-            "bgPage": "#eeeeee",
-            "groupBg": "#ffffff",
-            "groupOutline": "#cccccc"
-        }
     },
     {
         "id": "1d5e58c3b82f3637",
@@ -1821,33 +1726,6 @@
         "disabled": "false"
     },
     {
-        "id": "c1499e10fc3a9745",
-        "type": "ui-group",
-        "name": "Flow Viewer",
-        "page": "85043ba28e0273fe",
-        "width": "6",
-        "height": "1",
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "85043ba28e0273fe",
-        "type": "ui-page",
-        "name": "Third Party Widgets",
-        "ui": "d4c9d9e9b37824ea",
-        "path": "/third-party",
-        "icon": "account-group",
-        "layout": "grid",
-        "theme": "129e99574def90a3",
-        "order": 6,
-        "className": "",
-        "visible": true,
-        "disabled": "false"
-    },
-    {
         "id": "129e99574def90a3",
         "type": "ui-theme",
         "name": "Custom Theme",
@@ -1864,33 +1742,6 @@
             "groupBorderRadius": "9px",
             "widgetGap": "6px"
         }
-    },
-    {
-        "id": "9508bb8465b1b1e5",
-        "type": "ui-group",
-        "name": "Default Notification",
-        "page": "0fe97ec4631a4c92",
-        "width": "6",
-        "height": "1",
-        "order": 1,
-        "showTitle": false,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "0fe97ec4631a4c92",
-        "type": "ui-page",
-        "name": "Notification",
-        "ui": "d4c9d9e9b37824ea",
-        "path": "/notification",
-        "icon": "bell-badge-outline",
-        "layout": "notebook",
-        "theme": "9d8bfd7e0d216779",
-        "order": 7,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
     },
     {
         "id": "9d8bfd7e0d216779",
@@ -1911,39 +1762,30 @@
         }
     },
     {
-        "id": "5277f2969e4df951",
-        "type": "ui-group",
-        "name": "Advanced",
-        "page": "5d43941d3f14c655",
-        "width": "6",
-        "height": "1",
-        "order": 1,
-        "showTitle": false,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "5d43941d3f14c655",
-        "type": "ui-page",
-        "name": "Text Input",
-        "ui": "d4c9d9e9b37824ea",
-        "path": "/text-input",
-        "icon": "cursor-text",
-        "layout": "notebook",
-        "theme": "5075a7d8e4947586",
-        "order": 8,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
         "id": "5075a7d8e4947586",
         "type": "ui-theme",
         "name": "Default Theme",
         "colors": {
             "surface": "#ffffff",
             "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "af1e007be91f255e",
+        "type": "ui-theme",
+        "name": "Theme Name",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
             "bgPage": "#eeeeee",
             "groupBg": "#ffffff",
             "groupOutline": "#cccccc"
@@ -2934,7 +2776,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 170,
+        "x": 180,
         "y": 740,
         "wires": [
             [
@@ -2954,7 +2796,7 @@
         "city": "Montreal",
         "country": "CA",
         "language": "fr",
-        "x": 320,
+        "x": 330,
         "y": 740,
         "wires": [
             [
@@ -2975,7 +2817,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
+        "x": 490,
         "y": 740,
         "wires": [
             [
@@ -2992,7 +2834,7 @@
         "sqlquery": "prepared",
         "sql": "INSERT INTO TEMPERATURE_EXTERNE (\n  temperature,\n  humidity,\n  datetime\n)\nVALUES (\n  $temperature,\n  $humidity,\n  datetime('now', 'localtime')\n);\n",
         "name": "Insert data",
-        "x": 640,
+        "x": 650,
         "y": 740,
         "wires": [
             [
@@ -3167,8 +3009,8 @@
         "sqlquery": "fixed",
         "sql": "SELECT id_location, DEV.mac, description, counter,  max(DV.datetime ) as datetime\nFROM DATA_VIEW DV\nLEFT JOIN\n  DEVICE DEV ON DEV.id_device = DV.id_device\nwhere  DV.datetime > datetime('now', 'localtime', '-48 hours')\ngroup by id_location\norder by id_location, datetime ;",
         "name": "Most recent data temperature",
-        "x": 350,
-        "y": 3430,
+        "x": 360,
+        "y": 3370,
         "wires": [
             [
                 "49a66220910d81ef",
@@ -3190,8 +3032,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 830,
-        "y": 3470,
+        "x": 840,
+        "y": 3410,
         "wires": []
     },
     {
@@ -3216,8 +3058,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 3430,
+        "x": 140,
+        "y": 3370,
         "wires": [
             [
                 "8f34a61029fac0cb"
@@ -3237,8 +3079,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 610,
-        "y": 3430,
+        "x": 620,
+        "y": 3370,
         "wires": [
             [
                 "577fd00e89cbfbe3",
@@ -3263,67 +3105,9 @@
         "raw": true,
         "className": "",
         "name": "Erreur de réception",
-        "x": 850,
-        "y": 3430,
+        "x": 860,
+        "y": 3370,
         "wires": []
-    },
-    {
-        "id": "91ced026339a3eeb",
-        "type": "ui-chart",
-        "z": "57111ca025f638be",
-        "g": "4ac0d347446e702f",
-        "group": "ec83ebd45553c336",
-        "name": "Température",
-        "label": "Température",
-        "order": 1,
-        "chartType": "line",
-        "category": "topic",
-        "categoryType": "msg",
-        "xAxisLabel": "",
-        "xAxisProperty": "x",
-        "xAxisPropertyType": "msg",
-        "xAxisType": "time",
-        "xAxisFormat": "",
-        "xAxisFormatType": "ccc HH:mm",
-        "yAxisLabel": "",
-        "yAxisProperty": "y",
-        "ymin": "",
-        "ymax": "",
-        "action": "replace",
-        "stackSeries": false,
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": true,
-        "removeOlder": "10",
-        "removeOlderUnit": "86400",
-        "removeOlderPoints": "1000",
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "textColor": [
-            "#666666"
-        ],
-        "textColorDefault": true,
-        "gridColor": [
-            "#e5e5e5"
-        ],
-        "gridColorDefault": true,
-        "width": "7",
-        "height": "4",
-        "className": "msg.class",
-        "x": 1130,
-        "y": 2890,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "1c2e8d33bf43083e",
@@ -3332,14 +3116,13 @@
         "g": "4ac0d347446e702f",
         "mydb": "628739f370d1726d",
         "sqlquery": "msg.topic",
-        "sql": "SELECT mac, id_sensor, \ntemperature, humidity, counter, datetime\nfrom DATA_VIEW\nwhere id_device in ( $ids_devices)\nand datetime > datetime('now', 'localtime', $nbHours )\nand role like 'TEMPERATURE'\nORDER BY id_sensor, datetime asc;\n\n\n",
+        "sql": "SELECT id_location, acronyme, temperature, humidity, counter, datetime\nfrom DATA_VIEW\nwhere datetime > datetime($dateSelected) \nAND datetime < datetime($dateSelected, $nbHours) \nand role like 'TEMPERATURE'\nand id_location IN( $idList)\nORDER BY id_sensor, datetime asc;\n\n",
         "name": "Load temp sensor",
         "x": 710,
-        "y": 2900,
+        "y": 2930,
         "wires": [
             [
-                "e0694b109915343b",
-                "7994bd95bcd2809d"
+                "e0694b109915343b"
             ]
         ]
     },
@@ -3356,14 +3139,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-card title=\"Devices\" flat> </v-card>\n  <v-data-table v-model=\"selected\" :headers=\"headers\" \n    :items=\"devices\" item-value=\"id_device\" items-per-page=\"10\"\n    density=\"compact\"\n    select-strategy=\"page\" show-select return-object \n    >\n   \n    <template v-slot:bottom>\n      <div class=\"text-center pt-2\">\n        <v-pagination :length=\"pageCount\"></v-pagination>\n      </div>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      selected: [],\n      headers: [\n        { title: 'Location', key: 'location', maxWidth:2, sortable: false},\n        { title: 'mac', key: 'mac', maxWidth:2, sortable: false},\n        { title: 'id_device', sortable: false, maxWidth:1, key: 'id_device' },\n        { title: 'id_sensor', key: 'id_sensor', maxWidth:1, sortable: false},\n      ],\n      devices: [],\n    }),\n\n    watch: {\n       msg: function(){\n        this.devices = this.msg.payload\n        this.devices.push({id_device:-1, mac: \"SiteWeb\", location:\"\"});\n      },\n      selected: function () {\n        this.send({devices: this.selected})\n      // flow.set(\"DEVICE-TEST\", this.selected );\n        \n      },\n    },\n    mounted() {\n     // this.devices = this.msg?.payload\n    },\n    computed: {\n      pageCount() {\n        return Math.ceil(this.devices.length / this.itemsPerPage)\n      },\n    },\n  \n  }\n</script>",
+        "format": "<template>\n  <v-card title=\"Devices\" flat> </v-card>\n  <v-data-table v-model=\"selected\" :headers=\"headers\" \n    :items=\"devices\" item-value=\"id_device\" items-per-page=\"10\"\n    density=\"compact\"\n    select-strategy=\"page\" show-select return-object \n    >\n   \n    <template v-slot:bottom>\n      <div class=\"text-center pt-2\">\n        <v-pagination :length=\"pageCount\"></v-pagination>\n      </div>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      selected: [],\n      itemsPerPage: 10,\n      page: 1, \n      headers: [\n        { title: 'Location', key: 'location', maxWidth:2, sortable: false},\n        { title: 'mac', key: 'mac', maxWidth:2, sortable: false},\n        { title: 'id_device', sortable: false, maxWidth:1, key: 'id_device' },\n        { title: 'id_sensor', key: 'id_sensor', maxWidth:1, sortable: false},\n      ],\n      devices: [],\n    }),\n\n    watch: {\n       msg: function(){\n        this.devices = this.msg.payload\n        this.devices.push({id_device:-1, mac: \"SiteWeb\", location:\"\"});\n      },\n      selected: function () {\n        this.send({devices: this.selected})\n      // flow.set(\"DEVICE-TEST\", this.selected );\n        \n      },\n    },\n    mounted() {\n     // this.devices = this.msg?.payload\n    },\n    computed: {\n      pageCount() {\n        return Math.ceil(this.devices.length / this.itemsPerPage)\n      },\n    },\n  \n  }\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 480,
-        "y": 2950,
+        "y": 2980,
         "wires": [
             [
                 "6e21b41b46590719"
@@ -3392,7 +3175,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 120,
-        "y": 2950,
+        "y": 2980,
         "wires": [
             [
                 "836e4535583ce900"
@@ -3413,8 +3196,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 570,
-        "y": 3480,
+        "x": 580,
+        "y": 3420,
         "wires": []
     },
     {
@@ -3511,69 +3294,11 @@
         "payload": "",
         "payloadType": "date",
         "x": 130,
-        "y": 2990,
+        "y": 3020,
         "wires": [
             [
                 "836e4535583ce900"
             ]
-        ]
-    },
-    {
-        "id": "388cb232c9079e14",
-        "type": "ui-chart",
-        "z": "57111ca025f638be",
-        "g": "4ac0d347446e702f",
-        "group": "ec83ebd45553c336",
-        "name": "Humidité",
-        "label": "Humidité",
-        "order": 2,
-        "chartType": "line",
-        "category": "topic",
-        "categoryType": "msg",
-        "xAxisLabel": "",
-        "xAxisProperty": "x",
-        "xAxisPropertyType": "msg",
-        "xAxisType": "time",
-        "xAxisFormat": "",
-        "xAxisFormatType": "ccc HH:mm",
-        "yAxisLabel": "",
-        "yAxisProperty": "y",
-        "ymin": "",
-        "ymax": "",
-        "action": "replace",
-        "stackSeries": false,
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": true,
-        "removeOlder": "10",
-        "removeOlderUnit": "86400",
-        "removeOlderPoints": "1000",
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "textColor": [
-            "#666666"
-        ],
-        "textColorDefault": false,
-        "gridColor": [
-            "#e5e5e5"
-        ],
-        "gridColorDefault": false,
-        "width": "7",
-        "height": "4",
-        "className": "",
-        "x": 1120,
-        "y": 3040,
-        "wires": [
-            []
         ]
     },
     {
@@ -3589,8 +3314,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 890,
-        "y": 3080,
+        "x": 920,
+        "y": 3140,
         "wires": [
             [
                 "0866c283bc7f9752"
@@ -3607,14 +3332,13 @@
         "g": "4ac0d347446e702f",
         "mydb": "628739f370d1726d",
         "sqlquery": "prepared",
-        "sql": "SELECT 'SiteWeb' as location, temperature, humidity, datetime\nFROM TEMPERATURE_EXTERNE\nwhere  datetime > datetime($dateSelected) \n     AND datetime < datetime($dateSelected, $nbHours) \n\n -- datetime >  datetime($dateSelected, 'localtime', $nbHours)\norder by datetime asc;",
+        "sql": "SELECT 'SiteWeb' as location, temperature, humidity, datetime\nFROM TEMPERATURE_EXTERNE\nwhere  datetime BETWEEN datetime($dateSelected) \n     AND  datetime($dateSelected, $nbHours) \norder by datetime asc;",
         "name": "Load temp WEB",
-        "x": 720,
-        "y": 3080,
+        "x": 730,
+        "y": 3140,
         "wires": [
             [
-                "28c5da6a4d2da8ba",
-                "444ead931773a916"
+                "28c5da6a4d2da8ba"
             ]
         ]
     },
@@ -3628,7 +3352,7 @@
         "sql": "SELECT DE.id_device,\n      DE.mac,\n      SE.id_sensor, \n      LODE.id_location,\n      LOC.location,\n      LOC.description\n  FROM LOCATION LOC\n      JOIN \n      LOCATION_DEVICE LODE ON LODE.id_location = LOC.id_location\n      JOIN \n       DEVICE DE ON DE.id_device = LODE.id_device\n      JOIN\n      SENSOR SE ON SE.id_device = DE.id_device AND SE.id_role == 1\n WHERE EXISTS (\n      SELECT 1\n        FROM TEMPERATURE\n      WHERE id_location = LOC.id_location\n  )",
         "name": "Load devices",
         "x": 300,
-        "y": 2950,
+        "y": 2980,
         "wires": [
             [
                 "f138d867ef859cef"
@@ -3649,7 +3373,7 @@
         "finalize": "",
         "libs": [],
         "x": 730,
-        "y": 3040,
+        "y": 3080,
         "wires": [
             [
                 "98e8f77ab6b80fce"
@@ -3663,8 +3387,8 @@
         "g": "4ac0d347446e702f",
         "name": "Graphique temperature",
         "info": "",
-        "x": 360,
-        "y": 2870,
+        "x": 1180,
+        "y": 2930,
         "wires": []
     },
     {
@@ -3675,7 +3399,7 @@
         "name": " températures externes - site web",
         "info": "",
         "x": 830,
-        "y": 3000,
+        "y": 3180,
         "wires": []
     },
     {
@@ -3692,13 +3416,14 @@
         "finalize": "",
         "libs": [],
         "x": 900,
-        "y": 2900,
+        "y": 2930,
         "wires": [
             [
-                "91ced026339a3eeb"
+                "50bc4f6c5feac4f8",
+                "a7888e8a0576cd47"
             ],
             [
-                "388cb232c9079e14"
+                "a6a58491fcb5b37b"
             ]
         ],
         "outputLabels": [
@@ -3724,11 +3449,11 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1100,
-        "y": 3000,
+        "x": 1060,
+        "y": 3100,
         "wires": [
             [
-                "91ced026339a3eeb"
+                "a7888e8a0576cd47"
             ]
         ]
     },
@@ -3750,11 +3475,11 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1070,
-        "y": 3090,
+        "x": 1060,
+        "y": 3150,
         "wires": [
             [
-                "388cb232c9079e14"
+                "a6a58491fcb5b37b"
             ]
         ],
         "info": "Délai\r\nCe délais est ajouté pour que la mise à jour du \r\ngraphique fonctionne.\r\nCeci permets de faire un update du graphique après que les sensors ont été chargés."
@@ -3908,7 +3633,7 @@
             "e4aecc6f336ce4bc"
         ],
         "x": 505,
-        "y": 3110,
+        "y": 3140,
         "wires": [
             [
                 "59157c73ba907ed4"
@@ -3922,8 +3647,8 @@
         "g": "b3735df348adb38e",
         "name": "À développer",
         "info": "À développer",
-        "x": 140,
-        "y": 3480,
+        "x": 150,
+        "y": 3420,
         "wires": []
     },
     {
@@ -4235,7 +3960,6 @@
         "g": "abbcf13b0652a794",
         "name": "IN-refresh Devices",
         "links": [
-            "836dfbcc857f6e1b",
             "a147248bb7549068",
             "aecd825fcf9a94de",
             "4b59343b5845de12",
@@ -4279,7 +4003,7 @@
             "70beddcc675e5f7b"
         ],
         "x": 75,
-        "y": 2910,
+        "y": 2940,
         "wires": [
             [
                 "5b762b2b39d0624e"
@@ -4350,7 +4074,7 @@
         "finalize": "",
         "libs": [],
         "x": 180,
-        "y": 2910,
+        "y": 2940,
         "wires": [
             [
                 "836e4535583ce900"
@@ -4495,9 +4219,7 @@
         "g": "2a7669fef789d1e6",
         "name": "Load editor",
         "mode": "link",
-        "links": [
-            "43c18597783c3def"
-        ],
+        "links": [],
         "x": 545,
         "y": 1000,
         "wires": []
@@ -5732,7 +5454,7 @@
         "lastValueOutput": false,
         "outputs": 8,
         "_version": "0.4.1",
-        "x": 350,
+        "x": 360,
         "y": 1590,
         "wires": [
             [
@@ -6164,7 +5886,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-data-table\n    :headers=\"headers\"\n    :items=\"devices\"\n    :items-per-page=\"10\"\n    class=\"elevation-1\"\n  >\n    <template v-slot:top>\n      <v-toolbar flat>\n        <v-toolbar-title>Devices</v-toolbar-title>\n        <v-divider class=\"mx-4\" inset vertical></v-divider>\n        <v-spacer></v-spacer>\n        <v-btn color=\"primary\" dark class=\"mb-2\" @click=\"dataRefresh\">\n          Refresh\n        </v-btn>\n      </v-toolbar>\n      <v-dialog v-model=\"dialog\" max-width=\"800px\">\n        <v-card>\n          <v-card-title>\n            <span class=\"text-h5\">{{ formTitle }}</span>\n          </v-card-title>\n          <v-card-text>\n            <v-container>\n              <v-row>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                    v-model=\"editedItem.id_device\"\n                    label=\"Device ID\"\n                    readonly\n                  ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                    v-model=\"editedItem.mac\"\n                    label=\"MAC Address\"\n                    readonly\n                  ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                    v-model=\"editedItem.location\"\n                    label=\"Location\"\n                    readonly\n                  ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                      v-model=\"editedItem.sleep_duration\"\n                      label=\"Sleep duration\"\n                      @update:model-value=\"changeDevice()\"\n                    ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                      v-model=\"editedItem.im_alive_period\"\n                      label=\"ImAlive\"\n                      @update:model-value=\"changeDevice()\"\n                    ></v-text-field>\n                </v-col>\n              </v-row>\n              <v-divider class=\"mt-2 mb-4\"></v-divider>\n              <h3 class=\"mb-2\">Sensors</h3>\n              <v-expansion-panels>\n                <v-expansion-panel\n                  v-for=\"(sensor, sensorIndex) in editedItem.sensors\"\n                  :key=\"sensorIndex\"\n                >\n                  <v-expansion-panel-title>\n                    Sensor {{ sensorIndex + 1 }}\n                    <template v-slot:actions>\n                      <v-btn\n                        icon\n                        small\n                        color=\"error\"\n                        @click.stop=\"removeSensor(sensorIndex)\"\n                      >\n                        <v-icon>mdi-delete</v-icon>\n                      </v-btn>\n                    </template>\n                  </v-expansion-panel-title>\n                  <v-expansion-panel-text>\n                    <v-row>\n                      <v-col cols=\"12\" sm=\"6\">\n                        <v-text-field\n                          v-model.number=\"sensor.id_sensor\"\n                          label=\"Sensor ID\"\n                          readonly\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"6\">\n                        <v-select v-model=\"sensor.sensor_role\" :items=\"roles\" \n                          label=\"Rôle\" \n                          @update:model-value=\"updateSensor(sensorIndex)\">\n                        </v-select>\n                      </v-col>\n                    </v-row>\n                    <v-divider class=\"mt-2 mb-4\"></v-divider>\n                    <h4 class=\"mb-2\">attributs</h4>\n                    <v-row\n                      v-for=\"(attr, attrIndex) in sensor.attributs\"\n                      :key=\"attrIndex\"\n                    >\n                      <v-col cols=\"12\" sm=\"4\">\n                        <v-text-field\n                          v-model.number=\"attr.id_attribut\"\n                          label=\"Attribute ID\"\n                          readonly\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"4\">\n                        <v-text-field\n                          v-model=\"attr.name\"\n                          label=\"Attribute Name\"\n                          @update:model-value=\"updateAttribut(sensor, attrIndex)\"\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"3\">\n                        <v-text-field\n                          v-model.number=\"attr.value\"\n                          label=\"Value\"\n                          @update:model-value=\"updateAttribut(sensor, attrIndex)\"\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"1\">\n                        <v-btn\n                          color=\"error\"\n                          small\n                          @click=\"removeAttribute(sensor, attrIndex)\"\n                          >X</v-btn\n                        >\n                      </v-col>\n                    </v-row>\n                    <v-btn color=\"success\" small @click=\"addAttribute(sensor)\"\n                      >Add Attribute</v-btn\n                    >\n                  </v-expansion-panel-text>\n                </v-expansion-panel>\n              </v-expansion-panels>\n              <v-btn color=\"success\" class=\"mt-4\" @click=\"addSensor\"\n                >Add Sensor</v-btn\n              >\n            </v-container>\n          </v-card-text>\n          <v-card-actions>\n            <v-spacer></v-spacer>\n            <v-btn color=\"blue darken-1\" @click=\"close\">Cancel</v-btn>\n            <v-btn color=\"blue darken-1\" @click=\"save\">Save</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </template>\n    <template v-slot:item.actions=\"{ item }\">\n      <v-icon small class=\"mr-2\" @click=\"editItem(item)\"> mdi-pencil </v-icon>\n       <v-icon small class=\"mr-2\" @click=\"sendConfig(item)\"> mdi-rss  </v-icon>\n    </template>\n    <template v-slot:item.sensors=\"{ item }\">\n      {{ item.sensors.length }} sensors\n      <v-tooltip bottom max-width=\"400\">\n        <template v-slot:activator=\"{ props }\">\n          <v-icon small v-bind=\"props\">mdi-information</v-icon>\n        </template>\n        <v-card>\n          <v-card-text>\n            <div\n              v-for=\"(sensor, sIndex) in item.sensors\"\n              :key=\"sensor.id_sensor\"\n              class=\"mb-4\"\n            >\n              <h2>Sensor {{ sIndex + 1 }}:</h2>\n              {{ sensor.id_sensor}} - {{ sensor.sensor_role }}\n              <v-divider class=\"my-2\"></v-divider>\n              <h4>attributs:</h4>\n              <v-table dense>\n                <template v-slot:default>\n                  <tbody>\n                    <tr\n                      v-for=\"attr in sensor.attributs\"\n                      :key=\"attr.id_attribut\"\n                    >\n                      <td>{{ attr.id_attribut }}</td>\n                      <td>{{ attr.name }}</td>\n                      <td>{{ attr.value }}</td>\n                    </tr>\n                  </tbody>\n                </template>\n              </v-table>\n            </div>\n          </v-card-text>\n        </v-card>\n      </v-tooltip>\n    </template>\n        <template v-slot:bottom>\n          <div class=\"text-center pt-2\">\n            <v-pagination :length=\"pageCount\"></v-pagination>\n          </div>\n        </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      dialog: false,\n      headers: [\n        { title: 'Device ID', key: 'id_device' },\n        { title: 'MAC Address', key: 'mac' },\n        { title: 'Location', key: 'location' },\n        { title: 'Sleep', key: 'sleep_duration' },\n        { title: 'ImAlive', key: 'im_alive_period' },\n        { title: 'Sensors', key: 'sensors' },\n        { title: 'Actions', key: 'actions', sortable: false },\n      ],\n      devices: [ ],\n      editedIndex: -1,\n      editedItem: {\n        id_device: 0,\n        mac: '',\n        sleep_duration: 0,\n        im_alive_period: 0,\n        location: '',\n        sensors: [],\n      },\n      defaultItem: {\n        id_device: 0,\n        mac: '',\n        sleep_duration: 0,\n        im_alive_period: 0,\n        location: '',\n        sensors: [],\n      },\n      changements: {\n        deviceToUpdate: false,\n        sensorsToUpdate: [],\n        attributsToUpdate: [],\n        sensorsToDelete: [],\n        attributsToDelete: [],\n      },\n      roles: ['INDETERMINE'],\n      itemsPerPage: 10,\n    }),\n  watch: {\n    //Sur la réception d'un msg.\n    msg: function(){\n     // this.locations = this.msg.locations;\n      this.devices = this.msg.devices;\n      this.roles = this.msg.rolesList;\n      console.log(\"msg received\");\n    },\n  },\n\n  computed: {\n      formTitle() {\n        return this.editedIndex === -1 ? 'Ajouter Device' : 'Edit Device'\n      },\n\n      pageCount() {\n        return  1; // Math.ceil(this.devices.length / this.itemsPerPage)\n      },\n    },\n\n    created() {\n    },\n\n    methods: {\n      dataRefresh() {\n        this.send({action: \"dataRefresh\"});\n      },\n\n      sendConfig(item){\n        this.send({action: \"sendConfig\", device: item});\n      },\n\n      editItem(item) {\n        this.editedIndex = this.devices.indexOf(item)\n        this.editedItem = JSON.parse(JSON.stringify(item))\n        this.editedItem.sensorsToDelete = []\n        this.dialog = true\n      },\n\n      close() {\n        this.dialog = false\n        this.$nextTick(() => {\n          this.editedItem = JSON.parse(JSON.stringify(this.defaultItem))\n          this.editedIndex = -1\n        })\n        this.changements.deviceToUpdate = false\n        this.changements.sensorsToDelete = []\n        this.changements.sensorsToUpdate = []\n        this.changements.attributsToDelete = []\n        this.changements.attributsToUpdate = []\n      },\n\n      save() {\n        if (this.editedIndex > -1) {\n          this.send({action: \"dataSave\", device: this.editedItem, changements: this.changements});\n          Object.assign(this.devices[this.editedIndex], this.editedItem)\n        } else {\n          this.send({action: \"Unknown\", payload: \"editedIndex == -1 - Quoi faire\"});\n          this.devices.push(this.editedItem)\n        }\n        this.close()\n      },\n\n      changeDevice() {\n        this.changements.deviceToUpdate = true\n      },\n    \n      addSensor() {\n        this.editedItem.sensors.push({\n          id_sensor: -1,\n          name: \"INDETERMINE\",\n          attributs: [],\n        })\n      },\n     \n      removeSensor(index) {\n        let idSensor = this.editedItem.sensors[index].id_sensor\n        \n        if (!this.changements.sensorsToDelete.includes(idSensor)) {\n          this.changements.sensorsToDelete.push(idSensor)\n        }\n       \n        this.editedItem.sensors.splice(index, 1)\n      },\n\n      updateSensor(index) {\n        let idSensor = this.editedItem.sensors[index].id_sensor\n        \n        if(idSensor != -1){\n          if (!this.changements.sensorsToUpdate.includes(idSensor)) {\n            this.changements.sensorsToUpdate.push(idSensor)\n          }\n        }\n      },\n      \n      updateAttribut(sensor, attrIndex) {\n        let idAttribut = sensor.attributs[attrIndex].id_attribut\n\n        if(idAttribut != -1){\n          if (!this.changements.attributsToUpdate.includes(idAttribut)) {\n            this.changements.attributsToUpdate.push(idAttribut)\n          }\n        }\n      },\n\n      addAttribute(sensor) {\n        sensor.attributs.push({\n          id_attribut: -1,\n          name: '',\n          value: 0,\n        })\n      },\n\n      removeAttribute(sensor, attrIndex) {\n        let idAttribut = sensor.attributs[attrIndex].id_attribut\n        \n        if (!this.changements.attributsToDelete.includes(idAttribut)) {\n        this.changements.attributsToDelete.push(idAttribut)\n        }\n        \n        sensor.attributs.splice(attrIndex, 1)\n      },\n    },\n  }\n</script>\n",
+        "format": "<template>\n  <v-data-table\n    v-model:page=\"page\"\n    :items-per-page=\"itemsPerPage\"\n    :headers=\"headers\"\n    :items=\"devices\"\n    class=\"elevation-1\"\n  >\n    <template v-slot:top>\n      <v-toolbar flat>\n        <v-toolbar-title>Devices</v-toolbar-title>\n        <v-divider class=\"mx-4\" inset vertical></v-divider>\n        <v-spacer></v-spacer>\n        <v-btn color=\"primary\" dark class=\"mb-2\" @click=\"dataRefresh\">\n          Refresh\n        </v-btn>\n      </v-toolbar>\n      <v-dialog v-model=\"dialog\" max-width=\"800px\">\n        <v-card>\n          <v-card-title>\n            <span class=\"text-h5\">{{ formTitle }}</span>\n          </v-card-title>\n          <v-card-text>\n            <v-container>\n              <v-row>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                    v-model=\"editedItem.id_device\"\n                    label=\"Device ID\"\n                    readonly\n                  ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                    v-model=\"editedItem.mac\"\n                    label=\"MAC Address\"\n                    readonly\n                  ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                    v-model=\"editedItem.location\"\n                    label=\"Location\"\n                    readonly\n                  ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                      v-model=\"editedItem.sleep_duration\"\n                      label=\"Sleep duration\"\n                      @update:model-value=\"changeDevice()\"\n                    ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                      v-model=\"editedItem.im_alive_period\"\n                      label=\"ImAlive\"\n                      @update:model-value=\"changeDevice()\"\n                    ></v-text-field>\n                </v-col>\n              </v-row>\n              <v-divider class=\"mt-2 mb-4\"></v-divider>\n              <h3 class=\"mb-2\">Sensors</h3>\n              <v-expansion-panels>\n                <v-expansion-panel\n                  v-for=\"(sensor, sensorIndex) in editedItem.sensors\"\n                  :key=\"sensorIndex\"\n                >\n                  <v-expansion-panel-title>\n                    Sensor {{ sensorIndex + 1 }}\n                    <template v-slot:actions>\n                      <v-btn\n                        icon\n                        small\n                        color=\"error\"\n                        @click.stop=\"removeSensor(sensorIndex)\"\n                      >\n                        <v-icon>mdi-delete</v-icon>\n                      </v-btn>\n                    </template>\n                  </v-expansion-panel-title>\n                  <v-expansion-panel-text>\n                    <v-row>\n                      <v-col cols=\"12\" sm=\"6\">\n                        <v-text-field\n                          v-model.number=\"sensor.id_sensor\"\n                          label=\"Sensor ID\"\n                          readonly\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"6\">\n                        <v-select v-model=\"sensor.sensor_role\" :items=\"roles\" \n                          label=\"Rôle\" \n                          @update:model-value=\"updateSensor(sensorIndex)\">\n                        </v-select>\n                      </v-col>\n                    </v-row>\n                    <v-divider class=\"mt-2 mb-4\"></v-divider>\n                    <h4 class=\"mb-2\">attributs</h4>\n                    <v-row\n                      v-for=\"(attr, attrIndex) in sensor.attributs\"\n                      :key=\"attrIndex\"\n                    >\n                      <v-col cols=\"12\" sm=\"4\">\n                        <v-text-field\n                          v-model.number=\"attr.id_attribut\"\n                          label=\"Attribute ID\"\n                          readonly\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"4\">\n                        <v-text-field\n                          v-model=\"attr.name\"\n                          label=\"Attribute Name\"\n                          @update:model-value=\"updateAttribut(sensor, attrIndex)\"\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"3\">\n                        <v-text-field\n                          v-model.number=\"attr.value\"\n                          label=\"Value\"\n                          @update:model-value=\"updateAttribut(sensor, attrIndex)\"\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"1\">\n                        <v-btn\n                          color=\"error\"\n                          small\n                          @click=\"removeAttribute(sensor, attrIndex)\"\n                          >X</v-btn\n                        >\n                      </v-col>\n                    </v-row>\n                    <v-btn color=\"success\" small @click=\"addAttribute(sensor)\"\n                      >Add Attribute</v-btn\n                    >\n                  </v-expansion-panel-text>\n                </v-expansion-panel>\n              </v-expansion-panels>\n              <v-btn color=\"success\" class=\"mt-4\" @click=\"addSensor\"\n                >Add Sensor</v-btn\n              >\n            </v-container>\n          </v-card-text>\n          <v-card-actions>\n            <v-spacer></v-spacer>\n            <v-btn color=\"blue darken-1\" @click=\"close\">Cancel</v-btn>\n            <v-btn color=\"blue darken-1\" @click=\"save\">Save</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </template>\n    <template v-slot:item.actions=\"{ item }\">\n      <v-icon small class=\"mr-2\" @click=\"editItem(item)\"> mdi-pencil </v-icon>\n       <v-icon small class=\"mr-2\" @click=\"sendConfig(item)\"> mdi-rss  </v-icon>\n    </template>\n    <template v-slot:item.sensors=\"{ item }\">\n      {{ item.sensors.length }} sensors\n      <v-tooltip bottom max-width=\"400\">\n        <template v-slot:activator=\"{ props }\">\n          <v-icon small v-bind=\"props\">mdi-information</v-icon>\n        </template>\n        <v-card>\n          <v-card-text>\n            <div\n              v-for=\"(sensor, sIndex) in item.sensors\"\n              :key=\"sensor.id_sensor\"\n              class=\"mb-4\"\n            >\n              <h2>Sensor {{ sIndex + 1 }}:</h2>\n              {{ sensor.id_sensor}} - {{ sensor.sensor_role }}\n              <v-divider class=\"my-2\"></v-divider>\n              <h4>attributs:</h4>\n              <v-table dense>\n                <template v-slot:default>\n                  <tbody>\n                    <tr\n                      v-for=\"attr in sensor.attributs\"\n                      :key=\"attr.id_attribut\"\n                    >\n                      <td>{{ attr.id_attribut }}</td>\n                      <td>{{ attr.name }}</td>\n                      <td>{{ attr.value }}</td>\n                    </tr>\n                  </tbody>\n                </template>\n              </v-table>\n            </div>\n          </v-card-text>\n        </v-card>\n      </v-tooltip>\n    </template>\n    <template v-slot:bottom>\n      <div class=\"text-center pt-2\">\n        <v-pagination v-model=\"page\" :length=\"pageCount\"></v-pagination>\n      </div>\n    </template>\n     <!--   <template v-slot:bottom>\n          <div class=\"text-center pt-2\">\n            <v-pagination :length=\"pageCount\"></v-pagination>\n          </div>\n        </template> -->\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      dialog: false,\n      page: 1,\n      headers: [\n        { title: 'Device ID', key: 'id_device' },\n        { title: 'MAC Address', key: 'mac' },\n        { title: 'Location', key: 'location' },\n        { title: 'Sleep', key: 'sleep_duration' },\n        { title: 'ImAlive', key: 'im_alive_period' },\n        { title: 'Sensors', key: 'sensors' },\n        { title: 'Actions', key: 'actions', sortable: false },\n      ],\n      devices: [ ],\n      editedIndex: -1,\n      editedItem: {\n        id_device: 0,\n        mac: '',\n        sleep_duration: 0,\n        im_alive_period: 0,\n        location: '',\n        sensors: [],\n      },\n      defaultItem: {\n        id_device: 0,\n        mac: '',\n        sleep_duration: 0,\n        im_alive_period: 0,\n        location: '',\n        sensors: [],\n      },\n      changements: {\n        deviceToUpdate: false,\n        sensorsToUpdate: [],\n        attributsToUpdate: [],\n        sensorsToDelete: [],\n        attributsToDelete: [],\n      },\n      roles: ['INDETERMINE'],\n      itemsPerPage: 7,\n    }),\n  watch: {\n    //Sur la réception d'un msg.\n    msg: function(){\n     // this.locations = this.msg.locations;\n      this.devices = this.msg.devices;\n      this.roles = this.msg.rolesList;\n      console.log(\"msg received\");\n    },\n  },\n\n  computed: {\n      formTitle() {\n        return this.editedIndex === -1 ? 'Ajouter Device' : 'Edit Device'\n      },\n\n      pageCount() {\n        return Math.ceil(this.devices.length / this.itemsPerPage);\n      },\n    },\n\n    created() {\n    },\n\n    methods: {\n      dataRefresh() {\n        this.send({action: \"dataRefresh\"});\n      },\n\n      sendConfig(item){\n        this.send({action: \"sendConfig\", device: item});\n      },\n\n      editItem(item) {\n        this.editedIndex = this.devices.indexOf(item)\n        this.editedItem = JSON.parse(JSON.stringify(item))\n        this.editedItem.sensorsToDelete = []\n        this.dialog = true\n      },\n\n      close() {\n        this.dialog = false\n        this.$nextTick(() => {\n          this.editedItem = JSON.parse(JSON.stringify(this.defaultItem))\n          this.editedIndex = -1\n        })\n        this.changements.deviceToUpdate = false\n        this.changements.sensorsToDelete = []\n        this.changements.sensorsToUpdate = []\n        this.changements.attributsToDelete = []\n        this.changements.attributsToUpdate = []\n      },\n\n      save() {\n        if (this.editedIndex > -1) {\n          this.send({action: \"dataSave\", device: this.editedItem, changements: this.changements});\n          Object.assign(this.devices[this.editedIndex], this.editedItem)\n        } else {\n          this.send({action: \"Unknown\", payload: \"editedIndex == -1 - Quoi faire\"});\n          this.devices.push(this.editedItem)\n        }\n        this.close()\n      },\n\n      changeDevice() {\n        this.changements.deviceToUpdate = true\n      },\n    \n      addSensor() {\n        this.editedItem.sensors.push({\n          id_sensor: -1,\n          name: \"INDETERMINE\",\n          attributs: [],\n        })\n      },\n     \n      removeSensor(index) {\n        let idSensor = this.editedItem.sensors[index].id_sensor\n        \n        if (!this.changements.sensorsToDelete.includes(idSensor)) {\n          this.changements.sensorsToDelete.push(idSensor)\n        }\n       \n        this.editedItem.sensors.splice(index, 1)\n      },\n\n      updateSensor(index) {\n        let idSensor = this.editedItem.sensors[index].id_sensor\n        \n        if(idSensor != -1){\n          if (!this.changements.sensorsToUpdate.includes(idSensor)) {\n            this.changements.sensorsToUpdate.push(idSensor)\n          }\n        }\n      },\n      \n      updateAttribut(sensor, attrIndex) {\n        let idAttribut = sensor.attributs[attrIndex].id_attribut\n\n        if(idAttribut != -1){\n          if (!this.changements.attributsToUpdate.includes(idAttribut)) {\n            this.changements.attributsToUpdate.push(idAttribut)\n          }\n        }\n      },\n\n      addAttribute(sensor) {\n        sensor.attributs.push({\n          id_attribut: -1,\n          name: '',\n          value: 0,\n        })\n      },\n\n      removeAttribute(sensor, attrIndex) {\n        let idAttribut = sensor.attributs[attrIndex].id_attribut\n        \n        if (!this.changements.attributsToDelete.includes(idAttribut)) {\n        this.changements.attributsToDelete.push(idAttribut)\n        }\n        \n        sensor.attributs.splice(attrIndex, 1)\n      },\n    },\n  }\n</script>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -6260,7 +5982,7 @@
         "z": "57111ca025f638be",
         "g": "a5b04cf60d670697",
         "name": "debug 212",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -6292,7 +6014,7 @@
         "z": "57111ca025f638be",
         "g": "a5b04cf60d670697",
         "name": "debug 213",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -6494,24 +6216,6 @@
         "wires": []
     },
     {
-        "id": "444ead931773a916",
-        "type": "debug",
-        "z": "57111ca025f638be",
-        "g": "4ac0d347446e702f",
-        "name": "debug 217",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 870,
-        "y": 3160,
-        "wires": []
-    },
-    {
         "id": "a3b3a725a704ea19",
         "type": "function",
         "z": "57111ca025f638be",
@@ -6524,8 +6228,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 730,
-        "y": 2950,
+        "x": 740,
+        "y": 3000,
         "wires": [
             [
                 "1c2e8d33bf43083e"
@@ -6559,7 +6263,7 @@
         "iconPosition": "left",
         "iconInnerPosition": "inside",
         "x": 450,
-        "y": 3020,
+        "y": 3050,
         "wires": [
             [
                 "e982725746f62c93",
@@ -6595,7 +6299,7 @@
         "colorTrack": "green",
         "colorThumb": "",
         "x": 450,
-        "y": 3060,
+        "y": 3090,
         "wires": [
             [
                 "e982725746f62c93",
@@ -6617,7 +6321,7 @@
         "finalize": "",
         "libs": [],
         "x": 290,
-        "y": 3040,
+        "y": 3070,
         "wires": [
             [
                 "25c84611b53c2c6f"
@@ -6641,12 +6345,12 @@
             }
         ],
         "repeat": "",
-        "crontab": "",
+        "crontab": "00 00 * * *",
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
         "x": 130,
-        "y": 3040,
+        "y": 3070,
         "wires": [
             [
                 "64d643221c0ebd2a"
@@ -6654,7 +6358,94 @@
         ]
     },
     {
-        "id": "7994bd95bcd2809d",
+        "id": "a48ddca16eceb0d9",
+        "type": "function",
+        "z": "57111ca025f638be",
+        "d": true,
+        "g": "4ac0d347446e702f",
+        "name": "Params",
+        "func": "if (msg.topic === \"Slider\") {\n    flow.set('Slider', msg.payload);\n}\nif (msg.topic === \"DatePicker\") {\n    flow.set('DatePicker', msg.payload);\n}\n\n//On garde en mémoire la liste de mac.\nlet idList = context.get(\"idList\") || [];\n\nif (msg.devices != undefined) {\n    idList = [];\n    msg.devices.forEach(function (device) {\n        if (device.id_sensor != undefined) {\n            idList.push(device.id_location);\n            context.set(\"idList\", idList)\n        }\n    });\n}\n\nlet nbHours;\nlet dateSelected;\n\nnbHours = '+' +  flow.get('Slider') + ' hours'\ndateSelected =  flow.get('DatePicker');\n\n\nmsg.topic = \"SELECT id_location, acronyme, temperature, humidity, counter, datetime\"\n    + \" from DATA_VIEW\"\n    + \" where id_location in ( \" + idList.toString() + \"  )\"\n    + \" AND datetime > datetime('\"+ dateSelected + \"') \"\n    + \" AND datetime < datetime('\"+ dateSelected + \"', '\" + nbHours + \"') \"\n    + \" and role like 'TEMPERATURE'\"\n    + \" ORDER BY id_sensor, datetime asc;\"\n\n//    + \" and datetime > datetime('2024-04-15T04:00:00.000Z', 'localtime', '\" + nbHours + \"' )\"\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 2880,
+        "wires": [
+            [
+                "0f3b19615d2461dc"
+            ]
+        ]
+    },
+    {
+        "id": "0f3b19615d2461dc",
+        "type": "sqlite",
+        "z": "57111ca025f638be",
+        "d": true,
+        "g": "4ac0d347446e702f",
+        "mydb": "628739f370d1726d",
+        "sqlquery": "msg.topic",
+        "sql": "SELECT mac, id_sensor, \ntemperature, humidity, counter, datetime\nfrom DATA_VIEW\nwhere id_device in ( $ids_devices)\nand datetime > datetime('now', 'localtime', $nbHours )\nand role like 'TEMPERATURE'\nORDER BY id_sensor, datetime asc;\n\n\n",
+        "name": "Load temp sensor",
+        "x": 860,
+        "y": 2880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d3626a9698f6ee89",
+        "type": "function",
+        "z": "57111ca025f638be",
+        "d": true,
+        "g": "4ac0d347446e702f",
+        "name": "Params",
+        "func": "if (msg.topic === \"Slider\") {\n    flow.set('Slider', msg.payload);\n}\nif (msg.topic === \"DatePicker\") {\n    flow.set('DatePicker', msg.payload);\n}\n\n//On garde en mémoire la liste de mac.\nlet idList = context.get(\"idList\") || [];\n\nif (msg.devices != undefined) {\n    idList = [];\n    msg.devices.forEach(function (device) {\n        if (device.id_sensor != undefined) {\n            idList.push(device.id_location);\n            context.set(\"idList\", idList)\n        }\n    });\n}\n\nlet nbHours;\nlet dateSelected;\n\n//nbHours = '+' +  flow.get('Slider') + ' hours'\n//dateSelected =  flow.get('DatePicker');\n\nmsg.params = {\n    $idList: idList.toString(),\n //   $idList: \" IN (4,6)\",\n    $dateSelected: flow.get('DatePicker'),\n    $nbHours: '+' + flow.get('Slider') + ' hours'\n}\n\n/* msg.topic = \"SELECT id_location, acronyme, temperature, humidity, counter, datetime\"\n    + \" from DATA_VIEW\"\n    + \" where id_location in ( \" + idList.toString() + \"  )\"\n    + \" AND datetime > datetime('\"+ dateSelected + \"') \"\n    + \" AND datetime < datetime('\"+ dateSelected + \"', '\" + nbHours + \"') \"\n    + \" and role like 'TEMPERATURE'\"\n    + \" ORDER BY id_sensor, datetime asc;\"\n */\n//    + \" and datetime > datetime('2024-04-15T04:00:00.000Z', 'localtime', '\" + nbHours + \"' )\"\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 2880,
+        "wires": [
+            [
+                "3f82e6aed13c8507"
+            ]
+        ]
+    },
+    {
+        "id": "3f82e6aed13c8507",
+        "type": "sqlite",
+        "z": "57111ca025f638be",
+        "d": true,
+        "g": "4ac0d347446e702f",
+        "mydb": "628739f370d1726d",
+        "sqlquery": "prepared",
+        "sql": "SELECT id_location, acronyme, temperature, humidity, counter, datetime\nfrom DATA_VIEW\nwhere datetime > datetime($dateSelected) \nAND datetime < datetime($dateSelected, $nbHours) \nand role like 'TEMPERATURE'\nand id_location IN( $idList)\nORDER BY id_sensor, datetime asc;\n\n",
+        "name": "Load temp sensor",
+        "x": 1250,
+        "y": 2880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1301edfe0f59a0b1",
+        "type": "comment",
+        "z": "57111ca025f638be",
+        "g": "4ac0d347446e702f",
+        "name": "Graphique humidité",
+        "info": "",
+        "x": 1240,
+        "y": 3050,
+        "wires": []
+    },
+    {
+        "id": "50bc4f6c5feac4f8",
         "type": "debug",
         "z": "57111ca025f638be",
         "g": "4ac0d347446e702f",
@@ -6667,9 +6458,154 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 920,
-        "y": 2950,
+        "x": 940,
+        "y": 2980,
         "wires": []
+    },
+    {
+        "id": "a7888e8a0576cd47",
+        "type": "ui-chart",
+        "z": "57111ca025f638be",
+        "g": "4ac0d347446e702f",
+        "group": "ec83ebd45553c336",
+        "name": "Temperature",
+        "label": "Température",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "x",
+        "xAxisPropertyType": "property",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "y",
+        "yAxisPropertyType": "property",
+        "ymin": "",
+        "ymax": "",
+        "bins": "",
+        "action": "replace",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "48",
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": "5",
+        "className": "",
+        "interpolation": "linear",
+        "x": 1210,
+        "y": 2970,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a6a58491fcb5b37b",
+        "type": "ui-chart",
+        "z": "57111ca025f638be",
+        "g": "4ac0d347446e702f",
+        "group": "ec83ebd45553c336",
+        "name": "Humidité",
+        "label": "Humidité",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "x",
+        "xAxisPropertyType": "property",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "y",
+        "yAxisPropertyType": "property",
+        "ymin": "",
+        "ymax": "",
+        "bins": "",
+        "action": "replace",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "48",
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": "5",
+        "className": "",
+        "interpolation": "linear",
+        "x": 1220,
+        "y": 3090,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a49aadec797dbbda",
+        "type": "openweathermap in",
+        "z": "57111ca025f638be",
+        "d": true,
+        "g": "f53bba5e293da6fb",
+        "name": "",
+        "wtype": "current",
+        "lon": "",
+        "lat": "",
+        "city": "Montreal",
+        "country": "CA",
+        "language": "fr",
+        "x": 270,
+        "y": 780,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "da939ff73faa3d33",
@@ -7917,24 +7853,6 @@
         "wires": []
     },
     {
-        "id": "9bef50d59cc9996a",
-        "type": "debug",
-        "z": "797d9b2a7151f089",
-        "g": "fa8d72ad90e71a48",
-        "name": "debug 216",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 690,
-        "y": 180,
-        "wires": []
-    },
-    {
         "id": "16e678c55b9af1c2",
         "type": "function",
         "z": "797d9b2a7151f089",
@@ -8000,8 +7918,8 @@
         "g": "836f1c5e6a99b853",
         "mydb": "628739f370d1726d",
         "sqlquery": "fixed",
-        "sql": "delete FROM SYSTEM_LOG\nwhere  datetime < datetime('now', 'localtime', '-2 days')",
-        "name": "Delete SYS_LOG > 2 jours",
+        "sql": "delete FROM SYSTEM_LOG\nwhere  datetime < datetime('now', 'localtime', '-4 days')",
+        "name": "Delete SYS_LOG > 4 jours",
         "x": 730,
         "y": 260,
         "wires": [
@@ -8039,51 +7957,6 @@
         ]
     },
     {
-        "id": "e9d695451b8cd4d1",
-        "type": "inject",
-        "z": "8c02b6694634723d",
-        "g": "836f1c5e6a99b853",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 200,
-        "y": 350,
-        "wires": [
-            [
-                "bd7fea0d471990a7"
-            ]
-        ]
-    },
-    {
-        "id": "267b2d2e30b9fb61",
-        "type": "sqlite",
-        "z": "8c02b6694634723d",
-        "g": "836f1c5e6a99b853",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "fixed",
-        "sql": "delete FROM SYSTEM_LOG\n WHERE id_device = 3",
-        "name": "Delete SYS_LOG id_device = 3",
-        "x": 710,
-        "y": 350,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "f71406035e082c3c",
         "type": "sqlite",
         "z": "8c02b6694634723d",
@@ -8115,27 +7988,9 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 660,
+        "x": 670,
         "y": 310,
         "wires": []
-    },
-    {
-        "id": "bd7fea0d471990a7",
-        "type": "sqlite",
-        "z": "8c02b6694634723d",
-        "g": "836f1c5e6a99b853",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "fixed",
-        "sql": "SELECT count(*)\nFROM SYSTEM_LOG\n WHERE id_device = 3\n-- where  datetime < datetime('now', 'localtime', '-2 days')",
-        "name": "Count Delete SYS_LOG ",
-        "x": 420,
-        "y": 350,
-        "wires": [
-            [
-                "267b2d2e30b9fb61",
-                "80653104c09f9d63"
-            ]
-        ]
     },
     {
         "id": "6549eeb2ee54469e",
@@ -9233,8 +9088,8 @@
         "d": true,
         "g": "d186a865f8290820",
         "name": "",
-        "x": 670,
-        "y": 1610,
+        "x": 700,
+        "y": 810,
         "wires": []
     },
     {
@@ -9259,8 +9114,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 450,
-        "y": 1570,
+        "x": 480,
+        "y": 770,
         "wires": [
             [
                 "993a1d17b68cf824",
@@ -9275,8 +9130,8 @@
         "g": "d186a865f8290820",
         "name": "",
         "butt": "1",
-        "x": 270,
-        "y": 1600,
+        "x": 300,
+        "y": 800,
         "wires": [
             []
         ]
@@ -9287,8 +9142,8 @@
         "z": "a9c9090b.478498",
         "g": "d186a865f8290820",
         "name": "",
-        "x": 660,
-        "y": 1570,
+        "x": 690,
+        "y": 770,
         "wires": []
     },
     {
@@ -9303,8 +9158,8 @@
         "debounce": "25",
         "read": false,
         "bcm": true,
-        "x": 370,
-        "y": 1640,
+        "x": 400,
+        "y": 840,
         "wires": [
             []
         ]
@@ -9323,8 +9178,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 840,
-        "y": 1610,
+        "x": 870,
+        "y": 810,
         "wires": []
     },
     {
@@ -9335,8 +9190,8 @@
         "g": "d186a865f8290820",
         "name": "",
         "serial": "338b8e1916d50651",
-        "x": 650,
-        "y": 1660,
+        "x": 680,
+        "y": 860,
         "wires": [
             [
                 "67442326259348aa"
@@ -9368,8 +9223,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 140,
-        "y": 1690,
+        "x": 170,
+        "y": 890,
         "wires": [
             [
                 "87129503.c7b358"
@@ -9389,8 +9244,8 @@
         "septopics": true,
         "property": "payload",
         "topi": "topic",
-        "x": 350,
-        "y": 1710,
+        "x": 380,
+        "y": 910,
         "wires": [
             [
                 "5e2ffc27.c61dd4"
@@ -9409,8 +9264,8 @@
         "tostatus": false,
         "complete": "payload",
         "targetType": "msg",
-        "x": 560,
-        "y": 1710,
+        "x": 590,
+        "y": 910,
         "wires": []
     },
     {
@@ -9426,37 +9281,12 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 140,
-        "y": 1730,
+        "x": 170,
+        "y": 930,
         "wires": [
             [
                 "87129503.c7b358"
             ]
-        ]
-    },
-    {
-        "id": "3747ef966e4122fd",
-        "type": "ui-template",
-        "z": "a9c9090b.478498",
-        "d": true,
-        "group": "5b69d242410edd23",
-        "page": "",
-        "ui": "",
-        "name": "",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n  <v-data-table\n    :headers=\"headers\"\n    :items=\"devices\"\n    :items-per-page=\"5\"\n    class=\"elevation-1\"\n  >\n    <template v-slot:top>\n      <v-toolbar flat>\n        <v-toolbar-title>Devices</v-toolbar-title>\n        <v-divider class=\"mx-4\" inset vertical></v-divider>\n        <v-spacer></v-spacer>\n        <v-btn color=\"primary\" dark class=\"mb-2\" @click=\"addNewItem\">\n          Add New Device\n        </v-btn>\n      </v-toolbar>\n      <v-dialog v-model=\"dialog\" max-width=\"800px\">\n        <v-card>\n          <v-card-title>\n            <span class=\"text-h5\">{{ formTitle }}</span>\n          </v-card-title>\n          <v-card-text>\n            <v-container>\n              <v-row>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                    v-model=\"editedItem.id_device\"\n                    label=\"Device ID\"\n                  ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-text-field\n                    v-model=\"editedItem.mac_address\"\n                    label=\"MAC Address\"\n                  ></v-text-field>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-select\n                    v-model=\"editedItem.location\"\n                    :items=\"locations\"\n                    label=\"Location\"\n                  ></v-select>\n                </v-col>\n                <v-col cols=\"12\" sm=\"6\" md=\"4\">\n                  <v-select\n                    v-model=\"editedItem.status\"\n                    :items=\"['Online', 'Offline', 'Maintenance']\"\n                    label=\"Status\"\n                  ></v-select>\n                </v-col>\n              </v-row>\n              <v-divider class=\"mt-2 mb-4\"></v-divider>\n              <h3 class=\"mb-2\">Sensors</h3>\n              <v-expansion-panels>\n                <v-expansion-panel\n                  v-for=\"(sensor, sensorIndex) in editedItem.sensors\"\n                  :key=\"sensorIndex\"\n                >\n                  <v-expansion-panel-title>\n                    Sensor {{ sensorIndex + 1 }}\n                    <template v-slot:actions>\n                      <v-btn\n                        icon\n                        small\n                        color=\"error\"\n                        @click.stop=\"removeSensor(sensorIndex)\"\n                      >\n                        <v-icon>mdi-delete</v-icon>\n                      </v-btn>\n                    </template>\n                  </v-expansion-panel-title>\n                  <v-expansion-panel-text>\n                    <v-row>\n                      <v-col cols=\"12\" sm=\"6\">\n                        <v-text-field\n                          v-model.number=\"sensor.id_sensor\"\n                          label=\"Sensor ID\"\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"6\">\n                        <v-text-field\n                          v-model=\"sensor.name\"\n                          label=\"Sensor Name\"\n                        ></v-text-field>\n                      </v-col>\n                    </v-row>\n                    <v-divider class=\"mt-2 mb-4\"></v-divider>\n                    <h4 class=\"mb-2\">Attributes</h4>\n                    <v-row\n                      v-for=\"(attr, attrIndex) in sensor.attributes\"\n                      :key=\"attrIndex\"\n                    >\n                      <v-col cols=\"12\" sm=\"4\">\n                        <v-text-field\n                          v-model.number=\"attr.id_attr\"\n                          label=\"Attribute ID\"\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"4\">\n                        <v-text-field\n                          v-model=\"attr.name\"\n                          label=\"Attribute Name\"\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"3\">\n                        <v-text-field\n                          v-model.number=\"attr.value\"\n                          label=\"Value\"\n                        ></v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" sm=\"1\">\n                        <v-btn\n                          color=\"error\"\n                          small\n                          @click=\"removeAttribute(sensor, attrIndex)\"\n                          >X</v-btn\n                        >\n                      </v-col>\n                    </v-row>\n                    <v-btn color=\"success\" small @click=\"addAttribute(sensor)\"\n                      >Add Attribute</v-btn\n                    >\n                  </v-expansion-panel-text>\n                </v-expansion-panel>\n              </v-expansion-panels>\n              <v-btn color=\"success\" class=\"mt-4\" @click=\"addSensor\"\n                >Add Sensor</v-btn\n              >\n            </v-container>\n          </v-card-text>\n          <v-card-actions>\n            <v-spacer></v-spacer>\n            <v-btn color=\"blue darken-1\" @click=\"close\">Cancel</v-btn>\n            <v-btn color=\"blue darken-1\" @click=\"save\">Save</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </template>\n    <template v-slot:item.actions=\"{ item }\">\n      <v-icon small class=\"mr-2\" @click=\"editItem(item)\"> mdi-pencil </v-icon>\n    </template>\n    <template v-slot:item.status=\"{ item }\">\n      <v-chip :color=\"getStatusColor(item.status)\" small>\n        {{ item.status }}\n      </v-chip>\n    </template>\n    <template v-slot:item.sensors=\"{ item }\">\n      {{ item.sensors.length }} sensors\n      <v-tooltip bottom max-width=\"400\">\n        <template v-slot:activator=\"{ props }\">\n          <v-icon small v-bind=\"props\">mdi-information</v-icon>\n        </template>\n        <v-card>\n          <v-card-text>\n            <div\n              v-for=\"(sensor, sIndex) in item.sensors\"\n              :key=\"sensor.id_sensor\"\n              class=\"mb-4\"\n            >\n              <h2>Sensor {{ sIndex + 1 }}:</h2>\n              {{ sensor.id_sensor}} - {{ sensor.name }}\n              <v-divider class=\"my-2\"></v-divider>\n              <h4>Attributes:</h4>\n              <v-table dense>\n                <template v-slot:default>\n                  <tbody>\n                    <tr v-for=\"attr in sensor.attributes\" :key=\"attr.id_attr\">\n                      <td>{{ attr.id_attr }}</td>\n                      <td>{{ attr.name }}</td>\n                      <td>{{ attr.value.toFixed(2) }}</td>\n                    </tr>\n                  </tbody>\n                </template>\n              </v-table>\n            </div>\n          </v-card-text>\n        </v-card>\n      </v-tooltip>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      dialog: false,\n      headers: [\n        { text: 'Device ID', value: 'id_device' },\n        { text: 'MAC Address', value: 'mac_address' },\n        { text: 'Location', value: 'location' },\n        { text: 'Status', value: 'status' },\n        { text: 'Sensors', value: 'sensors' },\n        { text: 'Actions', value: 'actions', sortable: false },\n      ],\n      devices: [],\n      editedIndex: -1,\n      editedItem: {\n        id_device: 0,\n        mac_address: '',\n        location: '',\n        status: 'Offline',\n        sensors: [],\n      },\n      defaultItem: {\n        id_device: 0,\n        mac_address: '',\n        location: '',\n        status: 'Offline',\n        sensors: [],\n      },\n      locations: ['PlaceA', 'Cuisine', 'Chambre', 'Terrasse'],\n    }),\n\n    computed: {\n      formTitle() {\n        return this.editedIndex === -1 ? 'New Device' : 'Edit Device'\n      },\n    },\n\n    created() {\n      this.addRandomDevices(3)\n    },\n    \n    mounted() {\n      this.addRandomDevices(3)\n    },\n\n    methods: {\n      addRandomDevices(count) {\n        const statuses = ['Online', 'Offline', 'Maintenance']\n        const sensorNames = ['Temperature', 'Humidity', 'Pressure', 'Light']\n        const attributeNames = ['Min', 'Max', 'Average', 'Current']\n        for (let i = 0; i < count; i++) {\n          const sensorCount = Math.floor(Math.random() * 3) + 1 // 1 to 3 sensors per device\n          const sensors = []\n          for (let j = 0; j < sensorCount; j++) {\n            const attributeCount = Math.floor(Math.random() * 3) + 1 // 1 to 3 attributes per sensor\n            const attributes = []\n            for (let k = 0; k < attributeCount; k++) {\n              attributes.push({\n                id_attr: this.generateRandomId(),\n                name: attributeNames[\n                  Math.floor(Math.random() * attributeNames.length)\n                ],\n                value: Math.random() * 100,\n              })\n            }\n            sensors.push({\n              id_sensor: this.generateRandomId(),\n              name: sensorNames[Math.floor(Math.random() * sensorNames.length)],\n              attributes: attributes,\n            })\n          }\n          this.devices.push({\n            id_device: this.generateRandomId(),\n            mac_address: this.generateRandomMac(),\n            location:\n              this.locations[Math.floor(Math.random() * this.locations.length)],\n            status: statuses[Math.floor(Math.random() * statuses.length)],\n            sensors: sensors,\n          })\n        }\n      },\n\n      generateRandomId() {\n        return Math.floor(Math.random() * 10000)\n      },\n\n      generateRandomMac() {\n        return 'XX:XX:XX:XX:XX:XX'.replace(/X/g, () => {\n          return '0123456789ABCDEF'.charAt(Math.floor(Math.random() * 16))\n        })\n      },\n\n      getStatusColor(status) {\n        if (status === 'Online') return 'green'\n        if (status === 'Offline') return 'red'\n        return 'orange'\n      },\n\n      addNewItem() {\n        this.editedIndex = -1\n        this.editedItem = JSON.parse(JSON.stringify(this.defaultItem))\n        this.dialog = true\n      },\n\n      editItem(item) {\n        this.editedIndex = this.devices.indexOf(item)\n        this.editedItem = JSON.parse(JSON.stringify(item))\n        this.dialog = true\n      },\n\n      close() {\n        this.dialog = false\n        this.$nextTick(() => {\n          this.editedItem = JSON.parse(JSON.stringify(this.defaultItem))\n          this.editedIndex = -1\n        })\n      },\n      removeSensor(index) {\n        this.editedItem.sensors.splice(index, 1)\n      },\n\n\n      save() {\n        if (this.editedIndex > -1) {\n          Object.assign(this.devices[this.editedIndex], this.editedItem)\n        } else {\n          this.devices.push(this.editedItem)\n        }\n        this.close()\n      },\n\n      addSensor() {\n        this.editedItem.sensors.push({\n          id_sensor: this.generateRandomId(),\n          name: '',\n          attributes: [],\n        })\n      },\n\n      addAttribute(sensor) {\n        sensor.attributes.push({\n          id_attr: this.generateRandomId(),\n          name: '',\n          value: 0,\n        })\n      },\n\n      removeAttribute(sensor, attrIndex) {\n        sensor.attributes.splice(attrIndex, 1)\n      },\n    },\n  }\n</script>\n",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 140,
-        "y": 300,
-        "wires": [
-            []
         ]
     },
     {
@@ -9472,96 +9302,21 @@
         "height": 0,
         "content": "# Markdown Content\n\nGoes here...",
         "className": "",
-        "x": 880,
-        "y": 1670,
+        "x": 910,
+        "y": 870,
         "wires": [
             []
         ]
     },
     {
-        "id": "c9031ce11cdbdb03",
-        "type": "function",
-        "z": "a9c9090b.478498",
-        "name": "Simulation",
-        "func": "\nmsg = { \"device\": { \"id_device\": 2, \"mac\": \"C0:49:EF:CC:37:4C\", \"sleep_duration\": 1666, \"im_alive_period\": 3600, \n\"sensors\": [{ \"id_sensor\": -1, \"sensor_role\": \"TEMPERATURE\", \n    \"attributs\": [{ \"id_attribut\": 19, \"name\": \"pin\", \"value\": 22 }] }, \n    { \"id_sensor\": -1, \"sensor_role\": \"TEMPERATURE\", \n    \"attributs\": [{ \"id_attribut\": 19, \"name\": \"pin\", \"value\": 22 }] }], \n\"sensorsToDelete\": [] }, \"changements\": { \"deviceToUpdate\": false, \"sensorsToUpdate\": [1100, 2200, 3300, 4400], \"attributsToUpdate\": [2000, 3000, 4000], \"sensorsToDelete\": [1190, 1000, 2000, 3000], \"attributsToDelete\": [1780, 1000, 2000, 3000] }, \"_dashboard\": { \"sourceId\": \"457086935cb6673a\", \"templateId\": \"457086935cb6673a\" }, \"_client\": { \"socketId\": \"5UvBo2b05sbT9eP5AAAD\", \"socketIp\": \"169.254.109.98\" }, \"_msgid\": \"9e9c81602daab2d7\" }\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 360,
-        "y": 1490,
-        "wires": [
-            [
-                "45bd715516f670af"
-            ]
-        ]
-    },
-    {
-        "id": "507d080a20d6ad8d",
-        "type": "inject",
-        "z": "a9c9090b.478498",
-        "name": "Simulation",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 170,
-        "y": 1500,
-        "wires": [
-            [
-                "c9031ce11cdbdb03"
-            ]
-        ]
-    },
-    {
-        "id": "45bd715516f670af",
-        "type": "split",
-        "z": "a9c9090b.478498",
-        "name": "",
-        "splt": "\\n",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "sensor",
-        "property": "device.sensors",
-        "x": 550,
-        "y": 1490,
-        "wires": [
-            [
-                "befd847ae4e19935"
-            ]
-        ]
-    },
-    {
-        "id": "befd847ae4e19935",
-        "type": "debug",
-        "z": "a9c9090b.478498",
-        "name": "debug 211",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 710,
-        "y": 1490,
-        "wires": []
-    },
-    {
         "id": "a5e04c4acd4c7138",
         "type": "ui-button",
         "z": "a9c9090b.478498",
-        "group": "9508bb8465b1b1e5",
+        "g": "bc36bc91c1d59edc",
+        "group": "5b69d242410edd23",
         "name": "Trigger Notification",
         "label": "Send Notification",
-        "order": 1,
+        "order": 7,
         "width": "3",
         "height": "1",
         "emulateClick": false,
@@ -9571,15 +9326,22 @@
         "className": "",
         "icon": "",
         "iconPosition": "left",
-        "payload": "",
+        "payload": "test2",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
         "buttonColor": "green",
         "textColor": "white",
         "iconColor": "",
-        "x": 220,
-        "y": 610,
+        "enableClick": true,
+        "enablePointerdown": true,
+        "pointerdownPayload": "test",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 200,
+        "y": 380,
         "wires": [
             [
                 "7b506d35fcfd9b97"
@@ -9590,6 +9352,7 @@
         "id": "7b506d35fcfd9b97",
         "type": "function",
         "z": "a9c9090b.478498",
+        "g": "bc36bc91c1d59edc",
         "name": "function 6",
         "func": "msg.payload = \"Notification Triggered!\";\nreturn msg;",
         "outputs": 1,
@@ -9598,8 +9361,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
-        "y": 610,
+        "x": 370,
+        "y": 380,
         "wires": [
             [
                 "67c307711a8f6f52"
@@ -9610,189 +9373,35 @@
         "id": "67c307711a8f6f52",
         "type": "ui-notification",
         "z": "a9c9090b.478498",
+        "g": "bc36bc91c1d59edc",
         "ui": "d4c9d9e9b37824ea",
-        "position": "center center",
+        "position": "top right",
         "colorDefault": true,
         "color": "#000000",
-        "displayTime": "5",
+        "displayTime": "0",
         "showCountdown": true,
         "outputs": 1,
         "allowDismiss": true,
         "dismissText": "Close",
+        "allowConfirm": true,
+        "confirmText": "Confirmer",
         "raw": false,
         "className": "",
         "name": "submit-notification",
-        "x": 580,
-        "y": 610,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2fc1b1df36c382eb",
-        "type": "inject",
-        "z": "a9c9090b.478498",
-        "name": "Default ",
-        "props": [
-            {
-                "p": "DatePicker",
-                "v": "",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 170,
-        "y": 500,
+        "x": 560,
+        "y": 380,
         "wires": [
             [
-                "a828407042c3efd5"
+                "524d9ccdadd66692"
             ]
         ]
     },
     {
-        "id": "ad697d6a7f8a4461",
-        "type": "ui-text-input",
-        "z": "a9c9090b.478498",
-        "group": "5277f2969e4df951",
-        "name": "",
-        "label": "Date",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "datetime-local",
-        "tooltip": "",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "clearable": true,
-        "sendOnClear": true,
-        "icon": "",
-        "iconPosition": "left",
-        "iconInnerPosition": "inside",
-        "x": 490,
-        "y": 470,
-        "wires": [
-            [
-                "debd32c6e6fe892d",
-                "9500b9aa1654ab56"
-            ]
-        ]
-    },
-    {
-        "id": "d1b3ab2a4f634c99",
-        "type": "ui-slider",
-        "z": "a9c9090b.478498",
-        "group": "5277f2969e4df951",
-        "name": "",
-        "label": "slider",
-        "tooltip": "",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "outs": "end",
-        "topic": "topic",
-        "topicType": "msg",
-        "thumbLabel": "true",
-        "showTicks": "always",
-        "min": 0,
-        "max": "96",
-        "step": 1,
-        "className": "",
-        "iconPrepend": "",
-        "iconAppend": "",
-        "color": "",
-        "colorTrack": "",
-        "colorThumb": "",
-        "x": 490,
-        "y": 510,
-        "wires": [
-            [
-                "debd32c6e6fe892d",
-                "9e460a88103cf32e"
-            ]
-        ]
-    },
-    {
-        "id": "a8ec6b648da1a39a",
-        "type": "inject",
-        "z": "a9c9090b.478498",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "11",
-        "payloadType": "num",
-        "x": 200,
-        "y": 390,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a828407042c3efd5",
-        "type": "function",
-        "z": "a9c9090b.478498",
-        "name": "Set DateTime",
-        "func": "const d = new Date();\n\n let dateString = d.toLocaleDateString('fr-ca', {\n            year: 'numeric',\n            month: 'numeric',\n            day: 'numeric'\n          });\n\nmsg.payload = dateString + \" 00:00\";\nmsg.topic = \"DatePicker\";\n\nlet msg2 = {};\nmsg2.payload = 24;\nmsg2.topic = \"Slider\"\n\nflow.set(msg.topic, msg.payload);\nflow.set(msg2.topic, msg2.payload);\n\nreturn [msg, msg2];\n\n//return [null, msg];\n",
-        "outputs": 2,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 330,
-        "y": 500,
-        "wires": [
-            [
-                "ad697d6a7f8a4461"
-            ],
-            [
-                "d1b3ab2a4f634c99"
-            ]
-        ]
-    },
-    {
-        "id": "debd32c6e6fe892d",
-        "type": "function",
-        "z": "a9c9090b.478498",
-        "name": "Params",
-        "func": "if (msg.topic === \"Slider\") {\n    flow.set('Slider', msg.payload);\n}\nif (msg.topic === \"DatePicker\") {\n    flow.set('DatePicker', msg.payload);\n}\n\n//On garde en mémoire la liste de mac.\nlet idList = context.get(\"idList\") || [];\n\nif (msg.devices != undefined) {\n    idList = [];\n    msg.devices.forEach(function (device) {\n        if (device.id_sensor != undefined) {\n            idList.push(device.id_location);\n            context.set(\"idList\", idList)\n        }\n    });\n}\n\nlet nbHours;\nlet dateSelected;\n\nnbHours = '+' +  flow.get('Slider') + ' hours'\ndateSelected =  flow.get('DatePicker');\n\n\nmsg.topic = \"SELECT id_location, acronyme, temperature, humidity, counter, datetime\"\n    + \" from DATA_VIEW\"\n    + \" where id_location in ( \" + idList.toString() + \"  )\"\n    + \" AND datetime > datetime('\"+ dateSelected + \"', 'localtime') \"\n    + \" AND datetime < datetime('\"+ dateSelected + \"', 'localtime', '\" + nbHours + \"') \"\n    + \" and role like 'TEMPERATURE'\"\n    + \" ORDER BY id_sensor, datetime asc;\"\n\n//    + \" and datetime > datetime('2024-04-15T04:00:00.000Z', 'localtime', '\" + nbHours + \"' )\"\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 690,
-        "y": 410,
-        "wires": [
-            [
-                "5cc55aecf3ee8575"
-            ]
-        ]
-    },
-    {
-        "id": "5cc55aecf3ee8575",
+        "id": "524d9ccdadd66692",
         "type": "debug",
         "z": "a9c9090b.478498",
-        "name": "debug 221",
+        "g": "bc36bc91c1d59edc",
+        "name": "debug 223",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -9801,846 +9410,23 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 880,
+        "x": 760,
         "y": 380,
         "wires": []
     },
     {
-        "id": "9500b9aa1654ab56",
-        "type": "debug",
-        "z": "a9c9090b.478498",
-        "name": "debug 219",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 710,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "9e460a88103cf32e",
-        "type": "debug",
-        "z": "a9c9090b.478498",
-        "name": "debug 220",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 710,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "4389fdd1091783d4",
-        "type": "ui-template",
-        "z": "ec6678ccf32cce98",
-        "d": true,
-        "g": "dfaa0e84286af4c3",
-        "group": "e4203d846baf0d72",
-        "page": "",
-        "ui": "",
-        "name": "Éditeur device",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n  <v-layout class=\"rounded rounded-md\">\n    <v-app-bar color=\"surface-variant\" title=\"Configuration Device\">\n      <v-btn append-icon=\"mdi-send-circle\" position=\"static\" text=\"Send to device\" variant=\"outlined\" color=\"primary\"\n        @click=\"sendToDevice()\"></v-btn>\n      <v-btn append-icon=\"mdi-refresh\" position=\"static\" text=\"Refresh\" variant=\"outlined\" color=\"primary\"\n        @click=\"refreshBD()\"></v-btn>\n    </v-app-bar>\n\n    <v-navigation-drawer location=\"left\" border=\"1\" width=\"350\">\n      <v-card class=\"mx-auto pa-1\" min-height=\"500\">\n        <v-list bg-color=\"grey-lighten-2\" max-width=\"350\">\n          <v-list-subheader>Devices</v-list-subheader>\n          <v-list-item v-for=\"(item, i) in devices\" :key=\"item.id_device\" color=\"primary\" rounded=\"xl\"\n            @click=\"device = item\">\n            {{ item.id_device }} - {{ item.mac }} \n            <v-btn icon=\"mdi:mdi-delete\" border=\"true\" color=\"blue-grey-darken-1\" size=\"small\" @click=\"deleteDevice()\"></v-btn>\n          </v-list-item>\n        </v-list>\n      </v-card>\n\n    </v-navigation-drawer>\n\n    <v-main >\n      <!-- ========================================================================= -->\n      <!-- Device -->\n      <v-card min-height=\"500\">\n        <v-container class=\"bg-blue-grey-darken-1 pa-5 ma-1\">\n          <v-card class=\"text-Left pa-1 text-caption\" color=\"blue-grey-lighten-2\" title=\"Device\">\n            <v-card-text>\n              {{ device.id_device }} - {{ device.mac }}</v-card-text>\n          </v-card>\n          <v-row>\n            <v-col cols=\"3\">\n              <v-text-field v-model=\"device.location\" label=\"Location\" required density=\"compact\"></v-text-field>\n            </v-col>\n            <v-col cols=\"2\">\n              <v-text-field v-model=\"device.sleep_duration\" label=\"Sleep\" type=\"number\" hide-details required\n                density=\"compact\" />\n            </v-col>\n            <v-col cols=\"2\">\n              <v-text-field v-model=\"device.im_alive_period\" label=\"ImAlive\" type=\"number\" hide-details required\n                density=\"compact\">\n              </v-text-field>\n            </v-col>\n            <v-col cols=\"1\">\n              <v-icon small @click=\"updateDevice()\" icon=\"mdi:mdi-content-save\" :disabled=\"deviceChange\" />\n            </v-col>\n          </v-row>\n        </v-container>\n        <!-- ========================================================================= -->\n        <!-- Sensors -->\n        <v-card class=\"pa-2 ma-1 text-h12\" color=\"blue-grey-lighten-2\" max-width=\"600\">\n          <v-row>\n            <v-col cols=\"2\"> Sensors</v-col>\n            <v-col cols=\"3\">\n              <v-icon small @click=\"addSensor()\"> mdi-plus-circle </v-icon>\n            </v-col>\n          </v-row>\n        </v-card>\n        <v-container class=\"bg-blue-grey-darken-1 mb-1 ma-1\" v-for=\"(sensor, index) in device.sensors\"\n          :key=\"sensor.id_sensor\">\n          <v-row>\n            <v-col cols=\"1\" offset=\"1\" align-self=\"start\">\n              <v-text-field :model-value=\"sensor.id_sensor\" hide-details disabled density=\"compact\"\n                bg-color=\"bg-blue-grey-darken-2\"></v-text-field>\n            </v-col>\n            <v-col cols=\"3\">\n              <v-select v-model=\"sensor.sensor_role\" :items=\"rolesList\" label=\"Rôle\" return-object single-line density=\"compact\">\n              </v-select>\n            </v-col>\n            <v-col cols=\"2\">\n              <v-icon small @click=\"deleteSensor(sensor, index)\" icon=\"mdi:mdi-delete\"></v-icon>\n              <v-icon small @click=\"saveSensor(device, sensor)\" icon=\"mdi:mdi-content-save\"></v-icon>\n            </v-col>\n          </v-row>\n\n          <!-- ================================== Attributs ======================================= -->\n          <!-- En tête -->\n          <v-card class=\"pa-2 ma-1 text-h12\" color=\"blue-grey-lighten-2\">\n            <v-row>\n              <v-col cols=\"2\"> Attributs</v-col>\n              <v-col cols=\"3\">\n                <v-icon small @click=\"addAttribut(sensor)\" icon=\"mdi:mdi-plus-circle\" />\n              </v-col>\n            </v-row>\n          </v-card>\n          <!-- Attributs -- Liste des attributs -->\n          <v-container class=\"bg-blue-grey-darken-1 mb-0\" v-for=\"(attribut, attIndex) in sensor.attributs\">\n            <v-row>\n              <v-col cols=\"1\" offset=\"1\" align-self=\"start\">\n                <v-text-field :model-value=\"attribut.id_attribut\" hide-details disabled density=\"compact\"\n                  bg-color=\"bg-blue-grey-darken-2\"></v-text-field>\n              </v-col>\n              <v-col cols=\"3\">\n                <v-text-field v-model=\"attribut.name\" label=\"Nom\" hide-details required density=\"compact\">\n                </v-text-field>\n              </v-col>\n              <v-col cols=\"3\">\n                <v-text-field v-model=\"attribut.value\" label=\"Valeur\" hide-details required density=\"compact\">\n                </v-text-field>\n              </v-col>\n              <!-- Attributs -- Liste des actions -->\n              <v-col cols=\"2\">\n                <v-icon small @click=\"deleteAttribut(sensor, attribut, attIndex)\" icon=\"mdi:mdi-delete\"> </v-icon>\n                <v-icon small @click=\"saveAttribut(sensor, attribut)\" icon=\"mdi:mdi-content-save\"></v-icon>\n              </v-col>\n            </v-row>\n          </v-container>\n        </v-container>\n      </v-card>\n    </v-main>\n  </v-layout>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n    devices: [],\n    device: {},\n    deviceId: -1,\n    deviceChange: false,\n    attributToUpdate: {},    \n    sensorToUpdate: {},\n    rolesList: [\"ND\"],\n    \n    }),\n    mounted() {\n      this.devices = this.msg?.devices;\n     console.log(\"mounted\");\n    },\n    updated(){\n      this.send({message:\"updated\"});\n    },\n    onInput(){\n      this.send({message:\"onInput\"});\n    },\n    watch: {\n      msg: function(){\n        switch(this.msg.action){\n          case \"loadDevices\":\n            this.rolesList = this.msg.rolesList;\n            this.devices = this.msg.devices;\n            break;\n          case  \"attributLastId\":\n             this.attributToUpdate.id_attribut = this.msg.insertId;\n            break;\n           case  \"sensorLastId\":\n             this.sensorToUpdate.id_sensor = this.msg.insertId;\n            break;\n         default:\n           \n        }\n        \n      }\n    },\n    methods: {\n      refreshBD() {\n            this.send({type: \"refreshBD\"});\n      },\n      sendToDevice() {\n        this.send({type: \"configuration\",action: \"send\",device: this.device});\n        \n      },\n      updateDevice() {\n        this.send({type: \"device\",action: \"update\",device: this.device});\n      },\n      deleteDevice() {\n        this.send({type: \"device\",action:\"delete\",device: this.device});\n      },      \n      saveSensor(device, sensor) {\n        if(sensor.id_sensor === -1){\n          this.sensorToUpdate = sensor;\n          this.send({type: \"sensor\",action:\"insert\",device: device, sensor: sensor});\n        }else{\n          this.send({type: \"sensor\",action:\"update\",device: device, sensor: sensor});\n        }\n      },\n      saveAttribut(sensor, attribut) {\n        this.attributToUpdate = attribut;\n\n        if (attribut.id_attribut == -1) {\n          console.log(\"Ajout attribut à la BD\")\n          this.send({type: \"attribut\",action:\"insert\",id_sensor: sensor.id_sensor, attribut: attribut});\n        }else{\n          this.send({type:\"attribut\", action:\"update\", attribut: attribut});\n        }\n      },\n      updateSensor(index) {\n        //Ne fait rien\n      },\n      addSensor() {\n        this.device.sensors.push({\n          id_sensor: -1,\n          attributs: [],\n        })\n      },\n      \n      addAttribut(sensor) {\n        sensor.attributs.push({\n          id_attribut: -1,\n          name: 'XXX',\n          value: 0\n        });\n        console.log('test')\n      },\n      deleteSensor(sensor, index) {\n        let x = this.device.sensors.splice(index, 1)\n        this.send({type: \"sensor\",action:\"delete\",sensor:sensor});\n      },\n      deleteAttribut(sensor, attribut, attIndex) {\n        let x = sensor.attributs.splice(attIndex, 1);\n        this.send({type: \"attribut\", action: \"delete\", attribut: attribut});\n      },\n    },\n  }\n</script>",
-        "storeOutMessages": true,
-        "passthru": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 250,
-        "y": 200,
-        "wires": [
-            [
-                "8243b44d05178527",
-                "5281a6741f7934e9"
-            ]
-        ]
-    },
-    {
-        "id": "8243b44d05178527",
-        "type": "switch",
-        "z": "ec6678ccf32cce98",
-        "g": "dfaa0e84286af4c3",
-        "name": "Type data",
-        "property": "type",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "device",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "sensor",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "attribut",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "refreshBD",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "configuration",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "false",
-        "repair": true,
-        "outputs": 6,
-        "x": 200,
-        "y": 340,
-        "wires": [
-            [
-                "c4e724fa73826a50"
-            ],
-            [
-                "64aab75dcd444ffc"
-            ],
-            [
-                "e1a553834b10e213"
-            ],
-            [
-                "836dfbcc857f6e1b"
-            ],
-            [
-                "0beb5ac9e1a01e39"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "43c18597783c3def",
-        "type": "link in",
-        "z": "ec6678ccf32cce98",
-        "g": "dfaa0e84286af4c3",
-        "name": "IN-EditeurDevice",
-        "links": [
-            "c019c31104c9e3fb",
-            "e114f876591ccfa1"
-        ],
-        "x": 135,
-        "y": 200,
-        "wires": [
-            [
-                "4389fdd1091783d4"
-            ]
-        ]
-    },
-    {
-        "id": "836dfbcc857f6e1b",
-        "type": "link out",
-        "z": "ec6678ccf32cce98",
-        "g": "dfaa0e84286af4c3",
-        "name": "Request - Refresh Device",
-        "mode": "link",
-        "links": [
-            "5e2d481f338e5d45"
-        ],
-        "x": 315,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "0beb5ac9e1a01e39",
-        "type": "link out",
-        "z": "ec6678ccf32cce98",
-        "g": "dfaa0e84286af4c3",
-        "name": "Send configuration out",
-        "mode": "link",
-        "links": [],
-        "x": 285,
-        "y": 470,
-        "wires": []
-    },
-    {
-        "id": "94a25f5f0f5bbf85",
-        "type": "change",
-        "z": "ec6678ccf32cce98",
-        "g": "fb3df188fb17ca18",
-        "name": "Params",
-        "rules": [
-            {
-                "t": "set",
-                "p": "params.$id_device",
-                "pt": "msg",
-                "to": "device.id_device",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "params.$sleep_duration",
-                "pt": "msg",
-                "to": "device.sleep_duration",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "params.$im_alive_period",
-                "pt": "msg",
-                "to": "device.im_alive_period",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 610,
-        "y": 180,
-        "wires": [
-            [
-                "05ca023428f3e56d"
-            ]
-        ]
-    },
-    {
-        "id": "05ca023428f3e56d",
-        "type": "sqlite",
-        "z": "ec6678ccf32cce98",
-        "g": "fb3df188fb17ca18",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "prepared",
-        "sql": "UPDATE DEVICE \nSET sleep_duration = $sleep_duration,\n  im_alive_period = $im_alive_period,\n  datetime = strftime('%s','now')\nWHERE id_device = $id_device;",
-        "name": "Update",
-        "x": 780,
-        "y": 170,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c4e724fa73826a50",
-        "type": "switch",
-        "z": "ec6678ccf32cce98",
-        "g": "fb3df188fb17ca18",
-        "name": "Action",
-        "property": "action",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "update",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "delete",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 460,
-        "y": 190,
-        "wires": [
-            [
-                "94a25f5f0f5bbf85"
-            ],
-            [
-                "3769bcc99dded902"
-            ]
-        ]
-    },
-    {
-        "id": "3769bcc99dded902",
-        "type": "change",
-        "z": "ec6678ccf32cce98",
-        "g": "fb3df188fb17ca18",
-        "name": "Params",
-        "rules": [
-            {
-                "t": "set",
-                "p": "params.$id_device",
-                "pt": "msg",
-                "to": "device.id_device",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 610,
-        "y": 220,
-        "wires": [
-            [
-                "684ea77c83d9bbdd"
-            ]
-        ]
-    },
-    {
-        "id": "684ea77c83d9bbdd",
-        "type": "sqlite",
-        "z": "ec6678ccf32cce98",
-        "g": "fb3df188fb17ca18",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "prepared",
-        "sql": "DELETE FROM DEVICE\nWHERE id_device = $id_device;",
-        "name": "Delete",
-        "x": 770,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "64aab75dcd444ffc",
-        "type": "switch",
-        "z": "ec6678ccf32cce98",
-        "g": "2747294b54d3638e",
-        "name": "Action",
-        "property": "action",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "update",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "insert",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "delete",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 3,
-        "x": 460,
-        "y": 360,
-        "wires": [
-            [
-                "28ac10ee8cd542e9"
-            ],
-            [
-                "1ef6f5d174974bb6"
-            ],
-            [
-                "e1085faa4c4230a7"
-            ]
-        ]
-    },
-    {
-        "id": "28ac10ee8cd542e9",
-        "type": "change",
-        "z": "ec6678ccf32cce98",
-        "g": "2747294b54d3638e",
-        "name": "Params",
-        "rules": [
-            {
-                "t": "set",
-                "p": "params.$id_sensor",
-                "pt": "msg",
-                "to": "sensor.id_sensor",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "params.$sensor_role",
-                "pt": "msg",
-                "to": "sensor.sensor_role",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 600,
-        "y": 320,
-        "wires": [
-            [
-                "5b31bf3dedcd5291"
-            ]
-        ],
-        "info": "Update"
-    },
-    {
-        "id": "1ef6f5d174974bb6",
-        "type": "change",
-        "z": "ec6678ccf32cce98",
-        "g": "2747294b54d3638e",
-        "name": "Params",
-        "rules": [
-            {
-                "t": "set",
-                "p": "params.$id_device",
-                "pt": "msg",
-                "to": "device.id_device",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "params.$sensor_role",
-                "pt": "msg",
-                "to": "sensor.sensor_role",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 600,
-        "y": 360,
-        "wires": [
-            [
-                "563615fee670206d"
-            ]
-        ]
-    },
-    {
-        "id": "e1085faa4c4230a7",
-        "type": "change",
-        "z": "ec6678ccf32cce98",
-        "g": "2747294b54d3638e",
-        "name": "Params",
-        "rules": [
-            {
-                "t": "set",
-                "p": "params.$id_sensor",
-                "pt": "msg",
-                "to": "sensor.id_sensor",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 600,
-        "y": 400,
-        "wires": [
-            [
-                "52ab5441b29220e9"
-            ]
-        ]
-    },
-    {
-        "id": "52ab5441b29220e9",
-        "type": "sqlite",
-        "z": "ec6678ccf32cce98",
-        "g": "2747294b54d3638e",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "prepared",
-        "sql": "DELETE FROM SENSOR\nWHERE id_sensor = $id_sensor;",
-        "name": "Delete",
-        "x": 730,
-        "y": 410,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "563615fee670206d",
-        "type": "sqlite",
-        "z": "ec6678ccf32cce98",
-        "g": "2747294b54d3638e",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "prepared",
-        "sql": "INSERT INTO SENSOR (\n    id_device,\n    id_role)\nVALUES( \n    $id_device,\n    (   SELECT id_role \n        FROM SENSOR_ROLE\n        where role like $sensor_role)\n);\n",
-        "name": "Insert ",
-        "x": 730,
-        "y": 360,
-        "wires": [
-            [
-                "3ffa0607e4012b62"
-            ]
-        ]
-    },
-    {
-        "id": "5b31bf3dedcd5291",
-        "type": "sqlite",
-        "z": "ec6678ccf32cce98",
-        "g": "2747294b54d3638e",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "prepared",
-        "sql": "UPDATE SENSOR\nSET id_role = \n    (SELECT id_role \n     FROM SENSOR_ROLE\n     where role like $sensor_role)\n WHERE id_sensor = $id_sensor;\n",
-        "name": "Update ",
-        "x": 740,
-        "y": 310,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3ffa0607e4012b62",
-        "type": "sqlite",
-        "z": "ec6678ccf32cce98",
-        "g": "2747294b54d3638e",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "fixed",
-        "sql": "SELECT last_insert_rowid();",
-        "name": "Get last ID",
-        "x": 870,
-        "y": 360,
-        "wires": [
-            [
-                "bcfdd06c8e9bf4bf"
-            ]
-        ]
-    },
-    {
-        "id": "e1a553834b10e213",
-        "type": "switch",
-        "z": "ec6678ccf32cce98",
-        "g": "14aece7b990ed601",
-        "name": "Action",
-        "property": "action",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "update",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "insert",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "delete",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 3,
-        "x": 460,
-        "y": 550,
-        "wires": [
-            [
-                "a865f2936640d964"
-            ],
-            [
-                "9438a863f991294a"
-            ],
-            [
-                "7d807c553d8cc4f8"
-            ]
-        ]
-    },
-    {
-        "id": "a865f2936640d964",
-        "type": "change",
-        "z": "ec6678ccf32cce98",
-        "g": "14aece7b990ed601",
-        "name": "Params",
-        "rules": [
-            {
-                "t": "set",
-                "p": "params.$id_attribut",
-                "pt": "msg",
-                "to": "attribut.id_attribut",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "params.$name",
-                "pt": "msg",
-                "to": "attribut.name",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "params.$value",
-                "pt": "msg",
-                "to": "attribut.value",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 600,
-        "y": 510,
-        "wires": [
-            [
-                "e3e138d6a224ed69"
-            ]
-        ]
-    },
-    {
-        "id": "9438a863f991294a",
-        "type": "change",
-        "z": "ec6678ccf32cce98",
-        "g": "14aece7b990ed601",
-        "name": "Params",
-        "rules": [
-            {
-                "t": "set",
-                "p": "params.$id_sensor",
-                "pt": "msg",
-                "to": "id_sensor",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "params.$name",
-                "pt": "msg",
-                "to": "attribut.name",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "params.$value",
-                "pt": "msg",
-                "to": "attribut.value",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 600,
-        "y": 550,
-        "wires": [
-            [
-                "8016eb6039e164b2"
-            ]
-        ]
-    },
-    {
-        "id": "7d807c553d8cc4f8",
-        "type": "change",
-        "z": "ec6678ccf32cce98",
-        "g": "14aece7b990ed601",
-        "name": "Params",
-        "rules": [
-            {
-                "t": "set",
-                "p": "params.$id_attribut",
-                "pt": "msg",
-                "to": "attribut.id_attribut",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 600,
-        "y": 590,
-        "wires": [
-            [
-                "12e9604421c4d5b1"
-            ]
-        ]
-    },
-    {
-        "id": "12e9604421c4d5b1",
-        "type": "sqlite",
-        "z": "ec6678ccf32cce98",
-        "g": "14aece7b990ed601",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "prepared",
-        "sql": "DELETE FROM SENSOR_ATTRIBUT\nWHERE id_attribut = $id_attribut;",
-        "name": "Delete",
-        "x": 730,
-        "y": 600,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8016eb6039e164b2",
-        "type": "sqlite",
-        "z": "ec6678ccf32cce98",
-        "g": "14aece7b990ed601",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "prepared",
-        "sql": "INSERT INTO SENSOR_ATTRIBUT (\n    id_sensor,\n    name,\n    value)\nVALUES (\n    $id_sensor,\n    $name,\n    $value);\n",
-        "name": "Insert ",
-        "x": 730,
-        "y": 550,
-        "wires": [
-            [
-                "1660a5a757851231"
-            ]
-        ]
-    },
-    {
-        "id": "e3e138d6a224ed69",
-        "type": "sqlite",
-        "z": "ec6678ccf32cce98",
-        "g": "14aece7b990ed601",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "prepared",
-        "sql": "UPDATE SENSOR_ATTRIBUT\nSET name = $name,\n    value = $value\nWHERE id_attribut = $id_attribut;",
-        "name": "Update ",
-        "x": 740,
-        "y": 500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1660a5a757851231",
-        "type": "sqlite",
-        "z": "ec6678ccf32cce98",
-        "g": "14aece7b990ed601",
-        "mydb": "628739f370d1726d",
-        "sqlquery": "fixed",
-        "sql": "SELECT last_insert_rowid();",
-        "name": "Get last ID",
-        "x": 870,
-        "y": 550,
-        "wires": [
-            [
-                "842a98af577b1697"
-            ]
-        ]
-    },
-    {
-        "id": "842a98af577b1697",
-        "type": "change",
-        "z": "ec6678ccf32cce98",
-        "g": "33aac660f2f2aaf2",
-        "name": "Get last ID",
-        "rules": [
-            {
-                "t": "set",
-                "p": "action",
-                "pt": "msg",
-                "to": "attributLastId",
-                "tot": "str"
-            },
-            {
-                "t": "move",
-                "p": "payload[0].last_insert_rowid()",
-                "pt": "msg",
-                "to": "insertId",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1070,
-        "y": 470,
-        "wires": [
-            [
-                "c019c31104c9e3fb"
-            ]
-        ]
-    },
-    {
-        "id": "bcfdd06c8e9bf4bf",
-        "type": "change",
-        "z": "ec6678ccf32cce98",
-        "g": "33aac660f2f2aaf2",
-        "name": "Get last id",
-        "rules": [
-            {
-                "t": "set",
-                "p": "action",
-                "pt": "msg",
-                "to": "sensorLastId",
-                "tot": "str"
-            },
-            {
-                "t": "move",
-                "p": "payload[0].last_insert_rowid()",
-                "pt": "msg",
-                "to": "insertId",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1070,
-        "y": 420,
-        "wires": [
-            [
-                "c019c31104c9e3fb"
-            ]
-        ]
-    },
-    {
-        "id": "c019c31104c9e3fb",
-        "type": "link out",
-        "z": "ec6678ccf32cce98",
-        "g": "33aac660f2f2aaf2",
-        "name": "SendLastId",
-        "mode": "link",
-        "links": [
-            "43c18597783c3def"
-        ],
-        "x": 1175,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "5281a6741f7934e9",
-        "type": "debug",
-        "z": "ec6678ccf32cce98",
-        "g": "dfaa0e84286af4c3",
-        "name": "debug 206",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 270,
-        "y": 130,
-        "wires": []
-    },
-    {
-        "id": "306d455509a3747e",
+        "id": "84222b92.d65d18",
         "type": "inject",
-        "z": "aaaa9485612d7317",
-        "name": "Inject the sample data",
+        "z": "a9c9090b.478498",
+        "g": "a336ea4b50110cee",
+        "name": "",
         "props": [
             {
                 "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
             }
         ],
         "repeat": "",
@@ -10648,51 +9434,119 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "[{\"timestamp\":\"2024-06-17T10:00:00Z\",\"temperature\":298.15},{\"timestamp\":\"2024-06-17T11:00:00Z\",\"temperature\":299.15},{\"timestamp\":\"2024-06-17T10:30:00Z\",\"temperature\":300.15},{\"timestamp\":\"2024-06-17T10:15:00Z\",\"temperature\":301.15},{\"timestamp\":\"2024-06-17T10:45:00Z\",\"temperature\":303.15},{\"timestamp\":\"2024-06-18T09:00:00Z\",\"temperature\":297.15},{\"timestamp\":\"2024-06-18T10:00:00Z\",\"temperature\":300.15},{\"timestamp\":\"2024-06-18T11:00:00Z\",\"temperature\":301.15},{\"timestamp\":\"2024-06-18T12:00:00Z\",\"temperature\":302.15},{\"timestamp\":\"2024-06-19T10:00:00Z\",\"temperature\":298.15},{\"timestamp\":\"2024-06-19T11:00:00Z\",\"temperature\":299.15}]",
-        "payloadType": "json",
-        "x": 240,
-        "y": 250,
+        "payload": "Hello, World!",
+        "payloadType": "str",
+        "x": 230,
+        "y": 570,
         "wires": [
             [
-                "c58e1653fe5511eb"
+                "b4b9f603.739598"
             ]
         ]
     },
     {
-        "id": "c58e1653fe5511eb",
-        "type": "function",
-        "z": "aaaa9485612d7317",
-        "name": "Filtering, mapping, reducing and sorting data with traditional coding",
-        "func": "let sensorData = msg.payload;\n\nconst filteredData = sensorData\n    .filter(item => item.timestamp.startsWith(\"2024-06-17\"))\n    .map(item => ({\n        timestamp: item.timestamp,\n        temperature: item.temperature - 273.15\n    }));\n\nfilteredData.sort((a, b) => (a.timestamp > b.timestamp) ? 1 : ((b.timestamp > a.timestamp) ? -1 : 0));\n\nconst totalTemperature = filteredData.reduce((acc, entry) => acc + entry.temperature, 0);\nconst averageTemperature = totalTemperature / filteredData.length;\n\nmsg.payload = {\n    sensorData: filteredData,\n    averageTemperature: averageTemperature\n};\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 680,
-        "y": 250,
+        "id": "7b014430.dfd94c",
+        "type": "comment",
+        "z": "a9c9090b.478498",
+        "g": "a336ea4b50110cee",
+        "name": "Watch changes of a file",
+        "info": "Watch node can watch and report changes of a file.",
+        "x": 200,
+        "y": 490,
+        "wires": []
+    },
+    {
+        "id": "b4b9f603.739598",
+        "type": "file",
+        "z": "a9c9090b.478498",
+        "g": "a336ea4b50110cee",
+        "name": "",
+        "filename": "/home/pi-md/hello.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 440,
+        "y": 570,
         "wires": [
             [
-                "827c7d2009eeb046"
+                "caa9feabab137443"
             ]
         ]
     },
     {
-        "id": "827c7d2009eeb046",
+        "id": "672d3693.3cabd8",
+        "type": "comment",
+        "z": "a9c9090b.478498",
+        "g": "a336ea4b50110cee",
+        "name": "↓write to /tmp/hello.txt",
+        "info": "",
+        "x": 440,
+        "y": 530,
+        "wires": []
+    },
+    {
+        "id": "15f1f5aa.506ffa",
+        "type": "watch",
+        "z": "a9c9090b.478498",
+        "g": "a336ea4b50110cee",
+        "name": "",
+        "files": "/home/pi-md/hello.txt",
+        "recursive": "",
+        "x": 440,
+        "y": 610,
+        "wires": [
+            [
+                "92322ac737d147d1"
+            ]
+        ]
+    },
+    {
+        "id": "2ab4eba8.267d64",
+        "type": "comment",
+        "z": "a9c9090b.478498",
+        "g": "a336ea4b50110cee",
+        "name": "↑watch changes of  /tmp/hello.txt",
+        "info": "",
+        "x": 470,
+        "y": 650,
+        "wires": []
+    },
+    {
+        "id": "caa9feabab137443",
         "type": "debug",
-        "z": "aaaa9485612d7317",
-        "name": "debug 3",
+        "z": "a9c9090b.478498",
+        "g": "a336ea4b50110cee",
+        "name": "debug 224",
         "active": true,
         "tosidebar": true,
-        "console": true,
-        "tostatus": true,
+        "console": false,
+        "tostatus": false,
         "complete": "true",
         "targetType": "full",
-        "statusVal": "payload",
+        "statusVal": "",
         "statusType": "auto",
-        "x": 1050,
-        "y": 250,
+        "x": 670,
+        "y": 570,
+        "wires": []
+    },
+    {
+        "id": "92322ac737d147d1",
+        "type": "debug",
+        "z": "a9c9090b.478498",
+        "g": "a336ea4b50110cee",
+        "name": "debug 225",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 610,
         "wires": []
     }
 ]
